@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, StaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/Post';
@@ -8,14 +9,16 @@ import { Row, Col } from 'reactstrap';
 const Blog = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the blog page</h1>
     <Row>
       <Col>
-        <div style={{ border: '1px solid red', width: 100 }}></div>
+        <div style={{ border: '1px solid red', textAlign: 'center' }}>
+          <h1>Hi from the blog page</h1>
+        </div>
       </Col>
     </Row>
-
+    <br />
     <Link to="/">Go back to the home</Link>
+    <br /> <br />
     <StaticQuery
       query={blogQuery}
       render={data => {
@@ -25,7 +28,7 @@ const Blog = () => (
               <Post
                 key={node.id}
                 title={node.frontmatter.title}
-                path={node.frontmatter.path}
+                slug={node.fields.slug}
                 date={node.frontmatter.date}
                 body={node.excerpt}
                 fluid={node.frontmatter.Image.childImageSharp.fluid}
@@ -40,15 +43,18 @@ const Blog = () => (
 );
 
 const blogQuery = graphql`
-  query MyQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+  query blogQuery {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 2
+    ) {
+      totalCount
       edges {
         node {
           id
           frontmatter {
             title
-            date(formatString: "MM-DD-YYYY")
-            path
+            date(formatString: "MMM Do YYYY")
             tags
             Image {
               childImageSharp {
@@ -58,7 +64,10 @@ const blogQuery = graphql`
               }
             }
           }
-          excerpt
+          fields {
+            slug
+          }
+          excerpt(format: MARKDOWN)
         }
       }
     }

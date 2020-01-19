@@ -1,10 +1,12 @@
 ---
-title: 'FIrst post'
-date: 2020-01-17
-Image: '../../images/code.jpg'
+title: 'Third Post - CSS'
+date: 2018-12-03 07:00:00
+image: ../../images/code.jpg
 tags:
-  - Gatsby.js
-  - HTML
+  - design
+  - tutorial
+  - rEaCt
+  - gatsbyJS
 ---
 
 <p>hover over &after underline on titles</p>
@@ -12,8 +14,8 @@ tags:
 <div style="color:red;font-size:40px;">
 asdasdadas
 </div>
-endexcerpt
 <!-- endexcerpt -->
+
 <p>
 second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post
 </p>

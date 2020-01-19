@@ -1,11 +1,12 @@
 ---
 title: 'second post'
 date: 2019-12-01
-
-Image: '../../images/code.jpg'
+image: ../../images/code.jpg
 tags:
   - code
   - React
+  - design
+  - Gatsby.js
 ---
 
 welcome to code blog

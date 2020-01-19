@@ -1,5 +1,6 @@
 const { slugify } = require('./src/utils/utilityFunctions.js');
 const path = require('path');
+const _ = require('lodash');
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
@@ -12,15 +13,15 @@ exports.onCreateNode = ({ node, actions }) => {
     });
   }
 };
+//creating the path to the blog name,
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
   const templates = {
-    post: path.resolve('src/templates/single-post.js'),
-    // postList: path.resolve('src/templates/post-list.js'),
-    tag: path.resolve('src/templates/tag-posts.js')
-    // tagsPage: path.resolve('src/templates/tags-page.js'),
+    post: path.resolve('./src/templates/single-post.js'),
+    tag: path.resolve('./src/templates/tag-posts.js'),
+    tagsPage: path.resolve('src/templates/tags-page.js')
   };
   return graphql(`
     {
@@ -49,6 +50,53 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           // Passing slug for template to use to fetch the post
           slug: node.fields.slug
+          // Find author imageUrl from author array and pass it to template
+        }
+      });
+    });
+    //created post for each blog
+
+    // Get all tags
+    let tags = [];
+    _.each(posts, edge => {
+      if (_.get(edge, 'node.frontmatter.tags')) {
+        tags = tags.concat(edge.node.frontmatter.tags);
+      }
+    });
+
+    let tagPostCounts = {}; // { tutorial: 2, design: 1}
+    tags.forEach(tag => {
+      // Or 0 cause it might not exist yet
+      tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1;
+    });
+
+    // Tags page (all tags)
+    createPage({
+      path: '/tags',
+      component: templates.tagsPage,
+      context: {
+        tags,
+        tagPostCounts
+      }
+    });
+
+    // Tags page (all tags)
+    createPage({
+      path: '/tags',
+      component: templates.tagsPage,
+      context: {
+        tags,
+        tagPostCounts
+      }
+    });
+
+    // Tag posts pages
+    tags.forEach(tag => {
+      createPage({
+        path: `/tags/${_.kebabCase(tag)}`,
+        component: templates.tag,
+        context: {
+          tag
         }
       });
     });

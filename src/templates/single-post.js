@@ -24,18 +24,18 @@ const SinglePost = ({ data, pageContext, location }) => {
       <Card>
         <Img
           className="card-image-top"
-          fluid={post.Image.childImageSharp.fluid}
+          fluid={post.image.childImageSharp.fluid}
         />
         <CardSubtitle>
           <div className="text-info">{post.date}</div>
         </CardSubtitle>
-        <div dangerouslySetInnerHTML={{ __html: data.html }} />
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Card>
       <div style={{ display: 'inline-block' }}>
-        <div style={{ display: 'inline-block' }}>
+        <div style={{ textAlign: 'right' }}>
           {post.tags.map(tag => (
-            <Link key={tag} to={`/tags/${slugify(tag)}/`}>
-              <Badge color="primary">{tag}</Badge>{' '}
+            <Link to={`/tags/${slugify(tag)}`}>
+              <Badge color="primary">{tag}</Badge>
             </Link>
           ))}
         </div>
@@ -106,7 +106,7 @@ export const postQuery = graphql`
         title
         date(formatString: "MMM Do YYYY")
         tags
-        Image {
+        image {
           childImageSharp {
             fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid

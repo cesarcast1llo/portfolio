@@ -13,38 +13,28 @@ import {
 } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
 
-const Post = ({ title, date, slug, body, fluid, tags }) => {
-  // or {props.title}, {props.date} etc
-  return (
-    <Card>
-      <Link to={`/${slug}`}>
-        <Img className="card-img-top" fluid={fluid} />
-      </Link>
-      <CardBody style={{ padding: 0 }}>
-        <br />
-        <CardTitle>
-          <Link to={`/${slug}`}>{title}</Link>
-        </CardTitle>
-        <CardSubtitle>{date}</CardSubtitle>
-      </CardBody>
-      <CardText>{body}</CardText>
-      <Row>
-        <Col sm="6">
-          <Link to={`/${slug}`}>Read Moreeee</Link>
-        </Col>
-        <Col sm="6">
-          <div style={{ textAlign: 'right' }}>
-            {tags.map(tag => (
-              <Link key={tag} to={`/tags/${slugify(tag)}/`}>
-                <Badge color="danger">{tag}</Badge>{' '}
-              </Link>
-            ))}
-          </div>
-        </Col>
-      </Row>
+const Post = ({ title, slug, date, body, fluid, tags }) => (
+  <Card>
+    <Link to={`/${slug}`}>
+      <Img className="card-image-top" fluid={fluid} />
+    </Link>
+    <CardBody style={{ padding: 0 }}>
       <br />
-    </Card>
-  );
-};
+      <CardTitle>
+        <Link to={`/${slug}`}>{title}</Link>
+      </CardTitle>
+      <CardSubtitle>{date}</CardSubtitle>
+    </CardBody>
+    <CardText>{body}</CardText>
+    {tags.map(tag => (
+      <Link to={`/tags/${slugify(tag)}`}>
+        <Badge color="primary" className="text-uppercase">
+          {tag}
+        </Badge>
+      </Link>
+    ))}
+    <br />
+  </Card>
+);
 
 export default Post;

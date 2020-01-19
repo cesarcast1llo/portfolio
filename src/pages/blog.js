@@ -7,11 +7,11 @@ import Post from '../components/Post';
 import { Row, Col } from 'reactstrap';
 
 const Blog = () => (
-  <Layout>
-    <SEO title="Page two" />
+  <Layout pageTitle="CodeBlog">
+    <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
     <Row>
       <Col>
-        <div style={{ border: '1px solid red', textAlign: 'center' }}>
+        <div style={{ border: '1px solid red', textAlign: 'cenm' }}>
           <h1>Hi from the blog page</h1>
         </div>
       </Col>
@@ -29,9 +29,9 @@ const Blog = () => (
                 key={node.id}
                 title={node.frontmatter.title}
                 slug={node.fields.slug}
-                date={node.frontmatter.date}
                 body={node.excerpt}
-                fluid={node.frontmatter.Image.childImageSharp.fluid}
+                date={node.frontmatter.date}
+                fluid={node.frontmatter.image.childImageSharp.fluid}
                 tags={node.frontmatter.tags}
               />
             ))}
@@ -43,10 +43,10 @@ const Blog = () => (
 );
 
 const blogQuery = graphql`
-  query blogQuery {
+  query indexQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 2
+      limit: 1111
     ) {
       totalCount
       edges {
@@ -56,7 +56,7 @@ const blogQuery = graphql`
             title
             date(formatString: "MMM Do YYYY")
             tags
-            Image {
+            image {
               childImageSharp {
                 fluid(maxWidth: 600) {
                   ...GatsbyImageSharpFluid
@@ -67,7 +67,7 @@ const blogQuery = graphql`
           fields {
             slug
           }
-          excerpt(format: MARKDOWN)
+          excerpt
         }
       }
     }

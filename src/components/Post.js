@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
+import { tagCapital } from '../utils/utilityFunctions.js';
 import {
   Card,
   CardTitle,
@@ -12,6 +13,10 @@ import {
   Col
 } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
+
+// TODO before loading the card, run through tags and delete duplicates
+// or else well keep getting multiple different tags on /tags page
+// because of the chance of mispelling, camelcase, etc
 
 const Post = ({ title, slug, date, body, fluid, tags }) => (
   <Card>
@@ -27,13 +32,16 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
     </CardBody>
     <CardText>{body}</CardText>
     {tags.map(tag => (
-      <Link to={`/tags/${slugify(tag)}`}>
-        <Badge color="primary" className="text-uppercase">
-          {tag}
-        </Badge>
-      </Link>
+      <div key={tag}>
+        <Link to={`/tags/${slugify(tag)}`}>
+          <Badge color="primary" className="text-uppercase">
+            {slugify(tag)}
+          </Badge>
+        </Link>
+      </div>
     ))}
     <br />
+    {console.log(tags)}
   </Card>
 );
 

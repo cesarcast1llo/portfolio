@@ -70,6 +70,10 @@ exports.createPages = ({ actions, graphql }) => {
       tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1;
     });
 
+    // Remove duplicates since same id is given to multiple children
+    // error in tags-page
+    tags = _.uniq(tags);
+
     // Tags page (all tags)
     createPage({
       path: '/tags',
@@ -93,7 +97,7 @@ exports.createPages = ({ actions, graphql }) => {
     // Tag posts pages
     tags.forEach(tag => {
       createPage({
-        path: `/tags/${_.kebabCase(tag)}`,
+        path: `/tags/${slugify(tag)}`,
         component: templates.tag,
         context: {
           tag

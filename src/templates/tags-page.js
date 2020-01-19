@@ -3,7 +3,7 @@ import Layout from '../components/layout';
 import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import { Badge, Button } from 'reactstrap';
-import { slugify } from '../utils/utilityFunctions';
+import { slugify, tagCapital, dup } from '../utils/utilityFunctions';
 
 const tagsPage = ({ pageContext }) => {
   const { tags, tagPostCounts } = pageContext;
@@ -14,15 +14,17 @@ const tagsPage = ({ pageContext }) => {
         keywords={['tags', 'topics']}
       />
       TAGSS
+      {console.log(tags)}
       {tags.map(tag => (
         <li key={tag} style={{ marginBottom: '10px' }}>
-          <Button color="primary" href={`/tags/${slugify(tag)}`}>
-            {tag} <Badge color="light">{tagPostCounts[tag]}</Badge>
-          </Button>
+          <Link to={`/tags/${slugify(tag)}`}>
+            <Button color="primary">
+              {tagCapital(tag)}{' '}
+              <Badge color="light">{tagPostCounts[tag]}</Badge>
+            </Button>
+          </Link>
         </li>
       ))}
-      {/* TODO watch unique key prop error, also lowercase all; URLs */}
-      {/* working, /tags */}
     </Layout>
   );
 };

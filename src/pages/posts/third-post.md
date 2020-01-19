@@ -7,6 +7,7 @@ tags:
   - tutorial
   - rEaCt
   - gatsbyJS
+  - GaTsBy.js
 ---
 
 <p>hover over &after underline on titles</p>

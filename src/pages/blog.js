@@ -43,7 +43,7 @@ const Blog = () => (
 );
 
 const blogQuery = graphql`
-  query indexQuery {
+  query blogQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: 1111

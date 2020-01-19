@@ -21,6 +21,7 @@ const SinglePost = ({ data, pageContext, location }) => {
         pathname={location.pathname}
       />
       <h1>{post.title}</h1>
+
       <Card>
         <Img
           className="card-image-top"
@@ -34,9 +35,13 @@ const SinglePost = ({ data, pageContext, location }) => {
       <div style={{ display: 'inline-block' }}>
         <div style={{ textAlign: 'right' }}>
           {post.tags.map(tag => (
-            <Link to={`/tags/${slugify(tag)}`}>
-              <Badge color="primary">{tag}</Badge>
-            </Link>
+            <div key={tag}>
+              <Link to={`/tags/${slugify(tag)}`}>
+                <Badge color="primary" className="text-uppercase">
+                  {slugify(tag)}
+                </Badge>
+              </Link>
+            </div>
           ))}
         </div>
         <div style={{ display: 'inline-block' }}>

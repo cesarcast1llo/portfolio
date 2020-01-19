@@ -6,6 +6,8 @@ tags:
   - code
   - react
   - tutorial
+  - React.js
+  - react.js
 ---
 
 <p>hover over &after underline on titles</p>

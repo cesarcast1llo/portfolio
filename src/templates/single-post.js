@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import { Badge, Card, CardSubtitle } from 'reactstrap';
 import Img from 'gatsby-image';
-import { slugify } from '../utils/utilityFunctions.js';
+import { slugify, tagCapital } from '../utils/utilityFunctions.js';
 import { Link } from 'gatsby';
 
 const SinglePost = ({ data, pageContext, location }) => {
@@ -38,7 +38,7 @@ const SinglePost = ({ data, pageContext, location }) => {
             <div key={tag}>
               <Link to={`/tags/${slugify(tag)}`}>
                 <Badge color="primary" className="text-uppercase">
-                  {slugify(tag)}
+                  {tagCapital(tag)}
                 </Badge>
               </Link>
             </div>

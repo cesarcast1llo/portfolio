@@ -3,11 +3,8 @@ title: 'Third Post - CSS'
 date: 2018-12-03 07:00:00
 image: ../../images/code.jpg
 tags:
-  - design
-  - tutorial
-  - rEaCt
-  - gatsbyJS
-  - GaTsBy.js
+  - Javascript
+  - Node.js
 ---
 
 <p>hover over &after underline on titles</p>

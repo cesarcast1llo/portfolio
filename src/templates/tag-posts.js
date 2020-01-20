@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Post from '../components/Post';
-import { slugify, tagCapital } from '../utils/utilityFunctions.js';
+import { tagCapital } from '../utils/utilityFunctions.js';
 
 const tagPosts = ({ data, pageContext }) => {
   const { tags, tag } = pageContext;

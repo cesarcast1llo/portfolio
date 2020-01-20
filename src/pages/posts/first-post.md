@@ -3,9 +3,9 @@ title: 'second post'
 date: 2019-12-01
 image: ../../images/code.jpg
 tags:
-  - code
+  - Code
   - React
-  - design
+  - Design
   - Gatsby.js
 ---
 

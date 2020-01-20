@@ -8,9 +8,7 @@ import {
   CardText,
   CardSubtitle,
   CardBody,
-  Badge,
-  Row,
-  Col
+  Badge
 } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
 
@@ -35,7 +33,7 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       <div key={tag}>
         <Link to={`/tags/${slugify(tag)}`}>
           <Badge color="primary" className="text-uppercase">
-            {slugify(tag)}
+            {tagCapital(tag)}
           </Badge>
         </Link>
       </div>

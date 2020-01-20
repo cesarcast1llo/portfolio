@@ -3,11 +3,10 @@ title: 'First Post - Introduction'
 date: 2018-12-01 07:00:00
 image: ../../images/code.jpg
 tags:
-  - code
-  - react
-  - tutorial
+  - Tutorial
   - React.js
-  - react.js
+  - Node.js
+  - Design
 ---
 
 <p>hover over &after underline on titles</p>

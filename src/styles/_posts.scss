@@ -1,0 +1,106 @@
+.single-post {
+  padding: 0;
+
+  .post-title {
+    color: red;
+    font-size: 2rem;
+  }
+
+  .image-container {
+    padding: 10px 0 0;
+
+    .card-image-top {
+      // max-width: 300px;
+    }
+  }
+
+  .post-copy {
+    padding: 1.5rem;
+
+    .post-date {
+      color: green;
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .post-body {
+      padding-top: 20px;
+    }
+  }
+
+  .sm-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    .share {
+      display: inline-block;
+    }
+    .social-share-links {
+      display: inline-block;
+
+      a {
+        opacity: 0.6;
+        transition: all 0.1s ease-in;
+        &:hover {
+          opacity: 1;
+        }
+        &.fb {
+          color: rgb(66, 103, 178);
+        }
+        &.twit {
+          color: rgb(56, 161, 243);
+        }
+        &.linkedin {
+          color: rgb(0, 119, 181);
+        }
+      }
+    }
+  }
+
+  .tag-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    .tags {
+      text-transform: uppercase;
+
+      .badge {
+        background-color: red;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// .social-share-links {
+//   ul {
+//     display: inline-flex;
+//     margin: 20px auto;
+
+//     li {
+//       margin: auto 20px;
+
+//       a {
+//         opacity: 0.6;
+//         transition: all 0.1s ease-in;
+//         &:hover {
+//           opacity: 1;
+//         }
+//         &.facebook {
+//           color: rgb(66, 103, 178);
+//         }
+//         &.twitter {
+//           color: rgb(56, 161, 243);
+//         }
+//         &.google {
+//           color: rgb(221, 75, 57);
+//         }
+//         &.linkedin {
+//           color: rgb(0, 119, 181);
+//         }
+//       }
+//     }
+//   }
+// }

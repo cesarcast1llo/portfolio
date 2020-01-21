@@ -57,7 +57,7 @@ export const tagQuery = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 280)
         }
       }
     }

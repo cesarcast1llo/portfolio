@@ -1,21 +1,18 @@
 ---
-title: 'First Post - Introduction'
-date: 2018-12-01 07:00:00
+title: 'Seconds'
+date: 2018-12-19 07:00:00
 image: ../../images/code.jpg
 tags:
   - Tutorial
-  - React.js
   - Node.js
   - Design
 ---
 
 <p>hover over &after underline on titles</p>
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 <div style="color:red;font-size:40px;">
-asdasdadas
+asdasdasd
 </div>
-endexcerpt
-<!-- endexcerpt -->
+<!-- end -->
 <p>
 second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post second post
 </p>

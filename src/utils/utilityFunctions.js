@@ -11,7 +11,7 @@ const slugify = function(text) {
     .replace(/-+$/, '');
 };
 
-String.prototype.capitalize = function() {
+const capitalize = function() {
   return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
@@ -21,8 +21,8 @@ const tagCapital = function(text) {
     .toLowerCase()
     .replace(/\s+/g, '-')
     .replace(/\.+/, '')
-    .replace(/(js)+/g, '.js')
-    .capitalize();
+    .replace(/(js)+/g, '.js');
+  // .capitalize();
 };
 
 const dup = function(text) {

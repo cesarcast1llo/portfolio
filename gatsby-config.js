@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Cesar Castillo`,
+    description: `Building portfolio as well as blog to showcase my experience and JS logic`,
     author: `Cesar C`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        excerpt_separator: `<!-- endexcerpt -->`
+        excerpt_separator: `<!-- end -->`
       }
     }
 

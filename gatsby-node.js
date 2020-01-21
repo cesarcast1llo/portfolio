@@ -45,12 +45,11 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach(({ node }) => {
       createPage({
-        path: node.fields.slug,
+        path: `/blog/${node.fields.slug}`,
         component: templates.post,
         context: {
           // Passing slug for template to use to fetch the post
           slug: node.fields.slug
-          // Find author imageUrl from author array and pass it to template
         }
       });
     });

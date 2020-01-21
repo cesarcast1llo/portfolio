@@ -1,7 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+html,
+body {
+  overflow-x: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
 
-$site-font: 'Raleway', sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-$light-gray: rgb(240, 240, 240);
-$dark-gray: rgb(80, 80, 80);
-$white: white;
+// screen sizes
+$L: 1200px;
+$M: 992px;
+$S: 768px;
+$mobile: 480px;
+
+.em_hide_desktop {
+  display: block;
+  @media (min-width: $S) {
+    display: none !important;
+  }
+}
+
+.em_hide {
+  display: none !important;
+  @media (min-width: $S) {
+    display: block !important;
+  }
+}

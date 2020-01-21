@@ -14,7 +14,10 @@ const Blog = () => (
       <Row>
         <Col>
           <div className="blog-header">
-            <h1>100 Days of Javascript</h1>
+            <h1>
+              FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS
+              <br /> make a description before blog starts
+            </h1>
           </div>
         </Col>
       </Row>
@@ -22,7 +25,7 @@ const Blog = () => (
         query={blogQuery}
         render={data => {
           return (
-            <div className="blog">
+            <div className="blogs">
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <Post
                   key={node.id}

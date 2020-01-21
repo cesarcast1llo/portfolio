@@ -26,18 +26,13 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       </Link>
     </Col>
     <Col md="7" className="blog-post">
-      <Row>
-        <Col className="blog-body">
-          <CardBody className="cardbody">
-            <Link to={`/blog/${slug}`}>
-              <CardTitle className="cardtitle">{title}</CardTitle>
-            </Link>
-            <CardSubtitle className="post-date">
-              clock icon- {date}
-            </CardSubtitle>
-            <CardText className="cardtext">{body}</CardText>{' '}
-          </CardBody>
-
+      <Col className="blog-body">
+        <CardBody className="card-body">
+          <Link to={`/blog/${slug}`}>
+            <CardTitle className="cardtitle">{title}</CardTitle>
+          </Link>
+          <CardSubtitle className="post-date">clock icon- {date}</CardSubtitle>
+          <CardText className="cardtext">{body}</CardText>{' '}
           <div className="tags">
             {tags.map(tag => (
               <Link key={tag} to={`/tags/${slugify(tag)}`}>
@@ -45,8 +40,8 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
               </Link>
             ))}
           </div>
-        </Col>
-      </Row>
+        </CardBody>
+      </Col>
     </Col>
   </Row>
 );

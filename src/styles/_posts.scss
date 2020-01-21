@@ -15,8 +15,13 @@
   }
 
   .post-copy {
-    padding: 1.5rem;
-
+    padding: 30px 15px 10px;
+    @media (min-width: $S) {
+      padding: 30px 15px 20px;
+    }
+    @media (min-width: $M) {
+      padding: 30px 15px 40px;
+    }
     .post-date {
       color: green;
       font-style: italic;
@@ -29,10 +34,12 @@
   }
 
   .sm-container {
-    padding-top: 20px;
-    display: flex;
-    justify-content: flex-start;
-
+    display: none;
+    @media (min-width: $S) {
+      padding: 0 0 20px 15px;
+      display: flex;
+      justify-content: flex-start;
+    }
     .share {
       display: inline-block;
     }
@@ -40,67 +47,59 @@
       display: inline-block;
 
       a {
-        opacity: 0.6;
+        opacity: 0.9;
         transition: all 0.1s ease-in;
+
         &:hover {
           opacity: 1;
         }
-        &.fb {
+        &.email {
           color: rgb(66, 103, 178);
         }
-        &.twit {
+        &.twitter {
           color: rgb(56, 161, 243);
         }
         &.linkedin {
           color: rgb(0, 119, 181);
+        }
+
+        .envelope {
+          color: black;
+          margin: 0 10px;
+          font-size: 30px;
+        }
+        .twit {
+          color: rgb(56, 161, 243);
+          margin: 0 5px;
+          font-size: 33px;
+        }
+        .lnkdin {
+          color: rgb(0, 119, 181);
+          margin: 0 0 0 10px;
+          font-size: 33px;
         }
       }
     }
   }
 
   .tag-container {
-    padding-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+    @media (min-width: $S) {
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 0 20px 0;
+    }
     .tags {
       text-transform: uppercase;
 
       .badge {
         background-color: red;
         margin-right: 10px;
+        padding: 10px;
       }
     }
   }
 }
-
-// .social-share-links {
-//   ul {
-//     display: inline-flex;
-//     margin: 20px auto;
-
-//     li {
-//       margin: auto 20px;
-
-//       a {
-//         opacity: 0.6;
-//         transition: all 0.1s ease-in;
-//         &:hover {
-//           opacity: 1;
-//         }
-//         &.facebook {
-//           color: rgb(66, 103, 178);
-//         }
-//         &.twitter {
-//           color: rgb(56, 161, 243);
-//         }
-//         &.google {
-//           color: rgb(221, 75, 57);
-//         }
-//         &.linkedin {
-//           color: rgb(0, 119, 181);
-//         }
-//       }
-//     }
-//   }
-// }

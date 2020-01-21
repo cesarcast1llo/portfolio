@@ -8,6 +8,7 @@ import SEO from '../components/seo';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <h1>diverteted css image as hero </h1>
     <Container>
       <Row>
         <Col md="12">
@@ -19,6 +20,7 @@ const IndexPage = () => (
       <Row>
         <Col md="6">
           <div>
+            <i className="fa fa-github" aria-hidden="true"></i>
             <h2 style={{ textDecoration: 'underline', textAlign: 'center' }}>
               DEV
             </h2>
@@ -133,6 +135,7 @@ const IndexPage = () => (
       </Row>
     </Container>
     <br />
+    <h1>ADD QUOTES HERE FROM FAV BOOKS</h1>
     <br />
     <br />
     <Link to="/blog/">Developing Blog</Link>

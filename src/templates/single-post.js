@@ -35,7 +35,9 @@ const SinglePost = ({ data, pageContext, location }) => {
         </Row>
         <Row>
           <Col className="post-copy">
-            <div className="post-date">add clock icon {post.date}</div>
+            <div className="post-date">
+              <i className="fa fa-calendar" aria-hidden="true"></i> {post.date}
+            </div>
 
             <div
               className="post-body"
@@ -53,11 +55,11 @@ const SinglePost = ({ data, pageContext, location }) => {
                   baseUrl +
                   pageContext.slug
                 }
-                className="fb"
+                className="email"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-facebook-official" aria-hidden="true"></i>
+                <i className="fa fa-envelope-o envelope" aria-hidden="true"></i>
               </a>
               <a
                 href={
@@ -69,11 +71,11 @@ const SinglePost = ({ data, pageContext, location }) => {
                   '&via' +
                   'twitterHandle'
                 }
-                className="twit"
+                className="twitter"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-spinner fa-spin"></i>
+                <i className="fa fa-twitter twit" aria-hidden="true"></i>
               </a>
               <a
                 href={
@@ -85,11 +87,14 @@ const SinglePost = ({ data, pageContext, location }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-spinner fa-spin"></i>
+                <i
+                  className="fa fa-linkedin-square lnkdin"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </Col>
-          <Col sm="6" className="tag-container">
+          <Col md="6" sm="12" className="tag-container">
             <div className="tags">
               {post.tags.map(tag => (
                 <Link key={tag} to={`/tags/${slugify(tag)}`}>

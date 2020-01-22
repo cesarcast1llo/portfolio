@@ -1,7 +1,7 @@
 ---
 title: 'JS - Removing duplicates and finding parent ID'
 date: 2020-01-20 07:00:00
-image: ../../images/code.jpg
+image: ../../images/code3.jpeg
 tags:
   - Tutorial
   - Code

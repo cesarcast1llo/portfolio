@@ -3,22 +3,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`
-    }}
-  >
-    <h1 style={{ margin: 0 }}>
-      <Link
-        to="/"
-        style={{
-          color: `white`,
-          textDecoration: `none`
-        }}
-      >
-        {siteTitle}
-      </Link>
+  <header className="header">
+    <div className="background">
+      header with inherit bg color and hamburger menu on mobile going here
+    </div>
+    <h1>
+      <Link to="/">{siteTitle}</Link>
     </h1>
   </header>
 );

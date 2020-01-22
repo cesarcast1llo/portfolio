@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { tagCapital } from '../utils/utilityFunctions.js';
-import { Badge, Col, Row, Container } from 'reactstrap';
+import { Badge, Col, Row } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
 
 // TODO before loading the card, run through tags and delete duplicates
@@ -25,7 +25,7 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       <div className="card-body">{body}</div>
       <div className="tags">
         {tags.map(tag => (
-          <Link key={tag} to={`/tags/#${slugify(tag)}`}>
+          <Link key={tag} to={`/tags/${slugify(tag)}`}>
             <Badge className="badge">#{tagCapital(tag)}</Badge>
           </Link>
         ))}

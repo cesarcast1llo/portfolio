@@ -1,7 +1,7 @@
 // Bootstrap scss
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
 @import './variables';
 @import './index';
 @import './blog';
-@import './posts';
+@import './components/posts';
+@import './components/header';

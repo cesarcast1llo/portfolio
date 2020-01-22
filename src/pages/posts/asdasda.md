@@ -1,7 +1,7 @@
 ---
 title: 'asaasSeconds Jautoprila posting about effects and hooks'
 date: 2020-12-19 07:00:00
-image: ../../images/code.jpg
+image: ../../images/code1.jpeg
 tags:
   - Tutorial
   - Node.js

@@ -19,7 +19,6 @@ a {
 
   &:hover {
     text-decoration: none;
-    cursor: pointer;
   }
 }
 
@@ -35,8 +34,9 @@ a {
   }
 }
 
-$fontSize: 18px;
-$MfontSize: 14px;
+$font-size: 1.5em;
+$line-height: 1.6;
+$font-weight: 400;
 
 // screen sizes
 $L: 1200px;

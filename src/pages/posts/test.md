@@ -1,7 +1,7 @@
 ---
 title: 'Stest'
 date: 2018-12-19 07:00:00
-image: ../../images/code.jpg
+image: ../../images/code2.jpeg
 tags:
   - Tutorial
   - Node.js

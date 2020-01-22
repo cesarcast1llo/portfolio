@@ -29,6 +29,7 @@ const IndexPage = ({ data }) => (
       <Row>
         <Col md="12" className="goals">
           <div style={{ textAlign: 'center' }}>
+            <h1>testing netlify staging</h1>
             <h1>2020</h1>
           </div>
         </Col>

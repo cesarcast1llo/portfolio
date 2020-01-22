@@ -15,8 +15,9 @@ const tagPosts = ({ data, pageContext }) => {
     <Layout pageTitle={pageHeader}>
       <h1>
         Posts with --->
-        <span style={{ textDecoration: 'underline' }}>{tagCapital(tag)}</span>
+        <span style={{ textDecoration: 'underline' }}>#{tagCapital(tag)}</span>
       </h1>
+      <h3>highlight all other matching tag instances</h3>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Post
           key={node.id}

@@ -98,7 +98,7 @@ const SinglePost = ({ data, pageContext, location }) => {
             <div className="tags">
               {post.tags.map(tag => (
                 <Link key={tag} to={`/tags/${slugify(tag)}`}>
-                  <Badge className="badge">{tagCapital(tag)}</Badge>
+                  <Badge className="badge">#{tagCapital(tag)}</Badge>
                 </Link>
               ))}
             </div>

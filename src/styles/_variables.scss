@@ -14,10 +14,35 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.mobile-hide {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.desktop-hide {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+$fontSize: 18px;
+$MfontSize: 14px;
+
 // screen sizes
 $L: 1200px;
 $M: 992px;
 $S: 768px;
+$BTP576: 576px;
 $mobile: 480px;
 
 .em_hide_desktop {

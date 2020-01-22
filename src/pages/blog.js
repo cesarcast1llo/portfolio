@@ -5,27 +5,23 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/Post';
 // import '../styles/portfolio.scss';
-import { Row, Col, Container } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 const Blog = () => (
   <Layout pageTitle="CodeBlog">
     <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
     <div className="blog-page">
-      <Row>
-        <Col>
-          <div className="blog-header">
-            <h1>
-              FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS
-              <br /> make a description before blog starts
-            </h1>
-          </div>
-        </Col>
-      </Row>
+      <div className="blog-header">
+        <h1>
+          FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS
+          <br /> make a description before blog starts
+        </h1>
+      </div>
       <StaticQuery
         query={blogQuery}
         render={data => {
           return (
-            <div className="blogs">
+            <Container className="blogs-cont">
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <Post
                   key={node.id}
@@ -37,13 +33,10 @@ const Blog = () => (
                   tags={node.frontmatter.tags}
                 />
               ))}
-            </div>
+            </Container>
           );
         }}
       />
-      <Row>
-        <Col>All Tags</Col>
-      </Row>
     </div>
   </Layout>
 );
@@ -73,7 +66,7 @@ const blogQuery = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 190)
         }
       }
     }

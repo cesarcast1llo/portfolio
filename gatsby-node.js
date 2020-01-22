@@ -9,6 +9,7 @@ exports.onCreateNode = ({ node, actions }) => {
     createNodeField({
       node,
       name: 'slug',
+      // value: `/blog${value}`
       value: slugFromTitle
     });
   }

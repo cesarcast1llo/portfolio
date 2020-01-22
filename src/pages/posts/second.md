@@ -1,11 +1,12 @@
 ---
-title: 'second'
+title: 'JS - Removing duplicates and finding parent ID'
 date: 2020-01-20 07:00:00
 image: ../../images/code.jpg
 tags:
   - Tutorial
   - Code
   - React.js
+  - Node.js
 ---
 
 1111

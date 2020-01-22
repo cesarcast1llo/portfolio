@@ -1,68 +1,135 @@
 .blog-page {
-  padding: 0 10px !important;
+  margin: 0 auto;
 
   .blog-header {
     text-align: left;
-    padding-bottom: 40px;
+    padding: 0 0 30px;
     @media (min-width: $S) {
       text-align: center;
     }
   }
 
-  .blog-image {
-    padding: 0 15px 10px;
-    @media (min-width: $S) {
-      padding: 0 0 40px 15px;
-    }
-  }
+  .blogs-cont {
+    margin: 0 auto;
 
-  .blog-post {
-    padding: 0 20px 30px;
-    @media (min-width: $mobile) {
-      padding: 0 25px 40px;
-    }
-    @media (min-width: $S) {
-      padding: 0 15px;
+    @media (min-width: $BTP576) {
+      width: 100%;
+      max-width: 900px;
     }
 
-    .blog-body {
-      padding: 0 15px;
+    .blog-image {
+      padding: 0;
+
+      @media (min-width: $S) {
+        padding: 0 15px 60px;
+      }
+
+      .card-image-top {
+        img {
+          margin: 0;
+        }
+      }
+    }
+
+    .blog-post {
+      padding: 15px 10px 40px;
       @media (min-width: $mobile) {
-        padding: 0 15px 0 0;
+        padding: 15px 15px 40px;
+      }
+      @media (min-width: $S) {
+        padding: 0 15px 60px 0;
+      }
+
+      .blog-title {
+        @media (min-width: 850px) {
+          padding-top: 25px;
+        }
+        a {
+          color: blue;
+          font-size: 18px;
+          line-height: 20px;
+          margin-bottom: 0;
+          display: block;
+          @media (min-width: $S) {
+            font-size: 21px;
+            line-height: 25px;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .fa-calendar {
+        color: green;
+        font-size: 14px;
+        margin-bottom: 0;
+        display: inline-block;
+        margin: 0 5px 5px 0;
+        @media (min-width: $mobile) {
+          font-size: 16px;
+        }
+      }
+
+      .date {
+        display: inline-block;
+        font-style: italic;
+        color: red;
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 5px;
+        @media (min-width: $S) {
+          font-size: 14px;
+          line-height: 17px;
+        }
       }
 
       .card-body {
-        font-size: 1rem;
         padding: 0;
+        color: black;
+        display: block;
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 19px;
 
-        .cardtitle {
-          font-size: 1.5rem;
-          margin-bottom: 0;
+        @media (min-width: 800px) {
+          font-size: 18px;
+          line-height: 22px;
         }
-
-        .post-date {
-          font-style: italic;
-          color: green;
-        }
-
-        .cardtext {
-          border: 1px solid red;
+        @media (min-width: 850px) {
+          padding-top: 5px;
         }
       }
-    }
-  }
 
-  .tags {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-end;
+      .tags {
+        text-align: right;
 
-    .badge {
-      background-color: red;
-      margin: 0 10px 0 0;
-      padding: 10px;
-      @media (min-width: $mobile) {
-        margin: 0 0 0 10px;
+        @media (min-width: $S) {
+          position: absolute;
+          bottom: 60px;
+          right: 15px;
+        }
+
+        a {
+          display: inline-block;
+          //  &:hover {
+          //     slide across
+          //  }
+        }
+
+        .badge {
+          text-transform: uppercase;
+          background-color: red;
+          margin: 0 0 0 7px;
+          padding: 6px 7px;
+          font-size: 8.5px;
+          letter-spacing: 0.5px;
+          @media (min-width: $S) {
+            margin: 0 0 10px 10px;
+            padding: 8px;
+            font-size: 10.5px;
+          }
+        }
       }
     }
   }

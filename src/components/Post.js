@@ -2,16 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { tagCapital } from '../utils/utilityFunctions.js';
-import {
-  Card,
-  CardTitle,
-  CardText,
-  CardSubtitle,
-  CardBody,
-  Badge,
-  Col,
-  Row
-} from 'reactstrap';
+import { Badge, Col, Row, Container } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
 
 // TODO before loading the card, run through tags and delete duplicates
@@ -20,28 +11,25 @@ import { slugify } from '../utils/utilityFunctions.js';
 
 const Post = ({ title, slug, date, body, fluid, tags }) => (
   <Row>
-    <Col md="5" className="blog-image">
+    <Col md="6" className="blog-image">
       <Link to={`/blog/${slug}`}>
         <Img className="card-image-top" fluid={fluid} />
       </Link>
     </Col>
-    <Col md="7" className="blog-post">
-      <Col className="blog-body">
-        <CardBody className="card-body">
-          <Link to={`/blog/${slug}`}>
-            <CardTitle className="cardtitle">{title}</CardTitle>
+    <Col md="6" className="blog-post">
+      <div className="blog-title">
+        <Link to={`/blog/${slug}`}>{title}</Link>
+      </div>
+      <i className="fa fa-calendar" aria-hidden="true"></i>
+      <span className="date">{date}</span>
+      <div className="card-body">{body}</div>
+      <div className="tags">
+        {tags.map(tag => (
+          <Link key={tag} to={`/tags/#${slugify(tag)}`}>
+            <Badge className="badge">#{tagCapital(tag)}</Badge>
           </Link>
-          <CardSubtitle className="post-date">clock icon- {date}</CardSubtitle>
-          <CardText className="cardtext">{body}</CardText>{' '}
-          <div className="tags">
-            {tags.map(tag => (
-              <Link key={tag} to={`/tags/${slugify(tag)}`}>
-                <Badge className="badge">{tagCapital(tag)}</Badge>
-              </Link>
-            ))}
-          </div>
-        </CardBody>
-      </Col>
+        ))}
+      </div>
     </Col>
   </Row>
 );

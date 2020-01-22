@@ -30,6 +30,9 @@
 
     .post-body {
       padding-top: 20px;
+      @media (min-width: $S) {
+        margin: 5px;
+      }
     }
   }
 

@@ -20,8 +20,14 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       <div className="blog-title">
         <Link to={`/blog/${slug}`}>{title}</Link>
       </div>
-      <i className="fa fa-calendar" aria-hidden="true"></i>
-      <span className="date">{date}</span>
+      <span className="date">
+        <img
+          alt="calendar"
+          className="calendar"
+          src="https://img.icons8.com/android/24/000000/calendar.png"
+        />
+        &nbsp;{date}
+      </span>
       <div className="card-body">{body}</div>
       <div className="tags">
         {tags.map(tag => (

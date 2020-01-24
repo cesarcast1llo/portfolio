@@ -16,8 +16,10 @@
   }
 
   .background {
-    --dark-overlay: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
-    height: 35rem;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    height: 375px;
+    background-color: red;
     width: 100%;
     // background-image: url('https://miro.medium.com/max/5184/0*Jy3heMl_yP_fQwMO');
     // background-size: cover;
@@ -25,8 +27,5 @@
     // background-attachment: fixed;
     // background-repeat: no-repeat;
     // background-image: var(--dark-overlay), var(--photo-url);
-    background-color: red;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
   }
 }

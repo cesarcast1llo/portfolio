@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
+  font-size: $font-size-base;
 }
 
 * {
@@ -34,7 +35,7 @@ a {
   }
 }
 
-$font-size: 1.5em;
+$font-size-base: 10px;
 $line-height: 1.6;
 $font-weight: 400;
 
@@ -42,7 +43,7 @@ $font-weight: 400;
 $L: 1200px;
 $M: 992px;
 $S: 768px;
-$BTP576: 576px;
+$XS: 576px;
 $mobile: 480px;
 
 .em_hide_desktop {

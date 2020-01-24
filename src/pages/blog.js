@@ -5,40 +5,41 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/Post';
 // import '../styles/portfolio.scss';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 const Blog = () => (
-  <Layout pageTitle="CodeBlog">
+  <div>
     <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="blog-page">
-      <div className="blog-header">
-        <h1>
-          FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS
-          <br /> make a description before blog starts
-        </h1>
-      </div>
-      <StaticQuery
-        query={blogQuery}
-        render={data => {
-          return (
-            <Container className="blogs-cont">
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Post
-                  key={node.id}
-                  title={node.frontmatter.title}
-                  slug={node.fields.slug}
-                  body={node.excerpt}
-                  date={node.frontmatter.date}
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
-                />
-              ))}
-            </Container>
-          );
-        }}
-      />
-    </div>
-  </Layout>
+    <div className="blog-top-img"></div>
+    <Container className="blog-page-container">
+      <Row>
+        <Col className="blog-wrapper">
+          FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS make a description
+          before blog starts
+          <StaticQuery
+            query={blogQuery}
+            render={data => {
+              return (
+                <div className="each-post">
+                  {data.allMarkdownRemark.edges.map(({ node }) => (
+                    <Post
+                      key={node.id}
+                      title={node.frontmatter.title}
+                      slug={node.fields.slug}
+                      body={node.excerpt}
+                      date={node.frontmatter.date}
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      tags={node.frontmatter.tags}
+                    />
+                  ))}
+                </div>
+              );
+            }}
+          />
+        </Col>
+      </Row>
+    </Container>
+  </div>
 );
 
 const blogQuery = graphql`
@@ -53,7 +54,7 @@ const blogQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "MMM. Do, YYYY")
             tags
             image {
               childImageSharp {

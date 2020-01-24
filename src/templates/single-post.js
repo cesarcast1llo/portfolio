@@ -1,11 +1,9 @@
 import React from 'react';
-import Layout from '../components/layout';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import { Badge, Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import { slugify, tagCapital } from '../utils/utilityFunctions.js';
-import '../../node_modules/font-awesome/css/font-awesome.min.css';
 import { Link } from 'gatsby';
 
 const SinglePost = ({ data, pageContext, location }) => {
@@ -13,7 +11,11 @@ const SinglePost = ({ data, pageContext, location }) => {
   const baseUrl = 'https:/ADDURLHERE.COM/';
 
   return (
-    <Layout>
+    <div className="single-post">
+      <Img
+        className="card-image-top"
+        fluid={post.image.childImageSharp.fluid}
+      />
       <SEO
         title={post.title}
         keywords={post.tags}
@@ -21,24 +23,27 @@ const SinglePost = ({ data, pageContext, location }) => {
         url={baseUrl}
         pathname={location.pathname}
       />
-      <Container className="single-post">
-        <Row>
-          <Col md="12" className="post-title">
-            {post.title}
-          </Col>
-          <Col md="12" className="image-container">
-            <Img
-              className="card-image-top"
-              fluid={post.image.childImageSharp.fluid}
-            />
-          </Col>
-        </Row>
+      <Container className="single-blog-container ">
         <Row>
           <Col className="post-copy">
-            <div className="post-date">
-              <i className="fa fa-calendar" aria-hidden="true"></i> {post.date}
-            </div>
-
+            <div className="post-title">{post.title}</div>
+            <Row>
+              <Col md="3" className="post-date">
+                <img
+                  alt="calendar"
+                  className="calendar"
+                  src="https://img.icons8.com/android/24/000000/calendar.png"
+                />
+                &nbsp;{post.date}
+              </Col>
+              <Col md="9" className="tag-container">
+                {post.tags.map(tag => (
+                  <Link key={tag} to={`/tags/${slugify(tag)}`}>
+                    <Badge className="badge">#{tagCapital(tag)}</Badge>
+                  </Link>
+                ))}
+              </Col>
+            </Row>
             <div
               className="post-body"
               dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
@@ -46,8 +51,8 @@ const SinglePost = ({ data, pageContext, location }) => {
           </Col>
         </Row>
         <Row>
-          <Col sm="6" className="sm-container">
-            <h3 className="share">Share this post: </h3>
+          <Col col="12" className="sm-container">
+            Share:&nbsp;
             <div className="social-share-links">
               <a
                 href={
@@ -59,7 +64,10 @@ const SinglePost = ({ data, pageContext, location }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-envelope-o envelope" aria-hidden="true"></i>
+                <img
+                  className="email"
+                  src="https://img.icons8.com/small/90/000000/filled-message.png"
+                />
               </a>
               <a
                 href={
@@ -75,7 +83,10 @@ const SinglePost = ({ data, pageContext, location }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa fa-twitter twit" aria-hidden="true"></i>
+                <img
+                  className="twit"
+                  src="https://img.icons8.com/material-rounded/100/000000/twitter.png"
+                />
               </a>
               <a
                 href={
@@ -87,25 +98,16 @@ const SinglePost = ({ data, pageContext, location }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i
-                  className="fa fa-linkedin-square lnkdin"
-                  aria-hidden="true"
-                ></i>
+                <img
+                  className="lnkdin"
+                  src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                />
               </a>
-            </div>
-          </Col>
-          <Col md="6" sm="12" className="tag-container">
-            <div className="tags">
-              {post.tags.map(tag => (
-                <Link key={tag} to={`/tags/${slugify(tag)}`}>
-                  <Badge className="badge">#{tagCapital(tag)}</Badge>
-                </Link>
-              ))}
             </div>
           </Col>
         </Row>
       </Container>
-    </Layout>
+    </div>
   );
 };
 

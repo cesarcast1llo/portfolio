@@ -22,9 +22,9 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       </div>
       <span className="date">
         <img
-          alt="calendar"
+          alt="Calendar Icon"
           className="calendar"
-          src="https://img.icons8.com/android/24/000000/calendar.png"
+          src="https://img.icons8.com/android/24/3e3f3e/calendar.png"
         />
         &nbsp;{date}
       </span>

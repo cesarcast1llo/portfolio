@@ -18,9 +18,9 @@
   .background {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
-    height: 500px;
+    height: 550px;
     width: 100%;
-    background-color: red;
+    background-color: $secondary;
     // background-image: url('https://miro.medium.com/max/5184/0*Jy3heMl_yP_fQwMO');
     // background-size: cover;
     // background-position: center;

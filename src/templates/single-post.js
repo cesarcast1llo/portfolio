@@ -11,8 +11,10 @@ const SinglePost = ({ data, pageContext, location }) => {
   const baseUrl = 'https:/ADDURLHERE.COM/';
 
   return (
+    // <header></header>
     <div className="single-post">
       <Img
+        alt="Blog Image"
         className="card-image-top"
         fluid={post.image.childImageSharp.fluid}
       />
@@ -26,13 +28,15 @@ const SinglePost = ({ data, pageContext, location }) => {
       <Container className="single-blog-container ">
         <Row>
           <Col className="post-copy">
-            <Col className="post-title">{post.title}</Col>
+            <Row>
+              <Col className="post-title">{post.title}</Col>
+            </Row>
             <Row>
               <Col md="3" className="post-date">
                 <img
                   alt="calendar"
                   className="calendar"
-                  src="https://img.icons8.com/android/24/000000/calendar.png"
+                  src="https://img.icons8.com/android/24/3e3f3e/calendar.png"
                 />
                 &nbsp;{post.date}
               </Col>
@@ -44,67 +48,72 @@ const SinglePost = ({ data, pageContext, location }) => {
                 ))}
               </Col>
             </Row>
-          </Col>
-        </Row>
-        <Col
-          col="12"
-          className="post-body"
-          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        />
-        <Row>
-          <Col col="12" className="sm-container">
-            Share:&nbsp;
-            <div className="social-share-links">
-              <a
-                href={
-                  'https://www.facebook.com/sharer/sharer.php?u=' +
-                  baseUrl +
-                  pageContext.slug
-                }
-                className="email"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="email"
-                  src="https://img.icons8.com/small/90/000000/filled-message.png"
-                />
-              </a>
-              <a
-                href={
-                  'https://twitter.com/share?url=' +
-                  baseUrl +
-                  pageContext.slug +
-                  '&text=' +
-                  post.title +
-                  '&via' +
-                  'twitterHandle'
-                }
-                className="twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="twit"
-                  src="https://img.icons8.com/material-rounded/100/000000/twitter.png"
-                />
-              </a>
-              <a
-                href={
-                  'https://www.linkedin.com/shareArticle?url=' +
-                  baseUrl +
-                  pageContext.slug
-                }
-                className="linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="lnkdin"
-                  src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
-                />
-              </a>
-            </div>
+            <Row>
+              <Col
+                col="12"
+                className="post-body"
+                dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+              />
+            </Row>
+            <Row>
+              <Col col="12" className="sm-container">
+                Share:&nbsp;
+                <div className="social-share-links">
+                  <a
+                    href={
+                      'https://www.facebook.com/sharer/sharer.php?u=' +
+                      baseUrl +
+                      pageContext.slug
+                    }
+                    className="email"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      alt="email icon"
+                      className="email"
+                      src="https://img.icons8.com/small/90/000000/filled-message.png"
+                    />
+                  </a>
+                  <a
+                    href={
+                      'https://twitter.com/share?url=' +
+                      baseUrl +
+                      pageContext.slug +
+                      '&text=' +
+                      post.title +
+                      '&via' +
+                      'twitterHandle'
+                    }
+                    className="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      alt="Twitter icon"
+                      className="twit"
+                      src="https://img.icons8.com/material-rounded/100/000000/twitter.png"
+                    />
+                  </a>
+                  <a
+                    href={
+                      'https://www.linkedin.com/shareArticle?url=' +
+                      baseUrl +
+                      pageContext.slug
+                    }
+                    className="linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      alt="LinkedIn icon"
+                      className="lnkdin"
+                      src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                    />
+                  </a>
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>

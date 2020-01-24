@@ -1,30 +1,30 @@
 import React from 'react';
 import { StaticQuery } from 'gatsby';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/Post';
-// import '../styles/portfolio.scss';
+import '../styles/portfolio.scss';
 import { Container, Row, Col } from 'reactstrap';
 
 const Blog = () => (
-  <div>
+  // <header></header>
+  <>
     <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
     <div className="blog-top-img"></div>
     <Container className="blog-page-container">
       <Row>
         <Col className="blog-wrapper">
-          {/* <h1>BLOG - JS PROBLEMS</h1>
-          <h2>
+          <h1>BLOG - JS PROBLEMS</h1>
+          {/* <h2>
             this is my introduction to the blog. from here i will explain what
             is going on and the procedure that happens when i make a blog
-          </h2>
-          <h3>will finish 50 different JS problems by June 2020</h3> */}
+          </h2> */}
+          <h3>will finish 50 different JS problems by June 2020</h3>
           <StaticQuery
             query={blogQuery}
             render={data => {
               return (
-                <div className="each-post">
+                <>
                   {data.allMarkdownRemark.edges.map(({ node }) => (
                     <Post
                       key={node.id}
@@ -36,14 +36,14 @@ const Blog = () => (
                       tags={node.frontmatter.tags}
                     />
                   ))}
-                </div>
+                </>
               );
             }}
           />
         </Col>
       </Row>
     </Container>
-  </div>
+  </>
 );
 
 const blogQuery = graphql`
@@ -71,7 +71,7 @@ const blogQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 190)
+          excerpt(pruneLength: 225)
         }
       }
     }

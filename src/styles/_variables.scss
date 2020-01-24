@@ -7,6 +7,7 @@ body {
   padding: 0;
   position: relative;
   font-size: $font-size-base;
+  color: $secondary;
 }
 
 * {
@@ -23,17 +24,8 @@ a {
   }
 }
 
-.mobile-hide {
-  @media (max-width: 767px) {
-    display: none !important;
-  }
-}
-
-.desktop-hide {
-  @media (min-width: 768px) {
-    display: none !important;
-  }
-}
+$primary: black;
+$secondary: #3e3f3e;
 
 $font-size-base: 10px;
 $line-height: 1.6;
@@ -46,6 +38,17 @@ $S: 768px;
 $XS: 576px;
 $mobile: 480px;
 
+.mobile-hide {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.desktop-hide {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
 .em_hide_desktop {
   display: block;
   @media (min-width: $S) {

@@ -1,9 +1,9 @@
 .blog-top-img {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
-  height: 500px;
+  height: 550px;
   width: 100%;
-  background-color: red;
+  background-color: $secondary;
 }
 
 .blog-page-container {
@@ -19,145 +19,156 @@
     background-color: white;
     padding: 25px 15px 40px;
     margin: 0 15px;
-    text-align: center;
+    text-align: left;
 
     @media (min-width: $XS) {
+      padding: 40px 30px 40px;
       margin: 0;
     }
 
-    .each-post {
-      text-align: left;
-      margin: 0 auto;
+    h3 {
+      padding-bottom: 30px;
+      @media (min-width: $XS) {
+        padding-bottom: 30px;
+      }
+    }
+    .blog-image {
+      @media (min-width: $S) {
+        padding: 0 15px 60px;
+      }
 
-      .blog-image {
+      .card-image-top {
+        img {
+          margin: 0;
+        }
+      }
+    }
+
+    .blog-post {
+      padding: 15px 20px 50px;
+      font-weight: 300;
+
+      @media (min-width: $S) {
+        padding: 0 15px 60px 0;
+        margin: auto 0;
+        text-align: left;
+      }
+
+      .blog-title {
+        color: $secondary;
+        margin-bottom: 6px;
+        font-weight: 500;
         @media (min-width: $S) {
-          padding: 0 15px 60px;
+          margin-bottom: 2px;
+          font-weight: 600;
         }
 
-        .card-image-top {
-          img {
-            margin: 0;
+        a {
+          color: $secondary;
+          font-size: 22px;
+          line-height: 26px;
+          margin-bottom: 0;
+          display: block;
+          @media (min-width: $XS) {
+            font-size: 23px;
+            line-height: 26px;
+          }
+          &:hover {
+            text-decoration: none;
           }
         }
       }
 
-      .blog-post {
-        padding: 15px 25px 50px;
+      .date {
+        display: inline-block;
+        font-style: italic;
+        color: $secondary;
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-left: 1px;
+        font-weight: 400;
 
         @media (min-width: $S) {
-          padding: 0 15px 60px 0;
-          margin: auto 0;
+          margin-bottom: 5px;
+          font-weight: 400;
         }
 
-        .blog-title {
-          margin-bottom: 6px;
+        .calendar {
+          width: 17px;
+          margin-bottom: 5px;
+
           @media (min-width: $S) {
-            margin-bottom: 2px;
-          }
-
-          a {
-            color: blue;
-            font-size: 22px;
-            line-height: 26px;
-            margin-bottom: 0;
-            display: block;
-            @media (min-width: $XS) {
-              font-size: 23px;
-              line-height: 26px;
-            }
-            &:hover {
-              text-decoration: none;
-            }
+            width: 16px;
           }
         }
+      }
 
-        .date {
-          display: inline-block;
-          font-style: italic;
-          color: red;
-          font-size: 15px;
+      .card-body {
+        padding: 0;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        color: $secondary;
+        font-weight: 300;
+        @media (min-width: $S) {
           margin-bottom: 10px;
+          font-size: 17px;
+          line-height: 20px;
+          font-weight: 400;
+        }
+        @media (min-width: 850px) {
+          margin-bottom: 15px;
+        }
+      }
 
-          @media (min-width: $S) {
-            margin-bottom: 5px;
-          }
-
-          .calendar {
-            width: 17px;
-            margin-bottom: 4px;
-
-            @media (min-width: $S) {
-              width: 16px;
-            }
-          }
+      .tags {
+        text-align: center;
+        @media (min-width: $S) {
+          text-align: right;
         }
 
-        .card-body {
-          padding: 0;
-          color: black;
-          display: block;
-          margin-bottom: 20px;
-          font-size: 18px;
-          line-height: 22px;
-          @media (min-width: $S) {
-            margin-bottom: 10px;
-            font-size: 17px;
-            line-height: 20px;
-          }
-          @media (min-width: 850px) {
-            margin-bottom: 15px;
-          }
+        a {
+          display: inline-block;
         }
 
-        .tags {
-          text-align: center;
-
-          //   @media (min-width: $S) {
-          //     position: absolute;
-          //     bottom: 60px;
-          //     right: 15px;
-          //   }
-          //   @media (min-width: 800px) {
-          //     bottom: 20px;
-          //   }
-
-          a {
-            display: inline-block;
-            //  &:hover {
-            //     slide across
-            //  }
+        .badge {
+          width: 100px;
+          text-transform: uppercase;
+          background-color: white;
+          border: 1px solid $secondary;
+          color: $secondary;
+          margin: 0 10px 7px;
+          padding: 8px 0;
+          font-size: 12px;
+          letter-spacing: 0.2px;
+          @media (min-width: 375px) {
+            width: 135px;
+            margin: 0 5px 7px;
           }
-
-          .badge {
-            width: 100px;
-            text-transform: uppercase;
-            background-color: red;
-            margin: 0 10px 7px;
-            padding: 8px 0;
-            font-size: 12px;
-            letter-spacing: 0.2px;
-            @media (min-width: 375px) {
-              width: 135px;
-              margin: 0 5px 7px;
-            }
-            @media (min-width: $mobile) {
-              width: 160px;
-              font-size: 13px;
-            }
-            @media (min-width: $XS) {
-              margin: 0 0 0 10px;
-              padding: 9px 13px;
-              width: auto;
-            }
-            @media (min-width: $S) {
-              margin: 0 0 0 5px;
-              padding: 7px 5px;
-              font-size: 10px;
-            }
-            @media (min-width: 800px) {
-              padding: 8px 6px;
-              font-size: 11px;
-            }
+          @media (min-width: $mobile) {
+            width: 160px;
+            font-size: 13px;
+          }
+          @media (min-width: $XS) {
+            margin: 0 0 0 10px;
+            padding: 9px 13px;
+            width: auto;
+          }
+          @media (min-width: $S) {
+            margin: 0 0 0 5px;
+            padding: 7px 5px;
+            font-size: 10px;
+          }
+          @media (min-width: 800px) {
+            padding: 8px 6px;
+            font-size: 11px;
+          }
+          &:hover {
+            background-color: $secondary;
+            border: 1px solid white;
+            color: white;
           }
         }
       }

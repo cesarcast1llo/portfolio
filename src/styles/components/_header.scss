@@ -16,11 +16,11 @@
   }
 
   .background {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10rem), 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
-    height: 375px;
-    background-color: red;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+    height: 500px;
     width: 100%;
+    background-color: red;
     // background-image: url('https://miro.medium.com/max/5184/0*Jy3heMl_yP_fQwMO');
     // background-size: cover;
     // background-position: center;

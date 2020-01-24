@@ -26,7 +26,7 @@ const SinglePost = ({ data, pageContext, location }) => {
       <Container className="single-blog-container ">
         <Row>
           <Col className="post-copy">
-            <div className="post-title">{post.title}</div>
+            <Col className="post-title">{post.title}</Col>
             <Row>
               <Col md="3" className="post-date">
                 <img
@@ -44,12 +44,13 @@ const SinglePost = ({ data, pageContext, location }) => {
                 ))}
               </Col>
             </Row>
-            <div
-              className="post-body"
-              dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-            />
           </Col>
         </Row>
+        <Col
+          col="12"
+          className="post-body"
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        />
         <Row>
           <Col col="12" className="sm-container">
             Share:&nbsp;

@@ -50,7 +50,7 @@ $mobile: 480px;
   }
 }
 .em_hide_desktop {
-  display: block;
+  display: block !important;
   @media (min-width: $S) {
     display: none !important;
   }

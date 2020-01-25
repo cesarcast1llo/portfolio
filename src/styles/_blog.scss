@@ -25,6 +25,10 @@
       padding: 40px 30px 40px;
       margin: 0;
     }
+    @media (min-width: $S) {
+      padding: 40px 15px 30px 30px;
+      margin: 0;
+    }
 
     h3 {
       padding-bottom: 30px;
@@ -55,7 +59,6 @@
       }
 
       .blog-title {
-        color: $secondary;
         margin-bottom: 6px;
         font-weight: 500;
         @media (min-width: $S) {
@@ -64,7 +67,7 @@
         }
 
         a {
-          color: $secondary;
+          color: black;
           font-size: 22px;
           line-height: 26px;
           margin-bottom: 0;

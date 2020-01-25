@@ -25,7 +25,7 @@
       }
 
       .post-title {
-        color: red;
+        color: black;
         font-size: 29px;
         line-height: 34px;
         padding-bottom: 8px;
@@ -148,6 +148,7 @@
         font-size: 24px;
         font-weight: 700;
         display: block;
+        color: black;
       }
       @media (min-width: $S) {
         text-align: left;

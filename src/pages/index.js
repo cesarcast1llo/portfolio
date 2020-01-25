@@ -12,6 +12,8 @@ const IndexPage = ({ data }) => (
     <Container className="index-page">
       <Row>
         <Col md="12" className="intro">
+          <Link to="/blog/">Developing Blog</Link>
+          <br />
           <Img
             alt="Me, Myself, and I"
             className="me"
@@ -19,17 +21,41 @@ const IndexPage = ({ data }) => (
           />
           <h2>
             Hello, my name is
-            <br />
-            Cesar Castillo
+            <br className="em_hide_desktop" style={{ display: 'none' }} /> Joe
+            Diiiiiirt
           </h2>
-          <h2>
-            Contact: <i className="fa fa-github" aria-hidden="true"></i>{' '}
-            <img
-              className="github"
-              alt="Github Icon"
-              src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
-            />
-          </h2>
+          <div className="info">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+            <div className="contact">
+              <a href="#" target="_blank">
+                <img
+                  alt="Email Icon"
+                  className="email"
+                  src="https://img.Icons8.com/small/90/000000/filled-message.png"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  className="github"
+                  alt="Github Icon"
+                  src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
+                />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  alt="LinkedIn icon"
+                  className="lnkdin"
+                  src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                />
+              </a>
+            </div>
+          </div>
         </Col>
       </Row>
 
@@ -39,8 +65,6 @@ const IndexPage = ({ data }) => (
         </Col>
       </Row>
     </Container>
-
-    <Link to="/blog/">Developing Blog</Link>
   </>
 );
 
@@ -50,7 +74,7 @@ export const query = graphql`
   query {
     placeholderImage: file(relativePath: { eq: "code2.jpeg" }) {
       childImageSharp {
-        fixed(width: 250) {
+        fixed(width: 160) {
           base64
           width
           height

@@ -1,7 +1,7 @@
 ---
 title: 'Second Challenge: Integrating Node.js to a Next.js Project'
 date: 2020-01-20 07:00:00
-image: ../../images/code.jpg
+image: ../../assets/images/code.jpg
 tags:
   - Tutorial
   - React.js

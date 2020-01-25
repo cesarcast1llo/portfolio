@@ -1,7 +1,7 @@
 ---
 title: 'We Are Starting This Blog With Our First Challenge!'
 date: 2020-01-19 07:00:00
-image: ../../images/code2.jpeg
+image: ../../assets/images/code2.jpeg
 tags:
   - Tutorial
   - Node.js

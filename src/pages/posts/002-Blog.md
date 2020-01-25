@@ -1,7 +1,7 @@
 ---
 title: 'For Better Practice, I am creating a Dev Blog!'
 date: 2020-01-15 07:00:00
-image: ../../images/code3.jpeg
+image: ../../assets/images/code3.jpeg
 tags:
   - Tutorial
   - Code

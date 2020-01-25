@@ -1,7 +1,7 @@
 ---
 title: 'Hello and Welcome!'
 date: 2020-01-02 07:00:00
-image: ../../images/code1.jpeg
+image: ../../assets/images/code1.jpeg
 tags:
   - Tutorial
   - Node.js

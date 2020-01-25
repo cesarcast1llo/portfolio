@@ -33,21 +33,21 @@ const IndexPage = ({ data }) => (
             going through the cites of the word in classical literature,
             discovered the undoubtable source. Lorem Ipsum comes from sections
             <div className="contact">
-              <a href="#" target="_blank">
+              <a href="/" target="_blank">
                 <img
                   alt="Email Icon"
                   className="email"
                   src="https://img.Icons8.com/small/90/000000/filled-message.png"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a href="/" target="_blank">
                 <img
                   className="github"
                   alt="Github Icon"
                   src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
                 />
               </a>
-              <a href="#" target="_blank">
+              <a href="/" target="_blank">
                 <img
                   alt="LinkedIn icon"
                   className="lnkdin"

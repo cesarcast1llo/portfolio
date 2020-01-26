@@ -4,7 +4,7 @@
 
 ========================================================
 
-`npm install` get all dependencies
+`npm install`
 
 `npm develop` start your server on `localhost:8000`
 

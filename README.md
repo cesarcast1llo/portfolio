@@ -6,7 +6,7 @@
 
 `npm install` get all dependencies
 
-`npm develop` start your server on localhost:8000
+`npm develop` start your server on `localhost:8000`
 
 before you start making changes, choose the `staging` branch
 

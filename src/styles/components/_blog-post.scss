@@ -1,4 +1,4 @@
-.single-post {
+.blog-post {
   .card-image-top {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
@@ -8,7 +8,7 @@
 
   .single-blog-container {
     background-color: white;
-    margin: -14rem auto;
+    margin: -20rem auto;
     z-index: 20;
     @media (min-width: $XS) {
       max-width: 900px;

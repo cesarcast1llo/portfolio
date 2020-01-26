@@ -12,7 +12,7 @@ const SinglePost = ({ data, pageContext, location }) => {
 
   return (
     /// Watch out for SEO props, use in pageWrapper
-    <div className="single-post">
+    <div className="blog-post">
       <Img
         alt="Blog Image"
         className="card-image-top"

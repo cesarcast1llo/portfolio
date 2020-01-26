@@ -2,6 +2,8 @@
 
 ## Hosted on Netlify and own domain using Gatsby.js
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/055daf19-0005-407b-94d9-e9058d478b22/deploy-status)](https://app.netlify.com/sites/cesarcast1llo/deploys)
+
 ========================================================
 
 `npm install`

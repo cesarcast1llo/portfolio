@@ -1,5 +1,5 @@
 .single-tag-container {
-  margin-top: -14rem;
+  margin: -20rem auto;
   z-index: 20;
 
   @media (min-width: $XS) {
@@ -88,27 +88,29 @@
             text-decoration: none;
           }
         }
-        .date {
-          display: inline-block;
-          font-style: italic;
-          color: $secondary;
-          font-size: 15px;
-          margin-bottom: 10px;
-          margin-left: 1px;
+      }
+
+      .date {
+        display: inline-block;
+        font-style: italic;
+        color: $secondary;
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-left: 1px;
+        font-weight: 400;
+
+        @media (min-width: $S) {
+          margin-bottom: 0;
           font-weight: 400;
+        }
+
+        .calendar {
+          width: 17px;
+          margin-bottom: 5px;
 
           @media (min-width: $S) {
+            width: 16px;
             margin-bottom: 0;
-            font-weight: 400;
-          }
-
-          .calendar {
-            width: 17px;
-            margin-bottom: 4px;
-
-            @media (min-width: $S) {
-              width: 16px;
-            }
           }
         }
       }

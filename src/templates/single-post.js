@@ -11,7 +11,7 @@ const SinglePost = ({ data, pageContext, location }) => {
   const baseUrl = 'https:/ADDURLHERE.COM/';
 
   return (
-    // <header></header>
+    /// Watch out for SEO props, use in pageWrapper
     <div className="single-post">
       <Img
         alt="Blog Image"
@@ -132,7 +132,7 @@ export const postQuery = graphql`
         tags
         image {
           childImageSharp {
-            fluid(maxWidth: 700) {
+            fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
           }

@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 // import Layout from '../components/layout';
 // import Img from 'gatsby-image';
+import Footer from '../components/Footer';
 import SEO from '../components/seo';
 
 const IndexPage = ({ data }) => (
@@ -126,6 +127,7 @@ const IndexPage = ({ data }) => (
         </Col>
       </Row>
     </Container>
+    <Footer />
   </>
 );
 

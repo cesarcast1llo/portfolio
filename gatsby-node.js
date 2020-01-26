@@ -66,14 +66,11 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   });
 
-  let tagPostCounts = {}; // { tutorial: 2, design: 1}
+  let tagPostCounts = {};
   tags.forEach(tag => {
-    // Or 0 cause it might not exist yet
     tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1;
   });
 
-  // Remove duplicates since same id is given to multiple children
-  // error in tags-page
   tags = _.uniq(tags);
 
   // Tags page (all tags)

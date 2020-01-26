@@ -1,16 +1,9 @@
-.upperoverlay {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
-  height: 550px;
-  width: 100%;
-  background-color: $secondary;
-}
-
 .index-page {
   margin-top: -14rem;
   z-index: 20;
+
   @media (min-width: $XS) {
-    max-width: 900px;
+    max-width: 900px !important;
     padding: 0 25px;
   }
 

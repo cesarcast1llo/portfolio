@@ -1,0 +1,16 @@
+.background {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+  height: 550px;
+  width: 100%;
+
+  // background-image: url('https://negativespace.co/wp-content/uploads/2017/10/negative-space-code-html-dark-background-Mian-Shahzad-Raza-thumb-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.header {
+  color: red;
+}

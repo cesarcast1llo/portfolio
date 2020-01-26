@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
-import SEO from '../components/seo';
+import PageWrapper from '../components/PageWrapper.js';
 
 const IndexPage = ({ data }) => (
-  // <header></header>
-  <>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="upperoverlay"></div>
+  <PageWrapper
+    pageTitle="Home"
+    pageKeywords={[`gatsby`, `application`, `react`]}
+    bgColor="#3d3e3d"
+    backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+  >
     <Container className="index-page">
       <Row>
         <Col md="12" className="intro">
@@ -25,13 +27,16 @@ const IndexPage = ({ data }) => (
             Diiiiiirt
           </h2>
           <div className="info">
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections
+            </p>
             <div className="contact">
               <a href="/" target="_blank">
                 <img
@@ -58,6 +63,31 @@ const IndexPage = ({ data }) => (
           </div>
         </Col>
       </Row>
+      <Row>
+        <Col md="12" className="goals">
+          <h1>How it all started..</h1>
+          <h2>1992-2017</h2>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+          </p>
+          <h2>2017-Present</h2>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+          </p>
+        </Col>
+      </Row>
 
       <Row>
         <Col md="12" className="goals">
@@ -65,7 +95,7 @@ const IndexPage = ({ data }) => (
         </Col>
       </Row>
     </Container>
-  </>
+  </PageWrapper>
 );
 
 export default IndexPage;

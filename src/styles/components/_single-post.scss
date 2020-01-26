@@ -7,11 +7,12 @@
   }
 
   .single-blog-container {
-    margin-top: -14rem;
+    background-color: white;
+    margin: -14rem auto;
     z-index: 20;
     @media (min-width: $XS) {
       max-width: 900px;
-      padding: 0 25px;
+      padding: 0 15px;
     }
 
     .post-copy {

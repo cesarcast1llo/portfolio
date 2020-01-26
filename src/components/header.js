@@ -1,20 +1,13 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
+// import { Link } from 'gatsby';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ props }) => (
   <header className="header">
-    <div className="background">
-      header with inherit bg color and hamburger menu on mobile going here
-    </div>
-    <h1>
-      <Link to="/">{siteTitle}</Link>
-    </h1>
+    {/* sticky fixed nav here to reuse in other pages without pagewrapper
+    <h1 style={{ color: 'white' }}>
+      <Link to="/">Cesar C.</Link>
+    </h1> */}
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
 
 export default Header;

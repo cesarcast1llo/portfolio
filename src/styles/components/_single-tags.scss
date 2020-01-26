@@ -1,5 +1,5 @@
-.blog-page-container {
-  margin: -14rem auto;
+.single-tag-container {
+  margin-top: -14rem;
   z-index: 20;
 
   @media (min-width: $XS) {
@@ -7,33 +7,37 @@
     padding: 0 25px;
   }
 
-  .blog-wrapper {
+  .single-tag-wrapper {
+    color: $secondary;
     border-radius: 10px;
     background-color: white;
-    padding: 25px 15px 40px;
+    padding: 25px 0 40px;
     margin: 0 15px;
-    text-align: left;
+    text-align: center;
+    font-size: 29px;
+    line-height: 34px;
 
     @media (min-width: $XS) {
       padding: 40px 30px 40px;
       margin: 0;
+      font-size: 35px;
+      line-height: 38px;
     }
     @media (min-width: $S) {
       padding: 40px 15px 30px 30px;
       margin: 0;
     }
-    .blog-intro {
-      font-size: 29px;
-      line-height: 34px;
+
+    .tag {
+      text-decoration: underline;
+      color: black;
+      display: inline;
+    }
+
+    h3 {
+      padding-bottom: 40px;
       @media (min-width: $XS) {
-        font-size: 35px;
-        line-height: 38px;
-      }
-      h3 {
         padding-bottom: 40px;
-        @media (min-width: $XS) {
-          padding-bottom: 40px;
-        }
       }
     }
 
@@ -84,29 +88,27 @@
             text-decoration: none;
           }
         }
-      }
-
-      .date {
-        display: inline-block;
-        font-style: italic;
-        color: $secondary;
-        font-size: 15px;
-        margin-bottom: 10px;
-        margin-left: 1px;
-        font-weight: 400;
-
-        @media (min-width: $S) {
-          margin-bottom: 0;
+        .date {
+          display: inline-block;
+          font-style: italic;
+          color: $secondary;
+          font-size: 15px;
+          margin-bottom: 10px;
+          margin-left: 1px;
           font-weight: 400;
-        }
-
-        .calendar {
-          width: 17px;
-          margin-bottom: 5px;
 
           @media (min-width: $S) {
-            width: 16px;
             margin-bottom: 0;
+            font-weight: 400;
+          }
+
+          .calendar {
+            width: 17px;
+            margin-bottom: 4px;
+
+            @media (min-width: $S) {
+              width: 16px;
+            }
           }
         }
       }

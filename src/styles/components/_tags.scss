@@ -1,0 +1,65 @@
+.tags-page-container {
+  margin-top: -14rem;
+  z-index: 20;
+
+  @media (min-width: $XS) {
+    max-width: 900px !important;
+    padding: 0 25px;
+  }
+
+  .tags-wrapper {
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px 0 40px;
+    margin: 0 15px;
+    text-align: center;
+
+    @media (min-width: $XS) {
+      padding: 40px 30px 40px;
+      margin: 0;
+    }
+    @media (min-width: $S) {
+      padding: 40px 15px 30px 30px;
+      margin: 0;
+    }
+    .tags-intro {
+      color: $secondary;
+      padding: 0 15px;
+      font-size: 29px;
+      line-height: 34px;
+      @media (min-width: $XS) {
+        font-size: 35px;
+        line-height: 38px;
+      }
+    }
+    .tags {
+      padding: 20px 0 0;
+      @media (min-width: $XS) {
+        padding: 40px 0 0;
+      }
+      .tag-button {
+        width: 45%;
+        margin: 5px 5px;
+        padding: 12px 0;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid $secondary;
+        color: $secondary;
+        @media (min-width: $XS) {
+          font-size: 16px;
+          margin: 10px 10px;
+        }
+        &:hover {
+          background-color: $secondary;
+          border: 1px solid white;
+          color: white;
+        }
+
+        .number {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

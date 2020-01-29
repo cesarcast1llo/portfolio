@@ -1,12 +1,10 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-// import Layout from '../components/layout';
-// import Img from 'gatsby-image';
 import Footer from '../components/Footer';
 import SEO from '../components/seo';
 
-const IndexPage = ({ data }) => (
+const twentyTwenty = ({ data }) => (
   <>
     <SEO title="Home" />
     <Container className="twentyTwenty">
@@ -131,20 +129,4 @@ const IndexPage = ({ data }) => (
   </>
 );
 
-export default IndexPage;
-
-export const query = graphql`
-  query {
-    placeholderImage: file(relativePath: { eq: "code.jpg" }) {
-      childImageSharp {
-        fixed(width: 300) {
-          base64
-          width
-          height
-          src
-          srcSet
-        }
-      }
-    }
-  }
-`;
+export default twentyTwenty;

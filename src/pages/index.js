@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';

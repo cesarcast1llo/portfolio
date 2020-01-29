@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
+import Header from './header';
 import SEO from './seo';
-import Footer from './Footer';
+import Footer from './footer';
 
 const PageWrapper = ({
   pageTitle,

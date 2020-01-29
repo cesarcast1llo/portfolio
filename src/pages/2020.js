@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 import SEO from '../components/seo';
 
 const twentyTwenty = ({ data }) => (

@@ -17,10 +17,6 @@ const Blog = () => (
         <Col className="blog-wrapper">
           <div className="blog-intro">
             <p>BLOG - JS PROBLEMS</p>
-            {/* <h2>
-            this is my introduction to the blog. from here i will explain what
-            is going on and the procedure that happens when i make a blog
-          </h2> */}
             <h3>will finish 50 different JS problems by June 2020</h3>
           </div>
           <StaticQuery

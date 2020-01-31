@@ -8,7 +8,7 @@ const Footer = ({ props }) => (
       <Col>
         <div
           style={{
-            display: 'inline-block',
+            display: 'block',
             textAlign: 'left',
             maxWidth: 960,
             padding: `1.45rem 1.0875rem`

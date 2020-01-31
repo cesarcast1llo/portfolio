@@ -13,52 +13,54 @@ const IndexPage = ({ data }) => (
   >
     <Container className="index-page">
       <Row>
-        <Col md="12" className="intro">
-          <Link to="/blog/">Developing Blog</Link>
-          <br />
-          <Img
-            alt="Me, Myself, and I"
-            className="me"
-            fixed={data.placeholderImage.childImageSharp.fixed}
-          />
-          <h2>
-            Hello, my name is
-            <br className="em_hide_desktop" style={{ display: 'none' }} /> Joe
-            Diiiiiirt
-          </h2>
-          <div className="info">
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections
-            </p>
-            <div className="contact">
-              <a href="/" target="_blank">
-                <img
-                  alt="Email Icon"
-                  className="email"
-                  src="https://img.Icons8.com/small/90/000000/filled-message.png"
-                />
-              </a>
-              <a href="/" target="_blank">
-                <img
-                  className="github"
-                  alt="Github Icon"
-                  src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
-                />
-              </a>
-              <a href="/" target="_blank">
-                <img
-                  alt="LinkedIn icon"
-                  className="lnkdin"
-                  src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
-                />
-              </a>
+        <Col className="index-page-wrapper">
+          <div className="intro">
+            <Link to="/blog/">Developing Blog</Link>
+            <br />
+            <Img
+              alt="Me, Myself, and I"
+              className="me"
+              fixed={data.placeholderImage.childImageSharp.fixed}
+            />
+            <h2>
+              Hello, my name is
+              <br className="em_hide_desktop" style={{ display: 'none' }} /> Joe
+              Diiiiiirt
+            </h2>
+            <div className="info">
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old. Richard McClintock, a
+                Latin professor at Hampden-Sydney College in Virginia, looked up
+                one of the more obscure Latin words, consectetur, from a Lorem
+                Ipsum passage, and going through the cites of the word in
+                classical literature, discovered the undoubtable source. Lorem
+                Ipsum comes from sections
+              </p>
+              <div className="contact">
+                <a href="/" target="_blank">
+                  <img
+                    alt="Email Icon"
+                    className="email"
+                    src="https://img.Icons8.com/small/90/000000/filled-message.png"
+                  />
+                </a>
+                <a href="/" target="_blank">
+                  <img
+                    className="github"
+                    alt="Github Icon"
+                    src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
+                  />
+                </a>
+                <a href="/" target="_blank">
+                  <img
+                    alt="LinkedIn icon"
+                    className="lnkdin"
+                    src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </Col>

@@ -11,33 +11,27 @@
     color: $secondary;
     border-radius: 10px;
     background-color: white;
-    padding: 25px 0 40px;
+    padding: 25px 15px 40px;
     margin: 0 15px;
-    text-align: center;
-    font-size: 29px;
-    line-height: 34px;
 
     @media (min-width: $XS) {
       padding: 40px 30px 40px;
-      margin: 0;
-      font-size: 35px;
-      line-height: 38px;
     }
     @media (min-width: $S) {
       padding: 40px 15px 30px 30px;
-      margin: 0;
     }
 
-    .tag {
-      text-decoration: underline;
-      color: black;
-      display: inline;
-    }
-
-    h3 {
+    .tag-intro {
+      text-align: center;
+      font-size: 29px;
+      line-height: 34px;
       padding-bottom: 40px;
       @media (min-width: $XS) {
-        padding-bottom: 40px;
+        font-size: 35px;
+        line-height: 38px;
+      }
+
+      h3 {
       }
     }
 
@@ -56,11 +50,11 @@
     .blog-post {
       padding: 15px 20px 50px;
       font-weight: 300;
+      text-align: left;
 
       @media (min-width: $S) {
         padding: 0 15px 60px 0;
         margin: auto 0;
-        text-align: left;
       }
 
       .blog-title {
@@ -95,13 +89,16 @@
         font-style: italic;
         color: $secondary;
         font-size: 15px;
-        margin-bottom: 10px;
-        margin-left: 1px;
+        margin: 7px 0 7px 1px;
         font-weight: 400;
 
         @media (min-width: $S) {
-          margin-bottom: 0;
+          margin: 3px 0;
           font-weight: 400;
+        }
+
+        @media (min-width: $M) {
+          margin: 7px 0;
         }
 
         .calendar {

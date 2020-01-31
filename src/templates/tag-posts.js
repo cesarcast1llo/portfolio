@@ -21,9 +21,12 @@ const tagPosts = ({ data, pageContext }) => {
       <Container className="single-tag-container">
         <Row>
           <Col className="single-tag-wrapper">
-            {pageHeader}
-            <div className="tag">{tag}</div>
-            <h3>highlight all other matching tag instances</h3>
+            <div className="tag-intro">
+              <p>
+                {pageHeader} {tag}
+              </p>
+              <h3>highlight all other matching tag instances</h3>
+            </div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <Post
                 key={node.id}
@@ -54,7 +57,7 @@ export const tagQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM Do YYYY")
+            date(formatString: "MMM. Do, YYYY")
             tags
             image {
               childImageSharp {

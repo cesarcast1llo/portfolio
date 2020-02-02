@@ -1,0 +1,62 @@
+.about-page {
+  margin: -20rem auto;
+  z-index: 20;
+
+  @media (min-width: $XS) {
+    max-width: 900px !important;
+    padding: 0 25px;
+  }
+
+  .about-page-wrapper {
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px 15px 40px;
+    margin: 0 15px;
+
+    @media (min-width: $XS) {
+      padding: 40px 30px 40px;
+    }
+    @media (min-width: $S) {
+      padding: 40px 15px;
+    }
+
+    .about {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 300;
+      color: $secondary;
+      @media (min-width: $XS) {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .me {
+        width: 300px;
+        max-width: 300px;
+      }
+
+      h1 {
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 7px;
+      }
+    }
+
+    .quotes {
+      padding-top: 30px;
+      text-align: center;
+      @media (min-width: $XS) {
+        padding-top: 40px;
+      }
+    }
+  }
+}

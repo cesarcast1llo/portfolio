@@ -3,13 +3,14 @@ import { Link, graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
+import Typed from 'react-typed';
 
-const IndexPage = ({ data }) => (
+const Index = ({ data }) => (
   <PageWrapper
     pageTitle="Home"
     pageKeywords={[`gatsby`, `application`, `react`]}
-    bgColor="#3d3e3d"
-    backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    bgColor="linear-gradient(135deg,#00C4FF,#9D1BB2)"
   >
     <Container className="index-page">
       <Row>
@@ -22,42 +23,40 @@ const IndexPage = ({ data }) => (
               className="me"
               fixed={data.placeholderImage.childImageSharp.fixed}
             />
-            <h2>
-              Hello, my name is
-              <br className="em_hide_desktop" style={{ display: 'none' }} /> Joe
-              Diiiiiirt
-            </h2>
+            <Typed strings={['Here you can find anything']} typeSpeed={40} />
             <div className="info">
               <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC, making it over 2000 years old. Richard McClintock, a
-                Latin professor at Hampden-Sydney College in Virginia, looked up
-                one of the more obscure Latin words, consectetur, from a Lorem
-                Ipsum passage, and going through the cites of the word in
-                classical literature, discovered the undoubtable source. Lorem
-                Ipsum comes from sections
+                The career of a professional athlete is short-lived, but the
+                skills and experiences attained during the journey last you a
+                lifetime. I apply the same drive to succeed as a Web Developer
+                where I showcase my retentive learning, creative thinking, and
+                superb work ethic. I like finding something new everyday that I
+                can create with web development. When I am not huddled over my
+                laptop finding a missing semi-colon, I enjoy spending time with
+                family, watching quality fútbol, and finding a new place to
+                travel to.
               </p>
               <div className="contact">
+                contact me!&nbsp;
                 <a href="/" target="_blank">
                   <img
                     alt="Email Icon"
                     className="email"
-                    src="https://img.Icons8.com/small/90/000000/filled-message.png"
+                    src="https://img.Icons8.com/small/90/3d3e3d/filled-message.png"
                   />
                 </a>
                 <a href="/" target="_blank">
                   <img
                     className="github"
                     alt="Github Icon"
-                    src="https://img.icons8.com/ios-glyphs/120/000000/github.png"
+                    src="https://img.icons8.com/ios-glyphs/120/3d3e3d/github.png"
                   />
                 </a>
                 <a href="/" target="_blank">
                   <img
                     alt="LinkedIn icon"
                     className="lnkdin"
-                    src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                    src="https://img.icons8.com/ios-filled/100/3d3e3d/linkedin.png"
                   />
                 </a>
               </div>
@@ -65,42 +64,11 @@ const IndexPage = ({ data }) => (
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col md="12" className="goals">
-          <h1>How it all started..</h1>
-          <h2>1992-2017</h2>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-          </p>
-          <h2>2017-Present</h2>
-          <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-          </p>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col md="12" className="goals">
-          <h1>ADD QUOTES HERE FROM FAV BOOKS</h1>
-        </Col>
-      </Row>
     </Container>
   </PageWrapper>
 );
 
-export default IndexPage;
+export default Index;
 
 export const query = graphql`
   query {

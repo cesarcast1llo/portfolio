@@ -90,11 +90,11 @@
         color: $secondary;
         font-size: 15px;
         margin: 7px 0 7px 1px;
-        font-weight: 400;
+        font-weight: 300;
 
         @media (min-width: $S) {
           margin: 3px 0;
-          font-weight: 400;
+          font-weight: 300;
         }
 
         @media (min-width: $M) {
@@ -125,7 +125,7 @@
           margin-bottom: 10px;
           font-size: 17px;
           line-height: 20px;
-          font-weight: 400;
+          font-weight: 300;
         }
         @media (min-width: 850px) {
           margin-bottom: 15px;

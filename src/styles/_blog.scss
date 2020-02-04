@@ -1,23 +1,20 @@
 .blog-page-container {
   margin: -20rem auto;
   z-index: 20;
-
-  @media (min-width: $XS) {
-    max-width: 900px !important;
-    padding: 0 25px;
-  }
+  padding: 0;
 
   .blog-wrapper {
+    max-width: 950px !important;
     border-radius: 10px;
     background-color: white;
     padding: 25px 15px 40px;
     margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 40px 30px;
+      padding: 40px 30px 40px;
     }
     @media (min-width: $S) {
-      padding: 40px 15px;
+      padding: 40px 15px 30px 15px;
     }
 
     .blog-intro {
@@ -86,11 +83,11 @@
         color: $secondary;
         font-size: 15px;
         margin: 7px 0 7px 1px;
-        font-weight: 300;
+        font-weight: 400;
 
         @media (min-width: $S) {
           margin: 3px 0;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         @media (min-width: $M) {
@@ -121,7 +118,7 @@
           margin-bottom: 10px;
           font-size: 17px;
           line-height: 20px;
-          font-weight: 300;
+          font-weight: 400;
         }
         @media (min-width: 850px) {
           margin-bottom: 15px;

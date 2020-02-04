@@ -1,9 +1,12 @@
 .blog-post {
   .card-image-top {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-    height: 550px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+    height: 60vh;
     width: 100%;
+    @media (min-width: $XS) {
+      height: 55vh;
+    }
   }
 
   .single-blog-container {
@@ -11,7 +14,7 @@
     margin: -20rem auto;
     z-index: 20;
     @media (min-width: $XS) {
-      max-width: 900px;
+      max-width: 950px;
       padding: 0 15px;
     }
 

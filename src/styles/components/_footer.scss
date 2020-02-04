@@ -1,0 +1,45 @@
+footer {
+  max-width: 2500px;
+  background-color: $primary;
+  margin: 0 auto;
+
+  .footer-container {
+    max-width: 950px;
+    padding: 5rem 1.5rem;
+
+    .left {
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .center {
+      text-align: center;
+      a {
+        color: $secondary;
+        text-decoration: none;
+      }
+    }
+
+    .right {
+      text-align: right;
+
+      h1 {
+        margin-left: 10px;
+        display: inline;
+
+        a {
+          color: $secondary;
+          text-decoration: none;
+          border: 1px solid $secondary;
+          &:hover {
+            background-color: $secondary;
+            border: 1px solid white;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

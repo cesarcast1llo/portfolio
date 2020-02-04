@@ -2,49 +2,32 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 
-const Footer = ({ props }) => (
-  <Container className="footer">
-    <Row>
-      <Col>
-        <div
-          style={{
-            display: 'block',
-            textAlign: 'left',
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`
-          }}
-        >
-          <h1 style={{ margin: 0 }}>&copy;2020</h1>
-        </div>
-        <div
-          style={{
-            display: 'inline-block',
-            textAlign: 'right',
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`
-          }}
-        >
-          <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`
-              }}
-            ></Link>
-            <Link
-              to="/blog"
-              style={{
-                color: `white`,
-                textDecoration: `none`
-              }}
-            >
-              Blog
-            </Link>
+const Footer = ({ data }) => (
+  <footer>
+    <Container className="footer-container">
+      <Row>
+        <Col className="left" md="4">
+          <img src="../assets/images/c.png" className="logo" />
+        </Col>
+        <Col className="center" md="4">
+          <h1>
+            &copy; Cesar Castillo
+            <br />
+            <Link to="/2020">2020</Link>
           </h1>
-          pass in prop to highlight where a use is, same as footer
-        </div>
-        <script
+        </Col>
+        <Col className="right" md="4">
+          <h1>
+            <Link to="/">Home</Link>
+          </h1>
+          <h1>
+            <Link to="/blog">Blog</Link>
+          </h1>
+          <h1>
+            <Link to="/about">About</Link>
+          </h1>
+        </Col>
+        {/* <script
           src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
           crossOrigin="anonymous"
@@ -59,9 +42,9 @@ const Footer = ({ props }) => (
           rel="stylesheet"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossOrigin="anonymous"
-        />
-      </Col>
-    </Row>
-  </Container>
+        /> */}
+      </Row>
+    </Container>
+  </footer>
 );
 export default Footer;

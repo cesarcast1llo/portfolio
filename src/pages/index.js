@@ -17,13 +17,24 @@ const Index = ({ data }) => (
         <Col className="index-page-wrapper">
           <div className="intro">
             <Link to="/blog/">Developing Blog</Link>
+            <div className="typed-wrapper">
+              <Typed
+                className="info"
+                strings={['Hello', 'Hola', 'Bonjour', 'Olá', 'Gluten Tag']}
+                typeSpeed={40}
+                backSpeed={50}
+                attr="placeholder"
+                loop
+              >
+                <input type="text" />
+              </Typed>
+            </div>
             <br />
             <Img
               alt="Me, Myself, and I"
               className="me"
               fixed={data.placeholderImage.childImageSharp.fixed}
             />
-            <Typed strings={['Here you can find anything']} typeSpeed={40} />
             <div className="info">
               <p>
                 The career of a professional athlete is short-lived, but the

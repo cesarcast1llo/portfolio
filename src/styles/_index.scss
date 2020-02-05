@@ -39,55 +39,54 @@
       }
 
       .me {
-        max-width: 160px;
+        max-width: 250px;
+        height: 200px;
         border-radius: 75px;
         display: block;
         margin: 0 auto;
       }
 
+      .contact {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+        @media (min-width: $XS) {
+          font-weight: 600;
+        }
+
+        .email {
+          width: 20px;
+          margin-bottom: 0.2rem;
+          margin-right: 5px;
+          @media (min-width: $XS) {
+            margin-right: 5px;
+          }
+        }
+        .github {
+          width: 20px;
+          margin-bottom: 0.4rem;
+          margin-right: 5px;
+          @media (min-width: $XS) {
+            margin-right: 5px;
+          }
+        }
+        .lnkdin {
+          width: 20px;
+          margin-bottom: 0.4rem;
+        }
+      }
+
       .info {
-        padding-top: 30px;
+        padding-top: 20px;
         color: $secondary;
         font-size: 17px;
         line-height: 21px;
         @media (min-width: $XS) {
           font-size: 18px;
           line-height: 24px;
-        }
-
-        .contact {
-          padding-top: 20px;
-          margin: 0 auto;
-          display: block;
-
-          &:first-of-type {
-            color: black;
-            font-size: 22px;
-            font-weight: 500;
-            @media (min-width: $XS) {
-              font-weight: 600;
-            }
-          }
-          .email {
-            width: 20px;
-            margin-bottom: 0.2rem;
-            margin-right: 5px;
-            @media (min-width: $XS) {
-              margin-right: 5px;
-            }
-          }
-          .github {
-            width: 20px;
-            margin-bottom: 0.4rem;
-            margin-right: 5px;
-            @media (min-width: $XS) {
-              margin-right: 5px;
-            }
-          }
-          .lnkdin {
-            width: 20px;
-            margin-bottom: 0.4rem;
-          }
         }
       }
     }

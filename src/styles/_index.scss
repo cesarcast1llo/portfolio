@@ -1,20 +1,17 @@
 .index-page {
   margin: -20rem auto 0;
   z-index: 20;
-  max-width: 950px !important;
-  padding: 0 25px;
+  padding: 0 15px;
+  max-width: 980px !important;
 
   .index-page-wrapper {
     border-radius: 10px;
     background-color: white;
-    padding: 25px 15px 40px;
+    padding: 40px 15px 40px;
     margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 40px 30px 40px;
-    }
-    @media (min-width: $S) {
-      padding: 40px 15px 30px 15px;
+      padding: 40px 20px;
     }
 
     .intro {
@@ -26,10 +23,7 @@
         text-align: center;
 
         span {
-          max-width: 200px;
-
           input {
-            max-width: 200px;
             text-align: center;
             border: 0;
             font-size: 30px;

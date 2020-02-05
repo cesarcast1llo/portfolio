@@ -7,7 +7,7 @@ const Footer = ({ data }) => (
     <Container className="footer-container">
       <Row>
         <Col className="left" md="4">
-          <img src="../assets/images/c.png" className="logo" />
+          {/* <img src="../assets/images/c.png" className="logo" /> */}
         </Col>
         <Col className="center" md="4">
           <h1>

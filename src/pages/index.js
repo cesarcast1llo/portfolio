@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 const Index = ({ data }) => (
   <PageWrapper
@@ -18,7 +18,7 @@ const Index = ({ data }) => (
           <div className="intro">
             <Link to="/blog/">Developing Blog</Link>
             <div className="typed-wrapper">
-              <Typed
+              {/* <Typed
                 className="info"
                 strings={['Hello', 'Hola', 'Bonjour', 'Olá', 'Gluten Tag']}
                 typeSpeed={40}
@@ -27,7 +27,7 @@ const Index = ({ data }) => (
                 loop
               >
                 <input type="text" />
-              </Typed>
+              </Typed> */}
             </div>
             <br />
             <Img

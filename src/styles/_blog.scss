@@ -1,20 +1,17 @@
 .blog-page-container {
-  margin: -20rem auto;
+  margin: -20rem auto 0;
   z-index: 20;
-  padding: 0;
+  padding: 0 15px;
+  max-width: 980px !important;
 
   .blog-wrapper {
-    max-width: 950px !important;
     border-radius: 10px;
     background-color: white;
-    padding: 25px 15px 40px;
+    padding: 40px 15px 40px;
     margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 40px 30px 40px;
-    }
-    @media (min-width: $S) {
-      padding: 40px 15px 30px 15px;
+      padding: 40px 20px;
     }
 
     .blog-intro {

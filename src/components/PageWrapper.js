@@ -12,6 +12,10 @@ const PageWrapper = ({
   children,
   height
 }) => {
+  if (typeof window === 'undefined') {
+    global.window = {};
+  }
+
   const url = window.location.pathname === '/';
 
   return (

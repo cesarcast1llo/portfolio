@@ -6,25 +6,12 @@ const Footer = ({ data }) => (
   <footer>
     <Container className="footer-container">
       <Row>
-        <Col className="left" md="4">
-          {/* <img src="../assets/images/c.png" className="logo" /> */}
+        <Col className="left" md="6">
+          <img alt="logo" className="logo" src="../assets/images/c.png" />
         </Col>
-        <Col className="center" md="4">
+        <Col className="center" md="6">
           <h1>
-            &copy; Cesar Castillo
-            <br />
-            <Link to="/2020">2020</Link>
-          </h1>
-        </Col>
-        <Col className="right" md="4">
-          <h1>
-            <Link to="/">Home</Link>
-          </h1>
-          <h1>
-            <Link to="/blog">Blog</Link>
-          </h1>
-          <h1>
-            <Link to="/about">About</Link>
+            &copy; Cesar Castillo&nbsp;<Link to="/2020">2020</Link>
           </h1>
         </Col>
         {/* <script

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
 
 const About = ({ data }) => (
@@ -17,11 +17,11 @@ const About = ({ data }) => (
           <div className="about">
             <Link to="/">Home</Link>
             <br />
-            <Img
+            {/* <Img
               alt="Me, Myself, and I"
               className="me"
               fixed={data.placeholderImage.childImageSharp.fixed}
-            />
+            /> */}
             <h1>Cesar Castillo</h1>
             <p>
               The career of a professional athlete is short-lived, but the
@@ -56,6 +56,13 @@ const About = ({ data }) => (
               literature, discovered the undoubtable source. Lorem Ipsum comes
               from sections
             </p>
+          </div>
+          <div className="coding-time">
+            <img
+              className="coding-chart"
+              alt="Coding Time, last seven days"
+              src="https://wakatime.com/share/@c748e2cc-d321-4212-8e58-ccb0e2142b08/e41390c0-8804-43e8-a158-db614c80fd68.png"
+            />
           </div>
           <div className="quotes">
             <h1>ADD QUOTES HERE FROM FAV BOOKS</h1>

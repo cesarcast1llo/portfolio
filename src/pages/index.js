@@ -4,20 +4,22 @@ import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
 import Projects from '../components/Projects';
-// import Typed from 'react-typed';
+
+// const items = ['CESAR', 'ASD', 'ASDSA'];
 
 const Index = ({ data }) => (
   <PageWrapper
     pageTitle="Home"
     pageKeywords={[`gatsby`, `application`, `react`]}
-    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
-    bgColor="linear-gradient(135deg,#00C4FF,#9D1BB2)"
+    bgColor="linear-gradient(135deg,#000000,#9D1BB2)"
+    height="100vh"
   >
     <Container className="index-page">
       <Row>
         <Col className="index-page-wrapper">
           <div className="intro">
             <Link to="/blog/">Developing Blog</Link>
+
             <div className="typed-wrapper">
               {/* <Typed
                 className="info"

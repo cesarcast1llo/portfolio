@@ -1,64 +1,61 @@
 import React, { Component } from 'react';
-// import { Row, Col } from 'reactstrap';
-import Chart from 'react-google-charts';
-
-const options = {
-  width: 400,
-  height: 120,
-  redFrom: 90,
-  redTo: 100,
-  yellowFrom: 75,
-  yellowTo: 90,
-  minorTicks: 5
-};
-
-const getRandomNumber = () => {
-  return Math.random() * 100;
-};
+import { Link } from 'gatsby';
+import { Row, Col } from 'reactstrap';
 
 class Projects extends Component {
-  state = {
-    networkSpeed: 1,
-    memory: 80,
-    cpu: 55
-  };
-  intervalID = null;
-  getData = () => {
-    return [
-      ['Label', 'Value'],
-      ['Memory', this.state.memory],
-      ['CPU', this.state.cpu],
-      ['Network', this.state.networkSpeed]
-    ];
-  };
+  state = {};
+
   componentWillUnmount() {
-    if (this.intervalID === null) return;
-    clearInterval(this.intervalID);
+    //  if (this.intervalID === null) return;
+    //  clearInterval(this.intervalID);
   }
   componentDidMount() {
-    this.intervalID = setInterval(() => {
-      this.setState(state => {
-        return {
-          ...state,
-          networkSpeed: getRandomNumber(),
-          cpu: getRandomNumber(),
-          memory: getRandomNumber()
-        };
-      });
-    }, 3000);
+    //  this.intervalID = setInterval(() => {s
+    //    this.setState(state => {
+    //      return {s
+    //        ...state,
+    //        networkSpeed: getRandomNumber(),
+    //        cpu: getRandomNumber(),
+    //        memory: getRandomNumber()
+    //      };
+    //    });
+    //  }, 3000);
   }
   render() {
     // console.log(this.getData());
     return (
-      <div className="App">
-        <Chart
-          chartType="Gauge"
-          width="100%"
-          height="400px"
-          data={this.getData()}
-          options={options}
-        />
-      </div>
+      <Row>
+        <Col className="project-wrapper">
+          <div className="projects-intro">
+            <h1>pd doc</h1>
+            <h1>
+              <u>Technical</u>
+            </h1>
+            <h3>projects</h3>
+            <div>frdnly</div>
+            <div>html emails</div>
+            <div>landing pages</div>
+            <div>
+              personal projects:
+              <ul
+                style={{
+                  textAlign: 'right',
+                  padding: 0,
+                  listStyleType: 'none'
+                }}
+              >
+                <li>-portfolio running on gatsby</li>
+                <li>-jcc website running on nextjs</li>
+                <li>
+                  -100 js problems here <Link to="/blog/">blog</Link>
+                </li>
+                <li>-tic tac toe game running on react</li>
+                <li>-todo list game running on react</li>
+              </ul>
+            </div>
+          </div>
+        </Col>
+      </Row>
     );
   }
 }

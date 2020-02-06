@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { Transition } from 'react-spring/renderprops';
 
-const c = [{ text: 'C' }];
+const c = [{ text: 'E' }];
 const e = [{ text: 'E' }];
-const s = [{ text: 'S' }];
-const a = [{ text: 'A' }];
+const s = [{ text: 'A' }];
+const a = [{ text: 'E' }];
 const r = [{ text: 'R' }];
 
 export default class InitialAnimation extends Component {
@@ -94,7 +94,7 @@ export default class InitialAnimation extends Component {
           {props => (
             <div style={props}>
               <p id="cast" className="name">
-                CASTILLO
+                IPSUMMMM
               </p>
             </div>
           )}

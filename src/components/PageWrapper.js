@@ -21,7 +21,10 @@ class PageWrapper extends Component {
   }
 
   componentDidMount() {
-    cookies.set('name', 'visited', { path: '/' });
+    cookies.set('name', 'visited', {
+      path: '/',
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+    });
 
     setTimeout(() => {
       this.setState(prevState => ({

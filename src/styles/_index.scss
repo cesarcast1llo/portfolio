@@ -1,43 +1,94 @@
 .index-page {
-  margin: -25rem auto;
-  z-index: 9999;
-  box-sizing: border-box;
+  margin: -20rem auto 0;
+  z-index: 20;
+  padding: 0 15px;
+  max-width: 980px !important;
 
-  .intro {
-    padding: 40px 0;
-    text-align: center;
+  .index-page-wrapper {
+    border-radius: 10px;
     background-color: white;
-    border-radius: 15px;
-    max-width: 700px;
-    margin: 0 auto;
+    padding: 40px 15px 40px;
+    margin: 0 15px;
 
-    .me {
-      height: 300px;
-      width: 300px;
+    @media (min-width: $XS) {
+      padding: 40px 20px;
+    }
+
+    .intro {
       margin: 0 auto;
-      padding-bottom: 10px;
-      border-radius: 75px;
-    }
-
-    h2 {
-      margin: 0;
-
-      &:first-of-type {
-        padding-top: 10px;
-      }
-
-      &:last-child {
-        color: green;
-        text-decoration: underline;
-      }
-
-      .fa {
-        color: black;
-      }
-    }
-
-    .goals {
       text-align: center;
+
+      .typed-wrapper {
+        margin: 0 auto;
+        text-align: center;
+
+        span {
+          input {
+            text-align: center;
+            border: 0;
+            font-size: 30px;
+            @media (min-width: $XS) {
+              font-size: 60px;
+            }
+          }
+          ::placeholder {
+            color: $secondary;
+            opacity: 1;
+          }
+        }
+      }
+
+      .me {
+        max-width: 250px;
+        height: 200px;
+        border-radius: 75px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;
+        color: black;
+        font-size: 22px;
+        font-weight: 500;
+        @media (min-width: $XS) {
+          font-weight: 600;
+        }
+
+        .email {
+          width: 20px;
+          margin-bottom: 0.2rem;
+          margin-right: 5px;
+          @media (min-width: $XS) {
+            margin-right: 5px;
+          }
+        }
+        .github {
+          width: 20px;
+          margin-bottom: 0.4rem;
+          margin-right: 5px;
+          @media (min-width: $XS) {
+            margin-right: 5px;
+          }
+        }
+        .lnkdin {
+          width: 20px;
+          margin-bottom: 0.4rem;
+        }
+      }
+
+      .info {
+        padding-top: 20px;
+        color: $secondary;
+        font-size: 17px;
+        line-height: 21px;
+        @media (min-width: $XS) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
     }
   }
 }

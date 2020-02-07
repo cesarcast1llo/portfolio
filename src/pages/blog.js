@@ -1,44 +1,48 @@
 import React from 'react';
 import { StaticQuery } from 'gatsby';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
-// import '../styles/portfolio.scss';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 const Blog = () => (
-  <Layout pageTitle="CodeBlog">
-    <SEO title="Blog" keywords={[`gatsby`, `application`, `react`]} />
-    <div className="blog-page">
-      <div className="blog-header">
-        <h1>
-          FIND A HERO IMAGE USING THE CSS SLASH GOING UPWARDS
-          <br /> make a description before blog starts
-        </h1>
-      </div>
-      <StaticQuery
-        query={blogQuery}
-        render={data => {
-          return (
-            <Container className="blogs-cont">
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <Post
-                  key={node.id}
-                  title={node.frontmatter.title}
-                  slug={node.fields.slug}
-                  body={node.excerpt}
-                  date={node.frontmatter.date}
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
-                />
-              ))}
-            </Container>
-          );
-        }}
-      />
-    </div>
-  </Layout>
+  <PageWrapper
+    pageTitle="Blog"
+    pageKeywords={[`gatsby`, `application`, `react`]}
+    bgColor="#3d3e3d"
+    backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+  >
+    <Container className="blog-page-container">
+      <Row>
+        <Col className="blog-wrapper">
+          <div className="blog-intro">
+            <p>BLOG - JS PROBLEMS</p>
+            <h3>will finish 50 different JS problems by June 2020</h3>
+          </div>
+          <StaticQuery
+            query={blogQuery}
+            render={data => {
+              return (
+                <>
+                  {data.allMarkdownRemark.edges.map(({ node }) => (
+                    <Post
+                      key={node.id}
+                      title={node.frontmatter.title}
+                      slug={node.fields.slug}
+                      body={node.excerpt}
+                      date={node.frontmatter.date}
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      tags={node.frontmatter.tags}
+                    />
+                  ))}
+                </>
+              );
+            }}
+          />
+        </Col>
+      </Row>
+    </Container>
+  </PageWrapper>
 );
 
 const blogQuery = graphql`
@@ -53,11 +57,11 @@ const blogQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "MMM. Do, YYYY")
             tags
             image {
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 900) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -66,7 +70,7 @@ const blogQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 190)
+          excerpt(pruneLength: 225)
         }
       }
     }

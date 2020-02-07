@@ -19,9 +19,15 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
     <Col md="6" className="blog-post">
       <div className="blog-title">
         <Link to={`/blog/${slug}`}>{title}</Link>
+        <span className="date">
+          <img
+            alt="Calendar Icon"
+            className="calendar"
+            src="https://img.icons8.com/android/24/3e3f3e/calendar.png"
+          />
+          &nbsp;{date}
+        </span>
       </div>
-      <i className="fa fa-calendar" aria-hidden="true"></i>
-      <span className="date">{date}</span>
       <div className="card-body">{body}</div>
       <div className="tags">
         {tags.map(tag => (

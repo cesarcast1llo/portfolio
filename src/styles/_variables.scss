@@ -1,3 +1,17 @@
+$primary: black;
+$secondary: #3e3f3e;
+
+$font-size-base: 10px;
+$line-height: 1.6;
+$font-weight: 300;
+
+// screen sizes
+$L: 1200px;
+$M: 992px;
+$S: 768px;
+$XS: 576px;
+$mobile: 480px;
+
 html,
 body {
   overflow-x: none;
@@ -6,6 +20,9 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
+  font-size: $font-size-base;
+  color: $secondary;
+  font-weight: 300;
 }
 
 * {
@@ -22,6 +39,12 @@ a {
   }
 }
 
+h1,
+h2,
+h3 {
+  color: $secondary;
+}
+
 .mobile-hide {
   @media (max-width: 767px) {
     display: none !important;
@@ -33,20 +56,8 @@ a {
     display: none !important;
   }
 }
-
-$font-size: 1.5em;
-$line-height: 1.6;
-$font-weight: 400;
-
-// screen sizes
-$L: 1200px;
-$M: 992px;
-$S: 768px;
-$BTP576: 576px;
-$mobile: 480px;
-
 .em_hide_desktop {
-  display: block;
+  display: block !important;
   @media (min-width: $S) {
     display: none !important;
   }

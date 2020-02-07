@@ -1,0 +1,14 @@
+.project-wrapper {
+  border-radius: 10px;
+  background-color: white;
+  padding: 0 15px 40px;
+  margin: 0 15px;
+
+  @media (min-width: $XS) {
+    padding: 40px 20px;
+  }
+
+  .projects-intro {
+    text-align: center;
+  }
+}

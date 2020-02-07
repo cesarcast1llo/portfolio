@@ -1,10 +1,10 @@
-.blog-page-container {
+.single-tag-container {
   margin: -20rem auto 0;
   z-index: 20;
   padding: 0 15px;
   max-width: 980px !important;
 
-  .blog-wrapper {
+  .single-tag-wrapper {
     border-radius: 10px;
     background-color: white;
     padding: 40px 15px 40px;
@@ -14,7 +14,7 @@
       padding: 40px 20px;
     }
 
-    .blog-intro {
+    .tag-intro {
       text-align: center;
       font-size: 29px;
       line-height: 34px;
@@ -22,6 +22,9 @@
       @media (min-width: $XS) {
         font-size: 35px;
         line-height: 38px;
+      }
+
+      h3 {
       }
     }
 
@@ -40,11 +43,11 @@
     .blog-post {
       padding: 15px 20px 50px;
       font-weight: 300;
+      text-align: left;
 
       @media (min-width: $S) {
         padding: 0 15px 60px 0;
         margin: auto 0;
-        text-align: left;
       }
 
       .blog-title {
@@ -80,11 +83,11 @@
         color: $secondary;
         font-size: 15px;
         margin: 7px 0 7px 1px;
-        font-weight: 400;
+        font-weight: 300;
 
         @media (min-width: $S) {
           margin: 3px 0;
-          font-weight: 400;
+          font-weight: 300;
         }
 
         @media (min-width: $M) {
@@ -115,6 +118,7 @@
           margin-bottom: 10px;
           font-size: 17px;
           line-height: 20px;
+          font-weight: 300;
         }
         @media (min-width: 850px) {
           margin-bottom: 15px;

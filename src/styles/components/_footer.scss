@@ -1,0 +1,36 @@
+footer {
+  max-width: 2500px;
+  background-color: $primary;
+  margin: 0 auto;
+
+  .footer-container {
+    max-width: 950px;
+    padding: 3rem 1.5rem;
+
+    .left {
+      .coding-chart {
+        max-width: 300px;
+      }
+    }
+
+    .right {
+      text-align: right;
+
+      h1 {
+        margin-left: 10px;
+        display: inline;
+
+        a {
+          color: $secondary;
+          text-decoration: none;
+          border: 1px solid $secondary;
+          &:hover {
+            background-color: $secondary;
+            border: 1px solid white;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

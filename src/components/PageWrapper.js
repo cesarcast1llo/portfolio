@@ -10,14 +10,9 @@ const PageWrapper = ({
   bgColor,
   backgroundURL,
   children,
-  height
+  height,
+  animation
 }) => {
-  if (typeof window === 'undefined') {
-    global.window = {};
-  }
-
-  const url = window.location.pathname === '/';
-
   return (
     <>
       <SEO title={pageTitle} keywords={pageKeywords} />
@@ -29,9 +24,9 @@ const PageWrapper = ({
           height: height
         }}
       >
-        {url ? (
+        {animation ? (
           <div className="name-intro">
-            {console.log(url + ' activate')}
+            {console.log(animation + ' activate')}
             <InitialAnimation />
           </div>
         ) : null}

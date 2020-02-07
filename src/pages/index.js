@@ -13,6 +13,7 @@ const Index = ({ data }) => (
     pageKeywords={[`gatsby`, `application`, `react`]}
     bgColor="linear-gradient(135deg,#000000,#9D1BB2)"
     height="100vh"
+    animation="true"
   >
     <Container className="index-page">
       <Row>

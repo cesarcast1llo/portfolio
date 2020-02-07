@@ -23,14 +23,14 @@ const tagsPage = ({ pageContext }) => {
               <div className="tags">
                 {tags.map(function(tag, index) {
                   return index % 2 === 0 ? (
-                    <Link to={`/tags/${slugify(tag)}`}>
-                      <Button key={tag} color="primary" className="tag-button">
+                    <Link key={tag} to={`/tags/${slugify(tag)}`}>
+                      <Button color="primary" className="tag-button">
                         {tag} <div className="number">{tagPostCounts[tag]}</div>
                       </Button>
                     </Link>
                   ) : (
-                    <Link to={`/tags/${slugify(tag)}`}>
-                      <Button key={tag} color="primary" className="odd">
+                    <Link key={tag} to={`/tags/${slugify(tag)}`}>
+                      <Button color="primary" className="odd">
                         {tag} <div className="number">{tagPostCounts[tag]}</div>
                       </Button>
                     </Link>

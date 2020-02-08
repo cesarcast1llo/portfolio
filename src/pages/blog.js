@@ -14,7 +14,6 @@ const Blog = () => (
     pageKeywords={[`gatsby`, `application`, `react`]}
     bgColor="#3d3e3d"
     backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
-    name={cookies.get('name')}
   >
     <Container className="blog-page-container">
       <Row>

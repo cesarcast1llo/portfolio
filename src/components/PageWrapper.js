@@ -9,7 +9,6 @@ const cookies = new Cookies();
 if (typeof window === 'undefined') {
   global.window = {};
 }
-const location = window.location.pathname;
 
 class PageWrapper extends Component {
   constructor(props) {
@@ -43,8 +42,8 @@ class PageWrapper extends Component {
             height: this.props.height
           }}
         >
-          {console.log(location)}
-          {location === '/' && this.state.name === `` ? (
+          {console.log(window.location.pathname)}
+          {window.location.pathname === '/' && this.state.name === `` ? (
             <div className="name-intro">
               <InitialAnimation />
             </div>

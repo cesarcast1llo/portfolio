@@ -4,6 +4,9 @@ import { graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
+import { Cookies } from 'react-cookie';
+
+const cookies = new Cookies();
 
 const Blog = () => (
   <PageWrapper
@@ -11,6 +14,7 @@ const Blog = () => (
     pageKeywords={[`gatsby`, `application`, `react`]}
     bgColor="#3d3e3d"
     backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    name={cookies.get('name')}
   >
     <Container className="blog-page-container">
       <Row>

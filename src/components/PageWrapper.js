@@ -42,7 +42,7 @@ class PageWrapper extends Component {
             height: this.props.height
           }}
         >
-          {console.log(window.location.pathname)}
+          {/* {console.log(window.location.pathname)} */}
           {window.location.pathname === '/' && this.state.name === `` ? (
             <div className="name-intro">
               <InitialAnimation />

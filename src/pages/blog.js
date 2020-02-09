@@ -4,9 +4,6 @@ import { graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
-import { Cookies } from 'react-cookie';
-
-const cookies = new Cookies();
 
 const Blog = () => (
   <PageWrapper

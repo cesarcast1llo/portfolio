@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { Transition } from 'react-spring/renderprops';
 
@@ -8,8 +8,8 @@ const s = [{ text: 'A' }];
 const a = [{ text: 'E' }];
 const r = [{ text: 'R' }];
 
-export default class InitialAnimation extends Component {
-  render() {
+const InitialAnimation = props => {
+  if (props.animation) {
     return (
       <>
         <Transition
@@ -94,5 +94,9 @@ export default class InitialAnimation extends Component {
         </Spring>
       </>
     );
+  } else {
+    return null;
   }
-}
+};
+
+export default InitialAnimation;

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import SEO from './seo';
 import Footer from './footer';
+import InitialAnimation from '../components/animations/InitialAnimation';
 
 const PageWrapper = ({
   pageTitle,
@@ -9,7 +10,9 @@ const PageWrapper = ({
   bgColor,
   backgroundURL,
   children,
-  height
+  height,
+  clipPath,
+  animation
 }) => {
   return (
     <>
@@ -19,9 +22,14 @@ const PageWrapper = ({
         style={{
           background: bgColor,
           backgroundImage: backgroundURL,
-          height: height
+          height: height,
+          clipPath: clipPath
         }}
-      ></div>
+      >
+        <div className="name-intro">
+          {animation ? <InitialAnimation animation={true} /> : null}
+        </div>
+      </div>
       <Header />
       <main>{children}</main>
       <Footer />

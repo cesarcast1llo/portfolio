@@ -1,31 +1,35 @@
 import React, { Component } from 'react';
-import { Link, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 // import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
 import Projects from '../components/Projects';
-import InitialAnimation from '../components/animations/InitialAnimation';
 import { Cookies } from 'react-cookie';
 
 const cookies = new Cookies();
+const scroll = document.body.style.overflow;
 
 class Index extends Component {
   constructor(props) {
+    if (typeof window === 'undefined') {
+      global.window = {};
+    }
     super(props);
     this.state = {
-      name: cookies.get('name') || ''
+      // animation: cookies.get('activate') || '',
+      clipPath: 'none',
+      containerMargin: '0'
     };
   }
 
   componentDidMount() {
-    cookies.set('name', 'visited', {
-      path: '/',
-      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+    cookies.set('activate', 'true', {
+      path: '/'
+      // expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
     });
-
     setTimeout(() => {
       this.setState(prevState => ({
-        name: cookies.get('name')
+        // animation: cookies.get('activate')
       }));
     }, 5000);
   }
@@ -37,20 +41,19 @@ class Index extends Component {
         pageKeywords={[`gatsby`, `application`, `react`]}
         bgColor="linear-gradient(135deg,#000000,#9D1BB2)"
         height="100vh"
+        animation={!this.state.animation}
+        clipPath={this.state.clipPath}
       >
-        <Container className="index-page">
+        <Container
+          className="index-page"
+          style={{ margin: this.state.containerMargin }}
+        >
           <Row>
+            {console.log('mount')}
             <Col className="index-page-wrapper">
               <div className="intro">
-                <h1>STATE -- {this.state.name}</h1>
-                <h1>COOKIES -- {cookies.get('name')}</h1>
-                {console.log(this.state.name)}
-                {this.state.name === `` ? (
-                  <div className="name-intro">
-                    <InitialAnimation />
-                  </div>
-                ) : null}
-                {console.log(this.state.name + ' after mpount')}
+                <h1>STATE -- {this.state.animation}</h1>
+                <h1>COOKIES -- {cookies.get('activate')}</h1>
                 <Link to="/blog/">Developing Blog</Link>
 
                 <div className="typed-wrapper">

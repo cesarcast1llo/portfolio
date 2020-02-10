@@ -13,6 +13,14 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
+  @keyframes polygon {
+    0% {
+      clip-path: polygon(75%);
+    }
+    100% {
+      clip-path: polygon(25%);
+    }
+  }
   @media (min-width: $XS) {
     height: 55vh;
   }
@@ -38,6 +46,12 @@
       }
     }
   }
+}
+
+.pre-animation {
+  background: linear-gradient(270deg, #3d3e3d, #ffffff);
+  height: 100vh;
+  clip-path: none;
 }
 
 .header {

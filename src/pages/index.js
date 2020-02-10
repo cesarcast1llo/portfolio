@@ -16,24 +16,27 @@ class Index extends Component {
     super(props);
     this.state = {
       // animation: cookies.get('activate') || '',
-      clipPath: 'none',
-      containerMargin: '0'
+      className: 'pre-animation',
+      containerMargin: '0 auto'
     };
   }
 
   componentDidMount() {
     this.targetElement = document.querySelector('body');
     disableBodyScroll(this.targetElement);
+    setTimeout(() => {
+      this.setState(prevState => ({
+        // animation: cookies.get('activate')
+        containerMargin: '-20rem auto 0',
+        className: ''
+      }));
+      enableBodyScroll(this.targetElement);
+      // }, 5000);
+    }, 2000);
     cookies.set('activate', 'true', {
       path: '/'
       // expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
     });
-    setTimeout(() => {
-      this.setState(prevState => ({
-        // animation: cookies.get('activate')
-      }));
-      enableBodyScroll(this.targetElement);
-    }, 5000);
   }
 
   render() {
@@ -41,11 +44,10 @@ class Index extends Component {
       <PageWrapper
         pageTitle="Home"
         pageKeywords={[`gatsby`, `application`, `react`]}
-        bgColor="linear-gradient(135deg,#000000,#9D1BB2)"
-        height="100vh"
         animation={!this.state.animation}
-        clipPath={this.state.clipPath}
+        className={this.state.className}
       >
+        {console.log(this.state.className)}
         <Container
           className="index-page"
           style={{ margin: this.state.containerMargin }}

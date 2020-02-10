@@ -7,25 +7,14 @@ import InitialAnimation from '../components/animations/InitialAnimation';
 const PageWrapper = ({
   pageTitle,
   pageKeywords,
-  bgColor,
-  backgroundURL,
   children,
-  height,
-  clipPath,
-  animation
+  animation,
+  className
 }) => {
   return (
     <>
       <SEO title={pageTitle} keywords={pageKeywords} />
-      <div
-        className="background"
-        style={{
-          background: bgColor,
-          backgroundImage: backgroundURL,
-          height: height,
-          clipPath: clipPath
-        }}
-      >
+      <div className={`background ${className}`}>
         <div className="name-intro">
           {animation ? <InitialAnimation animation={true} /> : null}
         </div>

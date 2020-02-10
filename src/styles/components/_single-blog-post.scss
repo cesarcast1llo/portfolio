@@ -1,11 +1,13 @@
 .blog-post {
   .card-image-top {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 98px), 0 98%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
     height: 60vh;
     width: 100%;
     @media (min-width: $XS) {
       height: 55vh;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
     }
   }
 

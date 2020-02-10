@@ -5,15 +5,14 @@ import { Container, Row, Col } from 'reactstrap';
 import PageWrapper from '../components/PageWrapper.js';
 import Projects from '../components/Projects';
 import { Cookies } from 'react-cookie';
+// import { document } from 'browser-monads';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const cookies = new Cookies();
-const scroll = document.body.style.overflow;
 
 class Index extends Component {
+  targetElement = null;
   constructor(props) {
-    if (typeof window === 'undefined') {
-      global.window = {};
-    }
     super(props);
     this.state = {
       // animation: cookies.get('activate') || '',
@@ -23,6 +22,8 @@ class Index extends Component {
   }
 
   componentDidMount() {
+    this.targetElement = document.querySelector('body');
+    disableBodyScroll(this.targetElement);
     cookies.set('activate', 'true', {
       path: '/'
       // expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
@@ -31,6 +32,7 @@ class Index extends Component {
       this.setState(prevState => ({
         // animation: cookies.get('activate')
       }));
+      enableBodyScroll(this.targetElement);
     }, 5000);
   }
 

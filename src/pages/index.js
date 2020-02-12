@@ -14,15 +14,12 @@ class Index extends Component {
     this.state = {
       animation: cookies.get('activate') || '',
       className: 'pre-animation',
-      containerMargin: '0 auto',
+      containerMargin: '150rem auto',
       slideUp: false
     };
   }
 
   componentWillMount() {
-    {
-      console.log(this.state.slideUp + ' will mount');
-    }
     if (this.state.animation === cookies.get('activate')) {
       this.setState({
         className: '',
@@ -31,9 +28,9 @@ class Index extends Component {
       });
       enableBodyScroll(this.targetElement);
     } else {
-      this.setState({
-        slideUp: false
-      });
+      // this.setState({
+      //   slideUp: false
+      // });
     }
   }
 
@@ -41,9 +38,6 @@ class Index extends Component {
   // make sure animations are functioning
 
   componentDidMount() {
-    {
-      console.log(this.state.slideUp + ' did mount');
-    }
     if (this.state.animation === cookies.get('activate')) {
       enableBodyScroll(this.targetElement);
     } else {
@@ -54,23 +48,25 @@ class Index extends Component {
     setTimeout(() => {
       this.setState(prevState => ({
         animation: cookies.get('activate'),
-        containerMargin: '-20rem auto 0',
-        className: 'background',
+        className: 'animation',
         slideUp: true
       }));
       enableBodyScroll(this.targetElement);
     }, 2000);
-    {
-      console.log(this.state.slideUp + ' did mount 22');
-    }
+
+    setTimeout(() => {
+      this.setState(prevState => ({
+        containerMargin: '-20rem auto 0'
+      }));
+    }, 3000);
   }
 
-  componentDidUpdate() {
-    cookies.set('activate', 'true', {
-      path: '/',
-      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
-    });
-  }
+  // componentDidUpdate() {
+  //   cookies.set('activate', 'true', {
+  //     path: '/',
+  //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+  //   });
+  // }
 
   render() {
     return (

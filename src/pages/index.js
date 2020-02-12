@@ -12,54 +12,55 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animation: cookies.get('activate') || '',
+      // animation: cookies.get('activate') || '',
+      animation: '',
       className: 'pre-animation',
       containerMargin: '150rem auto',
       slideUp: false
     };
   }
 
-  componentWillMount() {
-    if (this.state.animation === cookies.get('activate')) {
-      this.setState({
-        className: '',
-        slideUp: true,
-        containerMargin: '-20rem auto 0'
-      });
-      enableBodyScroll(this.targetElement);
-    } else {
-      // this.setState({
-      //   slideUp: false
-      // });
-    }
-  }
+  // componentWillMount() {
+  //   if (this.state.animation === cookies.get('activate')) {
+  //     this.setState({
+  //       className: '',
+  //       slideUp: true,
+  //       containerMargin: '-20rem auto 0'
+  //     });
+  //     enableBodyScroll(this.targetElement);
+  //   } else {
+  //     // this.setState({
+  //     //   slideUp: false
+  //     // });
+  //   }
+  // }
 
   //figure out states willmpount vs didmount
   // make sure animations are functioning
 
-  componentDidMount() {
-    if (this.state.animation === cookies.get('activate')) {
-      enableBodyScroll(this.targetElement);
-    } else {
-      this.targetElement = document.querySelector('body');
-      disableBodyScroll(this.targetElement);
-    }
+  // componentDidMount() {
+  //   if (this.state.animation === cookies.get('activate')) {
+  //     enableBodyScroll(this.targetElement);
+  //   } else {
+  //     this.targetElement = document.querySelector('body');
+  //     disableBodyScroll(this.targetElement);
+  //   }
 
-    setTimeout(() => {
-      this.setState(prevState => ({
-        animation: cookies.get('activate'),
-        className: 'animation',
-        slideUp: true
-      }));
-      enableBodyScroll(this.targetElement);
-    }, 2000);
+  //   setTimeout(() => {
+  //     this.setState(prevState => ({
+  //       animation: cookies.get('activate'),
+  //       className: 'animation',
+  //       slideUp: true
+  //     }));
+  //     enableBodyScroll(this.targetElement);
+  //   }, 2000);
 
-    setTimeout(() => {
-      this.setState(prevState => ({
-        containerMargin: '-20rem auto 0'
-      }));
-    }, 3000);
-  }
+  //   setTimeout(() => {
+  //     this.setState(prevState => ({
+  //       containerMargin: '-20rem auto 0'
+  //     }));
+  //   }, 3000);
+  // }
 
   // componentDidUpdate() {
   //   cookies.set('activate', 'true', {

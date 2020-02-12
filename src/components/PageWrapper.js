@@ -21,7 +21,7 @@ const PageWrapper = ({
       </div>
       <Header />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

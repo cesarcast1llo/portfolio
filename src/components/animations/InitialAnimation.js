@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { Transition } from 'react-spring/renderprops';
 
@@ -8,15 +8,8 @@ const s = [{ text: 'A' }];
 const a = [{ text: 'E' }];
 const r = [{ text: 'R' }];
 
-export default class InitialAnimation extends Component {
-  // constructor(props) {
-  //    super(props);
-  //    this.state = {
-  //      name: props.initialName || ``
-  //    };
-  //  }
-
-  render() {
+const InitialAnimation = props => {
+  if (props.animation) {
     return (
       <>
         <Transition
@@ -35,7 +28,7 @@ export default class InitialAnimation extends Component {
         <Transition
           items={e}
           keys={item => item.key}
-          delay="1250"
+          delay="1300"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -48,7 +41,7 @@ export default class InitialAnimation extends Component {
         <Transition
           items={s}
           keys={item => item.key}
-          delay="1300"
+          delay="1400"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -61,7 +54,7 @@ export default class InitialAnimation extends Component {
         <Transition
           items={a}
           keys={item => item.key}
-          delay="1350"
+          delay="1500"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -74,7 +67,7 @@ export default class InitialAnimation extends Component {
         <Transition
           items={r}
           keys={item => item.key}
-          delay="1400"
+          delay="1600"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -89,7 +82,7 @@ export default class InitialAnimation extends Component {
             opacity: 0
           }}
           to={{ opacity: 1 }}
-          delay="1000"
+          delay="750"
         >
           {props => (
             <div style={props}>
@@ -101,5 +94,9 @@ export default class InitialAnimation extends Component {
         </Spring>
       </>
     );
+  } else {
+    return null;
   }
-}
+};
+
+export default InitialAnimation;

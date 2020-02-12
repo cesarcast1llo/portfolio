@@ -2,34 +2,22 @@ import React from 'react';
 import Header from './header';
 import SEO from './seo';
 import Footer from './footer';
-import InitialAnimation from './animations/InitialAnimation';
+import InitialAnimation from '../components/animations/InitialAnimation';
 
 const PageWrapper = ({
   pageTitle,
   pageKeywords,
-  bgColor,
-  backgroundURL,
   children,
-  height,
-  animation
+  animation,
+  className
 }) => {
   return (
     <>
       <SEO title={pageTitle} keywords={pageKeywords} />
-      <div
-        className="background"
-        style={{
-          background: bgColor,
-          backgroundImage: backgroundURL,
-          height: height
-        }}
-      >
-        {animation ? (
-          <div className="name-intro">
-            {console.log(animation + ' activate')}
-            <InitialAnimation />
-          </div>
-        ) : null}
+      <div className={`background ${className}`}>
+        <div className="name-intro">
+          {animation ? <InitialAnimation animation={true} /> : null}
+        </div>
       </div>
       <Header />
       <main>{children}</main>

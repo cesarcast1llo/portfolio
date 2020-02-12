@@ -2,19 +2,21 @@
   max-width: 2500px;
   margin: 0 auto;
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
   height: 60vh;
   background: linear-gradient(120deg, #00c3ff, #ff006a);
-
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
   // background-image: url('https://negativespace.co/wp-content/uploads/2017/10/negative-space-code-html-dark-background-Mian-Shahzad-Raza-thumb-1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
+
   @media (min-width: $XS) {
     height: 55vh;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
   }
 
   .name-intro {
@@ -36,6 +38,25 @@
         font-size: 70px;
         line-height: 75px;
       }
+    }
+  }
+}
+
+.pre-animation {
+  background: linear-gradient(270deg, #3d3e3d, #ffffff);
+  height: 100vh;
+  clip-path: none;
+}
+
+.animation {
+  @extend .background;
+  animation: 1250ms polygon;
+  @keyframes polygon {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
     }
   }
 }

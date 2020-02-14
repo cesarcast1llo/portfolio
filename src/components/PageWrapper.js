@@ -9,19 +9,20 @@ const PageWrapper = ({
   pageKeywords,
   children,
   animation,
-  className
+  className,
+  nameClassName
 }) => {
   return (
     <>
       <SEO title={pageTitle} keywords={pageKeywords} />
       <div className={`background ${className}`}>
-        <div className="name-intro">
+        <div className={`name-intro ${nameClassName}`}>
           {animation ? <InitialAnimation animation={true} /> : null}
         </div>
       </div>
       <Header />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

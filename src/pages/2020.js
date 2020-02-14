@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Footer from '../components/footer';
 import SEO from '../components/seo';
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
+// import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 
 class twentyTwenty extends Component {
   render() {
     return (
       <>
         <SEO title="Home" />
-        <Parallax ref={ref => (this.parallax = ref)} pages={2}>
+        {/* <Parallax ref={ref => (this.parallax = ref)} pages={2}>
           <ParallaxLayer
             offset={1}
             speed={1}
@@ -42,7 +42,7 @@ class twentyTwenty extends Component {
           >
             2dn
           </ParallaxLayer>
-        </Parallax>
+        </Parallax> */}
         <Container className="twentyTwenty">
           <Row>
             <Col md="12" className="goals">

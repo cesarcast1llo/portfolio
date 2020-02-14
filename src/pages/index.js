@@ -12,58 +12,61 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animation: cookies.get('activate') || '',
-      className: 'pre-animation',
-      slideUp: false,
-      nameClassName: ''
+      cookies: cookies.get('activate') || '',
+      className: 'cookies-animation',
+      showIndexPage: false,
+      animationText: '',
+      headerHide: ''
     };
   }
 
   componentDidMount() {
-    if (this.state.animation === cookies.get('activate')) {
+    if (this.state.cookies === cookies.get('activate')) {
       this.setState({
         className: '',
-        // containerMargin: '-20rem auto 0',
-        slideUp: true
+        showIndexPage: true,
+        headerHide: 'block'
       });
       enableBodyScroll(this.targetElement);
     } else {
       this.targetElement = document.querySelector('body');
       disableBodyScroll(this.targetElement);
+      this.setState({
+        headerHide: 'none'
+      });
       setTimeout(() => {
         this.setState(prevState => ({
-          className: 'animation',
-          slideUp: true,
-          nameClassName: 'hide-name',
-          animation: cookies.get('activate')
+          className: 'heroBg',
+          showIndexPage: true,
+          animationText: 'hide-name',
+          cookies: cookies.get('activate'),
+          headerHide: 'block'
         }));
         enableBodyScroll(this.targetElement);
-      }, 2000);
+      }, 1000);
     }
   }
 
-  componentDidUpdate() {
-    cookies.set('activate', 'true', {
-      path: '/',
-      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
-    });
-  }
-  // ^disable if you want to test animation^
+  // componentDidUpdate() {
+  //   cookies.set('activate', 'true', {
+  //     path: '/',
+  //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+  //   });
+  // }
+  // ^disable if you want to test animation and clear cookies^
 
   render() {
     return (
       <PageWrapper
         pageTitle="Home"
         pageKeywords={[`gatsby`, `application`, `react`]}
-        animation={!this.state.animation}
+        cookies={!this.state.cookies}
         className={this.state.className}
-        nameClassName={this.state.nameClassName}
+        animationText={this.state.animationText}
+        headerHide={this.state.headerHide}
       >
-        {this.state.slideUp ? (
-          <Container
-            className="index-page"
-            style={{ margin: this.state.containerMargin }}
-          >
+        {this.state.showIndexPage ? (
+          <Container className={`index-page ${this.state.containerMargin}`}>
             <Me />
             <Projects />
           </Container>

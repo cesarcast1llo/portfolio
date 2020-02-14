@@ -5,17 +5,20 @@ import { Badge, Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import { slugify, tagCapital } from '../utils/utilityFunctions.js';
 import { Link } from 'gatsby';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 const SinglePost = ({ data, pageContext, location }) => {
   const post = data.markdownRemark.frontmatter;
   const baseUrl = 'https:/ADDURLHERE.COM/';
 
   return (
-    /// Watch out for SEO props, use in pageWrapper
-    <div className="blog-post">
+    <>
+      <Header />
       <Img
+        id="hero"
         alt="Blog Image"
-        className="card-image-top"
+        className="hero-image-top"
         fluid={post.image.childImageSharp.fluid}
       />
       <SEO
@@ -117,7 +120,8 @@ const SinglePost = ({ data, pageContext, location }) => {
           </Col>
         </Row>
       </Container>
-    </div>
+      <Footer />
+    </>
   );
 };
 

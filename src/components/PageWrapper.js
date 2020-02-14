@@ -8,19 +8,25 @@ const PageWrapper = ({
   pageTitle,
   pageKeywords,
   children,
-  animation,
+  cookies,
+  bgColor,
+  backgroundURL,
   className,
-  nameClassName
+  animationText,
+  headerHide
 }) => {
   return (
     <>
       <SEO title={pageTitle} keywords={pageKeywords} />
-      <div className={`background ${className}`}>
-        <div className={`name-intro ${nameClassName}`}>
-          {animation ? <InitialAnimation animation={true} /> : null}
+      <div
+        className={`background ${className}`}
+        style={{ backgroundColor: bgColor, backgroundImage: backgroundURL }}
+      >
+        <div className={`name-intro ${animationText}`}>
+          {cookies ? <InitialAnimation animation={true} /> : null}
         </div>
       </div>
-      <Header />
+      <Header headerHide={headerHide} />
       <main>{children}</main>
       <Footer />
     </>

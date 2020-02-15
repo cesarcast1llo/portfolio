@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 class Hamburg extends Component {
   constructor(props) {
@@ -16,6 +17,15 @@ class Hamburg extends Component {
     });
   };
 
+  componentDidMount() {
+    if (this.state.visibility === true) {
+      console.log('visitbily true');
+      disableBodyScroll(this.targetElement);
+    } else {
+      enableBodyScroll(this.targetElement);
+    }
+  }
+
   render() {
     return (
       <div>
@@ -23,10 +33,18 @@ class Hamburg extends Component {
           id="flyoutMenu"
           className={this.state.visibility ? 'fadeIn' : 'fadeOut'}
         >
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/portfolio">Porfolio</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/" className="bm-li">
+            Home
+          </Link>
+          <Link to="/blog/" className="bm-li">
+            Blog
+          </Link>
+          <Link to="/blog/" className="bm-li">
+            Contact
+          </Link>
+          <Link to="/blog/" className="bm-li">
+            Portfolio
+          </Link>
         </div>
         <div
           role="button"

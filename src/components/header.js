@@ -1,10 +1,27 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Navbar } from 'reactstrap';
+import Img from 'gatsby-image';
 import Hamburg from '../components/Hamburg';
 import useScrollPosition from '../utils/scrollPosition.js';
+import { useStaticQuery } from 'gatsby';
 
 const Header = props => {
+  const data = useStaticQuery(graphql`
+    {
+      file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "cc.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 45) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   if (typeof window === 'undefined') {
     global.window = {};
   }
@@ -12,28 +29,29 @@ const Header = props => {
   const scrollPos = useScrollPosition();
 
   let headerBgColor = '';
+  let displayHeader = 'none';
 
-  if (scrollPos > 45) {
-    headerBgColor = '';
-  } else {
-    headerBgColor = 'white';
+  if (scrollPos > 60) {
+    headerBgColor = '#ffffffdb';
+    displayHeader = 'block';
   }
+
   return (
     <header style={{ display: props.headerHide }}>
       <div
         className={`header-container fixed-top`}
-        style={{ backgroundColor: headerBgColor }}
+        style={{ display: displayHeader, backgroundColor: headerBgColor }}
       >
         <Navbar className={`nav-bar fixed-top`}>
-          <NavbarBrand className={`image-wrapper animated bounceInleft`}>
-            <Link href="/">
-              <img
+          <div className={`image-wrapper`}>
+            <Link to="/">
+              <Img
+                fixed={data.file.childImageSharp.fixed}
+                alt="CC"
                 className="logo-img"
-                src="../assets/images/c.png"
-                alt="JCC"
               />
             </Link>
-          </NavbarBrand>
+          </div>
           <div className={`nav-wrapper`}>
             <Hamburg />
           </div>

@@ -4,32 +4,31 @@ $animate: all 0.2s ease-in-out;
   max-width: 2000px;
   position: fixed;
   margin: 0 auto;
-  height: 45px;
+  height: 55px;
+  // background-color: white;
 
   .nav-bar {
     margin: 0 auto;
     max-width: 980px !important;
-    padding: 10px 15px !important;
+    padding: 5px 15px !important;
     @media (min-width: 767px) {
-      padding: 10px 45px !important;
+      padding: 5px 45px !important;
     }
 
     .image-wrapper {
+      margin: 0;
       display: block;
       padding: 0;
 
       .logo-img {
-        max-width: 50px;
+        max-width: 45px;
         z-index: 11;
-
-        @media (min-width: 767px) {
-          max-width: 60px;
-        }
       }
     }
 
     .nav-wrapper {
       #flyoutMenu {
+        z-index: 33;
         width: 100vw;
         height: 100vh;
         background-color: rgb(19, 85, 22);
@@ -37,7 +36,7 @@ $animate: all 0.2s ease-in-out;
         top: 0;
         left: 0;
         overflow: scroll;
-        padding-top: 100px;
+        padding-top: 10rem;
         text-align: center;
 
         .bm-li {
@@ -66,7 +65,7 @@ $animate: all 0.2s ease-in-out;
             left: 1%;
             position: absolute;
             background: #fff;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.5s ease 0s, left 0.5s ease 0s;
             width: 0;
           }
         }
@@ -93,6 +92,10 @@ $animate: all 0.2s ease-in-out;
         -o-transition: 0.4s ease-in-out;
         transition: 0.4s ease-in-out;
         cursor: pointer;
+
+        #nav-icon4:focus {
+          outline: none !important;
+        }
 
         span {
           display: block;

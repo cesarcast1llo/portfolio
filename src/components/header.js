@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Navbar, NavbarBrand } from 'reactstrap';
-import HamBurg from './HamBurg';
+import Hamburg from '../components/Hamburg';
 import useScrollPosition from '../utils/scrollPosition.js';
 
 const Header = props => {
@@ -35,7 +35,7 @@ const Header = props => {
             </Link>
           </NavbarBrand>
           <div className={`nav-wrapper`}>
-            <HamBurg />
+            <Hamburg />
           </div>
         </Navbar>
       </div>

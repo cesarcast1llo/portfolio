@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 
-class HamBurg extends Component {
+class Hamburg extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,4 +45,4 @@ class HamBurg extends Component {
   }
 }
 
-export default HamBurg;
+export default Hamburg;

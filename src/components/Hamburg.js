@@ -12,19 +12,21 @@ class Hamburg extends Component {
   }
 
   toggleVisibility = () => {
-    this.setState({
-      visibility: !this.state.visibility
-    });
-  };
-
-  componentDidMount() {
-    if (this.state.visibility === true) {
-      console.log('visitbily true');
+    if (this.state.visibility === false) {
+      console.log('open');
       disableBodyScroll(this.targetElement);
-    } else {
-      enableBodyScroll(this.targetElement);
+      this.setState({
+        visibility: true
+      });
     }
-  }
+    if (this.state.visibility === true) {
+      console.log('not open');
+      enableBodyScroll(this.targetElement);
+      this.setState({
+        visibility: false
+      });
+    }
+  };
 
   render() {
     return (
@@ -33,17 +35,17 @@ class Hamburg extends Component {
           id="flyoutMenu"
           className={this.state.visibility ? 'fadeIn' : 'fadeOut'}
         >
-          <Link to="/" className="bm-li">
+          <Link to="/" className="bm-li" onClick={this.toggleVisibility}>
             Home
           </Link>
-          <Link to="/blog/" className="bm-li">
+          <Link to="/blog/" className="bm-li" onClick={this.toggleVisibility}>
             Blog
           </Link>
-          <Link to="/blog/" className="bm-li">
-            Contact
+          <Link to="/about" className="bm-li" onClick={this.toggleVisibility}>
+            About
           </Link>
-          <Link to="/blog/" className="bm-li">
-            Portfolio
+          <Link to="/2020" className="bm-li" onClick={this.toggleVisibility}>
+            2020
           </Link>
         </div>
         <div

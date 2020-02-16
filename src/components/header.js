@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { Navbar } from 'reactstrap';
 import Img from 'gatsby-image';
 import Hamburg from '../components/Hamburg';

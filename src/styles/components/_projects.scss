@@ -1,14 +1,36 @@
 .project-wrapper {
-  border-radius: 10px;
-  background-color: white;
-  padding: 0 15px 40px;
+  padding: 40px 15px 0;
   margin: 0 15px;
-
+  text-align: center;
   @media (min-width: $XS) {
-    padding: 40px 20px;
+    padding: 40px 20px 0;
+  }
+
+  .skill-sliders {
+    padding-bottom: 10px;
+
+    p {
+      font-size: 5rem;
+    }
+
+    .skillName {
+      padding: 30px 10px 0;
+      @media (min-width: $S) {
+        padding: 20px 10px 0;
+      }
+
+      p {
+        font-size: 28px;
+        @media (min-width: $XS) {
+          font-size: 30px;
+        }
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 
   .projects-intro {
     text-align: center;
+    border: 2px solid $secondary;
   }
 }

@@ -53,6 +53,7 @@ class Index extends Component {
   //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
   //   });
   // }
+
   // ^disable if you want to test animation and clear cookies^
 
   render() {
@@ -66,7 +67,7 @@ class Index extends Component {
         headerHide={this.state.headerHide}
       >
         {this.state.showIndexPage ? (
-          <Container className={`index-page ${this.state.containerMargin}`}>
+          <Container className="index-page">
             <Me />
             <Projects />
           </Container>

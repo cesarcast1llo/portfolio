@@ -7,11 +7,11 @@
   .index-page-wrapper {
     border-radius: 10px;
     background-color: white;
-    padding: 40px 15px 40px;
+    padding: 40px 15px 0;
     margin: 0 8px;
 
     @media (min-width: $XS) {
-      padding: 40px 25px;
+      padding: 40px 25px 0;
       margin: 0 15px;
     }
 

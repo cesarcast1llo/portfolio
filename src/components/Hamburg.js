@@ -13,14 +13,12 @@ class Hamburg extends Component {
 
   toggleVisibility = () => {
     if (this.state.visibility === false) {
-      console.log('open');
       disableBodyScroll(this.targetElement);
       this.setState({
         visibility: true
       });
     }
     if (this.state.visibility === true) {
-      console.log('not open');
       enableBodyScroll(this.targetElement);
       this.setState({
         visibility: false

@@ -37,7 +37,7 @@ const Me = props => {
           <input type="text" />
         </Typed> */}
           </div>
-          <ScrollAnimation animateIn="fadeIn" delay={1750} animateOnce={true}>
+          <ScrollAnimation animateIn="fadeIn" delay={1500} animateOnce={true}>
             <Img
               fixed={data.file.childImageSharp.fixed}
               alt="CC"
@@ -69,7 +69,7 @@ const Me = props => {
               </a>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" delay={1750} animateOnce={true}>
+          <ScrollAnimation animateIn="fadeIn" delay={1500} animateOnce={true}>
             <div className="info">
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random

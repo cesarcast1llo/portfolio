@@ -1,6 +1,8 @@
 $primary: black;
 $secondary: #3e3f3e;
 
+$gradient: linear-gradient(90deg, #000000, #3d3e3d);
+
 $font-size-base: 10px;
 $line-height: 1.6;
 $font-weight: 300;
@@ -37,6 +39,11 @@ a {
   &:hover {
     text-decoration: none;
   }
+}
+
+:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 h1,

@@ -1,185 +1,183 @@
-.blog-post {
-  .card-image-top {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
-    height: 60vh;
-    width: 100%;
-    @media (min-width: $XS) {
-      height: 55vh;
-      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0 100%);
-    }
+.hero-image-top {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 45px), 0 100%);
+  height: 60vh;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2300px;
+  @media (min-width: $XS) {
+    height: 55vh;
+  }
+}
+
+.single-blog-container {
+  margin: -20rem auto 0;
+  z-index: 20;
+  padding: 0 15px;
+  max-width: 980px !important;
+
+  @media (min-width: $XS) {
+    padding: 0 15px;
   }
 
-  .single-blog-container {
-    margin: -20rem auto 0;
-    z-index: 20;
-    padding: 0 15px;
-    max-width: 980px !important;
+  .post-copy {
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px 15px 40px;
+    margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 0 15px;
+      padding: 40px 20px;
     }
 
-    .post-copy {
-      border-radius: 10px;
-      background-color: white;
-      padding: 40px 15px 40px;
-      margin: 0 15px;
+    .post-title {
+      color: black;
+      font-size: 29px;
+      line-height: 34px;
+      padding-bottom: 8px;
+      text-align: center;
+      @media (min-width: $XS) {
+        font-size: 35px;
+        line-height: 38px;
+        padding-bottom: 12px;
+        padding: 0 35px 8px;
+      }
+      @media (min-width: $S) {
+        padding-bottom: 30px;
+      }
+    }
+
+    .post-date {
+      text-align: center;
+      padding-bottom: 15px;
+      color: $secondary;
+      font-style: italic;
+      font-size: 16px;
 
       @media (min-width: $XS) {
-        padding: 40px 20px;
-      }
-
-      .post-title {
-        color: black;
-        font-size: 29px;
-        line-height: 34px;
-        padding-bottom: 8px;
-        text-align: center;
-        @media (min-width: $XS) {
-          font-size: 35px;
-          line-height: 38px;
-          padding-bottom: 12px;
-          padding: 0 35px 8px;
-        }
-        @media (min-width: $S) {
-          padding-bottom: 30px;
-        }
-      }
-
-      .post-date {
-        text-align: center;
-        padding-bottom: 15px;
-        color: $secondary;
-        font-style: italic;
-        font-size: 16px;
-
-        @media (min-width: $XS) {
-          font-size: 18px;
-        }
-        @media (min-width: $S) {
-          text-align: left;
-          padding-bottom: 40px;
-          padding-right: 0;
-          font-size: 20px;
-          margin-top: 1px;
-          line-height: 38px;
-        }
-
-        .calendar {
-          width: 16px;
-          margin-bottom: 4px;
-          @media (min-width: $XS) {
-            width: 18px;
-          }
-        }
-      }
-
-      .tag-container {
-        padding: 0 15px 30px;
-        display: block;
-        text-align: center;
-
-        @media (min-width: $XS) {
-          padding-bottom: 40px;
-        }
-
-        @media (min-width: $S) {
-          padding-left: 0;
-          text-align: right;
-        }
-
-        .badge {
-          width: 110px;
-          text-transform: uppercase;
-          background-color: white;
-          border: 1px solid $secondary;
-          color: $secondary;
-          margin: 0 7px 10px;
-          padding: 10px 0;
-          font-size: 14px;
-          letter-spacing: 0.2px;
-          @media (min-width: 375px) {
-            padding: 12px 0;
-            width: 135px;
-          }
-          @media (min-width: $mobile) {
-            width: 160px;
-            margin: 0 10px 10px;
-          }
-          @media (min-width: 584px) {
-            padding: 12px 14px;
-            margin: 0 0 0 10px;
-            width: auto;
-          }
-          &:hover {
-            background-color: $secondary;
-            border: 1px solid white;
-            color: white;
-          }
-        }
-      }
-
-      .post-body {
-        color: $secondary;
         font-size: 18px;
-        line-height: 22px;
-        padding: 0 20px 10px;
-        @media (min-width: 375px) {
-          padding: 0 18px 10px 25px;
-        }
-
-        @media (min-width: $mobile) {
-          padding: 0 15px 10px 40px;
-        }
-
-        @media (min-width: $XS) {
-          line-height: 24px;
-          padding: 0 18px 10px 25px;
-        }
-        @media (min-width: $S) {
-          line-height: 26px;
-          padding: 0 15px 10px;
-          p {
-            margin-bottom: 1.3rem;
-          }
-        }
-      }
-    }
-
-    .sm-container {
-      display: none;
-      @media (min-width: $XS) {
-        text-align: center;
-        font-size: 24px;
-        font-weight: 700;
-        display: block;
-        color: black;
       }
       @media (min-width: $S) {
         text-align: left;
+        padding-bottom: 40px;
+        padding-right: 0;
+        font-size: 20px;
+        margin-top: 1px;
+        line-height: 38px;
       }
 
-      .social-share-links {
-        display: inline-block;
+      .calendar {
+        width: 16px;
+        margin-bottom: 4px;
+        @media (min-width: $XS) {
+          width: 18px;
+        }
+      }
+    }
 
-        a {
-          .email {
-            margin: 0 5px 2px;
-            height: 29px;
-            width: 27px;
-          }
-          .twit {
-            margin: 0 5px 3px 0;
-            height: 29px;
-            width: 31px;
-          }
-          .lnkdin {
-            margin: 0 0 3px;
-            height: 26px;
-            width: 27px;
-          }
+    .tag-container {
+      padding: 0 15px 30px;
+      display: block;
+      text-align: center;
+
+      @media (min-width: $XS) {
+        padding-bottom: 40px;
+      }
+
+      @media (min-width: $S) {
+        padding-left: 0;
+        text-align: right;
+      }
+
+      .badge {
+        width: 110px;
+        text-transform: uppercase;
+        background-color: white;
+        border: 1px solid $secondary;
+        color: $secondary;
+        margin: 0 7px 10px;
+        padding: 10px 0;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        @media (min-width: 375px) {
+          padding: 12px 0;
+          width: 135px;
+        }
+        @media (min-width: $mobile) {
+          width: 160px;
+          margin: 0 10px 10px;
+        }
+        @media (min-width: 584px) {
+          padding: 12px 14px;
+          margin: 0 0 0 10px;
+          width: auto;
+        }
+        &:hover {
+          background-color: $secondary;
+          border: 1px solid white;
+          color: white;
+        }
+      }
+    }
+
+    .post-body {
+      color: $secondary;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0 20px 10px;
+      @media (min-width: 375px) {
+        padding: 0 18px 10px 25px;
+      }
+
+      @media (min-width: $mobile) {
+        padding: 0 15px 10px 40px;
+      }
+
+      @media (min-width: $XS) {
+        line-height: 24px;
+        padding: 0 18px 10px 25px;
+      }
+      @media (min-width: $S) {
+        line-height: 26px;
+        padding: 0 15px 10px;
+        p {
+          margin-bottom: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .sm-container {
+    display: none;
+    @media (min-width: $XS) {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+      color: black;
+    }
+    @media (min-width: $S) {
+      text-align: left;
+    }
+
+    .social-share-links {
+      display: inline-block;
+
+      a {
+        .email {
+          margin: 0 5px 2px;
+          height: 29px;
+          width: 27px;
+        }
+        .twit {
+          margin: 0 5px 3px 0;
+          height: 29px;
+          width: 31px;
+        }
+        .lnkdin {
+          margin: 0 0 3px;
+          height: 26px;
+          width: 27px;
         }
       }
     }

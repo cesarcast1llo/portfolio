@@ -9,7 +9,7 @@ const Blog = () => (
   <PageWrapper
     pageTitle="Blog"
     pageKeywords={[`gatsby`, `application`, `react`]}
-    bgColor="#3d3e3d"
+    bgColor="blue"
     backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
   >
     <Container className="blog-page-container">

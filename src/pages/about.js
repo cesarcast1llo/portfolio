@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-// import Img from 'gatsby-image';
+import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
 
 const About = ({ data }) => (
@@ -17,11 +17,11 @@ const About = ({ data }) => (
           <div className="about">
             <Link to="/">Home</Link>
             <br />
-            {/* <Img
+            <Img
               alt="Me, Myself, and I"
               className="me"
               fixed={data.placeholderImage.childImageSharp.fixed}
-            /> */}
+            />
             <h1>Cesar Castillo</h1>
             <p>
               The career of a professional athlete is short-lived, but the

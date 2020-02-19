@@ -1,14 +1,102 @@
 .project-wrapper {
-  border-radius: 10px;
-  background-color: white;
-  padding: 0 15px 40px;
-  margin: 0 15px;
+  max-width: 2300px;
 
   @media (min-width: $XS) {
-    padding: 40px 20px;
+    //
+  }
+
+  .skill-sliders {
+    // max-width: 2300px;
+    text-align: center;
+    color: white;
+    background: $gradient;
+    clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+    width: 100%;
+    @media (min-width: $XS) {
+      // padding: 10rem 0 10rem;
+    }
+
+    .format {
+      margin: 0 auto;
+      max-width: 980px !important;
+      padding: 40px 15px;
+
+      @media (min-width: $XS) {
+        padding: 40px 25px;
+      }
+
+      p {
+        font-size: 5rem;
+      }
+
+      .skillName {
+        padding: 30px 10px 0;
+        max-width: 85%;
+        margin: 0 auto;
+        @media (min-width: $mobile) {
+          max-width: 70%;
+        }
+        @media (min-width: $XS) {
+          max-width: 100%;
+        }
+        @media (min-width: $S) {
+          padding: 20px 10px 0;
+        }
+
+        p {
+          font-size: 28px;
+          @media (min-width: $XS) {
+            font-size: 30px;
+          }
+          margin-bottom: 1.5rem;
+        }
+        .CircularProgressbar-path,
+        .CircularProgressbar-text {
+          stroke: #542c85;
+          fill: #542c85;
+        }
+      }
+
+      .show-more {
+        margin: 0 auto;
+        padding-top: 4rem;
+
+        button {
+          color: #542c58;
+          background-color: white;
+          border-color: #542c58;
+          font-size: 2rem;
+          text-transform: uppercase;
+          padding: 10px 20px;
+          font-weight: 600;
+          &:hover,
+          &:focus {
+            color: white;
+            background-color: #542c58;
+            border-color: #542c58;
+            box-shadow: none;
+          }
+        }
+      }
+    }
   }
 
   .projects-intro {
     text-align: center;
+    border: 2px solid $secondary;
   }
 }

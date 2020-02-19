@@ -1,24 +1,32 @@
-import React, { Component } from 'react';
-import { Link } from 'gatsby';
-import { Row, Col } from 'reactstrap';
-// import Img from 'gatsby-image';
+import React from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Col } from 'reactstrap';
+import Img from 'gatsby-image';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-class Projects extends Component {
-  state = {};
+const Me = props => {
+  const data = useStaticQuery(graphql`
+    {
+      file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "gatsby-astronaut.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+  return (
+    <ScrollAnimation animateIn="slideInUp" duration={1.5} animateOnce={true}>
+      <Col className="index-page-wrapper">
+        <div className="intro">
+          <Link to="/blog/">Developing Blog</Link>
 
-  componentWillUnmount() {}
-
-  componentDidMount() {}
-
-  render() {
-    return (
-      <Row>
-        <Col className="index-page-wrapper">
-          <div className="intro">
-            <Link to="/blog/">Developing Blog</Link>
-
-            <div className="typed-wrapper">
-              {/* <Typed
+          <div className="typed-wrapper">
+            {/* <Typed
           className="info"
           strings={['Hello', 'Hola', 'Bonjour', 'Olá', 'Gluten Tag']}
           typeSpeed={40}
@@ -28,15 +36,16 @@ class Projects extends Component {
         >
           <input type="text" />
         </Typed> */}
-            </div>
-            <br />
-            {/* <Img
-            alt="Me, Myself, and I"
-            className="me"
-            fixed={data.placeholderImage.childImageSharp.fixed}
-          /> */}
+          </div>
+          <ScrollAnimation animateIn="fadeIn" delay={1500} animateOnce={true}>
+            <Img
+              fixed={data.file.childImageSharp.fixed}
+              alt="CC"
+              className="logo-img"
+            />
             <div className="contact">
-              contact me:&nbsp;
+              Hello.
+              <br /> contact me:&nbsp;
               <a href="/" target="_blank">
                 <img
                   alt="Email Icon"
@@ -59,6 +68,8 @@ class Projects extends Component {
                 />
               </a>
             </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeIn" delay={1500} animateOnce={true}>
             <div className="info">
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random
@@ -81,27 +92,11 @@ class Projects extends Component {
                 Rackham.
               </p>
             </div>
-          </div>
-        </Col>
-      </Row>
-    );
-  }
-}
+          </ScrollAnimation>
+        </div>
+      </Col>
+    </ScrollAnimation>
+  );
+};
 
-export default Projects;
-
-// const data = useStaticQuery(graphql`
-//   query {
-//     placeholderImage: file(relativePath: { eq: "code2.jpeg" }) {
-//       childImageSharp {
-//         fixed(width: 250) {
-//           base64
-//           width
-//           height
-//           src
-//           srcSet
-//         }
-//       }
-//     }
-//   }
-// `);
+export default Me;

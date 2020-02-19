@@ -1,66 +1,86 @@
 import React, { Component } from 'react';
 // import { Link } from 'gatsby';
 import { Row, Col } from 'reactstrap';
-import {
-  CircularProgressbar,
-  CircularProgressbarWithChildren
-} from 'react-circular-progressbar';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import VisibilitySensor from 'react-visibility-sensor';
 import 'react-circular-progressbar/dist/styles.css';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class SkillSliders extends Component {
-  state = {};
+  constructor() {
+    super();
 
-  componentWillUnmount() {
-    //  if (this.intervalID === null) return;
-    //  clearInterval(this.intervalID);
+    this.state = {
+      skills: [
+        { name: 'HTML', number: 90 },
+        { name: '(S)CSS', number: 90 },
+        { name: 'Javascript', number: 80 },
+        { name: 'React.js', number: 80 },
+        { name: 'Emails', number: 80 },
+        { name: 'Next.js', number: 80 },
+        { name: 'Wordpress', number: 80 },
+        { name: '____', number: 80 }
+      ],
+      itemsToShow: 4,
+      expanded: false
+    };
+
+    this.showMore = this.showMore.bind(this);
   }
-  componentDidMount() {
-    //  this.intervalID = setInterval(() => {s
-    //    this.setState(state => {
-    //      return {s
-    //        ...state,
-    //        networkSpeed: getRandomNumber(),
-    //        cpu: getRandomNumber(),
-    //        memory: getRandomNumber()
-    //      };
-    //    });
-    //  }, 3000);
+
+  showMore() {
+    this.state.itemsToShow === 4
+      ? this.setState({ itemsToShow: this.state.skills.length, expanded: true })
+      : this.setState({ itemsToShow: 4, expanded: false });
   }
+
   render() {
-    // console.log(this.getData());
     return (
       <Row>
         <Col className="skill-sliders">
-          <p>Skills</p>
-          <VisibilitySensor>
-            {({ isVisible }) => {
-              const react = isVisible ? 80 : 0;
-              const next = isVisible ? 75 : 0;
-              const html = isVisible ? 95 : 0;
-              const js = isVisible ? 85 : 0;
-              return (
-                <Row>
-                  <Col xs="6" md="3" className="skillName">
-                    <p>Emails</p>
-                    <CircularProgressbar value={html} text={`${html}%`} />
+          <div className="format">
+            <p>What I can do.</p>
+
+            <Row>
+              {this.state.skills
+                .slice(0, this.state.itemsToShow)
+                .map((skill, i) => (
+                  <Col xs="12" sm="6" md="3" className="skillName" key={i}>
+                    <ReactCSSTransitionGroup
+                      className="gauges"
+                      transitionName="fade"
+                      transitionEnterTimeout={500}
+                      transitionLeaveTimeout={500}
+                    >
+                      <VisibilitySensor>
+                        {({ isVisible }) => {
+                          return (
+                            <>
+                              <p>{skill.name}</p>
+                              <CircularProgressbar
+                                value={isVisible ? skill.number : 0}
+                                text={`${skill.number}%`}
+                              />
+                            </>
+                          );
+                        }}
+                      </VisibilitySensor>
+                    </ReactCSSTransitionGroup>
                   </Col>
-                  <Col xs="6" md="3" className="skillName">
-                    <p>Javascript</p>
-                    <CircularProgressbar value={js} text={`${js}%`} />
-                  </Col>
-                  <Col xs="6" md="3" className="skillName">
-                    <p>React.js</p>
-                    <CircularProgressbar value={react} text={`${react}%`} />
-                  </Col>
-                  <Col xs="6" md="3" className="skillName">
-                    <p>Next.js</p>
-                    <CircularProgressbar value={next} text={`${next}%`} />
-                  </Col>
-                </Row>
-              );
-            }}
-          </VisibilitySensor>
+                ))}
+
+              <br />
+              <div className="show-more">
+                <button className="btn btn-primary" onClick={this.showMore}>
+                  {this.state.expanded ? (
+                    <span>Show Less</span>
+                  ) : (
+                    <span>Show More</span>
+                  )}
+                </button>
+              </div>
+            </Row>
+          </div>
         </Col>
       </Row>
     );

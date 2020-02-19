@@ -32,7 +32,7 @@ const Header = props => {
   let displayHeader = 'none';
 
   if (scrollPos > 60) {
-    headerBgColor = '#ffffffdb';
+    headerBgColor = 'rgba(61, 62, 61, 0.50)';
     displayHeader = 'block';
   }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import PageWrapper from '../components/PageWrapper.js';
 import Me from '../components/Me.js';
 import Projects from '../components/Projects';
@@ -67,10 +67,18 @@ class Index extends Component {
         headerHide={this.state.headerHide}
       >
         {this.state.showIndexPage ? (
-          <Container className="index-page">
-            <Me />
-            <Projects />
-          </Container>
+          <>
+            <Container className="index-page">
+              <Row>
+                <Me />
+              </Row>
+            </Container>
+            <Container className="project-wrapper">
+              <Row>
+                <Projects />
+              </Row>
+            </Container>
+          </>
         ) : null}
       </PageWrapper>
     );

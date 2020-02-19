@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './header';
 import SEO from './seo';
+import { Helmet } from 'react-helmet';
 import Footer from './footer';
 import InitialAnimation from '../components/animations/InitialAnimation';
 
@@ -17,6 +18,13 @@ const PageWrapper = ({
 }) => {
   return (
     <>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+        />
+        {/* animate on scroll js */}
+      </Helmet>
       <SEO title={pageTitle} keywords={pageKeywords} />
       <div
         className={`background ${className}`}

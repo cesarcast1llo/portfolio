@@ -20,7 +20,7 @@ const Me = props => {
     }
   `);
   return (
-    <ScrollAnimation animateIn="slideInUp" duration={2} animateOnce={true}>
+    <ScrollAnimation animateIn="slideInUp" duration={1.5} animateOnce={true}>
       <Col className="index-page-wrapper">
         <div className="intro">
           <Link to="/blog/">Developing Blog</Link>
@@ -37,7 +37,7 @@ const Me = props => {
           <input type="text" />
         </Typed> */}
           </div>
-          <ScrollAnimation animateIn="fadeInUp" duration={2} animateOnce={true}>
+          <ScrollAnimation animateIn="fadeIn" delay={1750} animateOnce={true}>
             <Img
               fixed={data.file.childImageSharp.fixed}
               alt="CC"
@@ -69,7 +69,7 @@ const Me = props => {
               </a>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" duration={2} animateOnce={true}>
+          <ScrollAnimation animateIn="fadeIn" delay={1750} animateOnce={true}>
             <div className="info">
               <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random

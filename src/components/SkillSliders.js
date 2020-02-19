@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'gatsby';
 import { Row, Col } from 'reactstrap';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -39,7 +38,12 @@ export default class SkillSliders extends Component {
       <Row>
         <Col className="skill-sliders">
           <div className="format">
-            <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              // delay={1000}
+              animateOnce={true}
+            >
               <p>What I can do.</p>
 
               <Row>
@@ -47,7 +51,7 @@ export default class SkillSliders extends Component {
                   .slice(0, this.state.itemsToShow)
                   .map((skill, i) => (
                     <Col xs="12" sm="6" md="3" className="skillName" key={i}>
-                      <VisibilitySensor intervalDelay={3500}>
+                      <VisibilitySensor intervalDelay={4000}>
                         {({ isVisible }) => {
                           return (
                             <>

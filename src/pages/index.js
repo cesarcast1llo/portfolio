@@ -5,7 +5,6 @@ import Me from '../components/Me.js';
 import Projects from '../components/Projects';
 import { Cookies } from 'react-cookie';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
-
 const cookies = new Cookies();
 
 class Index extends Component {

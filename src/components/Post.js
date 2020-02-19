@@ -5,10 +5,6 @@ import { tagCapital } from '../utils/utilityFunctions.js';
 import { Badge, Col, Row } from 'reactstrap';
 import { slugify } from '../utils/utilityFunctions.js';
 
-// TODO before loading the card, run through tags and delete duplicates
-// or else well keep getting multiple different tags on /tags page
-// because of the chance of mispelling, camelcase, etc
-
 const Post = ({ title, slug, date, body, fluid, tags }) => (
   <Row>
     <Col md="6" className="blog-image">

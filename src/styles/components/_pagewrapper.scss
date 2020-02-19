@@ -59,7 +59,7 @@
 
 .heroBg {
   @extend .background;
-  animation: 1250ms polygon;
+  animation: 1s polygon;
 
   @keyframes polygon {
     0% {

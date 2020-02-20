@@ -38,14 +38,16 @@ export default class SkillSliders extends Component {
       <Row>
         <Col className="skill-sliders">
           <div className="format">
+            <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+              <p>What I can do.</p>
+            </ScrollAnimation>
+
             <ScrollAnimation
               animateIn="fadeIn"
               duration={2}
-              // delay={1000}
+              delay={1000}
               animateOnce={true}
             >
-              <p>What I can do.</p>
-
               <Row>
                 {this.state.skills
                   .slice(0, this.state.itemsToShow)
@@ -72,16 +74,41 @@ export default class SkillSliders extends Component {
                     </Col>
                   ))}
 
-                <br />
-                <div className="show-more">
-                  <button className="btn btn-primary" onClick={this.showMore}>
-                    {this.state.expanded ? (
-                      <span>Show Less</span>
-                    ) : (
-                      <span>Show More</span>
-                    )}
-                  </button>
-                </div>
+                <Col md="12">
+                  <div className="show-more">
+                    <button className="btn btn-primary" onClick={this.showMore}>
+                      {this.state.expanded ? (
+                        <span>Show Less</span>
+                      ) : (
+                        <span>Show More</span>
+                      )}
+                    </button>
+                  </div>
+                </Col>
+              </Row>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="slideInRight"
+              duration={1.5}
+              delay={2500}
+              animateOnce={true}
+            >
+              <Row>
+                <Col md="5" className="other-tools">
+                  Other Tools:
+                </Col>
+                <Col md="7" className="other-tools-icon">
+                  <img alt="Github" className="github" />
+                  <img alt="Heroku" className="heroku" />
+                  <img alt="Amazon Web Services" className="aws" />
+                  <img alt="Salesforce" className="salesforce" />
+                  <div style={{ display: 'inline-block' }}>
+                    <img alt="Adobe Photoshop" className="photoshop" />
+                    <img alt="Adobe InDesign" className="indesign" />
+                    <img alt="Adobe XD" className="xd" />
+                    <img alt="Sketch" className="sketch" />
+                  </div>
+                </Col>
               </Row>
             </ScrollAnimation>
           </div>

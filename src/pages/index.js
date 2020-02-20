@@ -11,8 +11,7 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // animation: cookies.get('activate') || '',
-      animation: '',
+      cookies: cookies.get('activate') || '',
       className: 'cookies-animation',
       showIndexPage: false,
       animationText: '',
@@ -20,32 +19,35 @@ class Index extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   if (this.state.cookies === cookies.get('activate')) {
-  //     this.setState({
-  //       className: '',
-  //       showIndexPage: true,
-  //       headerHide: 'block'
-  //     });
-  //     enableBodyScroll(this.targetElement);
-  //   } else {
-  //     this.targetElement = document.querySelector('body');
-  //     disableBodyScroll(this.targetElement);
-  //     this.setState({
-  //       headerHide: 'none'
-  //     });
-  //     setTimeout(() => {
-  //       this.setState(prevState => ({
-  //         className: 'heroBg',
-  //         showIndexPage: true,
-  //         animationText: 'hide-name',
-  //         cookies: cookies.get('activate'),
-  //         headerHide: 'block'
-  //       }));
-  //       enableBodyScroll(this.targetElement);
-  //     }, 1000);
-  //   }
-  // }
+  componentDidMount() {
+    if (this.state.cookies === cookies.get('activate')) {
+      this.setState({
+        className: '',
+        showIndexPage: true,
+        headerHide: 'block'
+      });
+      enableBodyScroll(this.targetElement);
+    } else {
+      this.targetElement = document.querySelector('body');
+      disableBodyScroll(this.targetElement);
+      this.setState({
+        headerHide: 'none'
+      });
+      setTimeout(
+        () => {
+          this.setState(prevState => ({
+            className: 'heroBg',
+            showIndexPage: true,
+            animationText: 'hide-name',
+            cookies: cookies.get('activate'),
+            headerHide: 'block'
+          }));
+          enableBodyScroll(this.targetElement);
+        }
+        // , 1000
+      );
+    }
+  }
 
   // componentDidUpdate() {
   //   cookies.set('activate', 'true', {
@@ -69,9 +71,7 @@ class Index extends Component {
         {this.state.showIndexPage ? (
           <>
             <Container className="index-page">
-              <Row>
-                <Me />
-              </Row>
+              <Me />
             </Container>
             <Container className="project-wrapper">
               <Row>

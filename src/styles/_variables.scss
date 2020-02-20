@@ -42,7 +42,7 @@ a {
 }
 
 :focus {
-  outline: none;
+  outline: none !important;
   box-shadow: none;
 }
 

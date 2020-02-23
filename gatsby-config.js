@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Cesar Castillo`,
+    title: `Front End Developer`,
+    author: `Cesar Castillo`,
     description: `Building portfolio as well as blog to showcase my experience and JS logic`,
-    author: `Cesar C`
+    siteUrl: `https://www.cesarcast1llo.com/`,
+    social: {
+      github: `https://github.com/cesarcast1llo`,
+      linkedin: `https://www.linkedin.com/in/cescastillo/`
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,10 +46,43 @@ module.exports = {
       options: {
         excerpt_separator: `<!-- end -->`
       }
-    }
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: process.env.GITHUB_TOKEN,
+        graphQLQuery: `{
+              search(query: "fmonteslab user:fmontes", type: REPOSITORY, first: 10) {
+                  edges {
+                      node {
+                          ... on Repository {
+                              name
+                              url
+                              homepageUrl
+                              description
+                              createdAt
+                              pushedAt
+                              primaryLanguage {
+                                  id
+                                  name
+                              }
+                              repositoryTopics(first: 100) {
+                                  edges {
+                                      node {
+                                          topic {
+                                              name
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+          `
+      }
+    },
+    `gatsby-plugin-offline`
   ]
 };

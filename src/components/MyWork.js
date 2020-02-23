@@ -6,8 +6,29 @@ import Projects from './MyWork/Projects';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const MyWork = props => {
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     allFile(filter: { extension: { eq: "pdf" } }) {
+  //       edges {
+  //         node {
+  //           publicURL
+  //           name
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   return (
     <Col className="project-wrapper">
+      {/* {data.allFile.edges.map((file, index) => {
+        return (
+          <li key={`pdf-${index}`}>
+            <a href={file.node.publicURL} download>
+              {file.node.name}
+            </a>
+          </li>
+        );
+      })} */}
       <SkillSliders />
       <Projects />
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>

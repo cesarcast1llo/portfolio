@@ -4,6 +4,16 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import VisibilitySensor from 'react-visibility-sensor';
 import 'react-circular-progressbar/dist/styles.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+// shorten
+import github from '../../assets/images/logos/github.png';
+import heroku from '../../assets/images/logos/heroku.png';
+import aws from '../../assets/images/logos/aws.png';
+import sf from '../../assets/images/logos/salesforce.png';
+import psd from '../../assets/images/logos/photoshop.png';
+import inD from '../../assets/images/logos/indesign.png';
+import xd from '../../assets/images/logos/xd.png';
+import sketch from '../../assets/images/logos/sketch.svg';
+// find a way to shorten this down ^^^
 
 export default class SkillSliders extends Component {
   constructor() {
@@ -44,12 +54,12 @@ export default class SkillSliders extends Component {
               delay={250}
               animateOnce={true}
             >
-              <p>What I can do.</p>
+              <div className="intro">What I can do.</div>
             </ScrollAnimation>
 
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={2}
+              duration={1}
               delay={750}
               animateOnce={true}
             >
@@ -58,7 +68,7 @@ export default class SkillSliders extends Component {
                   .slice(0, this.state.itemsToShow)
                   .map((skill, i) => (
                     <Col xs="12" sm="6" md="3" className="skillName" key={i}>
-                      <VisibilitySensor intervalDelay={2500}>
+                      <VisibilitySensor intervalDelay={4000}>
                         {({ isVisible }) => {
                           return (
                             <>
@@ -69,7 +79,7 @@ export default class SkillSliders extends Component {
                                 value={isVisible ? skill.number : 0}
                                 text={`${skill.number}%`}
                                 styles={buildStyles({
-                                  pathTransitionDuration: 3
+                                  pathTransitionDuration: 2.5
                                 })}
                               />
                             </>
@@ -93,9 +103,9 @@ export default class SkillSliders extends Component {
               </Row>
             </ScrollAnimation>
             <ScrollAnimation
-              animateIn="slideInRight"
+              animateIn="flipInX"
               duration={1.5}
-              delay={2500}
+              delay={3500}
               animateOnce={true}
             >
               <Row>
@@ -103,15 +113,15 @@ export default class SkillSliders extends Component {
                   Other Tools:
                 </Col>
                 <Col md="7" className="other-tools-icon">
-                  <img alt="Github" className="github" />
-                  <img alt="Heroku" className="heroku" />
-                  <img alt="Amazon Web Services" className="aws" />
-                  <img alt="Salesforce" className="salesforce" />
+                  <img alt="Github" className="github" src={github} />
+                  <img alt="Heroku" className="heroku" src={heroku} />
+                  <img alt="Amazon Web Services" className="aws" src={aws} />
+                  <img alt="Salesforce" className="sf" src={sf} />
                   <div style={{ display: 'inline-block' }}>
-                    <img alt="Adobe Photoshop" className="photoshop" />
-                    <img alt="Adobe InDesign" className="indesign" />
-                    <img alt="Adobe XD" className="xd" />
-                    <img alt="Sketch" className="sketch" />
+                    <img alt="Adobe Photoshop" className="psd" src={psd} />
+                    <img alt="Adobe InDesign" className="inD" src={inD} />
+                    <img alt="Adobe XD" className="xd" src={xd} />
+                    <img alt="Sketch" className="sketch" src={sketch} />
                   </div>
                 </Col>
               </Row>

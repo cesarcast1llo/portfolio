@@ -9,12 +9,10 @@
   text-align: center;
   color: $secondary;
   // background: $gradient;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 3rem 1rem;
   width: 100%;
   @media (min-width: $XS) {
-    padding-top: 5rem;
-    padding-bottom: 10rem;
+    padding: 4rem 1.5rem;
     clip-path: polygon(
       0 calc(0% + 45px),
       100% 0,
@@ -39,6 +37,12 @@
 
     p {
       font-size: 5rem;
+    }
+    .em_hide370 {
+      display: none;
+      @media (min-width: 370px) {
+        display: block;
+      }
     }
   }
 }

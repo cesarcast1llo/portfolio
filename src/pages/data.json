@@ -1,0 +1,101 @@
+{
+  "portfolio": {
+    "alt": ["construction alt text needed here"],
+    "jobs": [
+      {
+        "mainImg": ["/static/img/test.jpg"],
+        "buttonName": ["First Gallery"],
+        "jobDescription": [
+          "Job 2<br/> Started 01/01/2019 - Completed 04/01/2019 <br/> This was a renovated pool house with minimal stability foundation that was turned into a modern pool house with pillar stability and bathroom functionality"
+        ],
+        "jobTitle": ["Corte Madera, CA - Bathroom Remodelation"],
+        "jobSubTitle": [
+          "Description of job and procedure <br/> Descroiption of jopb <br/> list the process"
+        ],
+        "first": {
+          "key": "1",
+          "src": "/static/img/video-poster.jpg",
+          "caption": "111caption yooooo"
+        },
+        "second": {
+          "key": "2",
+          "src": "/static/img/placeholder.png",
+          "caption": "2222caption yooooo"
+        },
+        "third": {
+          "key": "3",
+          "src": "/static/img/uncharted.jpg",
+          "caption": "3333caption yooooo"
+        },
+        "fourth": {
+          "key": "4",
+          "src": "/static/img/test.jpg",
+          "caption": "4444caption yooooo"
+        },
+        "fifth": {
+          "key": "5",
+          "src": "/static/img/barca.png",
+          "caption": "555caption yooooo"
+        },
+        "altText": "JCC consruction"
+      },
+      {
+        "mainImg": ["/static/img/test.jpg"],
+        "buttonName": ["First Gallery"],
+        "jobDescription": [
+          "Job 2<br/> Started 01/01/2019 - Completed 04/01/2019 <br/> This was a renovated pool house with minimal stability foundation that was turned into a modern pool house with pillar stability and bathroom functionality"
+        ],
+        "jobTitle": ["Corte Madera, CA - Bathroom Remodelation"],
+        "jobSubTitle": [
+          "Description of job and procedure  Description of job and procedure Description of job and procedure Description of job and procedure Description of job and procedureDescription of job and procedure <br/> Descroiption of jopb <br/> list the process"
+        ],
+        "first": {
+          "key": "1",
+          "src": "/static/img/video-poster.jpg",
+          "caption": "111caption yooooo"
+        },
+        "second": {
+          "key": "2",
+          "src": "/static/img/placeholder.png",
+          "caption": "2222caption yooooo"
+        },
+        "third": {
+          "key": "3",
+          "src": "/static/img/uncharted.jpg",
+          "caption": "3333caption yooooo"
+        },
+        "fourth": {
+          "key": "4",
+          "src": "/static/img/test.jpg",
+          "caption": "4444caption yooooo"
+        },
+        "fifth": {
+          "key": "5",
+          "src": "/static/img/barca.png",
+          "caption": "555caption yooooo"
+        },
+        "altText": "JCC consruction"
+      }
+    ]
+  },
+  "contact": {
+    "reviews": [
+      {
+        "quote": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text text text&nbsp;texttext&nbsp;text",
+        "author": "Lorem Ipsum"
+      },
+      {
+        "id": 2,
+        "altText": "2222Review 1",
+        "quote": "2222There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text text text&nbsp;texttext&nbsp;text",
+        "author": "222Lorem Ipsum"
+      },
+      {
+        "id": 3,
+        "altText": "33Review 3",
+        "quote": "333There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text text text&nbsp;texttext&nbsp;text",
+        "author": "333Lorem Ipsum"
+      }
+    ]
+  }
+}

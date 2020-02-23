@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import SkillSliders from './MyWork/SkillSliders';
 import Projects from './MyWork/Projects';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -19,7 +19,7 @@ const MyWork = props => {
   //   }
   // `);
   return (
-    <Col className="project-wrapper">
+    <Container className="projects-wrapper">
       {/* {data.allFile.edges.map((file, index) => {
         return (
           <li key={`pdf-${index}`}>
@@ -31,6 +31,7 @@ const MyWork = props => {
       })} */}
       <SkillSliders />
       <Projects />
+
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
         <h1>
           <u>Technical</u>
@@ -58,7 +59,7 @@ const MyWork = props => {
           </ul>
         </div>
       </ScrollAnimation>
-    </Col>
+    </Container>
   );
 };
 

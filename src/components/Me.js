@@ -40,20 +40,12 @@ const Me = props => {
 
               <div className="info">
                 <p>
-                  have big letters in bold, turning off and on for highlighting
-                  words, thing giant js and chris project
-                </p>{' '}
-                <p>
-                  have big letters in bold, turning off and on for highlighting
-                  words, thing giant js and chris project
-                </p>{' '}
-                <p>
-                  have big letters in bold, turning off and on for highlighting
-                  words, thing giant js and chris project
-                </p>{' '}
-                <p>
-                  have big letters in bold, turning off and on for highlighting
-                  words, thing giant js and chris project
+                  Lorem Ipsum log latin language for text fill Lorem Ipsum log
+                  latin language for text fillLorem Ipsum log latin language for
+                  text fill Lorem Ipsum log latin language for text fill Lorem
+                  Ipsum log latin language for text fill Lorem Ipsum log latin
+                  language for text fillLorem Ipsum log latin language for text
+                  fill
                 </p>
               </div>
             </ScrollAnimation>

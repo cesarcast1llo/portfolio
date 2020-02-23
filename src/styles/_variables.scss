@@ -52,17 +52,7 @@ h3 {
   color: $secondary;
 }
 
-.mobile-hide {
-  @media (max-width: 767px) {
-    display: none !important;
-  }
-}
-
-.desktop-hide {
-  @media (min-width: 768px) {
-    display: none !important;
-  }
-}
+// 768px and below
 .em_hide_desktop {
   display: block !important;
   @media (min-width: $S) {
@@ -70,6 +60,15 @@ h3 {
   }
 }
 
+// 480px and below
+.em_hide_mobile {
+  display: block !important;
+  @media (min-width: $mobile) {
+    display: none !important;
+  }
+}
+
+// 768px and above
 .em_hide {
   display: none !important;
   @media (min-width: $S) {

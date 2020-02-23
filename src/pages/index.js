@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 import PageWrapper from '../components/PageWrapper.js';
 import Me from '../components/Me.js';
 import MyWork from '../components/MyWork';
@@ -66,11 +66,7 @@ class Index extends Component {
             <Container className="index-page">
               <Me />
             </Container>
-            <Container className="project-wrapper">
-              <Row>
-                <MyWork />
-              </Row>
-            </Container>
+            <MyWork />
           </>
         ) : null}
       </PageWrapper>

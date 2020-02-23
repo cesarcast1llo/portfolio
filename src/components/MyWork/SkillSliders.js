@@ -113,16 +113,15 @@ export default class SkillSliders extends Component {
                   Other Tools:
                 </Col>
                 <Col md="7" className="other-tools-icon">
+                  <img alt="Adobe Photoshop" className="psd" src={psd} />
+                  <img alt="Adobe InDesign" className="inD" src={inD} />
+                  <img alt="Sketch" className="sketch" src={sketch} />
+                  <img alt="Adobe XD" className="xd" src={xd} />
+                  <br className="em_hide_mobile" />
                   <img alt="Github" className="github" src={github} />
                   <img alt="Heroku" className="heroku" src={heroku} />
                   <img alt="Amazon Web Services" className="aws" src={aws} />
                   <img alt="Salesforce" className="sf" src={sf} />
-                  <div style={{ display: 'inline-block' }}>
-                    <img alt="Adobe Photoshop" className="psd" src={psd} />
-                    <img alt="Adobe InDesign" className="inD" src={inD} />
-                    <img alt="Adobe XD" className="xd" src={xd} />
-                    <img alt="Sketch" className="sketch" src={sketch} />
-                  </div>
                 </Col>
               </Row>
             </ScrollAnimation>

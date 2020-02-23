@@ -31,13 +31,7 @@
           "key": "4",
           "src": "/static/img/test.jpg",
           "caption": "4444caption yooooo"
-        },
-        "fifth": {
-          "key": "5",
-          "src": "/static/img/barca.png",
-          "caption": "555caption yooooo"
-        },
-        "altText": "JCC consruction"
+        }
       },
       {
         "mainImg": ["/static/img/test.jpg"],
@@ -68,13 +62,7 @@
           "key": "4",
           "src": "/static/img/test.jpg",
           "caption": "4444caption yooooo"
-        },
-        "fifth": {
-          "key": "5",
-          "src": "/static/img/barca.png",
-          "caption": "555caption yooooo"
-        },
-        "altText": "JCC consruction"
+        }
       }
     ]
   },

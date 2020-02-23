@@ -30,13 +30,6 @@ const images = [
     caption: `${Data.portfolio.jobs[0].fourth.caption}`,
     header: ' ',
     altText: `${Data.portfolio.jobs[0].altText}`
-  },
-  {
-    key: `${Data.portfolio.jobs[0].fifth.key}`,
-    src: `${Data.portfolio.jobs[0].fifth.src}`,
-    caption: `${Data.portfolio.jobs[0].fifth.caption}`,
-    header: ' ',
-    atText: `${Data.portfolio.jobs[0].altText}`
   }
 ];
 

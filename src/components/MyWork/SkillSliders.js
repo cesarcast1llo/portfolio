@@ -63,7 +63,7 @@ export default class SkillSliders extends Component {
               delay={750}
               animateOnce={true}
             >
-              <Row>
+              <Row className="justify-content-center">
                 {this.state.skills
                   .slice(0, this.state.itemsToShow)
                   .map((skill, i) => (
@@ -89,16 +89,14 @@ export default class SkillSliders extends Component {
                     </Col>
                   ))}
 
-                <Col md="12">
-                  <div className="show-more">
-                    <button className="btn btn-primary" onClick={this.showMore}>
-                      {this.state.expanded ? (
-                        <span>Show Less</span>
-                      ) : (
-                        <span>Show More</span>
-                      )}
-                    </button>
-                  </div>
+                <Col md="12" className="show-more">
+                  <button className="btn btn-primary" onClick={this.showMore}>
+                    {this.state.expanded ? (
+                      <span>Show Less</span>
+                    ) : (
+                      <span>Show More</span>
+                    )}
+                  </button>
                 </Col>
               </Row>
             </ScrollAnimation>

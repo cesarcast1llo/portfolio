@@ -52,6 +52,27 @@ h3 {
   color: $secondary;
 }
 
+.index-page-button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.8rem 0;
+  font-weight: 600;
+  width: 190px;
+  max-width: 190px;
+  @media (min-width: $S) {
+    width: 200px;
+    max-width: 200px;
+    padding: 1rem 0;
+  }
+  &:hover {
+    box-shadow: none;
+  }
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+}
+
 // 768px and below
 .em_hide_desktop {
   display: block !important;

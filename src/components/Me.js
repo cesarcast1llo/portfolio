@@ -48,25 +48,13 @@ const Me = props => {
                 Hello.
                 <br /> contact me:&nbsp;
                 <a href="/" target="_blank">
-                  <img
-                    alt="Email Icon"
-                    className="email"
-                    src="https://img.Icons8.com/small/90/3d3e3d/filled-message.png"
-                  />
+                  <img alt="Email Icon" className="email" />
                 </a>
                 <a href="/" target="_blank">
-                  <img
-                    className="github"
-                    alt="Github Icon"
-                    src="https://img.icons8.com/ios-glyphs/120/3d3e3d/github.png"
-                  />
+                  <img className="github" alt="Github Icon" />
                 </a>
                 <a href="/" target="_blank">
-                  <img
-                    alt="LinkedIn icon"
-                    className="lnkdin"
-                    src="https://img.icons8.com/ios-filled/100/3d3e3d/linkedin.png"
-                  />
+                  <img alt="LinkedIn icon" className="lnkdin" />
                 </a>
               </div>
 

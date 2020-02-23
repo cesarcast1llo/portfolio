@@ -38,14 +38,19 @@ export default class SkillSliders extends Component {
       <Row>
         <Col className="skill-sliders">
           <div className="format">
-            <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce={true}>
+            <ScrollAnimation
+              animateIn="fadeIn"
+              duration={2}
+              delay={250}
+              animateOnce={true}
+            >
               <p>What I can do.</p>
             </ScrollAnimation>
 
             <ScrollAnimation
               animateIn="fadeIn"
               duration={2}
-              delay={1000}
+              delay={750}
               animateOnce={true}
             >
               <Row>
@@ -53,13 +58,13 @@ export default class SkillSliders extends Component {
                   .slice(0, this.state.itemsToShow)
                   .map((skill, i) => (
                     <Col xs="12" sm="6" md="3" className="skillName" key={i}>
-                      <VisibilitySensor intervalDelay={4000}>
+                      <VisibilitySensor intervalDelay={2500}>
                         {({ isVisible }) => {
                           return (
                             <>
                               <p>{skill.name}</p>
                               <CircularProgressbar
-                                duration={4}
+                                duration={3}
                                 counterClockwise
                                 value={isVisible ? skill.number : 0}
                                 text={`${skill.number}%`}

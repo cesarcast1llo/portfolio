@@ -1,0 +1,161 @@
+.skill-sliders {
+  clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
+  -webkit-clip-path: polygon(
+    0 calc(0% + 25px),
+    100% 0,
+    100% calc(100% - 25px),
+    0 100%
+  );
+  text-align: center;
+  color: white;
+  background: $gradient;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  width: 100%;
+  @media (min-width: $XS) {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+  }
+
+  .format {
+    margin: 0 auto;
+    max-width: 980px !important;
+
+    @media (min-width: $XS) {
+      padding: 0 25px;
+    }
+
+    p {
+      font-size: 5rem;
+    }
+
+    .skillName {
+      padding: 30px 10px 0;
+      max-width: 85%;
+      margin: 0 auto;
+      @media (min-width: $mobile) {
+        max-width: 70%;
+      }
+      @media (min-width: $XS) {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 28px;
+        @media (min-width: $XS) {
+          font-size: 30px;
+        }
+        margin-bottom: 1.5rem;
+      }
+      .CircularProgressbar {
+        width: 85%;
+      }
+      .CircularProgressbar-path {
+        stroke: #542c85;
+        fill: #542c85;
+      }
+      .CircularProgressbar-text {
+        stroke: white;
+        fill: white;
+      }
+    }
+
+    .show-more {
+      margin: 0 auto;
+      padding-top: 4rem;
+
+      button {
+        border: 0;
+        color: #542c58;
+        background-color: white;
+        border-color: #542c58;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        font-weight: 600;
+        &:hover {
+          border: 0;
+          color: white;
+          background-color: #542c58;
+          border-color: #542c58;
+          box-shadow: none;
+        }
+        &:focus {
+          outline: none !important;
+          box-shadow: none;
+        }
+      }
+    }
+
+    .other-tools {
+      padding: 6rem 0 0;
+      font-size: 3.5rem;
+    }
+
+    .other-tools-icon {
+      padding: 0;
+
+      @media (min-width: $S) {
+        padding: 5rem 0 0;
+        text-align: right;
+      }
+
+      .github {
+        max-width: 45px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/ios-glyphs/120/ffffff/github.png');
+      }
+      .heroku {
+        margin-right: 3px;
+        max-width: 41px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/color/144/000000/heroku.png');
+      }
+      .aws {
+        margin-right: 6px;
+        max-width: 45px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/windows/128/ffffff/amazon-web-services.png');
+      }
+      .salesforce {
+        margin-right: 2px;
+        max-width: 50px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/color/144/000000/salesforce.png');
+      }
+      .photoshop {
+        max-width: 48px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/color/144/000000/adobe-photoshop.png');
+      }
+      .indesign {
+        max-width: 48px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/color/144/000000/adobe-indesign.png');
+      }
+      .xd {
+        margin-right: 3px;
+        max-width: 48px;
+        margin-top: 12px;
+        content: url('https://img.icons8.com/color/144/000000/adobe-xd.png');
+      }
+      .sketch {
+        max-width: 40px;
+        margin-top: 12px;
+        content: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Sketch_Logo.svg');
+      }
+    }
+  }
+}

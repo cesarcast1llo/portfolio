@@ -5,8 +5,8 @@ import { Badge, Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import { slugify, tagCapital } from '../utils/utilityFunctions.js';
 import { Link } from 'gatsby';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../components/pageWrapper/header';
+import Footer from '../components/pageWrapper/footer';
 
 const SinglePost = ({ data, pageContext, location }) => {
   const post = data.markdownRemark.frontmatter;

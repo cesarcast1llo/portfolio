@@ -2,8 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { Navbar } from 'reactstrap';
 import Img from 'gatsby-image';
-import Hamburg from '../components/Hamburg';
-import useScrollPosition from '../utils/scrollPosition.js';
+import Hamburg from './Hamburg';
+import useScrollPosition from '../../utils/scrollPosition.js';
 import { useStaticQuery } from 'gatsby';
 
 const Header = props => {

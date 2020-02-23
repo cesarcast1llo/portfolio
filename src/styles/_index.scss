@@ -7,7 +7,7 @@
   .index-page-wrapper {
     border-radius: 10px;
     background-color: white;
-    padding: 40px 15px 50px;
+    padding: 40px 15px 40px;
     margin: 0 8px;
 
     @media (min-width: $XS) {
@@ -59,7 +59,8 @@
         }
 
         .email {
-          width: 20px;
+          content: url('https://img.Icons8.com/small/90/3d3e3d/filled-message.png');
+          max-width: 20px;
           margin-bottom: 0.2rem;
           margin-right: 5px;
           @media (min-width: $XS) {
@@ -67,7 +68,8 @@
           }
         }
         .github {
-          width: 20px;
+          content: url('https://img.icons8.com/ios-glyphs/120/3d3e3d/github.png');
+          max-width: 20px;
           margin-bottom: 0.4rem;
           margin-right: 5px;
           @media (min-width: $XS) {
@@ -75,7 +77,8 @@
           }
         }
         .lnkdin {
-          width: 20px;
+          content: url('https://img.icons8.com/ios-filled/100/3d3e3d/linkedin.png');
+          max-width: 20px;
           margin-bottom: 0.4rem;
         }
       }

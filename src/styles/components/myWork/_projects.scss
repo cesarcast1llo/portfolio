@@ -1,0 +1,44 @@
+.projects {
+  clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
+  -webkit-clip-path: polygon(
+    0 calc(0% + 25px),
+    100% 0,
+    100% calc(100% - 25px),
+    0 100%
+  );
+  text-align: center;
+  color: $secondary;
+  // background: $gradient;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  @media (min-width: $XS) {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+  }
+
+  .format {
+    margin: 0 auto;
+    max-width: 980px !important;
+
+    @media (min-width: $XS) {
+      padding: 0 25px;
+    }
+
+    p {
+      font-size: 5rem;
+    }
+  }
+}

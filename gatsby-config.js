@@ -47,42 +47,42 @@ module.exports = {
         excerpt_separator: `<!-- end -->`
       }
     },
-    {
-      resolve: `gatsby-source-github-api`,
-      options: {
-        token: process.env.GITHUB_TOKEN,
-        graphQLQuery: `{
-              search(query: "fmonteslab user:fmontes", type: REPOSITORY, first: 10) {
-                  edges {
-                      node {
-                          ... on Repository {
-                              name
-                              url
-                              homepageUrl
-                              description
-                              createdAt
-                              pushedAt
-                              primaryLanguage {
-                                  id
-                                  name
-                              }
-                              repositoryTopics(first: 100) {
-                                  edges {
-                                      node {
-                                          topic {
-                                              name
-                                          }
-                                      }
-                                  }
-                              }
-                          }
-                      }
-                  }
-              }
-          }
-          `
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-github-api`,
+    //   options: {
+    //     token: process.env.GITHUB_TOKEN,
+    //     graphQLQuery: `{
+    //           search(query: "fmonteslab user:fmontes", type: REPOSITORY, first: 10) {
+    //               edges {
+    //                   node {
+    //                       ... on Repository {
+    //                           name
+    //                           url
+    //                           homepageUrl
+    //                           description
+    //                           createdAt
+    //                           pushedAt
+    //                           primaryLanguage {
+    //                               id
+    //                               name
+    //                           }
+    //                           repositoryTopics(first: 100) {
+    //                               edges {
+    //                                   node {
+    //                                       topic {
+    //                                           name
+    //                                       }
+    //                                   }
+    //                               }
+    //                           }
+    //                       }
+    //                   }
+    //               }
+    //           }
+    //       }
+    //       `
+    //   }
+    // },
     `gatsby-plugin-offline`
   ]
 };

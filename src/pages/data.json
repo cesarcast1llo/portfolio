@@ -4,13 +4,13 @@
     "jobs": [
       {
         "mainImg": ["/static/img/test.jpg"],
-        "buttonName": ["First Gallery"],
+        "buttonName": ["Gallery"],
         "jobDescription": [
-          "Job 2<br/> Started 01/01/2019 - Completed 04/01/2019 <br/> This was a renovated pool house with minimal stability foundation that was turned into a modern pool house with pillar stability and bathroom functionality"
+          "FrndlyTv <br/>Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum"
         ],
-        "jobTitle": ["Corte Madera, CA - Bathroom Remodelation"],
+        "jobTitle": ["FrdnlyTv"],
         "jobSubTitle": [
-          "Description of job and procedure <br/> Descroiption of jopb <br/> list the process"
+          "Description of job and procedure  Description of job and procedure Description of job and procedure Description of job and procedure Description of job and procedureDescription of job and procedure <br/> Descroiption of jopb <br/> list the process"
         ],
         "first": {
           "key": "1",
@@ -35,11 +35,11 @@
       },
       {
         "mainImg": ["/static/img/test.jpg"],
-        "buttonName": ["First Gallery"],
+        "buttonName": ["Gallery"],
         "jobDescription": [
-          "Job 2<br/> Started 01/01/2019 - Completed 04/01/2019 <br/> This was a renovated pool house with minimal stability foundation that was turned into a modern pool house with pillar stability and bathroom functionality"
+          "HTML Emails <br/>Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum"
         ],
-        "jobTitle": ["Corte Madera, CA - Bathroom Remodelation"],
+        "jobTitle": ["HTML Emails"],
         "jobSubTitle": [
           "Description of job and procedure  Description of job and procedure Description of job and procedure Description of job and procedure Description of job and procedureDescription of job and procedure <br/> Descroiption of jopb <br/> list the process"
         ],

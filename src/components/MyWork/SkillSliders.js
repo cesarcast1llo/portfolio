@@ -59,8 +59,8 @@ export default class SkillSliders extends Component {
 
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={1}
-              delay={750}
+              duration={2}
+              delay={250}
               animateOnce={true}
             >
               <Row className="justify-content-center">
@@ -68,7 +68,7 @@ export default class SkillSliders extends Component {
                   .slice(0, this.state.itemsToShow)
                   .map((skill, i) => (
                     <Col xs="12" sm="6" md="3" className="skillName" key={i}>
-                      <VisibilitySensor intervalDelay={4000}>
+                      <VisibilitySensor intervalDelay={2500}>
                         {({ isVisible }) => {
                           return (
                             <>

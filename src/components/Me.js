@@ -45,7 +45,12 @@ const Me = props => {
                   text fill Lorem Ipsum log latin language for text fill Lorem
                   Ipsum log latin language for text fill Lorem Ipsum log latin
                   language for text fillLorem Ipsum log latin language for text
-                  fill
+                  fill Lorem Ipsum log latin language for text fill Lorem Ipsum
+                  log latin language for text fillLorem Ipsum log latin language
+                  for text fill Lorem Ipsum log latin language for text fill
+                  Lorem Ipsum log latin language for text fill Lorem Ipsum log
+                  latin language for text fillLorem Ipsum log latin language for
+                  text fill
                 </p>
               </div>
             </ScrollAnimation>

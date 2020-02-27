@@ -102,8 +102,8 @@ export default class SkillSliders extends Component {
             </ScrollAnimation>
             <ScrollAnimation
               animateIn="flipInX"
-              duration={1.5}
-              delay={3500}
+              duration={1}
+              delay={1000}
               animateOnce={true}
             >
               <Row>

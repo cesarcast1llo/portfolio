@@ -3,7 +3,7 @@
     "alt": ["construction alt text needed here"],
     "jobs": [
       {
-        "mainImg": ["/static/img/test.jpg"],
+        "mainImg": ["../assets/images/gatsby-astronaut.png"],
         "buttonName": ["Gallery"],
         "jobDescription": [
           "FrndlyTv <br/>Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum Lorem ssdspsum"
@@ -14,22 +14,22 @@
         ],
         "first": {
           "key": "1",
-          "src": "/static/img/video-poster.jpg",
+          "src": "../assets/images/gatsby-astronaut.png",
           "caption": "111caption yooooo"
         },
         "second": {
           "key": "2",
-          "src": "/static/img/placeholder.png",
+          "src": "../assets/images/gatsby-astronaut.png",
           "caption": "2222caption yooooo"
         },
         "third": {
           "key": "3",
-          "src": "/static/img/uncharted.jpg",
+          "src": "../assets/images/gatsby-astronaut.png",
           "caption": "3333caption yooooo"
         },
         "fourth": {
           "key": "4",
-          "src": "/static/img/test.jpg",
+          "src": "../assets/images/gatsby-astronaut.png",
           "caption": "4444caption yooooo"
         }
       },

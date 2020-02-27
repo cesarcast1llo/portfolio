@@ -1,74 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from './Carousel';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const PortfolioImages = props => {
+const PortfolioModule = props => {
+  const { buttonLabel, className } = props;
+
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
+
   return (
     <div className="portfolio-modal">
-      <ScrollAnimation animateIn={props.animate} animateOnce={true}>
-        <div className="card" data-toggle="modal" data-target={props.modalID}>
-          <img
-            className="card-img-top"
-            src={props.mainImg}
-            alt={props.imgsAlt}
-          />
-          <div className="card-body">
-            <p
-              className="card-text"
-              dangerouslySetInnerHTML={{ __html: props.jobDescription }}
-            />
-          </div>
-          <button
-            type="button"
-            className="btn btn-primary"
-            data-toggle="modal"
-            data-target={props.modalID}
-            dangerouslySetInnerHTML={{ __html: props.buttonName }}
-          />
-        </div>
-      </ScrollAnimation>
-      <div
-        className="modal fade modal"
-        id={props.PopupID}
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered" role="document">
-          <div className="modal-content">
-            <div className="modal-body">
-              <Carousel />
-              <div className="container">
-                <div className="row">
-                  <div className="col-12 gallery-description">
-                    <h2
-                      className="modal-title"
-                      id="exampleModalLongTitle"
-                      dangerouslySetInnerHTML={{ __html: props.jobTitle }}
-                    />
-                    <p
-                      className="job-img-description"
-                      dangerouslySetInnerHTML={{ __html: props.jobSubTitle }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Button color="danger" onClick={toggle}>
+        frndly
+      </Button>
+      <Modal isOpen={modal} toggle={toggle} className={className}>
+        <ModalHeader toggle={toggle}>{props.jobTitle}</ModalHeader>
+        <ModalBody>
+          <Carousel />
+          {props.jobDescription}
+        </ModalBody>
+        <ModalFooter>
+          <Button color="primary" onClick={toggle}>
+            Prev. Project
+          </Button>
+          <Button color="secondary" onClick={toggle}>
+            Next Project
+          </Button>
+        </ModalFooter>
+      </Modal>
     </div>
   );
 };
 
-export default PortfolioImages;
+export default PortfolioModule;

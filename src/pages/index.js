@@ -55,7 +55,7 @@ class Index extends Component {
   render() {
     return (
       <PageWrapper
-        pageTitle="Home"
+        pageTitle="Cesar Castillo"
         pageKeywords={[`gatsby`, `application`, `react`]}
         cookies={!this.state.cookies}
         className={this.state.className}

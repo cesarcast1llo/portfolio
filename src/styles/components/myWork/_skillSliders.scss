@@ -32,18 +32,19 @@
     margin: 0 auto;
     max-width: 980px !important;
 
-    @media (min-width: $XS) {
+    @media (min-width: $mobile) {
       padding: 0 25px;
     }
     @media (min-width: $S) {
-      padding: 0 50px;
+      padding: 0 2.5rem;
     }
 
     .intro {
       font-size: 4.8rem;
+      padding-bottom: 2.5rem;
+
       @media (min-width: 325px) {
         font-size: 5rem;
-        padding-bottom: 2.5rem;
       }
       @media (min-width: $XS) {
         padding-bottom: 5rem;
@@ -53,17 +54,9 @@
     .skillName {
       padding: 0 0 3rem;
       margin: 0 auto;
-      max-width: 290px;
-      @media (min-width: $mobile) {
-        padding: 0 0 5rem;
-        margin: 0 20px;
-      }
-      @media (min-width: $XS) {
-        margin: 0;
-        max-width: 300px;
-      }
+
       @media (min-width: $S) {
-        padding: 0 0.5rem;
+        padding: 0 0 4rem;
       }
 
       p {
@@ -71,26 +64,13 @@
         @media (min-width: $XS) {
           font-size: 30px;
         }
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
       }
-      .CircularProgressbar {
-        @media (min-width: $XS) {
-          width: 90%;
-        }
-        @media (min-width: $S) {
-          width: 95%;
-        }
-      }
-      .CircularProgressbar-path {
-        stroke: #542c85;
-        fill: #542c85;
-      }
-      .CircularProgressbar-text {
-        stroke: white;
-        fill: white;
+
+      img {
+        max-width: 100px;
       }
     }
-
     .show-more {
       margin: 0 auto;
       padding-top: 2rem;
@@ -113,8 +93,8 @@
     }
 
     .other-tools {
-      padding: 6rem 0 0;
-      font-size: 3.5rem;
+      padding: 6.7rem 0 0;
+      font-size: 2.6rem;
     }
 
     .other-tools-icon {
@@ -125,40 +105,40 @@
         text-align: right;
       }
 
-      .github {
+      .Github {
         max-width: 45px;
         margin-top: 12px;
         // content: src('../../../assets/images/logos/github.png');
       }
-      .heroku {
+      .Heroku {
         margin-right: 3px;
         max-width: 41px;
         margin-top: 12px;
       }
-      .aws {
+      .AWS {
         margin-right: 6px;
         max-width: 45px;
         margin-top: 12px;
       }
-      .sf {
+      .Salesforce {
         margin-right: 2px;
         max-width: 50px;
         margin-top: 12px;
       }
-      .psd {
+      .Photoshop {
         max-width: 48px;
         margin-top: 12px;
       }
-      .inD {
+      .InDesign {
         max-width: 48px;
         margin-top: 12px;
       }
-      .xd {
+      .XD {
         margin-right: 3px;
         max-width: 48px;
         margin-top: 12px;
       }
-      .sketch {
+      .Sketch {
         max-width: 40px;
         margin-top: 12px;
       }

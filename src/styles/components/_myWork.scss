@@ -2,6 +2,10 @@
   max-width: 2300px;
   padding: 0;
 
-  @import './myWork/skillSliders';
-  @import './myWork/projects';
+  .row {
+    margin: 0;
+
+    @import './myWork/skillSliders';
+    @import './myWork/projects';
+  }
 }

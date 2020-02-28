@@ -4,31 +4,21 @@ import Carousel from './Carousel';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const PortfolioModule = props => {
-  const { buttonLabel, className } = props;
-
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
 
   return (
     <div className="portfolio-modal">
+      <p>{props.jobDescription}</p>
       <Button color="danger" onClick={toggle}>
-        frndly
+        {props.jobTitle}
       </Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      <Modal isOpen={modal} toggle={toggle} className="project-modal">
         <ModalHeader toggle={toggle}>{props.jobTitle}</ModalHeader>
         <ModalBody>
           <Carousel />
-          {props.jobDescription}
         </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Prev. Project
-          </Button>
-          <Button color="secondary" onClick={toggle}>
-            Next Project
-          </Button>
-        </ModalFooter>
       </Modal>
     </div>
   );

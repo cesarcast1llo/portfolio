@@ -1,40 +1,36 @@
 import React from 'react';
-import Data from '../../pages/data.json';
+import { StaticQuery, graphql } from 'gatsby';
 import { UncontrolledCarousel } from 'reactstrap';
+import { node } from 'prop-types';
 
-const images = [
-  {
-    key: `${Data.portfolio.jobs[0].first.key}`,
-    src: `${Data.portfolio.jobs[0].first.src}`,
-    caption: `${Data.portfolio.jobs[0].first.caption}`,
-    header: ' ',
-    atText: `${Data.portfolio.jobs[0].altText}`
-  },
-  {
-    key: `${Data.portfolio.jobs[0].second.key}`,
-    src: `${Data.portfolio.jobs[0].second.src}`,
-    caption: `${Data.portfolio.jobs[0].second.caption}`,
-    header: ' ',
-    altText: `${Data.portfolio.jobs[0].altText}`
-  },
-  {
-    key: `${Data.portfolio.jobs[0].third.key}`,
-    src: `${Data.portfolio.jobs[0].third.src}`,
-    caption: `${Data.portfolio.jobs[0].third.caption}`,
-    header: ' ',
-    atText: `${Data.portfolio.jobs[0].altText}`
-  },
-  {
-    key: `${Data.portfolio.jobs[0].fourth.key}`,
-    src: `${Data.portfolio.jobs[0].fourth.src}`,
-    caption: `${Data.portfolio.jobs[0].fourth.caption}`,
-    header: ' ',
-    altText: `${Data.portfolio.jobs[0].altText}`
-  }
-];
-
-const Carousel = () => (
-  <UncontrolledCarousel interval={false} indicators={false} items={images} />
+const Carousel = ({ children }) => (
+  <div>
+    <StaticQuery
+      query={query}
+      render={data => {
+        return (
+          <div className="cmon">
+            {data.allDataJson.edges.map(({ node }) => (
+              <h1 key={node.id}>{node.job}</h1>
+            ))}
+          </div>
+        );
+      }}
+    />
+  </div>
 );
+
+const query = graphql`
+  query MyQuery {
+    allDataJson {
+      edges {
+        node {
+          job
+          id
+        }
+      }
+    }
+  }
+`;
 
 export default Carousel;

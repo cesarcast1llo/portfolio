@@ -15,7 +15,7 @@ import html from '../../assets/images/logos/html.png';
 import css from '../../assets/images/logos/css3.png';
 import javascript from '../../assets/images/logos/javascript.png';
 import react from '../../assets/images/logos/react.png';
-import emails from '../../assets/images/logos/htmlemail.svg';
+import emails from '../../assets/images/logos/htmlemail.png';
 import next from '../../assets/images/logos/nextjs.png';
 import node from '../../assets/images/logos/nodejs.png';
 import gatsby from '../../assets/images/logos/gatsby.png';

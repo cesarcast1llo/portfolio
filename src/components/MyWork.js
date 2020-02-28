@@ -4,6 +4,7 @@ import { Container } from 'reactstrap';
 import SkillSliders from './MyWork/SkillSliders';
 import Projects from './MyWork/Projects';
 import ScrollAnimation from 'react-animate-on-scroll';
+// import Data from '../pages/data.json';
 
 const MyWork = props => {
   // const data = useStaticQuery(graphql`

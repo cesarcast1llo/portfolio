@@ -13,7 +13,7 @@
 
   width: 100%;
   @media (min-width: $XS) {
-    padding: 8rem 1.5rem 9rem;
+    padding: 11rem 1.5rem;
     clip-path: polygon(
       0 calc(0% + 45px),
       100% 0,
@@ -41,7 +41,7 @@
 
     .intro {
       font-size: 4.8rem;
-      padding-bottom: 2.5rem;
+      padding-bottom: 4rem;
 
       @media (min-width: 325px) {
         font-size: 5rem;
@@ -68,12 +68,16 @@
       }
 
       img {
-        max-width: 100px;
+        max-width: 125px;
+        @media (min-width: $S) {
+          max-width: 150px;
+        }
       }
     }
+
     .show-more {
       margin: 0 auto;
-      padding-top: 2rem;
+      padding-top: 3rem;
       @media (min-width: $S) {
         padding-top: 5rem;
       }
@@ -94,7 +98,10 @@
 
     .other-tools {
       padding: 6.7rem 0 0;
-      font-size: 2.6rem;
+      font-size: 3.5rem;
+      @media (min-width: $S) {
+        font-size: 2.6rem;
+      }
     }
 
     .other-tools-icon {
@@ -105,42 +112,46 @@
         text-align: right;
       }
 
-      .Github {
-        max-width: 45px;
-        margin-top: 12px;
-        // content: src('../../../assets/images/logos/github.png');
-      }
-      .Heroku {
-        margin-right: 3px;
-        max-width: 41px;
-        margin-top: 12px;
-      }
-      .AWS {
-        margin-right: 6px;
-        max-width: 45px;
-        margin-top: 12px;
-      }
-      .Salesforce {
-        margin-right: 2px;
-        max-width: 50px;
-        margin-top: 12px;
-      }
-      .Photoshop {
-        max-width: 48px;
-        margin-top: 12px;
-      }
-      .InDesign {
-        max-width: 48px;
-        margin-top: 12px;
-      }
-      .XD {
-        margin-right: 3px;
-        max-width: 48px;
-        margin-top: 12px;
-      }
-      .Sketch {
-        max-width: 40px;
-        margin-top: 12px;
+      .animate {
+        display: inline-block;
+
+        .Github {
+          max-width: 45px;
+          margin-top: 12px;
+          // content: src('../../../assets/images/logos/github.png');
+        }
+        .Heroku {
+          margin-right: 3px;
+          max-width: 41px;
+          margin-top: 12px;
+        }
+        .AWS {
+          margin-right: 6px;
+          max-width: 45px;
+          margin-top: 12px;
+        }
+        .Salesforce {
+          margin-right: 2px;
+          max-width: 50px;
+          margin-top: 12px;
+        }
+        .Photoshop {
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .InDesign {
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .XD {
+          margin-right: 3px;
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .Sketch {
+          max-width: 40px;
+          margin-top: 12px;
+        }
       }
     }
   }

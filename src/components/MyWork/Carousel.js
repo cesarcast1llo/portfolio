@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { UncontrolledCarousel } from 'reactstrap';
-import { node } from 'prop-types';
+// import { UncontrolledCarousel } from 'reactstrap';
+// import { node } from 'prop-types';
 
 const Carousel = ({ children }) => (
   <div>
@@ -21,7 +21,7 @@ const Carousel = ({ children }) => (
 );
 
 const query = graphql`
-  query MyQuery {
+  query json {
     allDataJson {
       edges {
         node {

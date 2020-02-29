@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from './Carousel';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 const PortfolioModule = props => {
   const [modal, setModal] = useState(false);

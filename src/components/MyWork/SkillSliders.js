@@ -29,25 +29,25 @@ export default class SkillSliders extends Component {
 
     this.state = {
       skills: [
-        { name: 'HTML', img: html },
-        { name: '(S)CSS', img: css },
-        { name: 'Javascript', img: javascript },
-        { name: 'React.js', img: react },
-        { name: 'Emails', img: emails },
-        { name: 'Next.js', img: next },
-        { name: 'Node.js', img: node },
-        { name: 'Gatsby', img: gatsby },
+        { name: 'HTML', img: html, number: 250 },
+        { name: '(S)CSS', img: css, number: 650 },
+        { name: 'Javascript', img: javascript, number: 1050 },
+        { name: 'React.js', img: react, number: 1450 },
+        { name: 'Emails', img: emails, number: 250 },
+        { name: 'Next.js', img: next, number: 450 },
+        { name: 'Node.js', img: node, number: 650 },
+        { name: 'Gatsby', img: gatsby, number: 850 },
         { name: 'Wordpress', img: wordpress }
       ],
       tools: [
-        { name: 'Github', src: github },
-        { name: 'Heroku', src: heroku },
-        { name: 'AWS', src: aws },
-        { name: 'Salesforce', src: sf },
-        { name: 'Photoshop', src: psd },
-        { name: 'InDesign', src: inD },
-        { name: 'XD', src: xd },
-        { name: 'Sketch', src: sketch }
+        { name: 'Github', src: github, number: 850 },
+        { name: 'Heroku', src: heroku, number: 1000 },
+        { name: 'AWS', src: aws, number: 1150 },
+        { name: 'Salesforce', src: sf, number: 1300 },
+        { name: 'Photoshop', src: psd, number: 1450 },
+        { name: 'InDesign', src: inD, number: 1600 },
+        { name: 'XD', src: xd, number: 1750 },
+        { name: 'Sketch', src: sketch, number: 1900 }
       ],
       itemsToShow: 4,
       expanded: false
@@ -79,28 +79,33 @@ export default class SkillSliders extends Component {
               </div>
             </ScrollAnimation>
 
-            <ScrollAnimation
-              animateIn="fadeIn"
-              duration={2}
-              delay={250}
-              animateOnce={true}
-            >
-              <Row className="justify-content-center">
-                {this.state.skills
-                  .slice(0, this.state.itemsToShow)
-                  .map((skill, i) => (
-                    <Col xs="6" sm="3" md="3" className="skillName" key={i}>
-                      <>
-                        <p>{skill.name}</p>
-                        <img
-                          alt={skill.name}
-                          className={skill.name}
-                          src={skill.img}
-                        />
-                      </>
-                    </Col>
-                  ))}
+            <Row className="justify-content-center">
+              {this.state.skills
+                .slice(0, this.state.itemsToShow)
+                .map((skill, i) => (
+                  <Col xs="6" sm="3" md="3" className="skillName" key={i}>
+                    <ScrollAnimation
+                      animateIn="fadeIn"
+                      duration={2.5}
+                      delay={skill.number}
+                      animateOnce={true}
+                    >
+                      <p>{skill.name}</p>
+                      <img
+                        alt={skill.name}
+                        className={skill.name}
+                        src={skill.img}
+                      />
+                    </ScrollAnimation>
+                  </Col>
+                ))}
 
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration={2}
+                delay={1300}
+                animateOnce={true}
+              >
                 <Col md="12" className="show-more">
                   <button className="btn btn-primary" onClick={this.showMore}>
                     {this.state.expanded ? (
@@ -110,12 +115,13 @@ export default class SkillSliders extends Component {
                     )}
                   </button>
                 </Col>
-              </Row>
-            </ScrollAnimation>
+              </ScrollAnimation>
+            </Row>
+
             <ScrollAnimation
-              animateIn="flipInX"
-              duration={1}
-              delay={750}
+              animateIn="fadeIn"
+              duration={2}
+              delay={1500}
               animateOnce={true}
             >
               <Row>
@@ -126,20 +132,37 @@ export default class SkillSliders extends Component {
                   {this.state.tools.map((tool, i) => {
                     return i === 3 ? (
                       <div key={i} style={{ display: 'inline' }}>
+                        <ScrollAnimation
+                          className="animate"
+                          animateIn="fadeIn"
+                          duration={1.5}
+                          delay={tool.number}
+                          animateOnce={true}
+                        >
+                          <img
+                            alt={tool.name}
+                            className={tool.name}
+                            src={tool.src}
+                          />
+                        </ScrollAnimation>
+
+                        <br className="em_hide_mobile" />
+                      </div>
+                    ) : (
+                      <ScrollAnimation
+                        className="animate"
+                        animateIn="fadeIn"
+                        duration={1.5}
+                        delay={tool.number}
+                        animateOnce={true}
+                        key={i}
+                      >
                         <img
                           alt={tool.name}
                           className={tool.name}
                           src={tool.src}
                         />
-                        <br className="em_hide_mobile" />
-                      </div>
-                    ) : (
-                      <img
-                        key={i}
-                        alt={tool.name}
-                        className={tool.name}
-                        src={tool.src}
-                      />
+                      </ScrollAnimation>
                     );
                   })}
                 </Col>

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'reactstrap';
-import SkillSliders from './MyWork/SkillSliders';
-import Projects from './MyWork/Projects';
+import SkillSliders from './myWork/SkillSliders';
+import Projects from './myWork/Projects';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Data from '../pages/data.json';
 
-const MyWork = props => {
+const myWork = props => {
   // const data = useStaticQuery(graphql`
   //   {
   //     allFile(filter: { extension: { eq: "pdf" } }) {
@@ -64,4 +64,4 @@ const MyWork = props => {
   );
 };
 
-export default MyWork;
+export default myWork;

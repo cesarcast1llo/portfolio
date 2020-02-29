@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
-import PortfolioModule from '../MyWork/PortfolioModule';
+import PortfolioModule from './PortfolioModule';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Carousel from './Carousel';
 // import Data from '../../pages/data.json';

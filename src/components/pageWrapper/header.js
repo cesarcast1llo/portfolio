@@ -25,6 +25,7 @@ const Header = props => {
   if (typeof window === 'undefined') {
     global.window = {};
   }
+  // TODO find a way to stop scrolling if its above 60, peep console.log
 
   const scrollPos = useScrollPosition();
 

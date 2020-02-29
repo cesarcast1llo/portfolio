@@ -37,17 +37,18 @@ export default class SkillSliders extends Component {
         { name: 'Next.js', img: next, number: 450 },
         { name: 'Node.js', img: node, number: 650 },
         { name: 'Gatsby', img: gatsby, number: 850 },
+        // graphql php
         { name: 'Wordpress', img: wordpress }
       ],
       tools: [
-        { name: 'Github', src: github, number: 850 },
-        { name: 'Heroku', src: heroku, number: 1000 },
-        { name: 'AWS', src: aws, number: 1150 },
-        { name: 'Salesforce', src: sf, number: 1300 },
-        { name: 'Photoshop', src: psd, number: 1450 },
-        { name: 'InDesign', src: inD, number: 1600 },
-        { name: 'XD', src: xd, number: 1750 },
-        { name: 'Sketch', src: sketch, number: 1900 }
+        { name: 'Github', src: github, number: 1200 },
+        { name: 'Heroku', src: heroku, number: 1350 },
+        { name: 'AWS', src: aws, number: 1500 },
+        { name: 'Salesforce', src: sf, number: 1650 },
+        { name: 'Photoshop', src: psd, number: 1800 },
+        { name: 'InDesign', src: inD, number: 1950 },
+        { name: 'XD', src: xd, number: 2100 },
+        { name: 'Sketch', src: sketch, number: 2250 }
       ],
       itemsToShow: 4,
       expanded: false
@@ -103,7 +104,7 @@ export default class SkillSliders extends Component {
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration={2}
-                delay={1300}
+                delay={1500}
                 animateOnce={true}
               >
                 <Col md="12" className="show-more">
@@ -121,7 +122,7 @@ export default class SkillSliders extends Component {
             <ScrollAnimation
               animateIn="fadeIn"
               duration={2}
-              delay={1500}
+              delay={1800}
               animateOnce={true}
             >
               <Row>
@@ -174,18 +175,3 @@ export default class SkillSliders extends Component {
     );
   }
 }
-// {tags.map(function(tag, index) {
-//   return index % 2 === 0 ? (
-//     <Link key={tag} to={`/tags/${slugify(tag)}`}>
-//       <Button color="primary" className="tag-button">
-//         {tag} <div className="number">{tagPostCounts[tag]}</div>
-//       </Button>
-//     </Link>
-//   ) : (
-//     <Link key={tag} to={`/tags/${slugify(tag)}`}>
-//       <Button color="primary" className="odd">
-//         {tag} <div className="number">{tagPostCounts[tag]}</div>
-//       </Button>
-//     </Link>
-//   );
-// })}

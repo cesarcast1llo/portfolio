@@ -1,17 +1,17 @@
 [
   {
-    "job": "frndly",
-    "description": "using Next.js for SSR...",
-    "src": "../assets/images/logos/wordpress.png",
-
-    "images": [
+    "projects": [
       {
-        "src": "../assets/images/logos/wordpress.png",
-        "caption": "json to pull files"
+        "id": 1,
+        "name": "My Project 1",
+        "description": "My description 1",
+        "path": "#"
       },
       {
-        "src": "../assets/images/logos/wordpress.png",
-        "caption": "captcha for securioty to pull files"
+        "id": 2,
+        "name": "My Project 2",
+        "description": "My description 2",
+        "path": "#"
       }
     ]
   }

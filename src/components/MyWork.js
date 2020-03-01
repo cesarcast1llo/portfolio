@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container } from 'reactstrap';
 import SkillSliders from './myWork/SkillSliders';
-import Projects from './myWork/Projects';
+import Projects from './myWork/ProjectSection';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Data from '../pages/data.json';
 

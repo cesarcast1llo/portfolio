@@ -33,9 +33,9 @@ const PageWrapper = ({
           {cookies ? <InitialAnimation animation={true} /> : null}
         </div>
       </div>
-      {/* <Header headerHide={headerHide} /> */}
+      <Header headerHide={headerHide} />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

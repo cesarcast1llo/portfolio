@@ -8,14 +8,6 @@ import c from '../../assets/images/c.png';
 
 // import ScrollAnimation from 'react-animate-on-scroll';
 
-const frndly = [
-  {
-    name: 'FrndlyTV',
-    description: 'asdadasda',
-    tools: [{ name: 'HTML' }, { name: '(S)CSS' }, { name: 'Javascript' }]
-  }
-];
-
 const images = [
   {
     key: 1,
@@ -38,6 +30,16 @@ const images = [
 ];
 
 const Projects = props => {
+  const ss = {
+    reviews: [
+      {
+        author: 'Lorem Ipsum'
+      },
+      {
+        author: '222Lorem Ipsum'
+      }
+    ]
+  };
   const frndlylogo = useStaticQuery(graphql`
     {
       file(
@@ -66,7 +68,9 @@ const Projects = props => {
             key={data.allDataJson.edges.node.image}
             src={images.client}
           /> */}
-          <h1>{frndly.name}</h1>
+          {/* {ss.slice(0, 2).map((name, i) => ( */}
+          <p>{ss.reviews.quote}</p>
+
           <ul>
             <li>next.js</li>
             <li>node</li>
@@ -74,7 +78,7 @@ const Projects = props => {
             <li>dta,json</li>
           </ul>
           <Button color="danger" onClick={toggle}>
-            {frndly.name}
+            {ss.name}
           </Button>
         </Col>
         <Col xs="6">

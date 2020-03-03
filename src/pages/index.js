@@ -18,30 +18,30 @@ class Index extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   if (this.state.cookies === cookies.get('activate')) {
-  //     this.setState({
-  //       className: '',
-  //       showIndexPage: true
-  //     });
-  //     enableBodyScroll(this.targetElement);
-  //   } else {
-  //     this.targetElement = document.querySelector('body');
-  //     disableBodyScroll(this.targetElement);
-  //     setTimeout(
-  //       () => {
-  //         this.setState(prevState => ({
-  //           className: 'heroBg',
-  //           showIndexPage: true,
-  //           animationText: 'hide-name',
-  //           cookies: cookies.get('activate')
-  //         }));
-  //         enableBodyScroll(this.targetElement);
-  //       }
-  //       // , 1000
-  //     );
-  //   }
-  // }
+  componentDidMount() {
+    if (this.state.cookies === cookies.get('activate')) {
+      this.setState({
+        className: '',
+        showIndexPage: true
+      });
+      enableBodyScroll(this.targetElement);
+    } else {
+      this.targetElement = document.querySelector('body');
+      disableBodyScroll(this.targetElement);
+      setTimeout(
+        () => {
+          this.setState(prevState => ({
+            className: 'heroBg',
+            showIndexPage: true,
+            animationText: 'hide-name',
+            cookies: cookies.get('activate')
+          }));
+          enableBodyScroll(this.targetElement);
+        }
+        // , 1000
+      );
+    }
+  }
 
   // componentDidUpdate() {
   //   cookies.set('activate', 'true', {

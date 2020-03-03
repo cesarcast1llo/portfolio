@@ -9,7 +9,7 @@ const About = ({ data }) => (
     pageTitle="About"
     pageKeywords={[`gatsby`, `application`, `react`]}
     bgColor="#3d3e3d"
-    backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
   >
     <Container className="about-page">
       <Row>
@@ -18,9 +18,9 @@ const About = ({ data }) => (
             <Link to="/">Home</Link>
             <br />
             <Img
-              alt="Me, Myself, and I"
-              className="me"
-              fixed={data.placeholderImage.childImageSharp.fixed}
+              fixed={data.file.childImageSharp.fixed}
+              alt="CC"
+              className="logo-img"
             />
             <h1>Cesar Castillo</h1>
             <p>
@@ -77,14 +77,13 @@ export default About;
 
 export const query = graphql`
   query {
-    placeholderImage: file(relativePath: { eq: "code2.jpeg" }) {
+    file(
+      sourceInstanceName: { eq: "images" }
+      relativePath: { eq: "gatsby-astronaut.png" }
+    ) {
       childImageSharp {
-        fixed(width: 300) {
-          base64
-          width
-          height
-          src
-          srcSet
+        fixed(width: 150) {
+          ...GatsbyImageSharpFixed
         }
       }
     }

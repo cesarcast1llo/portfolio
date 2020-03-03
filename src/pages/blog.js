@@ -17,6 +17,7 @@ const Blog = () => (
         <Col className="blog-wrapper">
           <div className="blog-intro">
             <p>BLOG - JS PROBLEMS</p>
+            <h2>connect blog posts to DEV.to</h2>
             <h3>will finish 50 different JS problems by June 2020</h3>
           </div>
           <StaticQuery

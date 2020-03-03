@@ -1,0 +1,161 @@
+.skill-sliders {
+  clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
+  -webkit-clip-path: polygon(
+    0 calc(0% + 25px),
+    100% 0,
+    100% calc(100% - 25px),
+    0 100%
+  );
+  text-align: center;
+  color: white;
+  background: $gradient;
+  padding: 6rem 1.5rem 7rem;
+
+  width: 100%;
+  @media (min-width: $XS) {
+    padding: 11rem 1.5rem;
+    clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+    -webkit-clip-path: polygon(
+      0 calc(0% + 45px),
+      100% 0,
+      100% calc(100% - 45px),
+      0 100%
+    );
+  }
+
+  .format {
+    margin: 0 auto;
+    max-width: 980px !important;
+
+    @media (min-width: $mobile) {
+      padding: 0 2.5rem;
+    }
+    @media (min-width: $S) {
+      padding: 0 2.5rem;
+    }
+    @media (min-width: $M) {
+      padding: 0 3.5rem;
+    }
+
+    .intro {
+      font-size: 4.8rem;
+      padding-bottom: 4rem;
+
+      @media (min-width: 325px) {
+        font-size: 5rem;
+      }
+      @media (min-width: $XS) {
+        padding-bottom: 5rem;
+      }
+    }
+
+    .skillName {
+      padding: 0 0 3rem;
+      margin: 0 auto;
+
+      @media (min-width: $S) {
+        padding: 0 0 4rem;
+      }
+
+      p {
+        font-size: 28px;
+        @media (min-width: $XS) {
+          font-size: 30px;
+        }
+        margin-bottom: 0.5rem;
+      }
+
+      img {
+        max-width: 125px;
+        @media (min-width: $S) {
+          max-width: 150px;
+        }
+      }
+    }
+
+    .show-more {
+      margin: 0 auto;
+      padding-top: 3rem;
+      @media (min-width: $S) {
+        padding-top: 5rem;
+      }
+
+      button {
+        @extend .index-page-button;
+        color: $secondary;
+        background-color: white;
+        border: 1px solid white;
+
+        &:hover {
+          color: white;
+          background-color: $secondary;
+          border: 1px solid $secondary;
+        }
+      }
+    }
+
+    .other-tools {
+      padding: 6.7rem 0 0;
+      font-size: 3.5rem;
+      @media (min-width: $S) {
+        font-size: 2.6rem;
+      }
+    }
+
+    .other-tools-icon {
+      padding: 0;
+
+      @media (min-width: $S) {
+        padding: 5rem 0 0;
+        text-align: right;
+      }
+
+      .animate {
+        display: inline-block;
+
+        .Github {
+          max-width: 45px;
+          margin-top: 12px;
+          // content: src('../../../assets/images/logos/github.png');
+        }
+        .Heroku {
+          margin-right: 3px;
+          max-width: 41px;
+          margin-top: 12px;
+        }
+        .AWS {
+          margin-right: 6px;
+          max-width: 45px;
+          margin-top: 12px;
+        }
+        .Salesforce {
+          margin-right: 2px;
+          max-width: 50px;
+          margin-top: 12px;
+        }
+        .Photoshop {
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .InDesign {
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .XD {
+          margin-right: 3px;
+          max-width: 48px;
+          margin-top: 12px;
+        }
+        .Sketch {
+          max-width: 40px;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

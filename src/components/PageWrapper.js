@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './header';
+import Header from '../components/pageWrapper//header';
 import SEO from './seo';
 import { Helmet } from 'react-helmet';
-import Footer from './footer';
+import Footer from '../components/pageWrapper//footer';
 import InitialAnimation from '../components/animations/InitialAnimation';
 
 const PageWrapper = ({
@@ -23,7 +23,6 @@ const PageWrapper = ({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         />
-        {/* animate on scroll js */}
       </Helmet>
       <SEO title={pageTitle} keywords={pageKeywords} />
       <div
@@ -34,9 +33,9 @@ const PageWrapper = ({
           {cookies ? <InitialAnimation animation={true} /> : null}
         </div>
       </div>
-      {/* <Header headerHide={headerHide} /> */}
+      <Header headerHide={headerHide} />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

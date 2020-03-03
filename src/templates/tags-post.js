@@ -23,7 +23,7 @@ const tagPosts = ({ data, pageContext }) => {
           <Col className="single-tag-wrapper">
             <div className="tag-intro">
               <p>
-                {pageHeader} {tag}
+                {pageHeader} <i>{tag}</i>
               </p>
               <h3>highlight all other matching tag instances</h3>
             </div>

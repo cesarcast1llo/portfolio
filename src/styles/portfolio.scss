@@ -2,10 +2,11 @@
 @import './index';
 @import './blog';
 @import './about';
-@import './components/pagewrapper';
-@import './components/header';
-@import './components/footer';
-@import './components/projects';
+@import './modal';
+@import './pageWrapper/pagewrapper';
+@import './pageWrapper/header';
+@import './pageWrapper/footer';
+@import './components/myWork';
 @import './components/single-blog-post';
 @import './components/tags-page';
 @import './components/tags-post';

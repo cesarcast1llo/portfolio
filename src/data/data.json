@@ -1,0 +1,18 @@
+[
+  {
+    "projects": [
+      {
+        "id": 1,
+        "name": "My Project 1",
+        "description": "My description 1",
+        "path": "#"
+      },
+      {
+        "id": 2,
+        "name": "My Project 2",
+        "description": "My description 2",
+        "path": "#"
+      }
+    ]
+  }
+]

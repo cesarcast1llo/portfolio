@@ -15,8 +15,9 @@ const ProjectSection = () => {
             animateOnce={true}
           >
             <div className="header">
-              Projects I've <br className="em_hide_mobile" />
-              Worked&nbsp;On
+              {/* Projects I've <br className="em_hide_mobile" />
+              Worked&nbsp;On */}
+              Lorem Ipsum
             </div>
           </ScrollAnimation>
           <Projects animate="fadeInLeft" />

@@ -1,106 +1,60 @@
-import React, { useState } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import { UncontrolledCarousel, Row, Col } from 'reactstrap';
-import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import html from '../../assets/images/gatsby-astronaut.png';
-import c from '../../assets/images/c.png';
+import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Row, Col } from 'reactstrap';
+import javascript from '../../assets/images/logos/javascript.png';
+import next from '../../assets/images/logos/nextjs.png';
+import react from '../../assets/images/logos/react.png';
+import node from '../../assets/images/logos/nodejs.png';
+import frndly from '../../assets/images/frndly.jpg';
 
 // import ScrollAnimation from 'react-animate-on-scroll';
 
-const images = [
-  {
-    key: 1,
-    src: html,
-    altText: 'Slide 1',
-    caption: 'json to pull files'
-  },
-  {
-    key: 2,
-    src: c,
-    altText: 'Slide 555',
-    caption: 'captcha for securioty to pull files'
-  },
-  {
-    key: 3,
-    src: html,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+export default class Projects extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: 'Frndly TV',
+      img: frndly,
+      stack: [
+        { name: 'Node.js', img: node, number: 350 },
+        { name: 'Next.js', img: next, number: 450 },
+        { name: 'Javascript', img: javascript, number: 550 },
+        { name: 'React.js', img: react, number: 650 }
+      ]
+    };
   }
-];
 
-const Projects = props => {
-  const ss = {
-    reviews: [
-      {
-        author: 'Lorem Ipsum'
-      },
-      {
-        author: '222Lorem Ipsum'
-      }
-    ]
-  };
-  const frndlylogo = useStaticQuery(graphql`
-    {
-      file(
-        sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "code.jpg" }
-      ) {
-        childImageSharp {
-          fixed(width: 500) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
+  render() {
+    return (
+      <div className="project-layout">
+        <Row>
+          <Col sm={{ size: 6, order: 2 }} className="project-description">
+            <img alt="Frndly Tv" className="project-logo" src={frndly} />
+            <h1>astafs we auasd</h1>
+            <p>
+              Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
+              asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
+              asdasde asdasd asdasdbu
+            </p>
 
-  const [modal, setModal] = useState(false);
-
-  const toggle = () => setModal(!modal);
-
-  return (
-    <div className="project-layout">
-      <Row>
-        <Col xs="6" className="project">
-          {/* <img
-            alt={images.altText}
-            key={data.allDataJson.edges.node.image}
-            src={images.client}
-          /> */}
-          {/* {ss.slice(0, 2).map((name, i) => ( */}
-          <p>{ss.reviews.quote}</p>
-
-          <ul>
-            <li>next.js</li>
-            <li>node</li>
-            <li>express</li>
-            <li>dta,json</li>
-          </ul>
-          <Button color="danger" onClick={toggle}>
-            {ss.name}
-          </Button>
-        </Col>
-        <Col xs="6">
-          <Img
-            fixed={frndlylogo.file.childImageSharp.fixed}
-            alt="_"
-            className="project-image"
-          />
-          <Modal isOpen={modal} toggle={toggle} className="project-modal">
-            <ModalHeader toggle={toggle}></ModalHeader>
-            <ModalBody>
-              <UncontrolledCarousel
-                interval={false}
-                indicators={false}
-                items={images}
-              />
-            </ModalBody>
-          </Modal>
-        </Col>
-      </Row>
-    </div>
-  );
-};
-
-export default Projects;
+            {this.state.stack.map((stack, i) => (
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration={2.5}
+                animateOnce={true}
+                key={i}
+              >
+                <img alt={stack.name} className="logos" src={stack.img} />
+              </ScrollAnimation>
+            ))}
+          </Col>
+          <Col sm={{ size: 6, order: 1 }} className="project-images">
+            <img alt="Frndly Tv" src={frndly} />
+            <p>this one below mobile hide</p>
+            <img alt="Frndly Tv" src={frndly} />
+          </Col>
+        </Row>
+      </div>
+    );
+  }
+}

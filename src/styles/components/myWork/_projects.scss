@@ -1,3 +1,12 @@
+.header {
+  text-align: center;
+  font-size: 5rem;
+  padding-top: 1rem;
+  @media (min-width: $XS) {
+    padding-top: 1.5rem;
+  }
+}
+
 .projects {
   clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
   -webkit-clip-path: polygon(
@@ -12,9 +21,8 @@
   padding: 3rem 1.5rem;
   width: 100%;
   margin: 0 8px;
-  border: 1px solid red;
   @media (min-width: $XS) {
-    padding: 4rem 2.5rem;
+    padding: 4rem 2.5rem 0;
     margin: 0 15px;
     clip-path: polygon(
       0 calc(0% + 45px),
@@ -36,15 +44,7 @@
     padding: 0 0 40px;
 
     @media (min-width: $XS) {
-      padding: 0 0 60px;
-    }
-
-    .header {
-      font-size: 5rem;
-      padding-bottom: 0.75rem;
-      @media (min-width: $XS) {
-        padding-bottom: 3rem;
-      }
+      padding: 0 0 50px;
     }
 
     .project-layout {
@@ -53,19 +53,25 @@
       .project-images {
         img {
           margin: 0 auto;
-          max-width: 400px;
+          max-width: 450px;
           width: 100%;
         }
 
         img:last-child {
           display: none;
-          @media (min-width: $XS) {
+          @media (min-width: $S) {
+            padding-top: 2rem;
             display: block;
           }
         }
       }
       .project-description {
         vertical-align: middle;
+        margin: auto 0;
+        padding: 0 15px 25px;
+        @media (min-width: $S) {
+          padding: 0 15px 25px;
+        }
 
         .project-logo {
           max-width: 75px;
@@ -74,12 +80,52 @@
 
         h1 {
           padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          padding-bottom: 1rem;
+          @media (min-width: $S) {
+            font-size: 17px;
+            line-height: 21px;
+          }
         }
 
         .logos {
-          max-width: 50px;
+          display: inline-block;
+          margin-right: 10px;
+
+          img {
+            max-width: 50px;
+          }
+        }
+
+        .logos:last-child {
+          margin: 0;
         }
       }
     }
+  }
+}
+
+.odd {
+  @extend .projects;
+  background: $gradient;
+  color: white;
+  margin: 0;
+
+  .format {
+    padding: 4rem 0 8rem;
+
+    @media (min-width: $S) {
+      padding: 5rem 0 8rem;
+    }
+  }
+
+  h1,
+  h2 {
+    color: white;
   }
 }

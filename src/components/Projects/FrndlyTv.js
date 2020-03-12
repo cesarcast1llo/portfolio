@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
 import javascript from '../../assets/images/logos/javascript.png';
-import next from '../../assets/images/logos/nextjs.png';
-import react from '../../assets/images/logos/react.png';
+import next from '../../assets/images/logos/nextjsblack.svg';
+import sass from '../../assets/images/logos/sass.png';
 import node from '../../assets/images/logos/nodejs.png';
 import frndly from '../../assets/images/frndly.jpg';
-
-// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class FrndlyTv extends Component {
   constructor() {
@@ -16,10 +14,10 @@ export default class FrndlyTv extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Node.js', img: node, number: 350 },
-        { name: 'Next.js', img: next, number: 450 },
-        { name: 'Javascript', img: javascript, number: 550 },
-        { name: 'React.js', img: react, number: 650 }
+        { name: 'Next.js', img: next, number: 350 },
+        { name: 'Javascript', img: javascript, number: 450 },
+        { name: 'Sass', img: sass, number: 550 },
+        { name: 'Node.js', img: node, number: 650 }
       ]
     };
   }

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
-import javascript from '../../assets/images/logos/javascript.png';
-import next from '../../assets/images/logos/nextjs.png';
+import php from '../../assets/images/logos/php.png';
+import gulp from '../../assets/images/logos/gulp.png';
 import react from '../../assets/images/logos/react.png';
-import node from '../../assets/images/logos/nodejs.png';
+import sass from '../../assets/images/logos/sass.png';
+import mamp from '../../assets/images/logos/mamp.png';
 import frndly from '../../assets/images/frndly.jpg';
-
-// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class LiftSite extends Component {
   constructor() {
@@ -16,10 +15,10 @@ export default class LiftSite extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Node.js', img: node, number: 350 },
-        { name: 'Next.js', img: next, number: 450 },
-        { name: 'Javascript', img: javascript, number: 550 },
-        { name: 'React.js', img: react, number: 650 }
+        { name: 'PHP', img: php, number: 350 },
+        { name: 'Sass', img: sass, number: 450 },
+        { name: 'Gulp', img: gulp, number: 550 },
+        { name: 'MAMP', img: mamp, number: 650 }
       ]
     };
   }

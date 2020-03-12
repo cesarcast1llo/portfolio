@@ -3,7 +3,6 @@ import { Row, Col } from 'reactstrap';
 import FrndlyTv from './FrndlyTv';
 import LiftSite from './LiftSite';
 import HTMLEmails from './HTMLEmails';
-import OtherProjects from './OtherProjects';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Projects = () => {
@@ -43,13 +42,6 @@ const Projects = () => {
         <Col className="projects">
           <div className="format">
             <HTMLEmails />
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col className="odd">
-          <div className="format">
-            <OtherProjects />
           </div>
         </Col>
       </Row>

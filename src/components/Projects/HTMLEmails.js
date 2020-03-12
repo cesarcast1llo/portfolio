@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
-import javascript from '../../assets/images/logos/javascript.png';
-import next from '../../assets/images/logos/nextjs.png';
-import react from '../../assets/images/logos/react.png';
-import node from '../../assets/images/logos/nodejs.png';
+import HTML from '../../assets/images/logos/htmlemail.png';
+import css from '../../assets/images/logos/css3.png';
+import salesforce from '../../assets/images/logos/salesforce.png';
+import eoa from '../../assets/images/logos/eoa.jpg';
 import frndly from '../../assets/images/frndly.jpg';
-
-// import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class HTMLEmails extends Component {
   constructor() {
@@ -16,10 +14,10 @@ export default class HTMLEmails extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Node.js', img: node, number: 350 },
-        { name: 'Next.js', img: next, number: 450 },
-        { name: 'Javascript', img: javascript, number: 550 },
-        { name: 'React.js', img: react, number: 650 }
+        { name: 'HTML', img: HTML, number: 350 },
+        { name: 'CSS', img: css, number: 450 },
+        { name: 'Email On Acid', img: eoa, number: 550 },
+        { name: 'Salesforce', img: salesforce, number: 650 }
       ]
     };
   }

@@ -15,9 +15,8 @@ const Contact = () => {
       delay={250}
       animateOnce={true}
     >
-      {' '}
       <Row>
-        <Col className="projects">
+        <Col id="last" className="odd">
           <div className="format">
             <div className="resume">
               <h1>Reach Out</h1>
@@ -26,7 +25,7 @@ const Contact = () => {
                   <img alt="Email Icon" src={email} />
                 </a>
                 <a href="/" target="_blank">
-                  <img alt="Github Icon" src={github} />
+                  <img id="margin" alt="Github Icon" src={github} />
                 </a>
                 <a href="/" target="_blank">
                   <img alt="LinkedIn icon" src={linkedin} />

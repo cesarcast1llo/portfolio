@@ -71,7 +71,10 @@
       }
 
       img {
-        max-width: 125px;
+        max-width: 105px;
+        @media (min-width: 375px) {
+          max-width: 125px;
+        }
         @media (min-width: $S) {
           max-width: 150px;
         }
@@ -121,7 +124,11 @@
         .Github {
           max-width: 45px;
           margin-top: 12px;
-          // content: src('../../../assets/images/logos/github.png');
+        }
+        .Wordpress {
+          margin-right: 3px;
+          max-width: 46px;
+          margin-top: 12px;
         }
         .Heroku {
           margin-right: 3px;

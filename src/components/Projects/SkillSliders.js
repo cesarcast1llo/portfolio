@@ -35,19 +35,17 @@ export default class SkillSliders extends Component {
         { name: 'React.js', img: react, number: 1450 },
         { name: 'Emails', img: emails, number: 250 },
         { name: 'Next.js', img: next, number: 450 },
-        { name: 'Node.js', img: node, number: 650 },
-        { name: 'Gatsby', img: gatsby, number: 850 },
-        // graphql php
-        { name: 'Wordpress', img: wordpress }
+        { name: 'Gatsby', img: gatsby, number: 650 },
+        { name: 'Node.js', img: node, number: 850 }
       ],
       tools: [
         { name: 'Github', src: github, number: 1200 },
-        { name: 'Heroku', src: heroku, number: 1350 },
-        { name: 'AWS', src: aws, number: 1500 },
-        { name: 'Salesforce', src: sf, number: 1650 },
-        { name: 'Photoshop', src: psd, number: 1800 },
-        { name: 'InDesign', src: inD, number: 1950 },
-        { name: 'XD', src: xd, number: 2100 },
+        { name: 'Wordpress', src: wordpress, number: 1350 },
+        { name: 'Heroku', src: heroku, number: 1500 },
+        { name: 'AWS', src: aws, number: 1650 },
+        { name: 'Salesforce', src: sf, number: 1800 },
+        { name: 'Photoshop', src: psd, number: 1950 },
+        { name: 'InDesign', src: inD, number: 2100 },
         { name: 'Sketch', src: sketch, number: 2250 }
       ],
       itemsToShow: 4,

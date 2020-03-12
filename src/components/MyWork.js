@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 import SkillSliders from '../components/myWork/SkillSliders';
 import Projects from '../components/myWork/Projects';
-import Resume from '../components/myWork/Resume';
+import Contact from './myWork/Contact';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Data from '../pages/data.json';
 
@@ -11,16 +11,7 @@ const myWork = props => {
     <Container className="projects-wrapper">
       <SkillSliders />
       <Projects />
-      <Resume />
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-        <h1>
-          <u>Technical</u>
-        </h1>
-        <h3>projects</h3>
-        <div>frdnly</div>
-        <div>html emails</div>
-        <div>landing pages</div>
-      </ScrollAnimation>
+      <Contact />
     </Container>
   );
 };

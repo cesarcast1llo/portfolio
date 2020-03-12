@@ -34,7 +34,7 @@ export default class HTMLEmails extends Component {
       >
         <div className="project-layout">
           <Row>
-            <Col md={{ size: 6, order: 2 }} className="project-description">
+            <Col md={{ size: 6 }} className="project-description">
               <img alt="Frndly Tv" className="project-logo" src={frndly} />
               <h1>HTML Emails</h1>
               <p>

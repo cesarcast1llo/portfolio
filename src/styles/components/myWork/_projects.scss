@@ -41,10 +41,10 @@
   .format {
     margin: 0 auto;
     max-width: 900px !important;
-    padding: 0 0 40px;
+    padding-bottom: 5rem;
 
     @media (min-width: $XS) {
-      padding: 0 0 50px;
+      padding-bottom: 6rem;
     }
 
     .project-layout {
@@ -108,8 +108,38 @@
       }
     }
     .resume {
-      font-size: 24px;
-      line-height: 30px;
+      text-align: center;
+
+      h1 {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+        font-weight: 300;
+      }
+
+      .contact {
+        img {
+          max-width: 75px;
+          margin-left: 2rem;
+        }
+      }
+
+      h3 {
+        padding-top: 2rem;
+        font-size: 3rem;
+      }
+      a {
+        color: $secondary;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 3rem;
+        @media (min-width: $XS) {
+          font-size: 17px;
+          line-height: 21px;
+        }
+      }
     }
   }
 }
@@ -121,10 +151,10 @@
   margin: 0;
 
   .format {
-    padding: 4rem 0 8rem;
+    padding: 5rem 0 10rem;
 
     @media (min-width: $S) {
-      padding: 5rem 0 8rem;
+      padding: 7rem 0 11rem;
     }
   }
 

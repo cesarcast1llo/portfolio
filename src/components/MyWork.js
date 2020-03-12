@@ -1,17 +1,15 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import SkillSliders from './myWork/SkillSliders';
-import Projects from './myWork/Projects';
-import Contact from './myWork/Contact';
-import ScrollAnimation from 'react-animate-on-scroll';
-// import Data from '../pages/data.json';
+// import Projects from './myWork/Projects';
+// import Contact from './myWork/Contact';
 
-const myWork = props => {
+const myWork = () => {
   return (
     <Container className="projects-wrapper">
       <SkillSliders />
-      <Projects />
-      <Contact />
+      {/* <Projects />
+      <Contact /> */}
     </Container>
   );
 };

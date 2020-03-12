@@ -45,7 +45,7 @@ export default class LiftSite extends Component {
               <h2>What I used:</h2>
 
               {this.state.stack.map((stack, i) => (
-                <div className="logos">
+                <div className="logos" key={i}>
                   <ScrollAnimation
                     animateIn="fadeIn"
                     duration={2.5}

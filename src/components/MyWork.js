@@ -1,17 +1,17 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import SkillSliders from './myWork/SkillSliders';
-// import Projects from './myWork/Projects';
-// import Contact from './myWork/Contact';
+import Projects from './myWork/Projects';
+import Contact from './myWork/Contact';
 
-const myWork = () => {
+const MyWork = () => {
   return (
     <Container className="projects-wrapper">
       <SkillSliders />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects />
+      <Contact />
     </Container>
   );
 };
 
-export default myWork;
+export default MyWork;

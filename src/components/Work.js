@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import SkillSliders from './myWork/SkillSliders';
-import Projects from './myWork/Projects';
-import Contact from './myWork/Contact';
+import SkillSliders from './Projects/SkillSliders';
+import Projects from './Projects/Projects';
+import Contact from './Projects/Contact';
 
-const MyWork = () => {
+const Work = () => {
   return (
     <Container className="projects-wrapper">
       <SkillSliders />
@@ -14,4 +14,4 @@ const MyWork = () => {
   );
 };
 
-export default MyWork;
+export default Work;

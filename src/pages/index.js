@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import PageWrapper from '../components/PageWrapper.js';
 import Me from '../components/Me.js';
-import MyWork from '../components/MyWork';
+import Work from '../components/Work';
 import { Cookies } from 'react-cookie';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 const cookies = new Cookies();
@@ -66,7 +66,7 @@ class Index extends Component {
             <Container className="index-page">
               <Me />
             </Container>
-            <MyWork />
+            <Work />
           </>
         ) : null}
       </PageWrapper>

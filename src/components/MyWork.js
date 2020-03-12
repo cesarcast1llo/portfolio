@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from 'reactstrap';
-import SkillSliders from './myWork/SkillSliders';
-import Projects from './myWork/Projects';
-import Resume from './myWork/Resume';
+import SkillSliders from '../components/myWork/SkillSliders';
+import Projects from '../components/myWork/Projects';
+import Resume from '../components/myWork/Resume';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Data from '../pages/data.json';
 

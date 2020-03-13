@@ -3,7 +3,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
 import php from '../../assets/images/logos/php.png';
 import gulp from '../../assets/images/logos/gulp.png';
-import react from '../../assets/images/logos/react.png';
 import sass from '../../assets/images/logos/sass.png';
 import mamp from '../../assets/images/logos/mamp.png';
 import frndly from '../../assets/images/frndly.jpg';

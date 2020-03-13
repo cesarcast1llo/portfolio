@@ -8,7 +8,6 @@ import aws from '../../assets/images/logos/aws.png';
 import sf from '../../assets/images/logos/salesforce.png';
 import psd from '../../assets/images/logos/photoshop.png';
 import inD from '../../assets/images/logos/indesign.png';
-import xd from '../../assets/images/logos/xd.png';
 import sketch from '../../assets/images/logos/sketch.svg';
 
 import html from '../../assets/images/logos/html.png';

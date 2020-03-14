@@ -5,14 +5,14 @@ import php from '../../assets/images/logos/php.png';
 import gulp from '../../assets/images/logos/gulp.png';
 import sass from '../../assets/images/logos/sass.png';
 import mamp from '../../assets/images/logos/mamp.png';
-import frndly from '../../assets/images/frndly.jpg';
+import wearelift from '../../assets/images/LIFT-Agency.png';
 
 export default class LiftSite extends Component {
   constructor() {
     super();
     this.state = {
       name: 'Frndly TV',
-      img: frndly,
+      img: wearelift,
       stack: [
         { name: 'PHP', img: php, number: 350 },
         { name: 'Sass', img: sass, number: 450 },
@@ -33,15 +33,26 @@ export default class LiftSite extends Component {
         <div className="project-layout">
           <Row>
             <Col md={{ size: 6, order: 2 }} className="project-description">
-              <img alt="Frndly Tv" className="project-logo" src={frndly} />
-              <h1>Lift Site</h1>
+              <a
+                href="https://www.wearelift.com/"
+                target="_blank rel="
+                rel="noopener noreferrer"
+              >
+                <img alt="Frndly Tv" className="project-logo" src={wearelift} />
+              </a>
+              <a
+                href="https://www.wearelift.com/"
+                target="_blank rel="
+                rel="noopener noreferrer"
+              >
+                <h1>We Are Lift</h1>
+              </a>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
                 asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
                 asdasde asdasd asdasdbu
               </p>
               <h2>What I used:</h2>
-
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
@@ -56,8 +67,8 @@ export default class LiftSite extends Component {
               ))}
             </Col>
             <Col md={{ size: 6, order: 1 }} className="project-images">
-              <img alt="Frndly Tv" src={frndly} />
-              <img alt="Frndly Tv" src={frndly} />
+              <img alt="Frndly Tv" src={wearelift} />
+              <img alt="Frndly Tv" src={wearelift} />
             </Col>
           </Row>
         </div>

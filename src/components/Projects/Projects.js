@@ -19,7 +19,7 @@ const Projects = () => {
             <div className="header">
               {/* Projects I've <br className="em_hide_mobile" />
               Worked&nbsp;On */}
-              Lorem Ipsum
+              Projects I've Worked&nbsp;On
             </div>
           </ScrollAnimation>
         </Col>

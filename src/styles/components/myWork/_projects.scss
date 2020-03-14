@@ -80,6 +80,7 @@
 
         h1 {
           padding-top: 1rem;
+          text-decoration: underline;
           padding-bottom: 1rem;
         }
 
@@ -136,12 +137,13 @@
       h3 {
         font-size: 2.8rem;
         padding-top: 2rem;
+        color: white;
         @media (min-width: 335px) {
           font-size: 3rem;
         }
       }
       a {
-        color: $secondary;
+        color: white;
         text-decoration: underline;
       }
       p {

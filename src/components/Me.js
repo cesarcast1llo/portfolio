@@ -27,13 +27,13 @@ const Me = props => {
               <div className="contact">
                 Hello.
                 <br /> contact me:&nbsp;
-                <a href="/" target="_blank">
+                <a href="/" target="_blank" rel="noopener">
                   <img alt="Email Icon" className="email" />
                 </a>
-                <a href="/" target="_blank">
+                <a href="/" target="_blank" rel="noopener">
                   <img className="github" alt="Github Icon" />
                 </a>
-                <a href="/" target="_blank">
+                <a href="/" target="_blank" rel="noopener">
                   <img alt="LinkedIn icon" className="lnkdin" />
                 </a>
               </div>

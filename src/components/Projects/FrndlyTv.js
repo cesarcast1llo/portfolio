@@ -33,8 +33,14 @@ export default class FrndlyTv extends Component {
         <div className="project-layout">
           <Row>
             <Col md={{ size: 6 }} className="project-description">
-              <img alt="Frndly Tv" className="project-logo" src={frndly} />
-              <h1>Frndly</h1>
+              <a
+                href="https://www.frndlytv.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img alt="Frndly Tv" className="project-logo" src={frndly} />
+                <h1>Frndly</h1>
+              </a>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
                 asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa

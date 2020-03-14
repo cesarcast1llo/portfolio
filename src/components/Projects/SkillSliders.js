@@ -29,9 +29,9 @@ export default class SkillSliders extends Component {
     this.state = {
       skills: [
         { name: 'HTML', img: html, number: 250 },
-        { name: '(S)CSS', img: css, number: 650 },
-        { name: 'Javascript', img: javascript, number: 1050 },
-        { name: 'React.js', img: react, number: 1450 },
+        { name: '(S)CSS', img: css, number: 450 },
+        { name: 'Javascript', img: javascript, number: 650 },
+        { name: 'React.js', img: react, number: 850 },
         { name: 'Emails', img: emails, number: 250 },
         { name: 'Next.js', img: next, number: 450 },
         { name: 'Gatsby', img: gatsby, number: 650 },
@@ -101,7 +101,7 @@ export default class SkillSliders extends Component {
               <ScrollAnimation
                 animateIn="fadeIn"
                 duration={2}
-                delay={1500}
+                delay={1000}
                 animateOnce={true}
               >
                 <Col md="12" className="show-more">

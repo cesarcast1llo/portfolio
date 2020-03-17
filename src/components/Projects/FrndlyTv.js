@@ -39,7 +39,7 @@ export default class FrndlyTv extends Component {
                 rel="noopener noreferrer"
               >
                 <img alt="Frndly Tv" className="project-logo" src={frndly} />
-                <h1>Frndly</h1>
+                <h1>Frndly.com</h1>
               </a>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde

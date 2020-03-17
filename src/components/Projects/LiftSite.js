@@ -45,7 +45,7 @@ export default class LiftSite extends Component {
                 target="_blank rel="
                 rel="noopener noreferrer"
               >
-                <h1>We Are Lift</h1>
+                <h1>WeAreLift.com</h1>
               </a>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde

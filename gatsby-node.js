@@ -94,3 +94,27 @@ exports.createPages = async ({ actions, graphql }) => {
     });
   });
 };
+
+exports.onCreateWebpackConfig = ({ stage, plugins, actions }) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.(html)/,
+          use: {
+            loader: 'html-loader',
+            options: {
+              attrs: [':data-src']
+            }
+          }
+        }
+      ]
+    },
+    plugins: [
+      plugins.define({
+        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`
+      })
+    ]
+  });
+};
+// creating webpack to host HTML emails DB

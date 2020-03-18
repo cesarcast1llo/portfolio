@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
 import HTML from '../../assets/images/logos/htmlemail.png';
@@ -34,7 +35,9 @@ export default class HTMLEmails extends Component {
           <Row>
             <Col md={{ size: 6 }} className="project-description">
               <img alt="Frndly Tv" className="project-logo" src={frndly} />
-              <h1>HTML Emails</h1>
+              <Link to="/html/">
+                <h1>HTML Emails</h1>
+              </Link>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
                 asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa

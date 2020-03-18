@@ -16,11 +16,7 @@ const Projects = () => {
             delay={250}
             animateOnce={true}
           >
-            <div className="header">
-              {/* Projects I've <br className="em_hide_mobile" />
-              Worked&nbsp;On */}
-              Projects I've Worked&nbsp;On
-            </div>
+            <div className="header">Projects I've Worked&nbsp;On</div>
           </ScrollAnimation>
         </Col>
       </Row>

@@ -45,7 +45,7 @@ const Contact = () => {
                 </a>
               </h3>
               <p>
-                checkout my <Link to="/blog/">blog</Link> focusing on all
+                Checkout my <Link to="/blog/">blog</Link> focusing on all
                 javascript from problems, polls, and things i see on a daily
                 basis
               </p>

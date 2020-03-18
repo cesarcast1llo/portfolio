@@ -43,8 +43,8 @@ export default class FrndlyTv extends Component {
               </a>
               <p>
                 Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
-                asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
-                asdasde asdasd asdasdbu
+                {/* asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
+                asdasde asdasd asdasdbu */}
               </p>
               <h2>What I used:</h2>
 

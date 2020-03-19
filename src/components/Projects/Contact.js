@@ -48,8 +48,7 @@ const Contact = () => {
                 Checkout my <Link to="/blog/">blog</Link> focusing on all
                 javascript from problems, polls, and things i see on a daily
                 basis
-                https://www.cesarcast1llo.com/
-                alright here it is. it's nowhere near finished but i needed to get it up asap since i wrote down that i'd have it earlier than today. but anyways, all i am missing is a image of me as an illustration where 
+
               </p> */}
             </div>
             <br />

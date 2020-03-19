@@ -16,12 +16,12 @@
   "dependencies": {
     "body-scroll-lock": "^2.6.4",
     "bootstrap": "^4.4.1",
-    "gatsby": "^2.18.12",
+    "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-offline": "^3.0.27",
     "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sass": "^2.1.31",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-github-api": "^0.1.5",
@@ -40,6 +40,7 @@
     "reactstrap": "^8.3.2"
   },
   "devDependencies": {
+    "html-loader": "^0.5.5",
     "prettier": "^1.19.1"
   },
   "keywords": [

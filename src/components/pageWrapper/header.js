@@ -39,7 +39,7 @@ const Header = props => {
 
   return (
     <header style={{ display: props.headerHide }}>
-      <div
+      {/* <div
         className={`header-container fixed-top`}
         style={{ display: displayHeader, backgroundColor: headerBgColor }}
       >
@@ -57,7 +57,7 @@ const Header = props => {
             <Hamburg />
           </div>
         </Navbar>
-      </div>
+      </div> */}
     </header>
   );
 };

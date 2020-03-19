@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import PageWrapper from '../components/PageWrapper.js';
 import Me from '../components/Me.js';
-import MyWork from '../components/MyWork';
+import Work from '../components/Work';
 import { Cookies } from 'react-cookie';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 const cookies = new Cookies();
@@ -18,37 +18,34 @@ class Index extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   if (this.state.cookies === cookies.get('activate')) {
-  //     this.setState({
-  //       className: '',
-  //       showIndexPage: true
-  //     });
-  //     enableBodyScroll(this.targetElement);
-  //   } else {
-  //     this.targetElement = document.querySelector('body');
-  //     disableBodyScroll(this.targetElement);
-  //     setTimeout(
-  //       () => {
-  //         this.setState(prevState => ({
-  //           className: 'heroBg',
-  //           showIndexPage: true,
-  //           animationText: 'hide-name',
-  //           cookies: cookies.get('activate')
-  //         }));
-  //         enableBodyScroll(this.targetElement);
-  //       }
-  //       // , 1000
-  //     );
-  //   }
-  // }
+  componentDidMount() {
+    if (this.state.cookies === cookies.get('activate')) {
+      this.setState({
+        className: '',
+        showIndexPage: true
+      });
+      enableBodyScroll(this.targetElement);
+    } else {
+      this.targetElement = document.querySelector('body');
+      disableBodyScroll(this.targetElement);
+      setTimeout(() => {
+        this.setState(prevState => ({
+          className: 'heroBg',
+          showIndexPage: true,
+          animationText: 'hide-name',
+          cookies: cookies.get('activate')
+        }));
+        enableBodyScroll(this.targetElement);
+      }, 3500);
+    }
+  }
 
-  // componentDidUpdate() {
-  //   cookies.set('activate', 'true', {
-  //     path: '/',
-  //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
-  //   });
-  // }
+  componentDidUpdate() {
+    cookies.set('activate', 'true', {
+      path: '/',
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+    });
+  }
 
   // ^disable if you want to test animation and clear cookies^
 
@@ -66,7 +63,7 @@ class Index extends Component {
             <Container className="index-page">
               <Me />
             </Container>
-            <MyWork />
+            <Work />
           </>
         ) : null}
       </PageWrapper>

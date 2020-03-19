@@ -1,3 +1,14 @@
+.header {
+  text-align: center;
+  font-size: 4.8rem;
+  line-height: 5rem;
+  font-weight: 300;
+  padding-top: 1rem;
+  @media (min-width: $XS) {
+    padding-top: 1.5rem;
+  }
+}
+
 .projects {
   clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
   -webkit-clip-path: polygon(
@@ -12,9 +23,8 @@
   padding: 3rem 1.5rem;
   width: 100%;
   margin: 0 8px;
-  border: 1px solid red;
   @media (min-width: $XS) {
-    padding: 4rem 2.5rem;
+    padding: 4rem 2.5rem 0;
     margin: 0 15px;
     clip-path: polygon(
       0 calc(0% + 45px),
@@ -33,42 +43,157 @@
   .format {
     margin: 0 auto;
     max-width: 900px !important;
-    padding: 0 0 40px;
+    padding-bottom: 5rem;
 
     @media (min-width: $XS) {
-      padding: 0 0 60px;
-    }
-
-    .header {
-      font-size: 5rem;
-      padding-bottom: 0.75rem;
-      @media (min-width: $XS) {
-        padding-bottom: 3rem;
-      }
+      padding-bottom: 6rem;
     }
 
     .project-layout {
       margin: 0 auto;
 
-      .project {
-        .project-logo {
-          max-width: 250px;
+      .project-images {
+        img {
+          margin: 0 auto;
+          max-width: 450px;
+          width: 100%;
+        }
+
+        img:last-child {
+          display: none;
+          @media (min-width: $S) {
+            padding-top: 2rem;
+            display: block;
+          }
         }
       }
-      .intro {
-        font-size: 4rem;
-        text-align: center;
+      .project-description {
+        vertical-align: middle;
+        margin: auto 0;
+        padding: 0 15px 25px;
+        @media (min-width: $S) {
+          padding: 0 15px 25px;
+        }
+
+        .project-logo {
+          max-width: 100px;
+          width: 100%;
+          padding-bottom: 2rem;
+        }
+
+        h1 {
+          text-decoration: underline;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 20px;
+          padding-bottom: 1rem;
+          @media (min-width: $S) {
+            font-size: 17px;
+            line-height: 21px;
+          }
+        }
+
+        .logos {
+          display: inline-block;
+          margin-right: 10px;
+
+          img {
+            max-width: 50px;
+          }
+        }
+
+        .logos:last-child {
+          margin: 0;
+        }
+      }
+    }
+    .resume {
+      text-align: center;
+
+      h1 {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+        font-weight: 300;
       }
 
-      p {
-        margin: 0;
-        padding-bottom: 4rem;
-        font-size: 17px;
-        line-height: 21px;
-        @media (min-width: $XS) {
-          padding-bottom: 5rem;
+      .contact {
+        img {
+          max-width: 65px;
+          @media (min-width: $mobile) {
+            max-width: 75px;
+          }
+        }
+        #margin {
+          margin-right: 1rem;
+          margin-left: 1rem;
+          @media (min-width: $S) {
+            margin-right: 2rem;
+            margin-left: 2rem;
+          }
         }
       }
+
+      h3 {
+        font-size: 2.8rem;
+        padding-top: 2rem;
+        color: white;
+        @media (min-width: 335px) {
+          font-size: 3rem;
+        }
+      }
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 3rem;
+        @media (min-width: $XS) {
+          font-size: 17px;
+          line-height: 21px;
+        }
+      }
+    }
+  }
+}
+
+.odd {
+  @extend .projects;
+  background: $gradient;
+  color: white;
+  margin: 0;
+
+  .format {
+    padding: 5rem 0 10rem;
+
+    @media (min-width: $S) {
+      padding: 7rem 0 11rem;
+    }
+  }
+
+  h1,
+  h2 {
+    color: white;
+  }
+}
+#last.odd {
+  clip-path: polygon(0 calc(0% + 45px), 100% 0, 100% calc(100% - 0px), 0 100%);
+  -webkit-clip-path: polygon(
+    0 calc(0% + 45px),
+    100% 0,
+    100% calc(100% - 0px),
+    0 100%
+  );
+
+  .format {
+    padding: 5rem 0 7rem;
+
+    @media (min-width: $S) {
+      padding: 7rem 0 9rem;
     }
   }
 }

@@ -8,7 +8,6 @@ import aws from '../../assets/images/logos/aws.png';
 import sf from '../../assets/images/logos/salesforce.png';
 import psd from '../../assets/images/logos/photoshop.png';
 import inD from '../../assets/images/logos/indesign.png';
-import xd from '../../assets/images/logos/xd.png';
 import sketch from '../../assets/images/logos/sketch.svg';
 
 import html from '../../assets/images/logos/html.png';
@@ -30,24 +29,22 @@ export default class SkillSliders extends Component {
     this.state = {
       skills: [
         { name: 'HTML', img: html, number: 250 },
-        { name: '(S)CSS', img: css, number: 650 },
-        { name: 'Javascript', img: javascript, number: 1050 },
-        { name: 'React.js', img: react, number: 1450 },
+        { name: '(S)CSS', img: css, number: 450 },
+        { name: 'Javascript', img: javascript, number: 650 },
+        { name: 'React.js', img: react, number: 850 },
         { name: 'Emails', img: emails, number: 250 },
         { name: 'Next.js', img: next, number: 450 },
-        { name: 'Node.js', img: node, number: 650 },
-        { name: 'Gatsby', img: gatsby, number: 850 },
-        // graphql php
-        { name: 'Wordpress', img: wordpress }
+        { name: 'Gatsby', img: gatsby, number: 650 },
+        { name: 'Node.js', img: node, number: 850 }
       ],
       tools: [
         { name: 'Github', src: github, number: 1200 },
-        { name: 'Heroku', src: heroku, number: 1350 },
-        { name: 'AWS', src: aws, number: 1500 },
-        { name: 'Salesforce', src: sf, number: 1650 },
-        { name: 'Photoshop', src: psd, number: 1800 },
-        { name: 'InDesign', src: inD, number: 1950 },
-        { name: 'XD', src: xd, number: 2100 },
+        { name: 'Wordpress', src: wordpress, number: 1350 },
+        { name: 'Heroku', src: heroku, number: 1500 },
+        { name: 'AWS', src: aws, number: 1650 },
+        { name: 'Salesforce', src: sf, number: 1800 },
+        { name: 'Photoshop', src: psd, number: 1950 },
+        { name: 'InDesign', src: inD, number: 2100 },
         { name: 'Sketch', src: sketch, number: 2250 }
       ],
       itemsToShow: 4,
@@ -70,8 +67,8 @@ export default class SkillSliders extends Component {
           <div className="format">
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={2}
-              delay={250}
+              duration={1.5}
+              delay={100}
               animateOnce={true}
             >
               <div className="intro">
@@ -103,8 +100,8 @@ export default class SkillSliders extends Component {
 
               <ScrollAnimation
                 animateIn="fadeIn"
-                duration={2}
-                delay={1500}
+                duration={1.5}
+                delay={1000}
                 animateOnce={true}
               >
                 <Col md="12" className="show-more">
@@ -121,7 +118,7 @@ export default class SkillSliders extends Component {
 
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={2}
+              duration={1.5}
               delay={1800}
               animateOnce={true}
             >

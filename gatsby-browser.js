@@ -1,2 +1,3 @@
-import('./src/styles/portfolio.scss');
-require('bootstrap/dist/css/bootstrap.min.css');
+import './src/styles/portfolio.scss';
+//bootstrap
+import 'bootstrap/dist/css/bootstrap.css';

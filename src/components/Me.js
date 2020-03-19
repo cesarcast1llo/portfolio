@@ -82,7 +82,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={450}
+                delay={950}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">
@@ -93,7 +93,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={550}
+                delay={1050}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">
@@ -104,7 +104,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={650}
+                delay={1150}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">

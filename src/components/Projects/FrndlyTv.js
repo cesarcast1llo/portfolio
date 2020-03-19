@@ -42,20 +42,20 @@ export default class FrndlyTv extends Component {
                   className="animate"
                   animateIn="fadeIn"
                   duration={1}
-                  delay={450}
-                  animateOnce={true}
-                >
-                  <img alt="Frndly Tv" className="project-logo" src={frndly} />
-                </ScrollAnimation>
-                <ScrollAnimation
-                  className="animate"
-                  animateIn="fadeIn"
-                  duration={1}
                   delay={550}
                   animateOnce={true}
                 >
                   <h1>Friendly TV</h1>
                 </ScrollAnimation>
+                {/* <ScrollAnimation
+                  className="animate"
+                  animateIn="fadeIn"
+                  duration={1}
+                  delay={450}
+                  animateOnce={true}
+                >
+                  <img alt="Frndly Tv" className="project-logo" src={frndly} />
+                </ScrollAnimation> */}
               </a>
               <ScrollAnimation
                 className="animate"

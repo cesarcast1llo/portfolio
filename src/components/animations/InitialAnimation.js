@@ -2,10 +2,10 @@ import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { Transition } from 'react-spring/renderprops';
 
-const c = [{ text: 'E' }];
+const c = [{ text: 'C' }];
 const e = [{ text: 'E' }];
-const s = [{ text: 'A' }];
-const a = [{ text: 'E' }];
+const s = [{ text: 'S' }];
+const a = [{ text: 'A' }];
 const r = [{ text: 'R' }];
 
 const InitialAnimation = props => {
@@ -87,7 +87,7 @@ const InitialAnimation = props => {
           {props => (
             <div style={props}>
               <p id="cast" className="name">
-                IPSUMMMM
+                CASTILLO
               </p>
             </div>
           )}

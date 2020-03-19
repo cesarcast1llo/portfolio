@@ -68,7 +68,7 @@ export default class SkillSliders extends Component {
             <ScrollAnimation
               animateIn="fadeIn"
               duration={1.5}
-              delay={250}
+              delay={100}
               animateOnce={true}
             >
               <div className="intro">

@@ -28,27 +28,24 @@ class Index extends Component {
     } else {
       this.targetElement = document.querySelector('body');
       disableBodyScroll(this.targetElement);
-      setTimeout(
-        () => {
-          this.setState(prevState => ({
-            className: 'heroBg',
-            showIndexPage: true,
-            animationText: 'hide-name',
-            cookies: cookies.get('activate')
-          }));
-          enableBodyScroll(this.targetElement);
-        }
-        // , 1000
-      );
+      setTimeout(() => {
+        this.setState(prevState => ({
+          className: 'heroBg',
+          showIndexPage: true,
+          animationText: 'hide-name',
+          cookies: cookies.get('activate')
+        }));
+        enableBodyScroll(this.targetElement);
+      }, 3500);
     }
   }
 
-  // componentDidUpdate() {
-  //   cookies.set('activate', 'true', {
-  //     path: '/',
-  //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
-  //   });
-  // }
+  componentDidUpdate() {
+    cookies.set('activate', 'true', {
+      path: '/',
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+    });
+  }
 
   // ^disable if you want to test animation and clear cookies^
 

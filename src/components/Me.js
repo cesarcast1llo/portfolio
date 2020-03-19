@@ -66,13 +66,13 @@ const Me = props => {
                 <p>
                   The career of a professional athlete is short-lived, but the
                   skills and experiences attained during the journey last you a
-                  lifetime. I apply the same drive to succeed as a Web Developer
-                  where I showcase my retentive learning, creative thinking, and
-                  superb work ethic. I like finding something new everyday that
-                  I can create with web development. When I am not huddled over
-                  my laptop finding a missing semi-colon, I enjoy spending time
-                  with family, watching quality fútbol, and finding a new place
-                  to travel&nbsp;to.
+                  lifetime. I apply the same drive to succeed as a Front End
+                  Developer where I showcase my retentive learning, creative
+                  thinking, and superb work ethic. I like finding something new
+                  everyday that I can create with web development. When I am not
+                  huddled over my laptop, I enjoy spending time with family,
+                  watching quality fútbol, and finding a new place to
+                  travel&nbsp;to.
                 </p>
               </ScrollAnimation>
             </div>
@@ -82,7 +82,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={950}
+                delay={450}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">
@@ -93,7 +93,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={1050}
+                delay={550}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">
@@ -104,7 +104,7 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={1150}
+                delay={650}
                 animateOnce={true}
               >
                 <a href="/" target="_blank" rel="noopener">

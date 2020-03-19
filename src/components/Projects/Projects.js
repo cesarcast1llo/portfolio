@@ -13,7 +13,7 @@ const Projects = () => {
           <ScrollAnimation
             animateIn="fadeIn"
             duration={1}
-            delay={250}
+            delay={350}
             animateOnce={true}
           >
             <div className="header">Projects I've Worked&nbsp;On</div>

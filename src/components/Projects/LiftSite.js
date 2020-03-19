@@ -38,7 +38,7 @@ export default class LiftSite extends Component {
                 target="_blank rel="
                 rel="noopener noreferrer"
               >
-                <ScrollAnimation
+                {/* <ScrollAnimation
                   className="animate"
                   animateIn="fadeIn"
                   duration={1}
@@ -50,7 +50,7 @@ export default class LiftSite extends Component {
                     className="project-logo"
                     src={wearelift}
                   />
-                </ScrollAnimation>
+                </ScrollAnimation> */}
               </a>
               <a
                 href="https://www.wearelift.com/"

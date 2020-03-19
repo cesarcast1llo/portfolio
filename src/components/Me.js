@@ -85,7 +85,11 @@ const Me = props => {
                 delay={950}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a
+                  href="mailto:cescastillo25@gmail.com"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <img alt="Email Icon" src={email} />
                 </a>
               </ScrollAnimation>
@@ -96,7 +100,11 @@ const Me = props => {
                 delay={1050}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a
+                  href="https://github.com/cesarcast1llo"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <img id="margin" alt="Github Icon" src={github} />
                 </a>
               </ScrollAnimation>
@@ -107,7 +115,11 @@ const Me = props => {
                 delay={1150}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a
+                  href="https://www.linkedin.com/in/cescastillo/"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <img alt="LinkedIn icon" src={linkedin} />
                 </a>
               </ScrollAnimation>

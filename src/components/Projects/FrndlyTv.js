@@ -14,10 +14,10 @@ export default class FrndlyTv extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Next.js', img: next, number: 350 },
-        { name: 'Javascript', img: javascript, number: 450 },
-        { name: 'Sass', img: sass, number: 550 },
-        { name: 'Node.js', img: node, number: 650 }
+        { name: 'Next.js', img: next, number: 500 },
+        { name: 'Javascript', img: javascript, number: 650 },
+        { name: 'Sass', img: sass, number: 800 },
+        { name: 'Node.js', img: node, number: 950 }
       ]
     };
   }
@@ -39,22 +39,21 @@ export default class FrndlyTv extends Component {
                 rel="noopener noreferrer"
               >
                 <img alt="Frndly Tv" className="project-logo" src={frndly} />
-                <h1>Frndly.com</h1>
+                <h1>Friendly TV</h1>
               </a>
-              <p>
-                Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
-                {/* asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
-                asdasde asdasd asdasdbu */}
-              </p>
-              <h2>What I used:</h2>
+
+              <p>Live TV internet-based streaming TV&nbsp;service</p>
+
+              <h2>Developed In:</h2>
 
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
+                    className="animate"
                     animateIn="fadeIn"
-                    duration={2.5}
+                    duration={2}
+                    delay={stack.number}
                     animateOnce={true}
-                    key={i}
                   >
                     <img alt={stack.name} src={stack.img} />
                   </ScrollAnimation>

@@ -15,10 +15,10 @@ export default class HTMLEmails extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'HTML', img: HTML, number: 350 },
-        { name: 'CSS', img: css, number: 450 },
-        { name: 'Email On Acid', img: eoa, number: 550 },
-        { name: 'Salesforce', img: salesforce, number: 650 }
+        { name: 'HTML', img: HTML, number: 500 },
+        { name: 'CSS', img: css, number: 650 },
+        { name: 'Email On Acid', img: eoa, number: 800 },
+        { name: 'Salesforce', img: salesforce, number: 950 }
       ]
     };
   }
@@ -38,20 +38,24 @@ export default class HTMLEmails extends Component {
               <Link to="/html/">
                 <h1>HTML Emails</h1>
               </Link>
+
               <p>
-                Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
-                asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
-                asdasde asdasd asdasdbu
+                Coded and developed 100+ responsive HTML emails using HTML4,
+                Salesforce or React.js. All emails were proofed for HTML best
+                practices while being tested on 70+ email clients and devices
+                before delivery.
               </p>
-              <h2>What I used:</h2>
+
+              <h2>Developed In:</h2>
 
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
+                    className="animate"
                     animateIn="fadeIn"
-                    duration={2.5}
+                    duration={2}
+                    delay={stack.number}
                     animateOnce={true}
-                    key={i}
                   >
                     <img alt={stack.name} src={stack.img} />
                   </ScrollAnimation>

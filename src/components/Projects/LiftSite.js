@@ -14,10 +14,10 @@ export default class LiftSite extends Component {
       name: 'Frndly TV',
       img: wearelift,
       stack: [
-        { name: 'PHP', img: php, number: 350 },
-        { name: 'Sass', img: sass, number: 450 },
-        { name: 'Gulp', img: gulp, number: 550 },
-        { name: 'MAMP', img: mamp, number: 650 }
+        { name: 'PHP', img: php, number: 500 },
+        { name: 'Sass', img: sass, number: 650 },
+        { name: 'Gulp', img: gulp, number: 800 },
+        { name: 'MAMP', img: mamp, number: 950 }
       ]
     };
   }
@@ -45,21 +45,24 @@ export default class LiftSite extends Component {
                 target="_blank rel="
                 rel="noopener noreferrer"
               >
-                <h1>WeAreLift.com</h1>
+                <h1>Lift Creative Agency</h1>
               </a>
+
               <p>
-                Lorem ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa asdasde
-                {/* asdasd asdasdbu ipsuma asfa asdasde asdasd asdasdbu ipsuma asfa
-                asdasde asdasd asdasdbu */}
+                LIFT is a strategic design agency specializing in developing
+                creative ideas that elevate&nbsp;brands
               </p>
-              <h2>What I used:</h2>
+
+              <h2>Developed In:</h2>
+
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
+                    className="animate"
                     animateIn="fadeIn"
-                    duration={2.5}
+                    duration={2}
+                    delay={stack.number}
                     animateOnce={true}
-                    key={i}
                   >
                     <img alt={stack.name} src={stack.img} />
                   </ScrollAnimation>

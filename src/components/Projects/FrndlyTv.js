@@ -14,10 +14,10 @@ export default class FrndlyTv extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Next.js', img: next, number: 500 },
-        { name: 'Javascript', img: javascript, number: 650 },
-        { name: 'Sass', img: sass, number: 800 },
-        { name: 'Node.js', img: node, number: 950 }
+        { name: 'Next.js', img: next, number: 850 },
+        { name: 'Javascript', img: javascript, number: 1000 },
+        { name: 'Sass', img: sass, number: 1150 },
+        { name: 'Node.js', img: node, number: 1300 }
       ]
     };
   }
@@ -38,20 +38,49 @@ export default class FrndlyTv extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img alt="Frndly Tv" className="project-logo" src={frndly} />
-                <h1>Friendly TV</h1>
+                <ScrollAnimation
+                  className="animate"
+                  animateIn="fadeIn"
+                  duration={1}
+                  delay={450}
+                  animateOnce={true}
+                >
+                  <img alt="Frndly Tv" className="project-logo" src={frndly} />
+                </ScrollAnimation>
+                <ScrollAnimation
+                  className="animate"
+                  animateIn="fadeIn"
+                  duration={1}
+                  delay={550}
+                  animateOnce={true}
+                >
+                  <h1>Friendly TV</h1>
+                </ScrollAnimation>
               </a>
-
-              <p>Live TV internet-based streaming TV&nbsp;service</p>
-
-              <h2>Developed In:</h2>
-
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1.5}
+                delay={650}
+                animateOnce={true}
+              >
+                <p>Live TV internet-based streaming TV&nbsp;service</p>
+              </ScrollAnimation>
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1.5}
+                delay={750}
+                animateOnce={true}
+              >
+                <h2>Developed In:</h2>
+              </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
                     className="animate"
                     animateIn="fadeIn"
-                    duration={2}
+                    duration={1}
                     delay={stack.number}
                     animateOnce={true}
                   >

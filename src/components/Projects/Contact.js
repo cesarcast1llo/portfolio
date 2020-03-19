@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { Row, Col } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import resume from '../../assets/documents/cesarcastillo_resume.pdf';
@@ -44,11 +44,11 @@ const Contact = () => {
                   Download my resume
                 </a>
               </h3>
-              <p>
+              {/* <p>
                 Checkout my <Link to="/blog/">blog</Link> focusing on all
                 javascript from problems, polls, and things i see on a daily
                 basis
-              </p>
+              </p> */}
             </div>
             <br />
           </div>

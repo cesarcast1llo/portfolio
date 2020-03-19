@@ -67,7 +67,7 @@ export default class SkillSliders extends Component {
           <div className="format">
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={2}
+              duration={1.5}
               delay={250}
               animateOnce={true}
             >
@@ -100,7 +100,7 @@ export default class SkillSliders extends Component {
 
               <ScrollAnimation
                 animateIn="fadeIn"
-                duration={2}
+                duration={1.5}
                 delay={1000}
                 animateOnce={true}
               >
@@ -118,7 +118,7 @@ export default class SkillSliders extends Component {
 
             <ScrollAnimation
               animateIn="fadeIn"
-              duration={2}
+              duration={1.5}
               delay={1800}
               animateOnce={true}
             >

@@ -15,10 +15,10 @@ export default class HTMLEmails extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'HTML', img: HTML, number: 500 },
-        { name: 'CSS', img: css, number: 650 },
-        { name: 'Email On Acid', img: eoa, number: 800 },
-        { name: 'Salesforce', img: salesforce, number: 950 }
+        { name: 'HTML', img: HTML, number: 850 },
+        { name: 'CSS', img: css, number: 1000 },
+        { name: 'Email On Acid', img: eoa, number: 1150 },
+        { name: 'Salesforce', img: salesforce, number: 1300 }
       ]
     };
   }
@@ -34,26 +34,55 @@ export default class HTMLEmails extends Component {
         <div className="project-layout">
           <Row>
             <Col md={{ size: 6 }} className="project-description">
-              <img alt="Frndly Tv" className="project-logo" src={frndly} />
-              <Link to="/html/">
-                <h1>HTML Emails</h1>
-              </Link>
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={450}
+                animateOnce={true}
+              ></ScrollAnimation>
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={550}
+                animateOnce={true}
+              >
+                <Link to="/html/">
+                  <h1>HTML Emails</h1>
+                </Link>
+              </ScrollAnimation>
 
-              <p>
-                Coded and developed 100+ responsive HTML emails using HTML4,
-                Salesforce or React.js. All emails were proofed for HTML best
-                practices while being tested on 70+ email clients and devices
-                before delivery.
-              </p>
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={650}
+                animateOnce={true}
+              >
+                <p>
+                  Coded and developed 100+ responsive HTML emails using HTML4,
+                  Salesforce or React.js. All emails were proofed for HTML best
+                  practices while being tested on 70+ email clients and devices
+                  before delivery.
+                </p>
+              </ScrollAnimation>
 
-              <h2>Developed In:</h2>
-
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={750}
+                animateOnce={true}
+              >
+                <h2>Developed In:</h2>
+              </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
                     className="animate"
                     animateIn="fadeIn"
-                    duration={2}
+                    duration={1}
                     delay={stack.number}
                     animateOnce={true}
                   >

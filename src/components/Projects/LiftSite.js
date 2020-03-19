@@ -14,10 +14,10 @@ export default class LiftSite extends Component {
       name: 'Frndly TV',
       img: wearelift,
       stack: [
-        { name: 'PHP', img: php, number: 500 },
-        { name: 'Sass', img: sass, number: 650 },
-        { name: 'Gulp', img: gulp, number: 800 },
-        { name: 'MAMP', img: mamp, number: 950 }
+        { name: 'PHP', img: php, number: 850 },
+        { name: 'Sass', img: sass, number: 1000 },
+        { name: 'Gulp', img: gulp, number: 1150 },
+        { name: 'MAMP', img: mamp, number: 1300 }
       ]
     };
   }
@@ -38,29 +38,62 @@ export default class LiftSite extends Component {
                 target="_blank rel="
                 rel="noopener noreferrer"
               >
-                <img alt="Frndly Tv" className="project-logo" src={wearelift} />
+                <ScrollAnimation
+                  className="animate"
+                  animateIn="fadeIn"
+                  duration={1}
+                  delay={450}
+                  animateOnce={true}
+                >
+                  <img
+                    alt="Lift Creative Agency"
+                    className="project-logo"
+                    src={wearelift}
+                  />
+                </ScrollAnimation>
               </a>
               <a
                 href="https://www.wearelift.com/"
                 target="_blank rel="
                 rel="noopener noreferrer"
               >
-                <h1>Lift Creative Agency</h1>
+                <ScrollAnimation
+                  className="animate"
+                  animateIn="fadeIn"
+                  duration={1}
+                  delay={550}
+                  animateOnce={true}
+                >
+                  <h1>Lift Creative Agency</h1>
+                </ScrollAnimation>
               </a>
-
-              <p>
-                LIFT is a strategic design agency specializing in developing
-                creative ideas that elevate&nbsp;brands
-              </p>
-
-              <h2>Developed In:</h2>
-
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1.5}
+                delay={650}
+                animateOnce={true}
+              >
+                <p>
+                  LIFT is a strategic design agency specializing in developing
+                  creative ideas that elevate&nbsp;brands
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1.5}
+                delay={750}
+                animateOnce={true}
+              >
+                <h2>Developed In:</h2>
+              </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>
                   <ScrollAnimation
                     className="animate"
                     animateIn="fadeIn"
-                    duration={2}
+                    duration={1}
                     delay={stack.number}
                     animateOnce={true}
                   >

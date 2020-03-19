@@ -19,26 +19,6 @@
       margin: 0 auto;
       text-align: center;
 
-      .typed-wrapper {
-        margin: 0 auto;
-        text-align: center;
-
-        span {
-          input {
-            text-align: center;
-            border: 0;
-            font-size: 30px;
-            @media (min-width: $XS) {
-              font-size: 60px;
-            }
-          }
-          ::placeholder {
-            color: $secondary;
-            opacity: 1;
-          }
-        }
-      }
-
       .me {
         max-width: 250px;
         height: 200px;
@@ -50,36 +30,30 @@
       .contact {
         padding-top: 20px;
         margin: 0 auto;
-        display: block;
+        display: inline-block;
         color: black;
         font-size: 22px;
         font-weight: 500;
         @media (min-width: $XS) {
           font-weight: 600;
         }
+        .animate {
+          display: inline-block;
 
-        .email {
-          content: url('https://img.Icons8.com/small/90/3d3e3d/filled-message.png');
-          max-width: 20px;
-          margin-bottom: 0.2rem;
-          margin-right: 5px;
-          @media (min-width: $XS) {
-            margin-right: 5px;
+          img {
+            max-width: 65px;
+            @media (min-width: $mobile) {
+              max-width: 75px;
+            }
           }
-        }
-        .github {
-          content: url('https://img.icons8.com/ios-glyphs/120/3d3e3d/github.png');
-          max-width: 20px;
-          margin-bottom: 0.4rem;
-          margin-right: 5px;
-          @media (min-width: $XS) {
-            margin-right: 5px;
+          #margin {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            @media (min-width: $S) {
+              margin-right: 2rem;
+              margin-left: 2rem;
+            }
           }
-        }
-        .lnkdin {
-          content: url('https://img.icons8.com/ios-filled/100/3d3e3d/linkedin.png');
-          max-width: 20px;
-          margin-bottom: 0.4rem;
         }
       }
 
@@ -95,6 +69,9 @@
             font-size: 17px;
             line-height: 21px;
           }
+        }
+        p:last-child {
+          padding-top: 1rem;
         }
       }
     }

@@ -188,4 +188,12 @@
     100% calc(100% - 0px),
     0 100%
   );
+
+  .format {
+    padding: 5rem 0 7rem;
+
+    @media (min-width: $S) {
+      padding: 7rem 0 9rem;
+    }
+  }
 }

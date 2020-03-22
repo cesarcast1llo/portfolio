@@ -97,7 +97,11 @@ export default class LiftSite extends Component {
                     delay={stack.number}
                     animateOnce={true}
                   >
-                    <img alt={stack.name} src={stack.img} />
+                    <img
+                      className={stack.name}
+                      alt={stack.name}
+                      src={stack.img}
+                    />
                   </ScrollAnimation>
                 </div>
               ))}

@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap';
 import HTML from '../../assets/images/logos/htmlemail.png';
 import css from '../../assets/images/logos/css3.png';
 import salesforce from '../../assets/images/logos/salesforce.png';
-import eoa from '../../assets/images/logos/eoa.jpg';
+import eoa from '../../assets/images/logos/eoa.png';
 import frndly from '../../assets/images/frndly.jpg';
 
 export default class HTMLEmails extends Component {
@@ -86,7 +86,11 @@ export default class HTMLEmails extends Component {
                     delay={stack.number}
                     animateOnce={true}
                   >
-                    <img alt={stack.name} src={stack.img} />
+                    <img
+                      className={stack.name}
+                      alt={stack.name}
+                      src={stack.img}
+                    />
                   </ScrollAnimation>
                 </div>
               ))}

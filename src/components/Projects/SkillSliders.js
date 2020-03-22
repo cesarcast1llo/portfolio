@@ -8,7 +8,7 @@ import aws from '../../assets/images/logos/aws.png';
 import sf from '../../assets/images/logos/salesforce.png';
 import psd from '../../assets/images/logos/photoshop.png';
 import inD from '../../assets/images/logos/indesign.png';
-import sketch from '../../assets/images/logos/sketch.svg';
+import sketch from '../../assets/images/logos/sketch.png';
 
 import html from '../../assets/images/logos/html.png';
 import css from '../../assets/images/logos/css3.png';
@@ -31,11 +31,11 @@ export default class SkillSliders extends Component {
         { name: 'HTML', img: html, number: 250 },
         { name: '(S)CSS', img: css, number: 450 },
         { name: 'Javascript', img: javascript, number: 650 },
-        { name: 'React.js', img: react, number: 850 },
+        { name: 'React-js', img: react, number: 850 },
         { name: 'Emails', img: emails, number: 250 },
-        { name: 'Next.js', img: next, number: 450 },
+        { name: 'Next-js', img: next, number: 450 },
         { name: 'Gatsby', img: gatsby, number: 650 },
-        { name: 'Node.js', img: node, number: 850 }
+        { name: 'Node-js', img: node, number: 850 }
       ],
       tools: [
         { name: 'Github', src: github, number: 1200 },

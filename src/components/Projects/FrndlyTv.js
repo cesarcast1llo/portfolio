@@ -14,10 +14,10 @@ export default class FrndlyTv extends Component {
       name: 'Frndly TV',
       img: frndly,
       stack: [
-        { name: 'Next.js', img: next, number: 850 },
+        { name: 'Next-js', img: next, number: 850 },
         { name: 'Javascript', img: javascript, number: 1000 },
         { name: 'Sass', img: sass, number: 1150 },
-        { name: 'Node.js', img: node, number: 1300 }
+        { name: 'Node-js', img: node, number: 1300 }
       ]
     };
   }
@@ -45,7 +45,7 @@ export default class FrndlyTv extends Component {
                   delay={550}
                   animateOnce={true}
                 >
-                  <h1>Friendly TV</h1>
+                  <h1>Frndly TV</h1>
                 </ScrollAnimation>
                 {/* <ScrollAnimation
                   className="animate"
@@ -84,7 +84,11 @@ export default class FrndlyTv extends Component {
                     delay={stack.number}
                     animateOnce={true}
                   >
-                    <img alt={stack.name} src={stack.img} />
+                    <img
+                      className={stack.name}
+                      alt={stack.name}
+                      src={stack.img}
+                    />
                   </ScrollAnimation>
                 </div>
               ))}

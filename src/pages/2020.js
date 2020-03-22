@@ -54,7 +54,7 @@ class twentyTwenty extends Component {
               <h2 style={{ textDecoration: 'underline', textAlign: 'center' }}>
                 DEV
               </h2>
-              <h3>Advance in..</h3>
+              <h3>Master.</h3>
               <details>
                 <summary>Javascript</summary>
                 <ul>

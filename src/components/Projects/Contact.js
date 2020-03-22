@@ -19,7 +19,7 @@ const Contact = () => {
         >
           <div className="format">
             <div className="resume">
-              <h1>Reach Out</h1>
+              <h1>Let's work together</h1>
               <div className="contact">
                 <a href="mailto:cescastillo25@gmail.com" noopener="true">
                   <img alt="Email Icon" src={email} />
@@ -48,6 +48,7 @@ const Contact = () => {
                 Checkout my <Link to="/blog/">blog</Link> focusing on all
                 javascript from problems, polls, and things i see on a daily
                 basis
+
               </p> */}
             </div>
             <br />

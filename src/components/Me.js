@@ -82,10 +82,10 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={950}
+                delay={450}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a href="mailto:cescastillo25@gmail.com" noopener="true">
                   <img alt="Email Icon" src={email} />
                 </a>
               </ScrollAnimation>
@@ -93,10 +93,14 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={1050}
+                delay={550}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a
+                  href="https://github.com/cesarcast1llo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img id="margin" alt="Github Icon" src={github} />
                 </a>
               </ScrollAnimation>
@@ -104,10 +108,14 @@ const Me = props => {
                 className="animate"
                 animateIn="fadeIn"
                 duration={1.5}
-                delay={1150}
+                delay={650}
                 animateOnce={true}
               >
-                <a href="/" target="_blank" rel="noopener">
+                <a
+                  href="https://www.linkedin.com/in/cescastillo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img alt="LinkedIn icon" src={linkedin} />
                 </a>
               </ScrollAnimation>

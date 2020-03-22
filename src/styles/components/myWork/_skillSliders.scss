@@ -75,11 +75,15 @@
       img {
         max-width: 105px;
         @media (min-width: 375px) {
-          max-width: 125px;
+          max-width: 105px;
         }
         @media (min-width: $S) {
-          max-width: 150px;
+          max-width: 130px;
         }
+      }
+      .Next-js,
+      .Node-js {
+        padding-top: 2rem;
       }
     }
 
@@ -124,41 +128,68 @@
         display: inline-block;
 
         .Github {
-          max-width: 45px;
+          max-width: 43px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .Wordpress {
-          margin-right: 3px;
           max-width: 46px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .Heroku {
-          margin-right: 3px;
-          max-width: 41px;
+          max-width: 34px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .AWS {
-          margin-right: 6px;
           max-width: 45px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .Salesforce {
-          margin-right: 2px;
           max-width: 50px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .Photoshop {
-          max-width: 48px;
+          max-width: 43px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .InDesign {
-          max-width: 48px;
+          max-width: 43px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .XD {
-          margin-right: 3px;
-          max-width: 48px;
+          max-width: 43px;
           margin-top: 12px;
+          margin-right: 12px;
+          @media (min-width: $S) {
+            margin-right: 8px;
+          }
         }
         .Sketch {
           max-width: 40px;

@@ -41,9 +41,9 @@
           display: inline-block;
 
           img {
-            max-width: 65px;
+            max-width: 60px;
             @media (min-width: $mobile) {
-              max-width: 75px;
+              max-width: 60px;
             }
           }
           #margin {

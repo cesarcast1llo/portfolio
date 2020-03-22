@@ -15,8 +15,6 @@ const About = ({ data }) => (
       <Row>
         <Col className="about-page-wrapper">
           <div className="about">
-            <Link to="/">Home</Link>
-            <br />
             <Img
               fixed={data.file.childImageSharp.fixed}
               alt="CC"

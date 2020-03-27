@@ -31,11 +31,11 @@ export default class SkillSliders extends Component {
         { name: 'HTML', img: html, number: 250 },
         { name: '(S)CSS', img: css, number: 450 },
         { name: 'Javascript', img: javascript, number: 650 },
-        { name: 'React-js', img: react, number: 850 },
+        { name: 'React.js', img: react, number: 850 },
         { name: 'Emails', img: emails, number: 250 },
-        { name: 'Next-js', img: next, number: 450 },
+        { name: 'Next.js', class: 'image-middle', img: next, number: 450 },
         { name: 'Gatsby', img: gatsby, number: 650 },
-        { name: 'Node-js', img: node, number: 850 }
+        { name: 'Node.js', class: 'image-middle', img: node, number: 850 }
       ],
       tools: [
         { name: 'Github', src: github, number: 1200 },
@@ -91,7 +91,7 @@ export default class SkillSliders extends Component {
                       <p>{skill.name}</p>
                       <img
                         alt={skill.name}
-                        className={skill.name}
+                        className={skill.class ? skill.class : 'icons'}
                         src={skill.img}
                       />
                     </ScrollAnimation>

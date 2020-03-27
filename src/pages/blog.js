@@ -23,7 +23,7 @@ const Blog = () => (
               Tips and Tricks
             </h1>
             <p>will finish 50 different JS problems by June 2020</p>
-            <p>all published on medium(maaaybe) and dev.to</p>
+            <p>all published on dev.to and medium(maaaybe)</p>
             <a
               href="https://dev.to/cesarcast1llo"
               target="_blank"

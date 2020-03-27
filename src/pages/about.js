@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import PageWrapper from '../components/PageWrapper.js';
@@ -33,7 +33,8 @@ const About = ({ data }) => (
               to.
             </p>
             <h2>1992-2017</h2>
-            <p>
+            <h3>COMING SOON..</h3>
+            {/* <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock, a Latin
@@ -42,9 +43,10 @@ const About = ({ data }) => (
               passage, and going through the cites of the word in classical
               literature, discovered the undoubtable source. Lorem Ipsum comes
               from sections
-            </p>
+            </p> */}
             <h2>2017-Present</h2>
-            <p>
+            <h3>COMING SOON..</h3>
+            {/* <p>
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old. Richard McClintock, a Latin
@@ -53,8 +55,10 @@ const About = ({ data }) => (
               passage, and going through the cites of the word in classical
               literature, discovered the undoubtable source. Lorem Ipsum comes
               from sections
-            </p>
+            </p> */}
+            <h2>Coding Time</h2>
           </div>
+
           <div className="coding-time">
             <img
               className="coding-chart"
@@ -62,9 +66,9 @@ const About = ({ data }) => (
               src="https://wakatime.com/share/@c748e2cc-d321-4212-8e58-ccb0e2142b08/e41390c0-8804-43e8-a158-db614c80fd68.png"
             />
           </div>
-          <div className="quotes">
+          {/* <div className="quotes">
             <h1>ADD QUOTES HERE FROM FAV BOOKS</h1>
-          </div>
+          </div> */}
         </Col>
       </Row>
     </Container>

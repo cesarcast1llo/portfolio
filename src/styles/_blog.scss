@@ -29,6 +29,12 @@
           line-height: 38px;
         }
       }
+
+      p:last-child {
+        color: red;
+        padding-top: 20px;
+      }
+
       img {
         max-width: 50px;
         border-radius: 5px;

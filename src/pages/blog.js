@@ -17,15 +17,25 @@ const Blog = () => (
       <Row>
         <Col className="blog-wrapper">
           <div className="blog-intro">
+            <h1>Blog</h1>
             <h1>
-              Blog - All Javascript <br className="em_hide_desktop" />
+              All Javascript <br className="em_hide_desktop" />
               Tips and Tricks
             </h1>
             <p>will finish 50 different JS problems by June 2020</p>
             <p>all published on medium(maaaybe) and dev.to</p>
-            <a href="https://dev.to/cesarcast1llo">
+            <a
+              href="https://dev.to/cesarcast1llo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={devto} />
             </a>
+            <p>
+              these are not my articles, this is up to finalize gatsby node
+              structure. articles are Lorem Ipsum replacement text, will have
+              one up asap
+            </p>
           </div>
           <StaticQuery
             query={blogQuery}

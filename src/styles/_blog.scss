@@ -16,13 +16,22 @@
 
     .blog-intro {
       text-align: center;
-      font-size: 29px;
-      line-height: 34px;
       padding-bottom: 30px;
       @media (min-width: $XS) {
-        font-size: 35px;
-        line-height: 38px;
         padding-bottom: 40px;
+      }
+
+      h1 {
+        font-size: 29px;
+        line-height: 34px;
+        @media (min-width: $XS) {
+          font-size: 35px;
+          line-height: 38px;
+        }
+      }
+      img {
+        max-width: 50px;
+        border-radius: 5px;
       }
     }
 

@@ -42,9 +42,9 @@ class Hamburg extends Component {
           <Link to="/about" className="bm-li" onClick={this.toggleVisibility}>
             About
           </Link>
-          <Link to="/2020" className="bm-li" onClick={this.toggleVisibility}>
+          {/* <Link to="/2020" className="bm-li" onClick={this.toggleVisibility}>
             2020
-          </Link>
+          </Link> */}
         </div>
         <div
           role="button"

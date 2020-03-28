@@ -29,7 +29,7 @@ const Blog = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={devto} />
+              <img src={devto} alt="Dev.to" />
             </a>
             <p>
               these are not my articles, this is up to finalize gatsby node

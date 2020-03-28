@@ -32,8 +32,7 @@ class Index extends Component {
         this.setState(prevState => ({
           className: 'heroBg',
           showIndexPage: true,
-          animationText: 'hide-name',
-          cookies: cookies.get('activate')
+          animationText: 'hide-name'
         }));
         enableBodyScroll(this.targetElement);
       }, 3500);
@@ -66,6 +65,7 @@ class Index extends Component {
             <Work />
           </>
         ) : null}
+        x
       </PageWrapper>
     );
   }

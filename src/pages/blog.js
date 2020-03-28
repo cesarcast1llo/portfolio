@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
+import devto from '../assets/images/logos/dev.png';
 
 const Blog = () => (
   <PageWrapper
@@ -16,9 +17,25 @@ const Blog = () => (
       <Row>
         <Col className="blog-wrapper">
           <div className="blog-intro">
-            <p>BLOG - JS PROBLEMS</p>
-            <h2>connect blog posts to DEV.to</h2>
-            <h3>will finish 50 different JS problems by June 2020</h3>
+            <h1>Blog</h1>
+            <h1>
+              All Javascript <br className="em_hide_desktop" />
+              Tips and Tricks
+            </h1>
+            <p>will finish 50 different JS problems by June 2020</p>
+            <p>all published on dev.to and medium(maaaybe)</p>
+            <a
+              href="https://dev.to/cesarcast1llo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={devto} />
+            </a>
+            <p>
+              these are not my articles, this is up to finalize gatsby node
+              structure. articles are Lorem Ipsum replacement text, will have
+              one up asap
+            </p>
           </div>
           <StaticQuery
             query={blogQuery}

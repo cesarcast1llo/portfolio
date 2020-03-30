@@ -59,13 +59,13 @@
           width: 100%;
         }
 
-        img:last-child {
-          display: none;
-          @media (min-width: $S) {
-            padding-top: 2rem;
-            display: block;
-          }
-        }
+        // img:last-child {
+        //   display: none;
+        //   @media (min-width: $S) {
+        //     padding-top: 2rem;
+        //     display: block;
+        //   }
+        // }
       }
       .project-description {
         vertical-align: middle;
@@ -83,6 +83,10 @@
 
         h1 {
           text-decoration: underline;
+          padding-bottom: 1rem;
+        }
+
+        h2 {
           padding-bottom: 1rem;
         }
 

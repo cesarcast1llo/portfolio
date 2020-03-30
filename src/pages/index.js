@@ -65,7 +65,6 @@ class Index extends Component {
             <Work />
           </>
         ) : null}
-        x
       </PageWrapper>
     );
   }

@@ -38,14 +38,14 @@ export default class SkillSliders extends Component {
         { name: 'Node.js', class: 'image-middle', img: node, number: 850 }
       ],
       tools: [
-        { name: 'Github', src: github, number: 1200 },
-        { name: 'Wordpress', src: wordpress, number: 1350 },
-        { name: 'Heroku', src: heroku, number: 1500 },
-        { name: 'AWS', src: aws, number: 1650 },
-        { name: 'Salesforce', src: sf, number: 1800 },
-        { name: 'Photoshop', src: psd, number: 1950 },
-        { name: 'InDesign', src: inD, number: 2100 },
-        { name: 'Sketch', src: sketch, number: 2250 }
+        { name: 'Github', src: github, number: 750 },
+        { name: 'Wordpress', src: wordpress, number: 850 },
+        { name: 'Heroku', src: heroku, number: 950 },
+        { name: 'AWS', src: aws, number: 1050 },
+        { name: 'Salesforce', src: sf, number: 1150 },
+        { name: 'Photoshop', src: psd, number: 1250 },
+        { name: 'InDesign', src: inD, number: 1350 },
+        { name: 'Sketch', src: sketch, number: 1450 }
       ],
       itemsToShow: 4,
       expanded: false
@@ -119,7 +119,7 @@ export default class SkillSliders extends Component {
             <ScrollAnimation
               animateIn="fadeIn"
               duration={1.5}
-              delay={1800}
+              delay={1200}
               animateOnce={true}
             >
               <Row>

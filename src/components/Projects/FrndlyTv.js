@@ -5,7 +5,8 @@ import javascript from '../../assets/images/logos/javascript.png';
 import next from '../../assets/images/logos/nextjsblack.svg';
 import sass from '../../assets/images/logos/sass.png';
 import node from '../../assets/images/logos/nodejs.png';
-import frndly from '../../assets/images/frndly.jpg';
+import frndly from '../../assets/images/frndlytv.png';
+import frndlyOpt from '../../assets/images/frndlytv-opt.png';
 
 export default class FrndlyTv extends Component {
   constructor() {
@@ -32,7 +33,7 @@ export default class FrndlyTv extends Component {
       >
         <div className="project-layout">
           <Row>
-            <Col md={{ size: 6 }} className="project-description">
+            <Col md={{ size: 5 }} className="project-description">
               <a
                 href="https://www.frndlytv.com/"
                 target="_blank"
@@ -93,9 +94,9 @@ export default class FrndlyTv extends Component {
                 </div>
               ))}
             </Col>
-            <Col md={{ size: 6, order: 1 }} className="project-images">
-              <img alt="Frndly Tv" src={frndly} />
-              <img alt="Frndly Tv" src={frndly} />
+            <Col md={{ size: 7, order: 1 }} className="project-images">
+              <img alt="Frndly Tv" src={frndlyOpt} />
+              {/* <img alt="Frndly Tv" src={frndly} /> */}
             </Col>
           </Row>
         </div>

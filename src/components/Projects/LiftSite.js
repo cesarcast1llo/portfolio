@@ -5,7 +5,7 @@ import php from '../../assets/images/logos/php.png';
 import gulp from '../../assets/images/logos/gulp.png';
 import sass from '../../assets/images/logos/sass.png';
 import mamp from '../../assets/images/logos/mamp.png';
-import wearelift from '../../assets/images/LIFT-Agency.png';
+import wearelift from '../../assets/images/wearelift.png';
 
 export default class LiftSite extends Component {
   constructor() {
@@ -32,7 +32,7 @@ export default class LiftSite extends Component {
       >
         <div className="project-layout">
           <Row>
-            <Col md={{ size: 6, order: 2 }} className="project-description">
+            <Col md={{ size: 5, order: 2 }} className="project-description">
               <a
                 href="https://www.wearelift.com/"
                 target="_blank rel="
@@ -106,9 +106,9 @@ export default class LiftSite extends Component {
                 </div>
               ))}
             </Col>
-            <Col md={{ size: 6, order: 1 }} className="project-images">
-              <img alt="Frndly Tv" src={wearelift} />
-              <img alt="Frndly Tv" src={wearelift} />
+            <Col md={{ size: 7, order: 1 }} className="project-images">
+              <img alt="LIFT Creative Agency" src={wearelift} />
+              {/* <img alt="Frndly Tv" src={wearelift} /> */}
             </Col>
           </Row>
         </div>

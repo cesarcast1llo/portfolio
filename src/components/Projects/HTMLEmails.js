@@ -33,7 +33,7 @@ export default class HTMLEmails extends Component {
       >
         <div className="project-layout">
           <Row>
-            <Col md={{ size: 6 }} className="project-description">
+            <Col md={{ size: 12 }} className="project-description">
               <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
@@ -66,6 +66,14 @@ export default class HTMLEmails extends Component {
                   practices while being tested on 70+ email clients and devices
                   before&nbsp;delivery.
                 </p>
+                <p
+                  style={{
+                    fontWeight: 600,
+                    fontSize: 20
+                  }}
+                >
+                  Gallery coming soon.
+                </p>
               </ScrollAnimation>
 
               <ScrollAnimation
@@ -95,10 +103,9 @@ export default class HTMLEmails extends Component {
                 </div>
               ))}
             </Col>
-            <Col md={{ size: 6, order: 1 }} className="project-images">
+            {/* <Col md={{ size: 6, order: 1 }} className="project-images">
               <img alt="Frndly Tv" src={frndly} />
-              <img alt="Frndly Tv" src={frndly} />
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </ScrollAnimation>

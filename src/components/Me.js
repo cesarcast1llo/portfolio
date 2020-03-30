@@ -31,15 +31,16 @@ const Me = props => {
             <ScrollAnimation
               className="animate"
               animateIn="fadeIn"
-              duration={1.5}
+              duration={3}
               delay={550}
               animateOnce={true}
             >
-              <Img
+              {/* <Img
                 fixed={data.file.childImageSharp.fixed}
                 alt="CC"
                 className="logo-img"
-              />
+              /> */}
+              <h1 style={{ fontSize: '4.5rem' }}>Cesar Castillo</h1>
             </ScrollAnimation>
             <div className="info">
               <ScrollAnimation

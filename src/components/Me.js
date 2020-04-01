@@ -1,6 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+// import { useStaticQuery, graphql } from 'gatsby';
+// import Img from 'gatsby-image';
 import { Row, Col } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import github from '../assets/images/logos/github2.png';
@@ -8,20 +8,20 @@ import email from '../assets/images/logos/email.png';
 import linkedin from '../assets/images/logos/linkedin.png';
 
 const Me = props => {
-  const data = useStaticQuery(graphql`
-    {
-      file(
-        sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "gatsby-astronaut.png" }
-      ) {
-        childImageSharp {
-          fixed(width: 150) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     file(
+  //       sourceInstanceName: { eq: "images" }
+  //       relativePath: { eq: "gatsby-astronaut.png" }
+  //     ) {
+  //       childImageSharp {
+  //         fixed(width: 150) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   return (
     <ScrollAnimation animateIn="slideInUp" duration={1} animateOnce={true}>
       <Row>

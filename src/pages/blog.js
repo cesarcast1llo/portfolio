@@ -11,19 +11,22 @@ const Blog = () => (
     pageTitle="Blog"
     pageKeywords={[`gatsby`, `application`, `react`]}
     bgColor="blue"
-    backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
   >
     <Container className="blog-page-container">
       <Row>
         <Col className="blog-wrapper">
           <div className="blog-intro">
-            <h1>Blog</h1>
-            <h1>
-              All Javascript <br className="em_hide_desktop" />
-              Tips and Tricks
-            </h1>
-            <p>will finish 50 different JS problems by June 2020</p>
-            <p>all published on dev.to and medium(maaaybe)</p>
+            <h1>My Blog</h1>
+            <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2>
+            <p>
+              will finish 50 different JS problems by June 2020. all published
+              on my dev.to and medium. posting to: improve my coding skills
+              mainly javascript skills, building Javascript based projects using
+              Vanila JS, and to help others in the same situation I was in
+              looking for&nbsp;solutions.
+            </p>
+
             <a
               href="https://dev.to/cesarcast1llo"
               target="_blank"
@@ -31,11 +34,6 @@ const Blog = () => (
             >
               <img src={devto} alt="Dev.to" />
             </a>
-            <p>
-              these are not my articles, this is up to finalize gatsby node
-              structure. articles are Lorem Ipsum replacement text, will have
-              one up asap
-            </p>
           </div>
           <StaticQuery
             query={blogQuery}

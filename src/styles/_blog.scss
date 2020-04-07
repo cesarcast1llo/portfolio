@@ -17,22 +17,31 @@
     .blog-intro {
       text-align: center;
       padding-bottom: 30px;
+
       @media (min-width: $XS) {
         padding-bottom: 40px;
       }
 
       h1 {
-        font-size: 29px;
-        line-height: 34px;
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 5px;
+
         @media (min-width: $XS) {
-          font-size: 35px;
-          line-height: 38px;
+          padding-bottom: 10px;
         }
       }
 
-      p:last-child {
-        color: red;
-        padding-top: 20px;
+      h2 {
+        font-size: 25px;
+        line-height: 29px;
+        padding-bottom: 5px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 300;
       }
 
       img {
@@ -75,7 +84,7 @@
         }
 
         a {
-          color: black;
+          color: $secondary;
           font-size: 22px;
           line-height: 26px;
           margin-bottom: 0;
@@ -93,7 +102,7 @@
       .date {
         display: inline-block;
         font-style: italic;
-        color: red;
+        color: $primary;
         font-size: 15px;
         margin: 7px 0 7px 1px;
         font-weight: 400;

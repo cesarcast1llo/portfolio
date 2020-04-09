@@ -35,7 +35,7 @@ class Index extends Component {
           animationText: 'hide-name',
         }));
         enableBodyScroll(this.targetElement);
-      }, 3500);
+      }, 4000);
     }
   }
 
@@ -47,6 +47,7 @@ class Index extends Component {
   }
 
   // ^disable if you want to test animation and clear cookies^
+  // cookies last 24 hours
 
   render() {
     return (

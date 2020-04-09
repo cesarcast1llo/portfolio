@@ -22,14 +22,11 @@
         padding-bottom: 40px;
       }
 
-      h1 {
-        font-size: 32px;
-        line-height: 36px;
-        padding-bottom: 5px;
-
-        @media (min-width: $XS) {
-          padding-bottom: 10px;
-        }
+      .blog-title {
+        display: inline-block;
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: 400;
       }
 
       h2 {

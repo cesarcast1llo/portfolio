@@ -4,7 +4,13 @@ import { graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
+import { Transition } from 'react-spring/renderprops';
 import devto from '../assets/images/logos/dev.png';
+
+const b = [{ text: 'B' }];
+const l = [{ text: 'l' }];
+const o = [{ text: 'o' }];
+const g = [{ text: 'g' }];
 
 const Blog = () => (
   <PageWrapper
@@ -17,7 +23,58 @@ const Blog = () => (
       <Row>
         <Col className="blog-wrapper">
           <div className="blog-intro">
-            <h1>My Blog</h1>
+            <Transition
+              items={b}
+              keys={(item) => item.key}
+              delay="500"
+              from={{ transform: 'translate3d(0,-900px,0)' }}
+              enter={{ transform: 'translate3d(0,0px,0)' }}
+            >
+              {(item) => (props) => (
+                <p className="blog-title" style={props}>
+                  {item.text}
+                </p>
+              )}
+            </Transition>
+            <Transition
+              items={l}
+              keys={(item) => item.key}
+              delay="500"
+              from={{ transform: 'translate3d(0,-900px,0)' }}
+              enter={{ transform: 'translate3d(0,0px,0)' }}
+            >
+              {(item) => (props) => (
+                <p className="blog-title" style={props}>
+                  {item.text}
+                </p>
+              )}
+            </Transition>
+            <Transition
+              items={o}
+              keys={(item) => item.key}
+              delay="500"
+              from={{ transform: 'translate3d(0,-900px,0)' }}
+              enter={{ transform: 'translate3d(0,0px,0)' }}
+            >
+              {(item) => (props) => (
+                <p className="blog-title" style={props}>
+                  {item.text}
+                </p>
+              )}
+            </Transition>
+            <Transition
+              items={g}
+              keys={(item) => item.key}
+              delay="500"
+              from={{ transform: 'translate3d(0,-900px,0)' }}
+              enter={{ transform: 'translate3d(0,0px,0)' }}
+            >
+              {(item) => (props) => (
+                <p className="blog-title" style={props}>
+                  {item.text}
+                </p>
+              )}
+            </Transition>
             <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2>
             <p>
               will finish 50 different JS problems by June 2020. all published
@@ -26,7 +83,6 @@ const Blog = () => (
               Vanila JS, and to help others in the same situation I was in
               looking for&nbsp;solutions.
             </p>
-
             <a
               href="https://dev.to/cesarcast1llo"
               target="_blank"
@@ -37,7 +93,7 @@ const Blog = () => (
           </div>
           <StaticQuery
             query={blogQuery}
-            render={data => {
+            render={(data) => {
               return (
                 <>
                   {data.allMarkdownRemark.edges.map(({ node }) => (

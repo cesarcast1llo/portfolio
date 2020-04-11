@@ -72,7 +72,7 @@ export default class HTMLEmails extends Component {
                     fontSize: 20,
                   }}
                 >
-                  <Link to="/emailportal">Email Portal</Link>
+                  <Link to="/emails">Email Portal</Link>
                 </p>
               </ScrollAnimation>
 

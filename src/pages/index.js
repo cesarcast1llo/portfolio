@@ -35,7 +35,7 @@ class Index extends Component {
           animationText: 'hide-name',
         }));
         enableBodyScroll(this.targetElement);
-      }, 4500);
+      }, 4000000);
     }
   }
 

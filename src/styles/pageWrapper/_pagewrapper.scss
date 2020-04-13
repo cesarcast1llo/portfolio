@@ -38,13 +38,14 @@
       display: inline-block;
       font-size: 50px;
       line-height: 55px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
 
       @media (min-width: 375px) {
-        font-size: 70px;
-        line-height: 75px;
+        font-size: 60px;
+        line-height: 65px;
       }
       @media (min-width: $XS) {
+        letter-spacing: 2px;
         font-size: 115px;
         line-height: 120px;
       }

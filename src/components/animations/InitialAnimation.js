@@ -15,7 +15,7 @@ const InitialAnimation = (props) => {
         <Transition
           items={c}
           keys={(item) => item.key}
-          delay="1200"
+          delay="1000"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -28,7 +28,7 @@ const InitialAnimation = (props) => {
         <Transition
           items={e}
           keys={(item) => item.key}
-          delay="1300"
+          delay="1200"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -54,7 +54,7 @@ const InitialAnimation = (props) => {
         <Transition
           items={a}
           keys={(item) => item.key}
-          delay="1500"
+          delay="1600"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >
@@ -67,7 +67,7 @@ const InitialAnimation = (props) => {
         <Transition
           items={r}
           keys={(item) => item.key}
-          delay="1600"
+          delay="1800"
           from={{ transform: 'translate3d(0,-900px,0)' }}
           enter={{ transform: 'translate3d(0,0px,0)' }}
         >

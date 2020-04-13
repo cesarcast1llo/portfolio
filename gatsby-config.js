@@ -6,8 +6,8 @@ module.exports = {
     siteUrl: `https://www.cesarcast1llo.com/`,
     social: {
       github: `https://github.com/cesarcast1llo`,
-      linkedin: `https://www.linkedin.com/in/cescastillo/`
-    }
+      linkedin: `https://www.linkedin.com/in/cescastillo/`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,23 +16,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`
-      }
+        path: `${__dirname}/src/assets/images`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
-      }
+        path: `${__dirname}/src/pages`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -45,15 +38,15 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/c.png`
-      }
+        icon: `src/assets/images/c.png`,
+      },
     },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        excerpt_separator: `<!-- end -->`
-      }
+        excerpt_separator: `<!-- end -->`,
+      },
     },
     // {
     //   resolve: `gatsby-source-github-api`,
@@ -91,6 +84,6 @@ module.exports = {
     //       `
     //   }
     // },
-    `gatsby-plugin-offline`
-  ]
+    `gatsby-plugin-offline`,
+  ],
 };

@@ -14,7 +14,7 @@ const Contact = () => {
         <ScrollAnimation
           animateIn="fadeInLeft"
           duration={1}
-          delay={250}
+          delay={950}
           animateOnce={true}
         >
           <div className="format">

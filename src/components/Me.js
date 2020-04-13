@@ -7,7 +7,7 @@ import github from '../assets/images/logos/github2.png';
 import email from '../assets/images/logos/email.png';
 import linkedin from '../assets/images/logos/linkedin.png';
 
-const Me = props => {
+const Me = (props) => {
   // const data = useStaticQuery(graphql`
   //   {
   //     file(
@@ -51,7 +51,7 @@ const Me = props => {
                 animateOnce={true}
               >
                 <p>
-                  Versatile Front-End Developer with 2+ years of experience
+                  Versatile Front-End Developer with 3 years of experience
                   designing, developing, and managing complex sites and internal
                   frameworks. Passion for responsive website design and
                   mobile-first&nbsp;approach.

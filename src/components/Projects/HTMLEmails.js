@@ -18,8 +18,8 @@ export default class HTMLEmails extends Component {
         { name: 'HTML', img: HTML, number: 850 },
         { name: 'CSS', img: css, number: 1000 },
         { name: 'Email On Acid', img: eoa, number: 1150 },
-        { name: 'Salesforce', img: salesforce, number: 1300 }
-      ]
+        { name: 'Salesforce', img: salesforce, number: 1300 },
+      ],
     };
   }
 
@@ -69,10 +69,10 @@ export default class HTMLEmails extends Component {
                 <p
                   style={{
                     fontWeight: 600,
-                    fontSize: 20
+                    fontSize: 20,
                   }}
                 >
-                  Gallery coming soon.
+                  <Link to="/emails">Email Portal</Link>
                 </p>
               </ScrollAnimation>
 

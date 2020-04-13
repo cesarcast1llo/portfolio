@@ -1,0 +1,35 @@
+.email-portal-container {
+  margin: -20rem auto 0;
+  z-index: 20;
+  padding: 0 15px;
+  max-width: 980px !important;
+
+  .email-portal {
+    border-radius: 10px;
+    background-color: white;
+    padding: 40px 15px 40px;
+    margin: 0 15px;
+
+    @media (min-width: $XS) {
+      padding: 40px 20px;
+    }
+
+    .intro {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 38px;
+      line-height: 42px;
+      font-weight: 400;
+
+      @media (min-width: $XS) {
+        padding-bottom: 30px;
+      }
+    }
+    .description {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}

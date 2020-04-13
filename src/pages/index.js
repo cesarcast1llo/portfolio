@@ -35,16 +35,16 @@ class Index extends Component {
           animationText: 'hide-name',
         }));
         enableBodyScroll(this.targetElement);
-      }, 4000);
+      }, 40000000);
     }
   }
 
-  componentDidUpdate() {
-    cookies.set('activate', 'true', {
-      path: '/',
-      expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
-    });
-  }
+  // componentDidUpdate() {
+  //   cookies.set('activate', 'true', {
+  //     path: '/',
+  //     expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
+  //   });
+  // }
 
   // ^disable if you want to test animation and clear cookies^
   // cookies last 24 hours

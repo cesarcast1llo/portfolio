@@ -29,15 +29,17 @@
       font-family: Lato;
       font-weight: 600;
       text-align: center;
-      background: url(https://i1.wp.com/css-tricks.com/wp-content/uploads/2018/05/sweep_rot.gif?ssl=1) -20px -20px
+      background: url(https://portfolio-cc.s3-us-west-1.amazonaws.com/white-gray.gif)
         no-repeat;
       color: transparent;
       -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
       margin: 0;
       display: inline-block;
       font-size: 50px;
       line-height: 55px;
       letter-spacing: 2px;
+
       @media (min-width: 375px) {
         font-size: 70px;
         line-height: 75px;

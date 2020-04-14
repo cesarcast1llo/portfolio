@@ -18,7 +18,7 @@ const Contact = () => {
           animateOnce={true}
         >
           <h1>Let's work together</h1>
-          <div className="contact">
+          <div className="contact-icons">
             <ScrollAnimation
               className="animate"
               animateIn="fadeIn"

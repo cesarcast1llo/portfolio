@@ -1,25 +1,26 @@
 import React from 'react';
-// import { useStaticQuery, graphql } from 'gatsby';
-// import Img from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import { Row, Col } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Contact from '../components/Contact';
 
 const Me = props => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     file(
-  //       sourceInstanceName: { eq: "images" }
-  //       relativePath: { eq: "gatsby-astronaut.png" }
-  //     ) {
-  //       childImageSharp {
-  //         fixed(width: 150) {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
+  const data = useStaticQuery(graphql`
+    {
+      file(
+        sourceInstanceName: { eq: "images" }
+        relativePath: { eq: "cesAvatar.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Row>
       <Col className="index-page-wrapper">
@@ -31,11 +32,11 @@ const Me = props => {
             delay={550}
             animateOnce={true}
           >
-            {/* <Img
-                fixed={data.file.childImageSharp.fixed}
-                alt="CC"
-                className="logo-img"
-              /> */}
+            <Img
+              fixed={data.file.childImageSharp.fixed}
+              alt="CC"
+              className="logo-img"
+            />
             <h1 style={{ fontSize: '4.5rem' }}>Cesar Castillo</h1>
           </ScrollAnimation>
           <div className="info">

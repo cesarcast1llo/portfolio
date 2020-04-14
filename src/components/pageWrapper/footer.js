@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer = ({ data }) => (
   <footer>

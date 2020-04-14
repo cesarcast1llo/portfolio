@@ -135,54 +135,6 @@
         }
       }
     }
-    .resume {
-      text-align: center;
-
-      h1 {
-        font-size: 5rem;
-        padding-bottom: 2rem;
-        font-weight: 300;
-      }
-
-      .contact {
-        img {
-          max-width: 65px;
-          @media (min-width: $mobile) {
-            max-width: 65px;
-          }
-        }
-        #margin {
-          margin-right: 2rem;
-          margin-left: 2rem;
-          @media (min-width: $S) {
-            margin-right: 2rem;
-            margin-left: 2rem;
-          }
-        }
-      }
-
-      h3 {
-        font-size: 2.8rem;
-        padding-top: 2rem;
-        color: white;
-        @media (min-width: 335px) {
-          font-size: 3rem;
-        }
-      }
-      a {
-        color: white;
-        text-decoration: underline;
-      }
-      p {
-        font-size: 16px;
-        line-height: 20px;
-        padding-top: 3rem;
-        @media (min-width: $XS) {
-          font-size: 17px;
-          line-height: 21px;
-        }
-      }
-    }
   }
 }
 

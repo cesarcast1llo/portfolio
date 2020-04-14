@@ -31,7 +31,6 @@
         padding-top: 20px;
         margin: 0 auto;
         display: inline-block;
-        color: black;
         font-size: 22px;
         font-weight: 500;
         @media (min-width: $XS) {
@@ -46,6 +45,7 @@
               max-width: 60px;
             }
           }
+
           #margin {
             margin-right: 1rem;
             margin-left: 1rem;
@@ -72,6 +72,61 @@
         }
         p:last-child {
           padding-top: 1rem;
+        }
+      }
+    }
+
+    .contact-me {
+      text-align: center;
+      padding: 0;
+
+      h1 {
+        font-size: 5rem;
+        padding: 2rem 0;
+        font-weight: 300;
+      }
+
+      .contact {
+        .animate {
+          display: inline-block;
+          img {
+            max-width: 65px;
+            @media (min-width: $mobile) {
+              max-width: 65px;
+            }
+          }
+          #margin {
+            margin-right: 2rem;
+            margin-left: 2rem;
+            @media (min-width: $S) {
+              margin-right: 2rem;
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+
+      h3 {
+        font-size: 2.8rem;
+        padding-top: 2rem;
+        color: $secondary;
+        @media (min-width: 335px) {
+          font-size: 3rem;
+        }
+      }
+      a {
+        color: $secondary;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 3rem;
+        color: $secondary;
+
+        @media (min-width: $XS) {
+          font-size: 17px;
+          line-height: 21px;
         }
       }
     }

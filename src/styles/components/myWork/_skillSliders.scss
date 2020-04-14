@@ -10,8 +10,8 @@
   color: white;
   background: $gradient;
   padding: 6rem 1.5rem 7rem;
-
   width: 100%;
+
   @media (min-width: $XS) {
     padding: 11rem 1.5rem;
     clip-path: polygon(
@@ -36,10 +36,10 @@
       padding: 0 2.5rem;
     }
     @media (min-width: $S) {
-      padding: 0 2.5rem;
+      padding: 0 1.5rem;
     }
     @media (min-width: $M) {
-      padding: 0 3.5rem;
+      padding: 0 2.5rem;
     }
 
     .intro {
@@ -73,14 +73,13 @@
       }
 
       .icons {
-        max-width: 105px;
-        @media (min-width: 375px) {
-          max-width: 105px;
-        }
+        max-width: 100px;
+
         @media (min-width: $S) {
-          max-width: 130px;
+          max-width: 110px;
         }
       }
+
       .image-middle {
         padding-top: 2rem;
       }
@@ -90,7 +89,7 @@
       margin: 0 auto;
       padding-top: 3rem;
       @media (min-width: $S) {
-        padding-top: 5rem;
+        padding-top: 1rem;
       }
 
       button {

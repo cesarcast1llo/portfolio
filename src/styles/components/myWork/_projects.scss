@@ -70,10 +70,7 @@
       .project-description {
         vertical-align: middle;
         margin: auto 0;
-        padding: 0 15px 25px;
-        @media (min-width: $S) {
-          padding: 0 15px 25px;
-        }
+        padding: 0 15px;
 
         .project-logo {
           max-width: 100px;

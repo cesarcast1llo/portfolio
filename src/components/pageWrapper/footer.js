@@ -1,18 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Footer = ({ data }) => (
   <footer>
     <Container className="footer-container">
       <Row>
-        <Col className="left" md="6">
-          {/* <img alt="logo" className="logo" src="../assets/images/c.png" /> */}
-        </Col>
-        <Col className="center" md="6">
-          <h1>
-            &copy; Cesar Castillo&nbsp;<Link to="/2020">2020</Link>
-          </h1>
+        <Col className="center">
+          &copy; Cesar Castillo&nbsp;<Link to="/2020">2020</Link>
         </Col>
         {/* <script
           src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

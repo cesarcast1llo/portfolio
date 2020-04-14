@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/pageWrapper//header';
 import SEO from './seo';
 import { Helmet } from 'react-helmet';
-// import Footer from '../components/pageWrapper//footer';
+import Footer from '../components/pageWrapper//footer';
 import InitialAnimation from '../components/animations/InitialAnimation';
 
 const PageWrapper = ({
@@ -35,7 +35,7 @@ const PageWrapper = ({
       </div>
       <Header headerHide={headerHide} />
       <main>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

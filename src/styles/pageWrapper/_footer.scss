@@ -1,34 +1,27 @@
 footer {
+  background: $gradient;
   max-width: 2300px;
-  background-color: $primary;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
 
   .footer-container {
-    max-width: 950px;
-    padding: 3rem 1.5rem;
+    padding: 20px 0;
+    max-width: 980px !important;
 
-    .left {
-      .coding-chart {
-        max-width: 300px;
-      }
-    }
+    .center {
+      color: $secondary;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      margin: 0;
 
-    .right {
-      text-align: right;
-
-      h1 {
-        margin-left: 10px;
-        display: inline;
-
-        a {
-          color: $secondary;
-          text-decoration: none;
-          border: 1px solid $secondary;
-          &:hover {
-            background-color: $secondary;
-            border: 1px solid white;
-            color: white;
-          }
+      a {
+        color: $secondary;
+        text-decoration: none;
+        &:hover {
+          border: 1px solid white;
+          color: white;
         }
       }
     }

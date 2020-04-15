@@ -35,9 +35,9 @@ const Me = props => {
             <Img
               fixed={data.file.childImageSharp.fixed}
               alt="CC"
-              className="logo-img"
+              className="me"
             />
-            <h1 style={{ fontSize: '4.5rem' }}>Cesar Castillo</h1>
+            <h1>Cesar Castillo</h1>
           </ScrollAnimation>
           <div className="info">
             <ScrollAnimation
@@ -61,7 +61,7 @@ const Me = props => {
               delay={950}
               animateOnce={true}
             >
-              <p>
+              <p class="last">
                 The career of a professional athlete is short-lived, but the
                 skills and experiences attained during the journey last you a
                 lifetime. I apply the same drive to succeed as a Front End

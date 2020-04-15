@@ -14,7 +14,7 @@ const Contact = () => {
         <ScrollAnimation
           animateIn="fadeIn"
           duration={1}
-          delay={1150}
+          delay={150}
           animateOnce={true}
         >
           <h1>Let's work together</h1>
@@ -23,7 +23,7 @@ const Contact = () => {
               className="animate"
               animateIn="fadeIn"
               duration={1.5}
-              delay={350}
+              delay={250}
               animateOnce={true}
             >
               <a href="mailto:cescastillo25@gmail.com" noopener="true">
@@ -34,7 +34,7 @@ const Contact = () => {
               className="animate"
               animateIn="fadeIn"
               duration={1.5}
-              delay={550}
+              delay={450}
               animateOnce={true}
             >
               <a
@@ -61,11 +61,17 @@ const Contact = () => {
               </a>
             </ScrollAnimation>
           </div>
-          <h3>
+          <ScrollAnimation
+            className="resume"
+            animateIn="fadeIn"
+            duration={1.5}
+            delay={750}
+            animateOnce={true}
+          >
             <a href={resume} download>
-              Resume
+              <button class="animated-button draw">Resume</button>
             </a>
-          </h3>
+          </ScrollAnimation>
           {/* <p>
                 Checkout my <Link to="/blog/">blog</Link> focusing on all
                 javascript from problems, polls, and things i see on a daily

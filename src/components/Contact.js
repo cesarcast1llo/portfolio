@@ -14,7 +14,7 @@ const Contact = () => {
         <ScrollAnimation
           animateIn="fadeIn"
           duration={1}
-          delay={150}
+          delay={1150}
           animateOnce={true}
         >
           <h1>Let's work together</h1>

@@ -35,7 +35,7 @@ export default class SkillSliders extends Component {
         { name: 'Emails', img: emails, number: 250 },
         { name: 'Next.js', class: 'image-middle', img: next, number: 450 },
         { name: 'Gatsby', img: gatsby, number: 650 },
-        { name: 'Node.js', class: 'image-middle', img: node, number: 850 }
+        { name: 'Node.js', class: 'image-middle', img: node, number: 850 },
       ],
       tools: [
         { name: 'Github', src: github, number: 750 },
@@ -45,10 +45,10 @@ export default class SkillSliders extends Component {
         { name: 'Salesforce', src: sf, number: 1150 },
         { name: 'Photoshop', src: psd, number: 1250 },
         { name: 'InDesign', src: inD, number: 1350 },
-        { name: 'Sketch', src: sketch, number: 1450 }
+        { name: 'Sketch', src: sketch, number: 1450 },
       ],
       itemsToShow: 4,
-      expanded: false
+      expanded: false,
     };
 
     this.showMore = this.showMore.bind(this);

@@ -10,7 +10,7 @@ exports.onCreateNode = ({ node, actions }) => {
       node,
       name: 'slug',
       // value: `/blog${value}`
-      value: slugFromTitle
+      value: slugFromTitle,
     });
   }
 };
@@ -22,7 +22,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const templates = {
     post: path.resolve('./src/templates/single-blog-post.js'),
     tag: path.resolve('./src/templates/tags-post.js'),
-    tagsPage: path.resolve('src/templates/tags-page.js')
+    tagsPage: path.resolve('src/templates/tags-page.js'),
   };
 
   const res = await graphql(`
@@ -52,22 +52,22 @@ exports.createPages = async ({ actions, graphql }) => {
       component: templates.post,
       context: {
         // Passing slug for template to use to fetch the post
-        slug: node.fields.slug
-      }
+        slug: node.fields.slug,
+      },
     });
   });
   //created post for each blog
 
   // Get all tags
   let tags = [];
-  _.each(posts, edge => {
+  _.each(posts, (edge) => {
     if (_.get(edge, 'node.frontmatter.tags')) {
       tags = tags.concat(edge.node.frontmatter.tags);
     }
   });
 
   let tagPostCounts = {};
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     tagPostCounts[tag] = (tagPostCounts[tag] || 0) + 1;
   });
 
@@ -79,20 +79,61 @@ exports.createPages = async ({ actions, graphql }) => {
     component: templates.tagsPage,
     context: {
       tags,
-      tagPostCounts
-    }
+      tagPostCounts,
+    },
   });
 
   // Tag posts pages
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     createPage({
       path: `/tags/${slugify(tag)}`,
       component: templates.tag,
       context: {
-        tag
-      }
+        tag,
+      },
     });
   });
+};
+
+exports.createPages = async ({ actions, graphql }) => {
+  const { createPage } = actions;
+
+  const templates = {
+    html: path.resolve('./src/templates/single-html-post.js'),
+  };
+
+  const res = await graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              tags
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  if (res.errors) return Promise.reject(res.errors);
+
+  const html = res.data.allMarkdownRemark.edges;
+
+  html.forEach(({ node }) => {
+    createPage({
+      path: `/emails/${node.fields.slug}`,
+      component: templates.html,
+      context: {
+        // Passing slug for template to use to fetch the post
+        slug: node.fields.slug,
+      },
+    });
+  });
+  //created post for each html file
 };
 
 exports.onCreateWebpackConfig = ({ stage, plugins, actions }) => {
@@ -104,17 +145,17 @@ exports.onCreateWebpackConfig = ({ stage, plugins, actions }) => {
           use: {
             loader: 'html-loader',
             options: {
-              attrs: [':data-src']
-            }
-          }
-        }
-      ]
+              attrs: [':data-src'],
+            },
+          },
+        },
+      ],
     },
     plugins: [
       plugins.define({
-        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`
-      })
-    ]
+        __DEVELOPMENT__: stage === `develop` || stage === `develop-html`,
+      }),
+    ],
   });
 };
 // creating webpack to host HTML emails DB

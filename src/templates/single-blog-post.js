@@ -1,10 +1,9 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import SEO from '../components/seo';
 import { Badge, Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
 import { slugify, tagCapital } from '../utils/utilityFunctions.js';
-import { Link } from 'gatsby';
 import Header from '../components/pageWrapper/header';
 import Footer from '../components/pageWrapper/footer';
 
@@ -44,7 +43,7 @@ const SinglePost = ({ data, pageContext, location }) => {
                 &nbsp;{post.date}
               </Col>
               <Col md="9" className="tag-container">
-                {post.tags.map(tag => (
+                {post.tags.map((tag) => (
                   <Link key={tag} to={`/tags/${slugify(tag)}`}>
                     <Badge className="badge">#{tagCapital(tag)}</Badge>
                   </Link>

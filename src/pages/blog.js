@@ -1,6 +1,5 @@
 import React from 'react';
-import { StaticQuery } from 'gatsby';
-import { graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';

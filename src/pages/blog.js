@@ -120,6 +120,7 @@ const blogQuery = graphql`
   query blogQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/posts/" } }
       limit: 2000
     ) {
       totalCount

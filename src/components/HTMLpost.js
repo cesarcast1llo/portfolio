@@ -3,10 +3,10 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { Col, Row } from 'reactstrap';
 
-const Post = ({ title, slug, body, fluid }) => (
+const HTMLPost = ({ title, slug, body, fluid }) => (
   <Row>
     <Col md="6" className="blog-image">
-      <Link to={`/html/${slug}`}>
+      <Link to={`/emails/${slug}`}>
         <Img className="card-image-top" fluid={fluid} />
       </Link>
     </Col>
@@ -19,4 +19,4 @@ const Post = ({ title, slug, body, fluid }) => (
   </Row>
 );
 
-export default Post;
+export default HTMLPost;

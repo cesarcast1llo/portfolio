@@ -47,7 +47,7 @@ const SingleHTMLPost = ({ data, pageContext, location }) => {
   );
 };
 
-export const postQuery = graphql`
+export const HTMLPostQuery = graphql`
   query htmlPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id

@@ -15,7 +15,6 @@ const useScrollPosition = () => {
     window.addEventListener('load', onScroll);
     window.addEventListener('scroll', onScroll);
     return () => {
-      console.log('scrolling');
       // TODO find a fix for it constantly running
       window.removeEventListener('scroll', onScroll);
     };

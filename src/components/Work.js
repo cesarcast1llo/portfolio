@@ -6,8 +6,8 @@ import Projects from './Projects/Projects';
 const Work = () => {
   return (
     <Container className="projects-wrapper">
-      <SkillSliders />
       <Projects />
+      <SkillSliders />
     </Container>
   );
 };

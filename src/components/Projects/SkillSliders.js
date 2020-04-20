@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 // shorten
 import github from '../../assets/images/logos/github.png';
 import heroku from '../../assets/images/logos/heroku.png';
-import aws from '../../assets/images/logos/aws.png';
+// import aws from '../../assets/images/logos/aws.png';
 import sf from '../../assets/images/logos/salesforce.png';
 import psd from '../../assets/images/logos/photoshop.png';
 import inD from '../../assets/images/logos/indesign.png';
@@ -15,7 +15,7 @@ import css from '../../assets/images/logos/css3.png';
 import javascript from '../../assets/images/logos/javascript.png';
 import react from '../../assets/images/logos/react.png';
 import emails from '../../assets/images/logos/htmlemail.png';
-import next from '../../assets/images/logos/nextjs.png';
+import next from '../../assets/images/logos/nextjsblack.svg';
 import node from '../../assets/images/logos/nodejs.png';
 import gatsby from '../../assets/images/logos/gatsby.png';
 import wordpress from '../../assets/images/logos/wordpress.png';
@@ -33,7 +33,12 @@ export default class SkillSliders extends Component {
         { name: 'Javascript', img: javascript, number: 650 },
         { name: 'React.js', img: react, number: 850 },
         { name: 'Emails', img: emails, number: 250 },
-        { name: 'Next.js', class: 'image-middle', img: next, number: 450 },
+        {
+          name: 'Next.js',
+          class: 'image-middle nextjs',
+          img: next,
+          number: 450,
+        },
         { name: 'Gatsby', img: gatsby, number: 650 },
         { name: 'Node.js', class: 'image-middle', img: node, number: 850 },
       ],
@@ -41,7 +46,7 @@ export default class SkillSliders extends Component {
         { name: 'Github', src: github, number: 750 },
         { name: 'Wordpress', src: wordpress, number: 850 },
         { name: 'Heroku', src: heroku, number: 950 },
-        { name: 'AWS', src: aws, number: 1050 },
+        // { name: 'AWS', src: aws, number: 1050 },
         { name: 'Salesforce', src: sf, number: 1150 },
         { name: 'Photoshop', src: psd, number: 1250 },
         { name: 'InDesign', src: inD, number: 1350 },

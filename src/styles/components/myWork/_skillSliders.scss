@@ -1,31 +1,31 @@
 .skill-sliders {
-  clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
-  -webkit-clip-path: polygon(
-    0 calc(0% + 25px),
-    100% 0,
-    100% calc(100% - 25px),
-    0 100%
-  );
+  // clip-path: polygon(0 calc(0% + 25px), 100% 0, 100% calc(100% - 25px), 0 100%);
+  // -webkit-clip-path: polygon(
+  //   0 calc(0% + 25px),
+  //   100% 0,
+  //   100% calc(100% - 25px),
+  //   0 100%
+  // );
   text-align: center;
-  color: white;
-  background: $gradient;
+  color: $secondary;
+  // background: $gradient;
   padding: 6rem 1.5rem 7rem;
   width: 100%;
 
   @media (min-width: $XS) {
-    padding: 11rem 1.5rem;
-    clip-path: polygon(
-      0 calc(0% + 45px),
-      100% 0,
-      100% calc(100% - 45px),
-      0 100%
-    );
-    -webkit-clip-path: polygon(
-      0 calc(0% + 45px),
-      100% 0,
-      100% calc(100% - 45px),
-      0 100%
-    );
+    // padding: 11rem 1.5rem;
+    // clip-path: polygon(
+    //   0 calc(0% + 45px),
+    //   100% 0,
+    //   100% calc(100% - 45px),
+    //   0 100%
+    // );
+    // -webkit-clip-path: polygon(
+    //   0 calc(0% + 45px),
+    //   100% 0,
+    //   100% calc(100% - 45px),
+    //   0 100%
+    // );
   }
 
   .format {
@@ -83,6 +83,10 @@
       .image-middle {
         padding-top: 2rem;
       }
+
+      .nextjs {
+        max-width: 140px;
+      }
     }
 
     .show-more {
@@ -96,7 +100,7 @@
         @extend .index-page-button;
         color: $secondary;
         background-color: white;
-        border: 1px solid white;
+        border: 1px solid $secondary;
 
         &:hover {
           color: white;

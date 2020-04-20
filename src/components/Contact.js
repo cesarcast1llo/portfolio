@@ -12,6 +12,7 @@ const Contact = () => {
     <Row>
       <Col className="contact-me">
         <ScrollAnimation
+          className="animate"
           animateIn="fadeIn"
           duration={1}
           delay={150}

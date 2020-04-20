@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'reactstrap';
 import javascript from '../../assets/images/logos/javascript.png';
-import next from '../../assets/images/logos/nextjsblack.svg';
+import next from '../../assets/images/logos/nextjs.png';
 import sass from '../../assets/images/logos/sass.png';
 import node from '../../assets/images/logos/nodejs.png';
 import frndly from '../../assets/images/frndlytv.png';
@@ -18,8 +18,8 @@ export default class FrndlyTv extends Component {
         { name: 'Next-js', img: next, number: 850 },
         { name: 'Javascript', img: javascript, number: 1000 },
         { name: 'Sass', img: sass, number: 1150 },
-        { name: 'Node-js', img: node, number: 1300 }
-      ]
+        { name: 'Node-js', img: node, number: 1300 },
+      ],
     };
   }
 

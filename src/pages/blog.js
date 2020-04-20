@@ -134,7 +134,18 @@ const blogQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 900) {
-                  ...GatsbyImageSharpFluid
+                  base64
+                  tracedSVG
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+                  originalImg
+                  originalName
+                  presentationWidth
+                  presentationHeight
                 }
               }
             }

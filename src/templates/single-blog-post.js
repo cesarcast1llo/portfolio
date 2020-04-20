@@ -63,18 +63,20 @@ const SinglePost = ({ data, pageContext, location }) => {
                 <div className="social-share-links">
                   <a
                     href={
-                      'https://www.facebook.com/sharer/sharer.php?u=' +
+                      'mailto:?subject=' +
+                      'Cesar Castillo - Blog Post ' +
+                      post.date +
+                      '&body=' +
                       baseUrl +
                       pageContext.slug
                     }
                     className="email"
-                    target="_blank"
                     rel="noopener noreferrer"
                   >
                     <img
                       alt="email icon"
                       className="email"
-                      src="https://img.icons8.com/small/90/000000/filled-message.png"
+                      src="https://img.icons8.com/small/90/3e3f3e/filled-message.png"
                     />
                   </a>
                   <a
@@ -94,12 +96,15 @@ const SinglePost = ({ data, pageContext, location }) => {
                     <img
                       alt="Twitter icon"
                       className="twit"
-                      src="https://img.icons8.com/material-rounded/100/000000/twitter.png"
+                      src="https://img.icons8.com/material-rounded/100/3e3f3e/twitter.png"
                     />
                   </a>
                   <a
                     href={
-                      'https://www.linkedin.com/shareArticle?url=' +
+                      'http://www.linkedin.com/shareArticle?mini=true&url=' +
+                      baseUrl +
+                      pageContext.slug +
+                      '&source=' +
                       baseUrl +
                       pageContext.slug
                     }
@@ -110,7 +115,7 @@ const SinglePost = ({ data, pageContext, location }) => {
                     <img
                       alt="LinkedIn icon"
                       className="lnkdin"
-                      src="https://img.icons8.com/ios-filled/100/000000/linkedin.png"
+                      src="https://img.icons8.com/ios-filled/100/3e3f3e/linkedin.png"
                     />
                   </a>
                 </div>

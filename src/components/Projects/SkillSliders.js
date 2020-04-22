@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 // shorten
-import github from '../../assets/images/logos/github.png';
+import github from '../../assets/images/logos/github2.png';
 import heroku from '../../assets/images/logos/heroku.png';
 // import aws from '../../assets/images/logos/aws.png';
 import sf from '../../assets/images/logos/salesforce.png';

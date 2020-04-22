@@ -71,7 +71,7 @@ const Contact = () => {
           animateOnce={true}
         >
           <a href={resume} download>
-            <button class="animated-button draw">Resume</button>
+            <button className="animated-button draw">Resume</button>
           </a>
         </ScrollAnimation>
         {/* <p>

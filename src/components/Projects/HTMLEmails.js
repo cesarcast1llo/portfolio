@@ -48,7 +48,7 @@ export default class HTMLEmails extends Component {
                 delay={550}
                 animateOnce={true}
               >
-                <Link to="/html">
+                <Link to="/emails">
                   <h1>HTML Emails</h1>
                 </Link>
               </ScrollAnimation>

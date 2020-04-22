@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Contact from '../components/Contact';
 
-const Me = props => {
+const Me = (props) => {
   const data = useStaticQuery(graphql`
     {
       file(
@@ -61,7 +61,7 @@ const Me = props => {
               delay={950}
               animateOnce={true}
             >
-              <p class="last">
+              <p className="last">
                 The career of a professional athlete is short-lived, but the
                 skills and experiences attained during the journey last you a
                 lifetime. I apply the same drive to succeed as a Front End

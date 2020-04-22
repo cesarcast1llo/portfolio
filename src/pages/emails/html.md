@@ -100,7 +100,7 @@ table {
     height: 40px !important;
   }
 .em_main_table {
-	width: 481px!important;
+width: 100%!important;
 }
 .em_wrapper {
 	width: 100%!important;
@@ -241,7 +241,7 @@ height: auto!important;
 }
 
 .em_main_table {
-width: 375px!important;
+width: 100%!important;
 }
 .em_font23 {
 font-size: 25px!important;
@@ -336,7 +336,7 @@ max-width: 300px !important;
 }
 
 .em_main_table {
-width: 320px!important;
+width: 100%!important;
 }
 .em_font23 {
 font-size: 23px!important;
@@ -418,8 +418,6 @@ padding: 0 25px !important;
               </tr>
             </table></td>
         </tr>
-        
-        <!-- == //Header Section == -->
       </table></td>
   </tr>
 </table>
@@ -428,7 +426,6 @@ padding: 0 25px !important;
 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="em_full_wrap" bgcolor="#ffffff" style="table-layout:fixed;">
   <tr>
     <td align="center" valign="top"><table align="center" width="640" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:640px;">
-       
         <tr>
           <td align="center" valign="top" bgcolor="#e2f3db" style="background-color:#e2f3db;-webkit-text-size-adjust:none;"><table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
@@ -506,7 +503,6 @@ padding: 0 25px !important;
               </tr>
             </table></td>
         </tr>
-      
         <tr>
           <td height="40" style="height:40px;">&nbsp;</td>
         </tr>
@@ -515,7 +511,6 @@ padding: 0 25px !important;
           Whether you’re away for a few days or <br class="em_hide_desktop1" style="display: none;"/>a few hours, feel more at ease this <br class="em_hide_desktop1" style="display: none;"/><br class="em_hide"/>month by adding our <span style="font-weight:700; text-decoration:underline; color:#6cc24a;"><a href="#" target="_blank" style="color:#6cc24a;">Smart Door Lock</a></span> <br class="em_hide_desktop1" style="display: none;"/>to your home. Create a unique entry <br class="em_hide_desktop1" style="display: none;"/><br class="em_hide"/>codes for friends, family and pet <br class="em_hide_desktop1" style="display: none;"/>sitters. Plus, control your entire system <br class="em_hide_desktop1" style="display: none;"/><br class="em_hide"/>remotely from the Frontpoint&nbsp;App.
           </td>
         </tr>
-        
         <tr>
           <td align="center" valign="top">
             <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -677,12 +672,6 @@ padding: 0 25px !important;
                 height="521"
                 style="background-image:url(https://cdn.wearelift.net/frontpointsecurity.com/email/FPT-1117/EM1/Spring_Tip_Module_DT_2_1280x1042.png); height:521px; width:640px; max-width: 640px; background-repeat:no-repeat;text-align: center;background-size:contain"
               >
-                <!--[if gte mso 9]>
-              <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 640px; height: 521px;" src="https://cdn.wearelift.net/frontpointsecurity.com/email/FPT-1117/EM1/Spring_Tip_Module_DT_2_1280x1042.png" />
-              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 640px; height: 521px;">
-              <v:fill opacity="0%" color="#ffffff" />
-              <v:textbox inset="0,0,0,0">
-              <![endif]-->
                   <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
                     <tr>
                       <td height="40" style="height:40px;">&nbsp;</td>
@@ -703,29 +692,13 @@ padding: 0 25px !important;
                       <td height="40" style="height:40px;">&nbsp;</td>
                     </tr>
                   </table>
-
-                <!--[if gte mso 9]>
-              </v:textbox>
-              </v:fill>
-              </v:rect>
-              </v:image>
-              <![endif]-->
-            <!-- <tr>
-            <td align="center" valign="top" >
-              <img src="https://cdn.wearelift.net/frontpointsecurity.com/email/FPT-1117/EM1/Hero_Image_Mobile@2x.png" width="264" alt="Spectrum-Mobile" border="0" style="display:block; max-width:264px; font-family:Arial, sans-serif; font-size:17px; line-height:20px; color:#000000; font-weight:bold;" />
-            </td>
-          </tr> -->
             </td>
           </tr>
         </table>
         </td>
       </tr>
-
       </table></td>
-
   </tr>
-<!-- == //Body Section == --> 
-<!-- == Footer Section == -->
 <tr>
   <td align="center" valign="top"><table align="center" width="640" border="0" cellspacing="0" cellpadding="0" class="em_main_table" style="width:640px; table-layout:fixed;">
       <tr>
@@ -816,8 +789,6 @@ padding: 0 25px !important;
       </tr>
     </table></td>
 </tr>
-
 </table>
-<!-- == //Footer Section == -->
 </body>
 </html>

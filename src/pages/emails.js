@@ -14,8 +14,8 @@ const Emails = () => (
     <Container className="email-portal-container">
       <Row>
         <Col className="email-portal">
-          <div class="intro">HTML Emails</div>
-          <div class="description">
+          <div className="intro">HTML Emails</div>
+          <div className="description">
             <p>
               Coded and proofed 100+ responsive HTML emails using HTML4,
               Salesforce or React.js.

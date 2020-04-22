@@ -1,9 +1,9 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import SEO from '../components/seo';
-import { Badge, Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Img from 'gatsby-image';
-import { slugify, tagCapital } from '../utils/utilityFunctions.js';
+// import { slugify, tagCapital } from '../utils/utilityFunctions.js';
 import Header from '../components/pageWrapper/header';
 import Footer from '../components/pageWrapper/footer';
 
@@ -42,7 +42,8 @@ const SinglePost = ({ data, pageContext, location }) => {
                 />
                 &nbsp;{post.date}
               </Col>
-              <Col md="9" className="tag-container">
+              {/* TODO find why this is getting can't map over null in netlify */}
+              {/* <Col md="9" className="tag-container">
                 {post.tags.map(function(tag, index) {
                   return (
                     <Link key={tag} to={`/tags/${slugify(tag)}`}>
@@ -50,7 +51,7 @@ const SinglePost = ({ data, pageContext, location }) => {
                     </Link>
                   );
                 })}
-              </Col>
+              </Col> */}
             </Row>
             <Row>
               <Col

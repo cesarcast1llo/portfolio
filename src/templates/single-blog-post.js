@@ -42,13 +42,13 @@ const SinglePost = ({ data, pageContext, location }) => {
                 />
                 &nbsp;{post.date}
               </Col>
-              <Col md="9" className="tag-container">
+              {/* <Col md="9" className="tag-container">
                 {post.tags.map((tag) => (
                   <Link key={tag} to={`/tags/${slugify(tag)}`}>
                     <Badge className="badge">#{tagCapital(tag)}</Badge>
                   </Link>
                 ))}
-              </Col>
+              </Col> */}
             </Row>
             <Row>
               <Col

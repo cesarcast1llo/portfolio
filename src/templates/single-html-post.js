@@ -9,7 +9,7 @@ import Footer from '../components/pageWrapper/footer';
 
 const SingleHTMLPost = ({ data, pageContext, location }) => {
   const html = data.markdownRemark.frontmatter;
-  const baseUrl = 'https:/ADDURLHERE.COM/';
+  const baseUrl = 'https://www.cesarcast1llo.com/';
 
   return (
     <>

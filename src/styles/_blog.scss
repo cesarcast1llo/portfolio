@@ -27,6 +27,7 @@
         font-size: 38px;
         line-height: 42px;
         font-weight: 400;
+        color: $secondary;
       }
 
       h2 {
@@ -39,6 +40,7 @@
         font-size: 18px;
         line-height: 22px;
         font-weight: 300;
+        color: $secondary;
 
         @media (min-width: $XS) {
           font-size: 20px;

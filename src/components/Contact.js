@@ -15,7 +15,7 @@ const Contact = () => {
           className="animate"
           animateIn="fadeIn"
           duration={1}
-          delay={150}
+          delay={1350}
           animateOnce={true}
         >
           <h1>Let's work together</h1>

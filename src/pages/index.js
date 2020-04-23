@@ -14,7 +14,7 @@ class Index extends Component {
       cookies: cookies.get('activate') || '',
       className: 'cookies-animation',
       showIndexPage: false,
-      animationText: ''
+      animationText: '',
     };
   }
 
@@ -22,17 +22,17 @@ class Index extends Component {
     if (this.state.cookies === cookies.get('activate')) {
       this.setState({
         className: '',
-        showIndexPage: true
+        showIndexPage: true,
       });
       enableBodyScroll(this.targetElement);
     } else {
       this.targetElement = document.querySelector('body');
       disableBodyScroll(this.targetElement);
       setTimeout(() => {
-        this.setState(prevState => ({
+        this.setState((prevState) => ({
           className: 'heroBg',
           showIndexPage: true,
-          animationText: 'hide-name'
+          animationText: 'hide-name',
         }));
         enableBodyScroll(this.targetElement);
       }, 4500);
@@ -42,7 +42,7 @@ class Index extends Component {
   componentDidUpdate() {
     cookies.set('activate', 'true', {
       path: '/',
-      expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+      expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
     });
   }
 

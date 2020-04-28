@@ -14,7 +14,7 @@ const PageWrapper = ({
   backgroundURL,
   className,
   animationText,
-  headerHide
+  headerHide,
 }) => {
   return (
     <>
@@ -29,6 +29,8 @@ const PageWrapper = ({
         className={`background ${className}`}
         style={{ backgroundColor: bgColor, backgroundImage: backgroundURL }}
       >
+        <div className="hero-bg"></div>
+
         <div className={`name-intro ${animationText}`}>
           {cookies ? <InitialAnimation animation={true} /> : null}
         </div>

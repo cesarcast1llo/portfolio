@@ -11,7 +11,7 @@ class Index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cookies: cookies.get('activate') || '',
+      cookies: cookies.get('hasBeenHere') || '',
       className: 'cookies-animation',
       showIndexPage: false,
       animationText: '',
@@ -19,7 +19,7 @@ class Index extends Component {
   }
 
   componentDidMount() {
-    if (this.state.cookies === cookies.get('activate')) {
+    if (this.state.cookies === cookies.get('hasBeenHere')) {
       this.setState({
         className: '',
         showIndexPage: true,
@@ -30,9 +30,9 @@ class Index extends Component {
       disableBodyScroll(this.targetElement);
       setTimeout(() => {
         this.setState((prevState) => ({
-          className: 'heroBg',
           showIndexPage: true,
           animationText: 'hide-name',
+          className: 'openUp',
         }));
         enableBodyScroll(this.targetElement);
       }, 4500);
@@ -40,7 +40,7 @@ class Index extends Component {
   }
 
   componentDidUpdate() {
-    cookies.set('activate', 'true', {
+    cookies.set('hasBeenHere', 'true', {
       path: '/',
       expires: new Date(Date.now() + 24 * 60 * 60 * 1000),
     });

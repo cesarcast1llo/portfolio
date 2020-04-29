@@ -7,11 +7,11 @@
   .email-portal {
     border-radius: 10px;
     background-color: white;
-    padding: 40px 15px 40px;
+    padding: 40px 15px 20px;
     margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 40px 20px;
+      padding: 40px 20px 40px;
     }
 
     .intro {
@@ -36,6 +36,38 @@
         @media (min-width: $XS) {
           font-size: 20px;
           line-height: 24px;
+        }
+      }
+    }
+  }
+
+  .email-container {
+    display: block;
+
+    @media (min-width: $mobile) {
+      display: flex;
+    }
+
+    .html-email {
+      padding-bottom: 3rem;
+
+      @media (min-width: $XS) {
+        padding-bottom: 4rem;
+      }
+
+      .html-image {
+        margin: 0 auto;
+        max-width: 300px;
+      }
+
+      .html-title {
+        text-align: center;
+        padding-top: 1rem;
+        font-size: 22px;
+        line-height: 26px;
+
+        a {
+          color: $secondary;
         }
       }
     }

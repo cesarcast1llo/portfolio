@@ -1,22 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { Col, Row } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 const HTMLPost = ({ title, slug, body, fluid }) => (
-  <Row>
-    <Col md="6" className="blog-image">
+  <>
+    <Col md="4" className="html-email">
       <Link to={`/emails/${slug}`}>
-        <Img className="card-image-top" fluid={fluid} />
+        <Img className="card-image-top html-image" fluid={fluid} />
+        <div className="html-title">
+          <Link to={`/emails/${slug}`}>{title}</Link>
+        </div>
+        {/* <div className="card-body">{body}</div> */}
       </Link>
     </Col>
-    <Col md="6" className="blog-post">
-      <div className="blog-title">
-        <Link to={`/emails/${slug}`}>{title}</Link>
-      </div>
-      <div className="card-body">{body}</div>
-    </Col>
-  </Row>
+  </>
 );
 
 export default HTMLPost;

@@ -29,26 +29,30 @@ const Emails = () => (
           </div>
         </Col>
       </Row>
-      <StaticQuery
-        query={htmlQuery}
-        render={(data) => {
-          return (
-            <>
-              {data.allMarkdownRemark.edges.map(({ node }) => (
-                <HTMLpost
-                  key={node.id}
-                  title={node.frontmatter.title}
-                  slug={node.fields.slug}
-                  body={node.excerpt}
-                  date={node.frontmatter.date}
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
-                />
-              ))}
-            </>
-          );
-        }}
-      />
+      <Row>
+        <Col className="email-container">
+          <StaticQuery
+            query={htmlQuery}
+            render={(data) => {
+              return (
+                <>
+                  {data.allMarkdownRemark.edges.map(({ node }) => (
+                    <HTMLpost
+                      key={node.id}
+                      title={node.frontmatter.title}
+                      slug={node.fields.slug}
+                      body={node.excerpt}
+                      date={node.frontmatter.date}
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      tags={node.frontmatter.tags}
+                    />
+                  ))}
+                </>
+              );
+            }}
+          />
+        </Col>
+      </Row>
     </Container>
   </PageWrapper>
 );
@@ -68,7 +72,7 @@ const htmlQuery = graphql`
             title
             image {
               childImageSharp {
-                fluid(maxWidth: 900) {
+                fluid(maxWidth: 400, maxHeight: 500) {
                   base64
                   tracedSVG
                   aspectRatio

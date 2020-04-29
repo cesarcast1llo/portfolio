@@ -42,16 +42,6 @@ const SinglePost = ({ data, pageContext, location }) => {
                 />
                 &nbsp;{post.date}
               </Col>
-              {/* TODO find why this is getting can't map over null in netlify */}
-              {/* <Col md="9" className="tag-container">
-                {post.tags.map(function(tag, index) {
-                  return (
-                    <Link key={tag} to={`/tags/${slugify(tag)}`}>
-                      <Badge className="badge">#{tagCapital(tag)}</Badge>
-                    </Link>
-                  );
-                })}
-              </Col> */}
             </Row>
             <Row>
               <Col

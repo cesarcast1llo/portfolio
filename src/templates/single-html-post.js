@@ -19,7 +19,6 @@ const SingleHTMLPost = ({ data, pageContext, location }) => {
         url={baseUrl}
         pathname={location.pathname}
       />
-      =
       <Col
         col="12"
         className="post-body"

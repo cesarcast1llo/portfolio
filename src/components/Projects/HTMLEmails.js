@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import HTML from '../../assets/images/logos/htmlemail.png';
 import css from '../../assets/images/logos/css3.png';
 import salesforce from '../../assets/images/logos/salesforce.png';
@@ -52,7 +52,6 @@ export default class HTMLEmails extends Component {
                   <h1>HTML Emails</h1>
                 </Link>
               </ScrollAnimation>
-
               <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
@@ -66,14 +65,9 @@ export default class HTMLEmails extends Component {
                   practices while being tested on 70+ email clients and devices
                   before&nbsp;delivery.
                 </p>
-                <p
-                  style={{
-                    fontWeight: 600,
-                    fontSize: 20,
-                  }}
-                >
-                  <Link to="/emails">Email Portal</Link>
-                </p>
+                <Link to="/emails">
+                  <Button className="email-btn">Email Portal</Button>
+                </Link>
               </ScrollAnimation>
 
               <ScrollAnimation

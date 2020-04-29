@@ -97,6 +97,14 @@
           }
         }
 
+        button {
+          @extend .index-page-button;
+          color: $secondary;
+          background-color: white;
+          border: 1px solid $secondary;
+          margin: 1rem auto 3rem;
+        }
+
         .logos {
           display: inline-block;
           margin-right: 10px;

@@ -52,24 +52,27 @@ h3 {
   color: $secondary;
 }
 
-.index-page-button {
+.site-button {
+  border-radius: 5px;
   font-size: 2rem;
   text-transform: uppercase;
   padding: 0.8rem 0;
-  font-weight: 600;
-  width: 190px;
-  max-width: 190px;
-  @media (min-width: $S) {
-    width: 200px;
-    max-width: 200px;
-    padding: 1rem 0;
-  }
-  &:hover {
-    box-shadow: none;
-  }
+  font-weight: 500;
+  width: 225px;
+  padding: 5px 40px;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  line-height: 2.9rem;
+
+  &:hover,
+  &:active,
   &:focus {
     outline: none !important;
     box-shadow: none;
+  }
+
+  @media (min-width: $S) {
+    padding: 1rem 0;
   }
 }
 

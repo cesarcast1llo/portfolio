@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'gatsby';
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Button } from 'reactstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import resume from '../assets/documents/cesarcastillo_resume.pdf';
 import github from '../assets/images/logos/github2.png';
@@ -71,7 +71,7 @@ const Contact = () => {
           animateOnce={true}
         >
           <a href={resume} download>
-            <button className="animated-button draw">Resume</button>
+            <Button className="animated-button draw">Resume</Button>
           </a>
         </ScrollAnimation>
         {/* <p>

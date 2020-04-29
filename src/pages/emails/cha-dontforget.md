@@ -1,5 +1,5 @@
 ---
-title: "Spectrum Mobile Don't Forget!"
+title: "Spectrum Mobile - Don't Forget!"
 image: ../../assets/images/code1.jpeg
 ---
 

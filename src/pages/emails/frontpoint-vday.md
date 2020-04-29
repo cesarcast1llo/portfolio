@@ -1,5 +1,5 @@
 ---
-title: "Frontpoint Security Presidents' Day"
+title: "Frontpoint Security - Presidents' Day"
 image: ../../assets/images/code1.jpeg
 ---
 

@@ -7,9 +7,9 @@ import { Transition } from 'react-spring/renderprops';
 import devto from '../assets/images/logos/dev.png';
 
 const b = [{ text: 'B' }];
-const l = [{ text: 'l' }];
-const o = [{ text: 'o' }];
-const g = [{ text: 'g' }];
+const l = [{ text: 'L' }];
+const o = [{ text: 'O' }];
+const g = [{ text: 'G' }];
 
 const Blog = () => (
   <PageWrapper
@@ -74,13 +74,14 @@ const Blog = () => (
                 </p>
               )}
             </Transition>
-            <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2>
+            {/* <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2> */}
             <p>
-              will finish 50 different JS problems by June 2020. all published
+              {/* will finish 50 different JS problems by June 2020. all published
               on my dev.to and medium. posting to: improve my coding skills
               mainly javascript skills, building Javascript based projects using
               Vanila JS, and to help others in the same situation I was in
-              looking for&nbsp;solutions.
+              looking for&nbsp;solutions. */}
+              coming soon..
             </p>
             <a
               href="https://dev.to/cesarcast1llo"

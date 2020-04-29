@@ -6,7 +6,7 @@ class Hamburg extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visibility: false
+      visibility: false,
     };
     this.toggleVisibility = this.toggleVisibility.bind(this);
   }
@@ -15,13 +15,13 @@ class Hamburg extends Component {
     if (this.state.visibility === false) {
       disableBodyScroll(this.targetElement);
       this.setState({
-        visibility: true
+        visibility: true,
       });
     }
     if (this.state.visibility === true) {
       enableBodyScroll(this.targetElement);
       this.setState({
-        visibility: false
+        visibility: false,
       });
     }
   };
@@ -39,9 +39,9 @@ class Hamburg extends Component {
           <Link to="/blog/" className="bm-li" onClick={this.toggleVisibility}>
             Blog
           </Link>
-          <Link to="/about" className="bm-li" onClick={this.toggleVisibility}>
+          {/* <Link to="/about" className="bm-li" onClick={this.toggleVisibility}>
             About
-          </Link>
+          </Link> */}
           {/* <Link to="/2020" className="bm-li" onClick={this.toggleVisibility}>
             2020
           </Link> */}

@@ -47,6 +47,7 @@
 
     @media (min-width: $mobile) {
       display: flex;
+      flex-wrap: wrap;
     }
 
     .html-email {

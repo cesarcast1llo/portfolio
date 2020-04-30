@@ -22,37 +22,34 @@ const Emails = () => (
             </p>
             <p>
               All emails have been proofed and checked for HTML validation.
-              Tested on 70+ email clients and devices on Email on Acid and
-              Litmus for desktop and mobile responsiveness and approved locally
-              on multiple browsers before&nbsp;desployment.
+              Tested on 70+ email clients and devices locally, and on either
+              Email on Acid or Litmus for desktop and mobile responsiveness.
             </p>
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col className="email-container">
-          <StaticQuery
-            query={htmlQuery}
-            render={(data) => {
-              return (
-                <>
-                  {data.allMarkdownRemark.edges.map(({ node }) => (
-                    <HTMLpost
-                      key={node.id}
-                      title={node.frontmatter.title}
-                      slug={node.fields.slug}
-                      body={node.excerpt}
-                      date={node.frontmatter.date}
-                      fluid={node.frontmatter.image.childImageSharp.fluid}
-                      tags={node.frontmatter.tags}
-                    />
-                  ))}
-                </>
-              );
-            }}
-          />
-        </Col>
-      </Row>
+      <div className="email-container">
+        <StaticQuery
+          query={htmlQuery}
+          render={(data) => {
+            return (
+              <>
+                {data.allMarkdownRemark.edges.map(({ node }) => (
+                  <HTMLpost
+                    key={node.id}
+                    title={node.frontmatter.title}
+                    slug={node.fields.slug}
+                    body={node.excerpt}
+                    date={node.frontmatter.date}
+                    fluid={node.frontmatter.image.childImageSharp.fluid}
+                    tags={node.frontmatter.tags}
+                  />
+                ))}
+              </>
+            );
+          }}
+        />
+      </div>
     </Container>
   </PageWrapper>
 );

@@ -67,9 +67,10 @@
         padding-top: 1rem;
         font-size: 22px;
         line-height: 26px;
+        color: $secondary;
 
-        a {
-          color: $secondary;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }

@@ -9,7 +9,7 @@ const HTMLPost = ({ title, slug, body, fluid }) => (
       <Link to={`/emails/${slug}`}>
         <Img className="card-image-top html-image" fluid={fluid} />
         <div className="html-title">
-          <Link to={`/emails/${slug}`}>{title}</Link>
+          {title}
         </div>
         {/* <div className="card-body">{body}</div> */}
       </Link>

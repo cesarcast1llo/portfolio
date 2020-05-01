@@ -65,7 +65,7 @@ export default class HTMLEmails extends Component {
                   practices while being tested on 70+ email clients and devices
                   before&nbsp;delivery.
                 </p>
-                <Link to="/emails">
+                <Link to="/html-emails">
                   <Button className="email-btn">Email Portal</Button>
                 </Link>
               </ScrollAnimation>

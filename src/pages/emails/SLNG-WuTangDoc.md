@@ -10,7 +10,7 @@ date: 2021-04-06 07:00:00
 <title>Sling TELEVISION</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <style type="text/css">
 @font-face {
@@ -629,8 +629,7 @@ div.preheader
         <tr>
           <td align="center" valign="top">
                 <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; "><tr><td class="stylingblock-content-margin-cell" style="padding: 0px 0px 10px; "><table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper"><tr><td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner"><table width="100%" cellspacing="0" cellpadding="0"><tr><td align="center"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee1a1cd7aca62592a4a7cdeb2f48bf9293ade180d3c48c350985882cd451b0bc64f95ebfdba070762e956db5e6f519701" title=""   data-linkto="https://">
-<img data-assetid="4373" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/2eab51ca-f490-48df-a45c-64ef67f85e72.png" alt="A SHOWTIME® DOCUMENTARY SERIES WU-TANG CLAN: OF MICS AND MEN" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a></td></tr></table></td></tr></table></td></tr></table>
-                 
+<img src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/2eab51ca-f490-48df-a45c-64ef67f85e72.png" alt="A SHOWTIME® DOCUMENTARY SERIES WU-TANG CLAN: OF MICS AND MEN" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a></td></tr></table></td></tr></table></td></tr></table>   
    </td>
     </tr>
     <tr>

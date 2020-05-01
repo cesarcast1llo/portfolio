@@ -1,7 +1,7 @@
 ---
 title: "Spectrum Mobile - Don't Forget!"
 image: ../../assets/images/emails/CHA_DontForget.png
-date: 2020-04-06 07:00:00
+date: 2019-04-06 07:00:00
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -609,8 +609,19 @@ div.preheader
 <!--Full width table start-->
 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
   <!--HEADER SECTION -->
-    <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
- 
+    <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;  width:640px;">
+   <tr>
+    <td align="center" valign="top">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
+        <tr>
+          <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
+          Images requested are blocked since the content is not served over HTTPS<br/>
+          Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
+        </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
   <tr>
    <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
     <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">

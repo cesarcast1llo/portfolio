@@ -600,10 +600,22 @@ font-family: 'brandon_text_boldbold', Arial, sans-serif !important;}
     <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
  
   <tr>
-   <td align="center" style="padding: 20px 0px;" valign="top">
+   <td align="center" valign="top">
     <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">
+       <tr>
+    <td align="center" valign="top">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
+        <tr>
+          <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
+          Images requested are blocked since the content is not served over HTTPS<br/>
+          Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
+        </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
       <tr>
-       <td align="center" style="padding: 0px 20px;" valign="top">
+   <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
         <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px;" width="640">
           <tr>
            <td align="left" style="padding:0px 6px 0px 0px; text-align:left;" valign="top" width="85">

@@ -614,7 +614,18 @@ div.preheader
         <tr>
           <td align="center" valign="top">
                 <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
- 
+   <tr>
+    <td align="center" valign="top">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
+        <tr>
+          <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
+          Images requested are blocked since the content is not served over HTTPS<br/>
+          Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
+        </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
   <tr>
    <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
     <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">
@@ -843,7 +854,5 @@ This is an advertisement for Sling TV. All prices, fees, charges, packages, prog
 <div class="em_hide" style="white-space:nowrap;font:20px courier;color:#f2f3f2; background-color:#f2f3f2; font-size:0px; line-height:0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
 <img src="https://click.mail.sling.com/open.aspx?ffcb10-fef71373776301-fe561c72716c027d7c10-fe9813727565027976-ff961578-fe6717757567017a7515-ffce15" width="1" height="1">
 <img src="https://pixel.app.returnpath.net/pixel.gif?r=46c7df542fbe27fdc541df622b315e16e552bc9c" width="1" height="1">
-
-</custom></body>
-
+</body>
 </html>

@@ -99,7 +99,7 @@ exports.createPages = async ({ actions, graphql }) => {
 
   html.forEach(({ node }) => {
     createPage({
-      path: `/emails/${node.fields.slug}`,
+      path: `/html-emails/${node.fields.slug}`,
       component: templates.html,
       context: {
         // Passing slug for template to use to fetch the post

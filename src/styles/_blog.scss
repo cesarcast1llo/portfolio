@@ -27,8 +27,9 @@
         font-size: 38px;
         line-height: 42px;
         font-weight: 400;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         color: $secondary;
+        margin-bottom: 5px;
       }
 
       h2 {
@@ -42,6 +43,7 @@
         line-height: 22px;
         font-weight: 300;
         color: $secondary;
+        margin-bottom: 5px;
 
         @media (min-width: $XS) {
           font-size: 20px;

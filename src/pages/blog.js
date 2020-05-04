@@ -4,12 +4,11 @@ import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
 import { Transition } from 'react-spring/renderprops';
-import devto from '../assets/images/logos/dev.png';
 
 const b = [{ text: 'B' }];
-const l = [{ text: 'L' }];
-const o = [{ text: 'O' }];
-const g = [{ text: 'G' }];
+const l = [{ text: 'l' }];
+const o = [{ text: 'o' }];
+const g = [{ text: 'g' }];
 
 const Blog = () => (
   <PageWrapper
@@ -74,22 +73,32 @@ const Blog = () => (
                 </p>
               )}
             </Transition>
-            {/* <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2> */}
+            <h2>All Javascript Tips&nbsp;and&nbsp;Tricks</h2>
             <p>
-              {/* will finish 50 different JS problems by June 2020. all published
-              on my dev.to and medium. posting to: improve my coding skills
-              mainly javascript skills, building Javascript based projects using
-              Vanila JS, and to help others in the same situation I was in
-              looking for&nbsp;solutions. */}
-              coming soon..
+              <strong>Goal:</strong> Finish 50 different JS daily
+              situations/problems by{' '}
+              <span style={{ textDecoration: 'underline' }}>August 2020</span>
             </p>
-            <a
-              href="https://dev.to/cesarcast1llo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={devto} alt="Dev.to" />
-            </a>
+            <p>
+              <strong>Purpose:</strong> improve my overall comprehension,
+              retentiveness, and coding skills.
+            </p>
+            <p>
+              <strong>Focus:</strong> Vanilla Javascript, Javscript Library &
+              Frameworks, and implementing development procedure
+              tips&nbsp;&&nbsp;hacks.
+            </p>
+            <p>
+              I hope to be a resource and help others in the same situation I
+              have been before. All published on my&nbsp;
+              <a
+                href="https://dev.to/cesarcast1llo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                dev.to
+              </a>
+            </p>
           </div>
           <StaticQuery
             query={blogQuery}

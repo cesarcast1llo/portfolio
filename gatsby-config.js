@@ -23,8 +23,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `images/emails`,
         path: `${__dirname}/src/assets/images/emails`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images/blog-imgs`,
+        path: `${__dirname}/src/assets/images/blog-imgs`,
       },
     },
     {
@@ -49,17 +56,21 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/c.png`,
+        icon: `src/assets/images/ccc.png`,
       },
     },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        excerpt_separator: `<!-- end -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000,
+            },
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,

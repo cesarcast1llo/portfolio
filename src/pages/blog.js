@@ -90,10 +90,7 @@ const Blog = () => (
             >
               <p>
                 <strong>Goal:</strong> Finish 50 different JS daily
-                situations/problems by{' '}
-                <span style={{ textDecoration: 'underline' }}>
-                  August&nbsp;2020
-                </span>
+                situations/problems by August&nbsp;2020
               </p>
               <p>
                 <strong>Purpose:</strong> improve my overall comprehension,
@@ -107,13 +104,16 @@ const Blog = () => (
               <p>
                 I hope to be a resource and help others in the same situation I
                 have been before. All&nbsp;published on my&nbsp;
-                <a
-                  href="https://dev.to/cesarcast1llo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  dev.to
+                <a href="https://dev.to/cesarcast1llo">
+                  <img
+                    src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
+                    alt="Cesar Castillo's DEV Profile"
+                    height="20"
+                    width="20"
+                  />
                 </a>
+                &nbsp;
+                <a href="https://dev.to/cesarcast1llo">profile</a>
               </p>
             </ScrollAnimation>
           </div>

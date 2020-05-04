@@ -26,7 +26,7 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
       </div>
       <div className="card-body">{body}</div>
       <div className="tags">
-        {tags.map(tag => (
+        {tags.map((tag) => (
           <Link key={tag} to={`/tags/${slugify(tag)}`}>
             <Badge className="badge">#{tagCapital(tag)}</Badge>
           </Link>

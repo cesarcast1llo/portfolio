@@ -43,16 +43,18 @@ $animate: all 0.2s ease-in-out;
           color: white;
           display: block;
           margin-bottom: 5rem;
-          font-size: 5rem;
+          font-size: 4rem;
           text-align: center;
           margin: 0 auto;
           padding: 0;
           transition: $animate;
           position: relative;
         }
+
         .bm-li:hover {
           text-decoration: none;
         }
+
         .bm-li:after {
           display: none;
           @media (min-width: 767px) {

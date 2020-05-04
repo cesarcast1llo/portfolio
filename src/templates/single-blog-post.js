@@ -34,7 +34,7 @@ const SinglePost = ({ data, pageContext, location }) => {
               <Col className="post-title">{post.title}</Col>
             </Row>
             <Row>
-              <Col md="3" className="post-date">
+              <Col className="post-date">
                 <img
                   alt="calendar"
                   className="calendar"

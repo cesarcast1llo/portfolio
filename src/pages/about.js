@@ -8,8 +8,6 @@ const About = ({ data }) => (
   <PageWrapper
     pageTitle="About"
     pageKeywords={[`gatsby`, `application`, `react`]}
-    bgColor="#3d3e3d"
-    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
   >
     <Container className="about-page">
       <Row>

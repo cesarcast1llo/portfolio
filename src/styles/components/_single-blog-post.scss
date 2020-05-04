@@ -36,6 +36,8 @@
       line-height: 34px;
       padding-bottom: 8px;
       text-align: center;
+      font-style: italic;
+
       @media (min-width: $XS) {
         font-size: 35px;
         line-height: 38px;
@@ -59,7 +61,7 @@
       }
       @media (min-width: $S) {
         text-align: left;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-right: 0;
         font-size: 20px;
         margin-top: 1px;
@@ -140,8 +142,30 @@
       @media (min-width: $S) {
         line-height: 26px;
         padding: 0 15px 10px;
+
         p {
           margin-bottom: 1.3rem;
+        }
+
+        a {
+          color: $secondary;
+          text-decoration: underline;
+        }
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+
+        .center {
+          text-align: center;
+        }
+
+        .gatsby-resp-image-wrapper {
+          padding-bottom: 20px;
+        }
+
+        .signature {
+          padding: 20px 0;
         }
       }
     }

@@ -7,12 +7,7 @@ import { slugify } from '../utils/utilityFunctions';
 const tagsPage = ({ pageContext }) => {
   const { tags, tagPostCounts } = pageContext;
   return (
-    <PageWrapper
-      pageTitle="Tags"
-      pageKeywords={['tags', 'topics']}
-      bgColor="#3d3e3d"
-      backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
-    >
+    <PageWrapper pageTitle="Tags" pageKeywords={['tags', 'topics']}>
       <Container className="tags-page-container">
         <Row>
           <Col className="tags-wrapper">

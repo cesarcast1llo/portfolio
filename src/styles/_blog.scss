@@ -22,6 +22,14 @@
         padding-bottom: 40px;
       }
 
+      @media (min-width: $S) {
+        padding: 0 35px 40px;
+      }
+
+      @media (min-width: $M) {
+        padding: 0 100px 40px;
+      }
+
       .blog-title {
         display: inline-block;
         font-size: 38px;

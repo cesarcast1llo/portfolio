@@ -7,17 +7,13 @@ import PageWrapper from '../components/PageWrapper.js';
 const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const { totalCount } = data.allMarkdownRemark;
+
   const pageHeader = `${totalCount} post${
     totalCount === 1 ? '' : 's'
   } tagged with `;
 
   return (
-    <PageWrapper
-      pageTitle="Tags"
-      pageKeywords={['tags', 'topics']}
-      bgColor="#3d3e3d"
-      backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
-    >
+    <PageWrapper pageTitle="Tags" pageKeywords={['tags', 'topics']}>
       <Container className="single-tag-container">
         <Row>
           <Col className="single-tag-wrapper">
@@ -25,7 +21,6 @@ const tagPosts = ({ data, pageContext }) => {
               <p>
                 {pageHeader} <i>{tag}</i>
               </p>
-              <h3>highlight all other matching tag instances</h3>
             </div>
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <Post

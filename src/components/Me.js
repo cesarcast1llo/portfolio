@@ -50,8 +50,10 @@ const Me = (props) => {
               <p>
                 Versatile Front-End Developer with 3 years of experience
                 designing, developing, and managing complex sites and internal
-                frameworks. Passion for responsive website design and
-                mobile-first&nbsp;approach.
+                frameworks. Passion for responsive website design and{' '}
+                <span style={{ whiteSpace: 'nowrap' }}>
+                  mobile-first approach.
+                </span>
               </p>
             </ScrollAnimation>
             <ScrollAnimation
@@ -69,8 +71,8 @@ const Me = (props) => {
                 thinking, and superb work ethic. I like finding something new
                 everyday that I can create with web development. When I am not
                 huddled over my laptop, I enjoy spending time with family,
-                watching quality fútbol, and finding a new place to
-                travel&nbsp;to.
+                watching quality fútbol, and finding a new place
+                to&nbsp;travel&nbsp;to.
               </p>
             </ScrollAnimation>
           </div>

@@ -40,6 +40,11 @@
         margin-bottom: 5px;
       }
 
+      a {
+        color: $secondary;
+        text-decoration: underline;
+      }
+
       h2 {
         font-size: 25px;
         line-height: 29px;
@@ -105,6 +110,7 @@
           line-height: 26px;
           margin-bottom: 0;
           display: block;
+
           @media (min-width: $XS) {
             font-size: 23px;
             line-height: 26px;

@@ -3,75 +3,38 @@ import { StaticQuery, graphql } from 'gatsby';
 import PageWrapper from '../components/PageWrapper.js';
 import Post from '../components/Post';
 import { Container, Row, Col } from 'reactstrap';
-import { Transition } from 'react-spring/renderprops';
+// import { Transition } from 'react-spring/renderprops';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const b = [{ text: 'B' }];
-const l = [{ text: 'l' }];
-const o = [{ text: 'o' }];
-const g = [{ text: 'g' }];
+// const b = [{ text: 'B' }];
+// const l = [{ text: 'l' }];
+// const o = [{ text: 'o' }];
+// const g = [{ text: 'g' }];
 
 const Blog = () => (
   <PageWrapper
     pageTitle="Blog"
-    pageKeywords={[`gatsby`, `application`, `react`]}
+    pageKeywords={[
+      `Cesar Castillo Portfolio`,
+      `gatsby`,
+      `application`,
+      `react`,
+    ]}
+    background="background"
   >
     <Container className="blog-page-container">
       <Row>
         <Col className="blog-wrapper">
           <div className="blog-intro">
-            <Transition
-              items={b}
-              keys={(item) => item.key}
-              delay="200"
-              from={{ transform: 'translate3d(0,-900px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
+            <ScrollAnimation
+              className="animate"
+              animateIn="fadeIn"
+              duration={1}
+              delay={750}
+              animateOnce={true}
             >
-              {(item) => (props) => (
-                <p className="blog-title" style={props}>
-                  {item.text}
-                </p>
-              )}
-            </Transition>
-            <Transition
-              items={l}
-              keys={(item) => item.key}
-              delay="300"
-              from={{ transform: 'translate3d(0,-900px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
-            >
-              {(item) => (props) => (
-                <p className="blog-title" style={props}>
-                  {item.text}
-                </p>
-              )}
-            </Transition>
-            <Transition
-              items={o}
-              keys={(item) => item.key}
-              delay="400"
-              from={{ transform: 'translate3d(0,-900px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
-            >
-              {(item) => (props) => (
-                <p className="blog-title" style={props}>
-                  {item.text}
-                </p>
-              )}
-            </Transition>
-            <Transition
-              items={g}
-              keys={(item) => item.key}
-              delay="500"
-              from={{ transform: 'translate3d(0,-900px,0)' }}
-              enter={{ transform: 'translate3d(0,0px,0)' }}
-            >
-              {(item) => (props) => (
-                <p className="blog-title" style={props}>
-                  {item.text}
-                </p>
-              )}
-            </Transition>
+              <h1>Blog</h1>
+            </ScrollAnimation>
             <ScrollAnimation
               className="animate"
               animateIn="fadeIn"

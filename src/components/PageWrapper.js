@@ -15,6 +15,8 @@ const PageWrapper = ({
   className,
   animationText,
   headerHide,
+  footerHide,
+  background,
 }) => {
   return (
     <>
@@ -26,7 +28,7 @@ const PageWrapper = ({
       </Helmet>
       <SEO title={pageTitle} keywords={pageKeywords} />
       <div
-        className={`background ${className}`}
+        className={`${background} ${className}`}
         style={{ backgroundColor: bgColor, backgroundImage: backgroundURL }}
       >
         <div className="hero-bg"></div>
@@ -37,7 +39,7 @@ const PageWrapper = ({
       </div>
       <Header headerHide={headerHide} />
       <main>{children}</main>
-      <Footer />
+      <Footer footerHide={footerHide} />
     </>
   );
 };

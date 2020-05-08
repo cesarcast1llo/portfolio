@@ -53,10 +53,16 @@ class Index extends Component {
     return (
       <PageWrapper
         pageTitle="Cesar Castillo"
-        pageKeywords={[`gatsby`, `application`, `react`]}
+        pageKeywords={[
+          `Cesar Castillo Portfolio`,
+          `gatsby`,
+          `application`,
+          `react`,
+        ]}
         cookies={!this.state.cookies}
         className={this.state.className}
         animationText={this.state.animationText}
+        background="background"
       >
         {this.state.showIndexPage ? (
           <>

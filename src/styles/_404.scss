@@ -1,0 +1,19 @@
+.page-404 {
+  text-align: center;
+
+  .center {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+    h1 {
+      display: block;
+    }
+    p {
+      display: block;
+    }
+  }
+}

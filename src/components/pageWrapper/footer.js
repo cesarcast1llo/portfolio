@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
 
-const Footer = ({ data }) => (
-  <footer>
+const Footer = (props) => (
+  <footer style={{ display: props.footerHide }}>
     <Container className="footer-container">
       <Row>
         <Col className="center">

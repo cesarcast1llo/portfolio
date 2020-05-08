@@ -7,7 +7,13 @@ import PageWrapper from '../components/PageWrapper.js';
 const About = ({ data }) => (
   <PageWrapper
     pageTitle="About"
-    pageKeywords={[`gatsby`, `application`, `react`]}
+    pageKeywords={[
+      `Cesar Castillo Portfolio`,
+      `gatsby`,
+      `application`,
+      `react`,
+    ]}
+    background="background"
   >
     <Container className="about-page">
       <Row>

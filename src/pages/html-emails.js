@@ -7,9 +7,15 @@ import { Container, Row, Col } from 'reactstrap';
 const Emails = () => (
   <PageWrapper
     pageTitle="Email Portal"
-    pageKeywords={[`gatsby`, `application`, `react`]}
-    bgColor="blue"
-    // backgroundURL="url(https://previews.123rf.com/images/foxaon/foxaon1203/foxaon120300037/12751727-blue-source-code-background.jpg)"
+    pageKeywords={[
+      `Cesar Castillo Portfolio`,
+      `Gatsby`,
+      `HTML Emails`,
+      `React`,
+      `Litmus`,
+      `Email on Acid`,
+    ]}
+    background="background"
   >
     <Container className="email-portal-container">
       <Row>

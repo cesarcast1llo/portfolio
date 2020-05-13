@@ -1,7 +1,7 @@
 ---
 title: "Frontpoint Security - St. Patrick's Day"
 image: ../../assets/images/emails/FPT_StPatricksDay.png
-date: 2020-04-06 07:00:00
+date: 2021-04-06 07:00:00
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -521,7 +521,7 @@ width: 240px !important;
                         cellspacing="0"
                         cellpadding="0"
                         align="center"
-                        style="width:190px; background-color:#6CC24A; border-radius:4px;"
+                        style="width:190px;float:right; background-color:#6CC24A; border-radius:4px;"
                         bgcolor="#6CC24A"
                       >
                         <tr>
@@ -666,7 +666,7 @@ width: 240px !important;
                           </td>
                         </tr>
                         <tr>
-                          <td align="center" valign="top" class="em_hide">
+                          <td align="center" valign="top" class="em_hide1">
                             <img
                               src="https://cdn.wearelift.net/frontpointsecurity.com/email/FPT-1114/StPatricksUpsell/2mobile.gif"
                               alt=""
@@ -922,7 +922,7 @@ width: 240px !important;
                               align="left"
                             >
                               <tr>
-                                <td align="right" valign="top" class="em_hide">
+                                <td align="right" valign="top" >
                                   <a
                                     href="#"
                                     target="_blank"
@@ -1151,7 +1151,7 @@ width: 240px !important;
                               align="right"
                             >
                               <tr>
-                                <td align="left" valign="top" class="em_hide">
+                                <td align="left" valign="top" >
                                   <a
                                     href="#"
                                     target="_blank"
@@ -1227,7 +1227,7 @@ width: 240px !important;
                               align="left"
                             >
                               <tr>
-                                <td align="right" valign="top" class="em_hide">
+                                <td align="right" valign="top" >
                                   <a
                                     href="#"
                                     target="_blank"
@@ -1461,7 +1461,7 @@ width: 240px !important;
                               align="right"
                             >
                               <tr>
-                                <td align="left" valign="top" class="em_hide">
+                                <td align="left" valign="top" >
                                   <a
                                     href="#"
                                     target="_blank"

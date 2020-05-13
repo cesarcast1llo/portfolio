@@ -1,7 +1,7 @@
 ---
 title: 'Sling TV - Wu-Tang Documentary'
 image: ../../assets/images/emails/SLNG_WuTangDoc.png
-date: 2021-04-06 07:00:00
+date: 2020-04-06 07:00:00
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -124,6 +124,7 @@ date: 2021-04-06 07:00:00
          @media only screen and (min-width:481px) and (max-width:639px) {
          .em_main_table {
          width: 480px !important;
+         width: 100% !important;
          }
          .em_wrapper {
          width: 100% !important;
@@ -301,6 +302,7 @@ date: 2021-04-06 07:00:00
          @media only screen and (min-width:375px) and (max-width:480px) {
          .em_main_table {
          width: 374px !important;
+                  width: 100% !important;
          }
          .em_wrapper {
          width: 100% !important;
@@ -436,6 +438,7 @@ date: 2021-04-06 07:00:00
          @media only screen and (max-width:374px) {
          .em_main_table {
          width: 320px !important;
+                  width: 100% !important;
          }
          .em_wrapper {
          width: 100% !important;
@@ -588,6 +591,9 @@ date: 2021-04-06 07:00:00
          margin-left: auto !important;
          margin-right: auto !important;
          }
+         .class {
+            width: 100% !important;
+         }
          }
       </style>
       <style>
@@ -612,30 +618,31 @@ date: 2021-04-06 07:00:00
       <![endif]-->
    </head>
    <body style="margin:0px; padding:0px;">
-      <style type="text/css">
-         div.preheader 
-         { display: none !important; } 
-      </style>
+         <table width="100%" class="speciiial" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                  <tr>
+              <td align="center" valign="top">
       <div class="preheader" style="font-size: 1px; display: none !important;">wu tang</div>
       <!--Full width table start-->
       <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                  <tr>
+              <td align="center" valign="top">
          <!--HEADER SECTION -->
          <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper">
             <tr>
+              <td align="center" valign="top">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; background-color:salmon;max-width: 1000px;">
+                  <tr>
+                    <td align="center" style="padding: 10px;font-size: 15px;" valign="top">
+                        Images requested are blocked since the content is not served over&nbsp;HTTPS<br/>
+                        Please <strong>hard refresh</strong> to load images - <strong>CMD&nbsp;+&nbsp;Shift&nbsp;+&nbsp;R</strong>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
                <td class="stylingblock-content-wrapper camarker-inner">
-                  <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;  width:640px;">
-                     <tr>
-                        <td align="center" valign="top">
-                           <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
-                              <tr>
-                                 <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
-                                    Images requested are blocked since the content is not served over HTTPS<br/>
-                                    Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
-                                 </td>
-                              </tr>
-                           </table>
-                        </td>
-                     </tr>
+                  <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed; max-width: 640px; width:100%;">
                      <tr>
                         <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">
@@ -664,7 +671,7 @@ date: 2021-04-06 07:00:00
          <!--BODY SECTION -->
          <tr>
             <td align="center" valign="top">
-               <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;  width:640px;">
+               <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table class" style="table-layout:fixed;  width:640px;">
                   <tr>
                      <td align="center" valign="top">
                         <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; ">
@@ -1026,12 +1033,8 @@ date: 2021-04-06 07:00:00
             </td>
          </tr>
       </table>
-      </td></tr><!--//FOOTER SECTION -->
-      </table><!--Full width table End-->
-      <img src="https://pixel.app.returnpath.net/pixel.gif?r=46c7df542fbe27fdc541df622b315e16e552bc9c" width="1" alt="" height="1">
-      <div class="em_hide" style="white-space:nowrap;font:20px courier;color:#f2f3f2; background-color:#f2f3f2; font-size:0px; line-height:0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-      <img src="http://click.mail.sling.com/open.aspx?ffcb10-fefa1371776c07-fe561c72716c027d7c10-fe9813727565027976-ff961578-fe6717757567017a7515-ffce15" width="1" height="1">
-      <img src="https://pixel.app.returnpath.net/pixel.gif?r=46c7df542fbe27fdc541df622b315e16e552bc9c" width="1" height="1">
-      </custom>
+            </td>
+         </tr>
+      </table>
    </body>
 </html>

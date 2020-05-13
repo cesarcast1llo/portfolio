@@ -1,7 +1,7 @@
 ---
 title: 'Sling TV - NBA Finals 2019'
 image: ../../assets/images/emails/FPT_NBAFinals.png
-date: 2021-04-06 07:00:00
+date: 2020-04-06 07:00:00
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -605,6 +605,18 @@ date: 2021-04-06 07:00:00
       <div class="preheader" style="font-size: 1px; display: none !important;">BLUE V1</div>
       <!--Full width table start-->
       <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+        <tr>
+          <td align="center" valign="top">
+            <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; background-color:salmon;max-width: 1000px;">
+              <tr>
+                <td align="center" style="padding: 10px;font-size: 15px;" valign="top">
+                    Images requested are blocked since the content is not served over&nbsp;HTTPS<br/>
+                    Please <strong>hard refresh</strong> to load images - <strong>CMD&nbsp;+&nbsp;Shift&nbsp;+&nbsp;R</strong>
+                </td>
+              </tr>
+            </table>
+          </td>
+         </tr>
          <tr>
             <td align="center" valign="top">
                <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;  width:640px;">
@@ -614,18 +626,6 @@ date: 2021-04-06 07:00:00
                            <tr>
                               <td class="stylingblock-content-wrapper camarker-inner">
                                  <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
-                                    <tr>
-                                       <td align="center" valign="top">
-                                          <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
-                                             <tr>
-                                                <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
-                                                   Images requested are blocked since the content is not served over HTTPS<br/>
-                                                   Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
-                                                </td>
-                                             </tr>
-                                          </table>
-                                       </td>
-                                    </tr>
                                     <tr>
                                        <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
                                           <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">

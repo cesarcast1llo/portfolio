@@ -1,0 +1,20 @@
+.html-email-container {
+  padding: 0 10px !important;
+  max-width: 100%;
+
+  @media (min-width: 640px) {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+  .post-body {
+    padding: 0;
+  }
+
+  .port {
+    width: 100% !important;
+
+    @media (min-width: $XS) {
+      max-width: 640px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: 'Sling TV - Latino Summer Watchlist'
 image: ../../assets/images/emails/SLNG_LatinoWatchlist.png
-date: 2021-04-06 07:00:00
+date: 2020-04-03 07:00:00
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -580,37 +580,32 @@ date: 2021-04-06 07:00:00
          }
          }
       </style>
-      </style>
-      <style>
-         [style*="brandon_text_regular"] {
-         font-family: 'brandon_text_regular', Arial, sans-serif !important;}
-         [style*="brandon_text_boldbold"] {
-         font-family: 'brandon_text_boldbold', Arial, sans-serif !important;}  
-      </style>
    </head>
-   <body style="margin:0px; padding:0px;">
+   <body style="margin:0px; padding:0px;padding:0;">
       <!--Full width table start-->
       <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                          <tr>
+                      <td align="center" valign="top">
          <!--HEADER SECTION -->
          <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper">
             <tr>
                <td class="stylingblock-content-wrapper camarker-inner">
                   <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="center" valign="top">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; background-color:salmon;max-width: 1000px;">
+                          <tr>
+                            <td align="center" style="padding: 10px;font-size: 15px;" valign="top">
+                                Images requested are blocked since the content is not served over&nbsp;HTTPS<br/>
+                                Please <strong>hard refresh</strong> to load images - <strong>CMD&nbsp;+&nbsp;Shift&nbsp;+&nbsp;R</strong>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
                      <tr>
                         <td align="center" valign="top">
                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">
-                              <tr>
-                                 <td align="center" valign="top">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;background-color:salmon;" width="640">
-                                       <tr>
-                                          <td align="center" style="padding: 5px;font-size: 15px;" valign="top">
-                                             Images requested are blocked since the content is not served over HTTPS<br/>
-                                             Please <strong>hard refresh</strong> to load images - <strong>CMD + Shift + R</strong>
-                                          </td>
-                                       </tr>
-                                    </table>
-                                 </td>
-                              </tr>
                               <tr>
                                  <td align="center" style="padding: 20px 0px; border-top:solid 4px #00abe3;" valign="top">
                                     <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px;" width="640">
@@ -649,7 +644,7 @@ date: 2021-04-06 07:00:00
          <!--BODY SECTION -->
          <tr>
             <td align="center" valign="top">
-               <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table" style="table-layout:fixed;  width:640px;">
+               <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" class="em_main_table port" style="table-layout:fixed;  width:640px;">
                   <tr>
                      <td align="center" valign="top">
                         <table cellpadding="0" cellspacing="0" width="100%" class="stylingblock-content-wrapper" style="min-width: 100%; ">
@@ -1268,12 +1263,5 @@ date: 2021-04-06 07:00:00
             </td>
          </tr>
       </table>
-      </td></tr><!--//FOOTER SECTION -->
-      </table><!--Full width table End-->
-      <img src="https://pixel.app.returnpath.net/pixel.gif?r=46c7df542fbe27fdc541df622b315e16e552bc9c" width="1" alt="" height="1">
-      <div class="em_hide" style="white-space:nowrap;font:20px courier;color:#f2f3f2; background-color:#f2f3f2; font-size:0px; line-height:0px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
-      <img src="http://click.mail.sling.com/open.aspx?ffcb10-fef5137274630d-fe561c72716c027d7c10-fe9813727565027976-ff961578-fe6717757567017a7515-ffce15" width="1" height="1">
-      <img src="https://pixel.app.returnpath.net/pixel.gif?r=46c7df542fbe27fdc541df622b315e16e552bc9c" width="1" height="1">
-      </custom>
    </body>
 </html>

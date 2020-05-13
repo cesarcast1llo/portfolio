@@ -51,7 +51,9 @@
     }
 
     .html-email {
-      padding-bottom: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 3px solid $secondary;
+      margin-bottom: 2.5rem;
 
       @media (min-width: $XS) {
         padding-bottom: 4rem;

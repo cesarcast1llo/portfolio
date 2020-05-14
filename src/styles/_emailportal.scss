@@ -54,9 +54,14 @@
       padding-bottom: 2.5rem;
       border-bottom: 3px solid $secondary;
       margin-bottom: 2.5rem;
+      border-bottom: 3px solid $secondary;
 
       @media (min-width: $XS) {
         padding-bottom: 4rem;
+      }
+
+      @media (min-width: $S) {
+        border: none;
       }
 
       .html-image {

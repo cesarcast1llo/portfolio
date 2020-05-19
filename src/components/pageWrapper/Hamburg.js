@@ -48,7 +48,7 @@ class Hamburg extends Component {
         </div>
         <div
           role="button"
-          id="nav-icon4"
+          id="nav-button"
           className={this.state.visibility ? 'open' : null}
           onClick={this.toggleVisibility}
           onKeyDown={this.handleKeyDown}

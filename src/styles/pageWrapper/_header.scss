@@ -81,7 +81,7 @@ $animate: all 0.2s ease-in-out;
         }
       }
 
-      #nav-icon4 {
+      #nav-button {
         width: 37px;
         height: 25px;
         position: relative;
@@ -96,7 +96,7 @@ $animate: all 0.2s ease-in-out;
         cursor: pointer;
         z-index: 11;
 
-        #nav-icon4:focus {
+        #nav-button:focus {
           outline: none !important;
         }
 
@@ -141,7 +141,7 @@ $animate: all 0.2s ease-in-out;
           }
         }
       }
-      #nav-icon4.open {
+      #nav-button.open {
         span {
           background-color: white;
 

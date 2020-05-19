@@ -102,22 +102,22 @@
             @extend .site-button;
             margin: 1rem auto 3rem;
             border-radius: 5px;
-            padding: 5px 40px;
+            padding: 5px 0;
             font-size: 2.5rem;
             line-height: 4rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: white;
+            color: $secondary;
             border: 2px solid $secondary;
-            background-color: $secondary;
+            background-color: white;
             background-image: -webkit-linear-gradient(
               225deg,
-              #ffffff 50%,
+              $secondary 50%,
               transparent 50%
             );
             background-image: linear-gradient(
               225deg,
-              #ffffff 50%,
+              $secondary 50%,
               transparent 50%
             );
             background-size: 500px;
@@ -130,7 +130,7 @@
             &:active,
             &:focus {
               background-position: 100%;
-              color: $secondary;
+              color: white;
             }
           }
         }

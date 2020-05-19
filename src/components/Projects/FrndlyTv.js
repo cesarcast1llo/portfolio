@@ -46,7 +46,7 @@ export default class FrndlyTv extends Component {
                   delay={550}
                   animateOnce={true}
                 >
-                  <h1>Frndly TV</h1>
+                  <h2>Frndly TV</h2>
                 </ScrollAnimation>
                 {/* <ScrollAnimation
                   className="animate"
@@ -65,7 +65,7 @@ export default class FrndlyTv extends Component {
                 delay={650}
                 animateOnce={true}
               >
-                <p>Live TV internet-based streaming TV&nbsp;service</p>
+                <p>Live TV internet-based streaming TV&nbsp;service.</p>
               </ScrollAnimation>
               <ScrollAnimation
                 className="animate"
@@ -74,7 +74,7 @@ export default class FrndlyTv extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2>Developed In:</h2>
+                <h2 id="developed">Developed In:</h2>
               </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>

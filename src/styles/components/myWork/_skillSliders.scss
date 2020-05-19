@@ -48,9 +48,6 @@
       font-weight: 300;
       padding-bottom: 4rem;
 
-      @media (min-width: 325px) {
-        font-size: 5rem;
-      }
       @media (min-width: $XS) {
         padding-bottom: 5rem;
       }
@@ -66,10 +63,11 @@
 
       p {
         font-size: 28px;
+        margin-bottom: 0.5rem;
+
         @media (min-width: $XS) {
           font-size: 30px;
         }
-        margin-bottom: 0.5rem;
       }
 
       .icons {
@@ -134,10 +132,16 @@
     }
 
     .other-tools {
-      padding: 6.7rem 0 0;
-      font-size: 3.5rem;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 0;
+
+      @media (min-width: $XS) {
+        font-size: 20px;
+        line-height: 28px;
+      }
       @media (min-width: $S) {
-        font-size: 2.6rem;
+        padding: 1.5rem 0 0;
       }
     }
 
@@ -145,7 +149,7 @@
       padding: 0;
 
       @media (min-width: $S) {
-        padding: 5rem 0 0;
+        padding: 0;
         text-align: right;
       }
 
@@ -157,6 +161,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -165,6 +170,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -173,6 +179,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -181,6 +188,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -189,6 +197,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -197,6 +206,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -205,6 +215,7 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
@@ -213,12 +224,16 @@
           margin-top: 12px;
           margin-right: 12px;
           @media (min-width: $S) {
+            margin-top: 0;
             margin-right: 8px;
           }
         }
         .Sketch {
           max-width: 40px;
           margin-top: 12px;
+          @media (min-width: $S) {
+            margin-top: 0;
+          }
         }
       }
     }

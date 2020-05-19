@@ -24,9 +24,8 @@ const Emails = () => (
           <div className="description">
             <p>
               Coded and proofed 100+ responsive HTML emails using HTML4,
-              Salesforce or React.js.
-            </p>
-            <p>
+              Salesforce or&nbsp;React.js.
+              <br />
               All emails have been proofed and checked for HTML validation.
               Tested on 70+ email clients and devices locally, and on either
               Email on Acid or Litmus for desktop and mobile responsiveness.

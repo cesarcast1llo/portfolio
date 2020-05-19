@@ -48,12 +48,10 @@ const Me = (props) => {
               animateOnce={true}
             >
               <p>
-                Versatile Front-End Developer with 3 years of experience
-                designing, developing, and managing complex sites and internal
-                frameworks. Passion for responsive website design and{' '}
-                <span style={{ whiteSpace: 'nowrap' }}>
-                  mobile-first approach.
-                </span>
+                Versatile <span id="frontend">Front End Developer</span> with 3
+                years of experience designing, developing, and managing complex
+                sites and internal frameworks. Passion for responsive website
+                design and <span>mobile-first approach.</span>
               </p>
             </ScrollAnimation>
             <ScrollAnimation
@@ -66,13 +64,13 @@ const Me = (props) => {
               <p className="last">
                 The career of a professional athlete is short-lived, but the
                 skills and experiences attained during the journey last you a
-                lifetime. I apply the same drive to succeed as a Front End
-                Developer where I showcase my retentive learning, creative
-                thinking, and superb work ethic. I like finding something new
-                everyday that I can create with web development. When I am not
-                huddled over my laptop, I enjoy spending time with family,
-                watching quality fútbol, and finding a new place
-                to&nbsp;travel&nbsp;to.
+                lifetime. I apply the same drive to succeed as a{' '}
+                <span id="frontend">Front End Developer</span> where I showcase
+                my retentive learning, creative thinking, and superb work ethic.
+                I like finding something new everyday that I can create with web
+                development. When I am not huddled over my laptop, I enjoy
+                spending time with family, watching quality fútbol, and finding
+                a new place to&nbsp;travel&nbsp;to.
               </p>
             </ScrollAnimation>
           </div>

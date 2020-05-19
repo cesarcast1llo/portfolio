@@ -17,8 +17,8 @@ export default class LiftSite extends Component {
         { name: 'PHP', img: php, number: 850 },
         { name: 'Sass', img: sass, number: 1000 },
         { name: 'Gulp', img: gulp, number: 1150 },
-        { name: 'MAMP', img: mamp, number: 1300 }
-      ]
+        { name: 'MAMP', img: mamp, number: 1300 },
+      ],
     };
   }
 
@@ -64,7 +64,7 @@ export default class LiftSite extends Component {
                   delay={550}
                   animateOnce={true}
                 >
-                  <h1>Lift Creative Agency</h1>
+                  <h2>Lift Creative Agency</h2>
                 </ScrollAnimation>
               </a>
               <ScrollAnimation
@@ -76,7 +76,7 @@ export default class LiftSite extends Component {
               >
                 <p>
                   LIFT is a strategic design agency specializing in developing
-                  creative ideas that elevate&nbsp;brands
+                  creative ideas that elevate&nbsp;brands.
                 </p>
               </ScrollAnimation>
               <ScrollAnimation
@@ -86,7 +86,7 @@ export default class LiftSite extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2>Developed In:</h2>
+                <h2 id="developed">Developed In:</h2>
               </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>

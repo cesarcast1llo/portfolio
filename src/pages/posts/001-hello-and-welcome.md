@@ -9,7 +9,7 @@ tags:
   - ES6
 ---
 
-Took a while, but we're here! I was more focused on the Front End of my portfolio that I completely left out publishing blogs of everyday things that happened while developing the infrastructure of my portfolio.
+Took a while, but we're here! I was more focused on the index page dev that I completely left out publishing blogs of everyday things that happened while developing the infrastructure of my portfolio.
 
 Some of those include learning and implementing GraphQL while using Gatsby.js, creating and rendering both Markdown files and HTML files while using Gatsby Node, and using cookies to make sure animations don't overlap while on this site.
 

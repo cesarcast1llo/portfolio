@@ -18,7 +18,7 @@ const Projects = () => {
                 delay={350}
                 animateOnce={true}
               >
-                <div className="header">Projects I've Worked&nbsp;On</div>
+                <div className="header">Projects I've Worked&nbsp;On.</div>
               </ScrollAnimation>
             </Col>
           </Row>

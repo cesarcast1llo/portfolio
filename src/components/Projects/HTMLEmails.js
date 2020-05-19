@@ -77,7 +77,7 @@ export default class HTMLEmails extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2>Developed In:</h2>
+                <h2 id="developed">Developed In:</h2>
               </ScrollAnimation>
               {this.state.stack.map((stack, i) => (
                 <div className="logos" key={i}>

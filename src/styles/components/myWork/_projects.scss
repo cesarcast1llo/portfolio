@@ -55,18 +55,11 @@
       .project-images {
         img {
           margin: 0 auto;
-          max-width: 450px;
+          max-width: 490px;
           width: 100%;
         }
-
-        // img:last-child {
-        //   display: none;
-        //   @media (min-width: $S) {
-        //     padding-top: 2rem;
-        //     display: block;
-        //   }
-        // }
       }
+
       .project-description {
         vertical-align: middle;
         margin: auto 0;
@@ -78,35 +71,45 @@
           padding-bottom: 2rem;
         }
 
-        h1 {
+        h2 {
           text-decoration: underline;
           padding-bottom: 1rem;
+          font-size: 22px;
+          line-height: 26px;
+
+          @media (min-width: $XS) {
+            font-size: 24px;
+            line-height: 28px;
+          }
         }
 
-        h2 {
-          padding-bottom: 1rem;
+        #developed {
+          text-decoration: none;
         }
 
         p {
-          font-size: 16px;
-          line-height: 20px;
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 300;
           padding-bottom: 1rem;
-          @media (min-width: $S) {
-            font-size: 17px;
-            line-height: 21px;
+
+          @media (min-width: $XS) {
+            font-size: 20px;
+            line-height: 28px;
           }
         }
 
         .email-btn {
           @extend .site-button;
           margin: 1rem auto 3rem;
+          border-radius: 5px;
           padding: 5px 0;
-          font-size: 2.3rem;
+          font-size: 2.5rem;
           line-height: 4rem;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           color: $secondary;
-          // border: 1px solid white;
+          border: 2px solid $secondary;
           background-color: white;
           background-image: -webkit-linear-gradient(
             225deg,
@@ -129,7 +132,6 @@
           &:focus {
             background-position: 100%;
             color: white;
-            // border: 1px solid #3d3e3d;
           }
         }
 

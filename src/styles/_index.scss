@@ -46,11 +46,12 @@
 
           @media (min-width: $XS) {
             font-size: 20px;
-            line-height: 24px;
+            line-height: 28px;
           }
 
           #frontend {
             border-bottom: 1px dashed $secondary;
+            font-weight: 500;
           }
 
           span {

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     author: `Cesar Castillo`,
-    description: `Portfolio showcasing my skills and previous experience while authoring blogs tackling on everyday tasks and projects`,
+    description: `Portfolio showcasing my skills and previous experience, while authoring blogs tackling on everyday tasks and projects`,
     siteUrl: `https://www.cesarcast1llo.com/`,
     social: {
       github: `https://github.com/cesarcast1llo`,

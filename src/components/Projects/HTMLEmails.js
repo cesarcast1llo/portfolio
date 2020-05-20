@@ -49,7 +49,7 @@ export default class HTMLEmails extends Component {
                 animateOnce={true}
               >
                 <Link to="/html-emails">
-                  <h1>HTML Emails</h1>
+                  <h2>HTML Emails</h2>
                 </Link>
               </ScrollAnimation>
               <ScrollAnimation

@@ -60,13 +60,13 @@ export default class HTMLEmails extends Component {
                 animateOnce={true}
               >
                 <p>
-                  Coded and proofed 100+ responsive HTML emails using HTML4,
+                  Coded and validated 100+ responsive HTML emails using HTML4,
                   Salesforce or React.js. All emails were proofed for HTML best
                   practices while being tested on 70+ email clients and devices
                   before&nbsp;delivery.
                 </p>
                 <Link to="/html-emails">
-                  <Button className="email-btn">Email Portal</Button>
+                  <Button className="email-btn">EXAMPLES</Button>
                 </Link>
               </ScrollAnimation>
 

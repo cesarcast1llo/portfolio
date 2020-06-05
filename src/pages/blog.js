@@ -56,17 +56,16 @@ const Blog = () => (
                 situations/problems by August&nbsp;2020
               </p>
               <p>
-                <strong>Purpose:</strong> improve my overall comprehension,
+                <strong>Purpose:</strong> Improve my overall comprehension,
                 retentiveness, and coding&nbsp;skills.
               </p>
               <p>
-                <strong>Focus:</strong> Vanilla Javascript, Javscript Library &
+                <strong>Focus:</strong> Vanilla Javascript, Javascript Library &
                 Frameworks, and implementing development procedure
                 tips&nbsp;&&nbsp;hacks.
               </p>
               <p>
-                I hope to be a resource and help others in the same situation I
-                have been before. All&nbsp;published on my&nbsp;
+                All&nbsp;published on my&nbsp;
                 <a href="https://dev.to/cesarcast1llo">
                   <img
                     src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"

@@ -52,16 +52,16 @@ const Blog = () => (
               animateOnce={true}
             >
               <p>
-                <strong>Goal:</strong> Finish 50 different JS daily
-                situations/problems by August&nbsp;2020
+                <strong>Goal:</strong> Write development blogs about my
+                daily&nbsp;tasks
               </p>
               <p>
                 <strong>Purpose:</strong> Improve my overall comprehension,
                 retentiveness, and coding&nbsp;skills.
               </p>
               <p>
-                <strong>Focus:</strong> Vanilla Javascript, Javascript Library &
-                Frameworks, and implementing development procedure
+                <strong>Focus:</strong> Email Development, Vanilla Javascript,
+                Javscript Frameworks, and implementing development procedure for
                 tips&nbsp;&&nbsp;hacks.
               </p>
               <p>

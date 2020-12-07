@@ -65,7 +65,7 @@ export default class FrndlyTv extends Component {
                 delay={650}
                 animateOnce={true}
               >
-                <p>Live TV internet-based streaming TV&nbsp;service.</p>
+                <p>Live internet-based streaming TV&nbsp;service.</p>
               </ScrollAnimation>
               <ScrollAnimation
                 className="animate"

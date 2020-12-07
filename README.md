@@ -8,7 +8,7 @@
 
 `npm install`
 
-`npm develop` start your server on `localhost:8000`
+`gatsby develop` start your server on `localhost:8000`
 
 before you start making changes, choose the `staging` branch
 

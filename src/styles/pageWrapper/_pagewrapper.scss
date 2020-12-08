@@ -4,7 +4,7 @@
   max-width: 2300px;
   margin: 0 auto;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background: $gradient;
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   text-align: center;
 
   @media (min-width: $XS) {
-    height: 55vh;
+    height: 50vh;
   }
 
   .name-intro {

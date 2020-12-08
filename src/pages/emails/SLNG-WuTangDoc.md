@@ -651,7 +651,7 @@ date: 2020-04-03 07:00:00
                                     <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:640px;" width="640">
                                        <tr>
                                           <td align="left" style="padding:0px 6px 0px 0px; text-align:left;" valign="top" width="85">
-                                             <a href="http://click.mail.sling.com/?qs=4fed73bfd06b250e88591bc2e23dc6193e7595e569323de1854e367ef03425631cc8a1e1f7b27af2adeb77524e5e570723f7bb949d69827f"  style="text-decoration:none;" target="_blank"><img alt="sling TELEVISION" border="0" class="em_img98" src="http://image.mail.sling.com/lib/fe9813727565027976/m/10/39f3cfe8-30b5-42f7-a1a1-d1dd087387d4.png" style="display:block; font-family:Arial, sans-serif; font-size:16px; line-height:20px; color:#000000;" width="85"></a>
+                                             <a href="http://click.mail.sling.com/?qs=4fed73bfd06b250e88591bc2e23dc6193e7595e569323de1854e367ef03425631cc8a1e1f7b27af2adeb77524e5e570723f7bb949d69827f"  style="text-decoration:none;" target="_blank"><img alt="sling TELEVISION" border="0" class="em_img98" src="https://image.mail.sling.com/lib/fe9813727565027976/m/10/39f3cfe8-30b5-42f7-a1a1-d1dd087387d4.png" style="display:block; font-family:Arial, sans-serif; font-size:16px; line-height:20px; color:#000000;" width="85"></a>
                                           </td>
                                           <td align="right" class="font-cta-top" style="font-family:'brandon_text_regularregular', Arial, sans-serif; font-size:18px; line-height:21px; text-transform:uppercase; text-align:right; color:#14ABE0; padding:0px 0px 0px 6px; text-align:right;" valign="middle">
                                              <a class="font-cta-top" href="http://click.mail.sling.com/?qs=4fed73bfd06b250ed0d39851ae4f224f6e40f1189ab21f9b1f4f31b40edd64ee3d0bb2146e328e0f28e61560181ff9217b52268f525db0e3" style="text-decoration:none; color:#14ABE0; white-space:nowrap;font-weight:bold;" target="_blank" >GET SHOWTIME<sup style="font-size:10px;">®</sup> <span class="font-cta-top-arrow" style="vertical-align:1px; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif; font-weight:600; font-size:20px;">&gt;</span></a>
@@ -683,7 +683,7 @@ date: 2020-04-03 07:00:00
                                           <table width="100%" cellspacing="0" cellpadding="0">
                                              <tr>
                                                 <td align="center"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee1a1cd7aca62592a4a7cdeb2f48bf9293ade180d3c48c350985882cd451b0bc64f95ebfdba070762e956db5e6f519701" title=""   data-linkto="https://">
-                                                   <img src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/2eab51ca-f490-48df-a45c-64ef67f85e72.png" alt="A SHOWTIME® DOCUMENTARY SERIES WU-TANG CLAN: OF MICS AND MEN" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
+                                                   <img src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/2eab51ca-f490-48df-a45c-64ef67f85e72.png" alt="A SHOWTIME® DOCUMENTARY SERIES WU-TANG CLAN: OF MICS AND MEN" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
                                                 </td>
                                              </tr>
                                           </table>
@@ -706,7 +706,7 @@ date: 2020-04-03 07:00:00
                                           <table width="100%" cellspacing="0" cellpadding="0">
                                              <tr>
                                                 <td align="center">
-                                                   <img data-assetid="4374" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/a071398e-2e99-4c3d-857d-d2f691348ca7.png" alt="DON'T MISS WU-TANG CLAN: OF MICS AND MEN A Four-Part Documentary" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;">
+                                                   <img data-assetid="4374" src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/a071398e-2e99-4c3d-857d-d2f691348ca7.png" alt="DON'T MISS WU-TANG CLAN: OF MICS AND MEN A Four-Part Documentary" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;">
                                                 </td>
                                              </tr>
                                           </table>
@@ -775,7 +775,7 @@ date: 2020-04-03 07:00:00
                                           <table width="100%" cellspacing="0" cellpadding="0">
                                              <tr>
                                                 <td align="center"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250e0a113546fa8bd4dfd03f976d6acd615654eef2aea794d0b496154f01443785c3c9fd754da2a3b271cd0d2415fcb1d962" title=""   data-linkto="https://">
-                                                   <img data-assetid="4376" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/bc9469f6-dfb6-4e87-9ac5-10f08dcf3ccf.png" alt="GET SHOWTIME® IN 3 EASY STEPS" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
+                                                   <img data-assetid="4376" src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/bc9469f6-dfb6-4e87-9ac5-10f08dcf3ccf.png" alt="GET SHOWTIME® IN 3 EASY STEPS" width="640" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px;"></a>
                                                 </td>
                                              </tr>
                                           </table>
@@ -836,7 +836,7 @@ date: 2020-04-03 07:00:00
          <tr>
             <td>
                <!--Social_Icon_Section-->
-               <table width="640" border="0" cellspacing="0" cellpadding="0" align="center" style="background: #f2f3f2;table-layout:fixed; width:640px; background: url('http://image.mail.sling.com/lib/fe9813727565027976/m/9/gradient_bg.jpg') top repeat-x;" class="em_main_table">
+               <table width="640" border="0" cellspacing="0" cellpadding="0" align="center" style="background: #f2f3f2;table-layout:fixed; width:640px; background: url('https://image.mail.sling.com/lib/fe9813727565027976/m/9/gradient_bg.jpg') top repeat-x;" class="em_main_table">
                   <tr>
                      <td valign="top" align="center">
                         <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper">
@@ -846,7 +846,7 @@ date: 2020-04-03 07:00:00
                                  </table>
                                  <table width="100%" cellspacing="0" cellpadding="0">
                                     <tr>
-                                       <td align="center"><img data-assetid="4025" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/72dfd30e-cb1d-4d07-9e9f-ccec08dd0f52.png" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px; margin-bottom:-20px;"></td>
+                                       <td align="center"><img data-assetid="4025" src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/72dfd30e-cb1d-4d07-9e9f-ccec08dd0f52.png" style="display: block; padding: 0px; text-align: center; height: auto; width: 100%; border: 0px; margin-bottom:-20px;"></td>
                                     </tr>
                                  </table>
                                  <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; border-top: 0px; border-right: 0px; border-bottom: 1px solid transparent; border-left: 0px; " class="stylingblock-content-wrapper">
@@ -864,7 +864,7 @@ date: 2020-04-03 07:00:00
                                                                      <table align="center" class="contents" style="border-collapse: collapse; border-spacing: 0; width: 80%;">
                                                                         <!--Image-->
                                                                         <tr>
-                                                                           <td align="center" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="http://image.mail.sling.com/lib/fe9813727565027976/m/9/b775c395-52a4-4652-8295-f2d6a94e4dda.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
+                                                                           <td align="center" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="https://image.mail.sling.com/lib/fe9813727565027976/m/9/b775c395-52a4-4652-8295-f2d6a94e4dda.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
                                                                         </tr>
                                                                         <!--Image End-->
                                                                         <!--Text-->
@@ -892,13 +892,13 @@ date: 2020-04-03 07:00:00
                                                                      <table align="center" class="contents" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                         <tr>
                                                                            <td class="em_hide" align="left" width="1" style="margin-top:60px;display:block;" valign="middle">
-                                                                              <img data-assetid="4036" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/9fc0e007-5c1f-44b6-9697-0b4d3083cd0d.png" height="52" width="1" style="display: block; padding: 0px; text-align: center; height: 52px; width: 1px; border: 0px;">
+                                                                              <img data-assetid="4036" src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/9fc0e007-5c1f-44b6-9697-0b4d3083cd0d.png" height="52" width="1" style="display: block; padding: 0px; text-align: center; height: 52px; width: 1px; border: 0px;">
                                                                            </td>
                                                                            <td align="center">
                                                                               <!--Image-->
                                                                               <table>
                                                                                  <tr>
-                                                                                    <td align="center" valign="middle" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="http://image.mail.sling.com/lib/fe9813727565027976/m/9/29827674-b110-4522-920c-923700ab8866.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
+                                                                                    <td align="center" valign="middle" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="https://image.mail.sling.com/lib/fe9813727565027976/m/9/29827674-b110-4522-920c-923700ab8866.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
                                                                                  </tr>
                                                                                  <!--Image End-->
                                                                                  <!--Text-->
@@ -911,7 +911,7 @@ date: 2020-04-03 07:00:00
                                                                               <!--Text End-->
                                                                            </td>
                                                                            <td class="em_hide" align="right" width="1" style="margin-top:60px;display:block;" valign="middle">
-                                                                              <img data-assetid="4036" src="http://image.mail.sling.com/lib/fe9813727565027976/m/11/9fc0e007-5c1f-44b6-9697-0b4d3083cd0d.png" height="52" width="1" style="display: block; padding: 0px; text-align: center; height: 52px; width: 1px; border: 0px;">
+                                                                              <img data-assetid="4036" src="https://image.mail.sling.com/lib/fe9813727565027976/m/11/9fc0e007-5c1f-44b6-9697-0b4d3083cd0d.png" height="52" width="1" style="display: block; padding: 0px; text-align: center; height: 52px; width: 1px; border: 0px;">
                                                                            </td>
                                                                         </tr>
                                                                      </table>
@@ -931,7 +931,7 @@ date: 2020-04-03 07:00:00
                                                                      <table align="center" class="contents" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                                                         <!--Image-->
                                                                         <tr>
-                                                                           <td align="center" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="http://image.mail.sling.com/lib/fe9813727565027976/m/9/265da0de-4204-4933-b7f1-330b2f150cd4.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
+                                                                           <td align="center" style="border-collapse: collapse; padding: 15px 20px;"><img alt="" src="https://image.mail.sling.com/lib/fe9813727565027976/m/9/265da0de-4204-4933-b7f1-330b2f150cd4.png" style="border: 0; display: block !important; height: auto; max-width:32px;" width="32"></td>
                                                                         </tr>
                                                                         <!--Image End-->
                                                                         <!--Text-->
@@ -959,13 +959,13 @@ date: 2020-04-03 07:00:00
                                        <td align="center" valign="top">
                                           <table align="center" cellpadding="0" cellspacing="0" border="0">
                                              <tr>
-                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee8b715da12a3f0a6ac08c30441232d76301e135c8c722d392fe47d7ab6ee3cc09769b746c9c060db8f2f0b4aa6ced831" target="_blank" style="text-decoration:none;" ><img src="http://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_fb.png" width="29" height="29" alt="FB" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
+                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee8b715da12a3f0a6ac08c30441232d76301e135c8c722d392fe47d7ab6ee3cc09769b746c9c060db8f2f0b4aa6ced831" target="_blank" style="text-decoration:none;" ><img src="https://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_fb.png" width="29" height="29" alt="FB" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
                                                 <td width="7" style="width:7px;">&nbsp;</td>
-                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee930d8204901d0d9f1f1a026de5cfe495db67cc1bc8ae0eb9106fdb6dec0ea458db408a7b55f32235669e036a4410756" target="_blank" style="text-decoration:none;" ><img src="http://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_tw.png" width="29" height="29" alt="TW" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
+                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ee930d8204901d0d9f1f1a026de5cfe495db67cc1bc8ae0eb9106fdb6dec0ea458db408a7b55f32235669e036a4410756" target="_blank" style="text-decoration:none;" ><img src="https://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_tw.png" width="29" height="29" alt="TW" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
                                                 <td width="7" style="width:7px;">&nbsp;</td>
-                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ea6e655ab66c3657a2864ad87521052bd090ba8ab43ae31f44c7f353376aed8f29aeb7c4384f4560bbfb38d76ef087618" target="_blank" style="text-decoration:none;" ><img src="http://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_insta.png" width="29" height="29" alt="INSTA" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
+                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250ea6e655ab66c3657a2864ad87521052bd090ba8ab43ae31f44c7f353376aed8f29aeb7c4384f4560bbfb38d76ef087618" target="_blank" style="text-decoration:none;" ><img src="https://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_insta.png" width="29" height="29" alt="INSTA" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
                                                 <td width="7" style="width:7px;">&nbsp;</td>
-                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250e38420dd2084b0010180f29c894b5c0f873a1498801e034949e9ad413b5b35ace7d45c27220604e26b312ae8a4da3f17c" target="_blank" style="text-decoration:none;" ><img src="http://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_yt.png" width="29" height="29" alt="YT" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
+                                                <td align="center" valign="top"><a href="http://click.mail.sling.com/?qs=4fed73bfd06b250e38420dd2084b0010180f29c894b5c0f873a1498801e034949e9ad413b5b35ace7d45c27220604e26b312ae8a4da3f17c" target="_blank" style="text-decoration:none;" ><img src="https://image.mail.sling.com/lib/fe9813727565027976/m/5/A_Onboard_A_yt.png" width="29" height="29" alt="YT" border="0" style="display:block; font-family:Arial, sans-serif; font-size:12px; line-height:18px; color:#363636; font-weight:bold;"></a></td>
                                              </tr>
                                           </table>
                                        </td>

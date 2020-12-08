@@ -614,7 +614,7 @@ date: 2020-04-02 07:00:00
                                              <a href="http://click.mail.sling.com/?qs=b1eb53791efb5d89f64da8e4d05a99fa719776636d8c02b4242c1ca87f6360f169ab20b46b6096513ca73b715403967df14e7eed36bcdf7e"  style="text-decoration:none;" target="_blank"><img alt="sling TELEVISION" border="0" class="em_img98" src="https://image.mail.sling.com/lib/fe9813727565027976/m/10/39f3cfe8-30b5-42f7-a1a1-d1dd087387d4.png" style="display:block; font-family:Arial, sans-serif; font-size:16px; line-height:20px; color:#000000;" width="85"></a>
                                           </td>
                                           <td align="right" class="font-cta-top" style="font-family:'brandon_text_regularregular', Arial, sans-serif; font-size:18px; line-height:21px; text-transform:uppercase; text-align:right; color:#14ABE0; padding:0px 0px 0px 6px; text-align:right;" valign="middle">
-                                             <a href="http://click.mail.sling.com/?qs=b1eb53791efb5d894a341e7e171e2a6a6eea8b08c8712f308dd2bbced3058fb10ecf4e2e05efd536f4b0fa42b2d2ae8c89d3a2af851aee95" style="display: block"><img alt="DISFRUTA AHORA &gt;" style="border: 0; display: inline-block;" border="0" src="http://mi.sling.com/p/rp/d039ec19dd1b7f3b.png?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880"></a>
+                                             <a href="http://click.mail.sling.com/?qs=b1eb53791efb5d894a341e7e171e2a6a6eea8b08c8712f308dd2bbced3058fb10ecf4e2e05efd536f4b0fa42b2d2ae8c89d3a2af851aee95" style="display: block"><img alt="DISFRUTA AHORA &gt;" style="border: 0; display: inline-block;" border="0" src="https://mi.sling.com/p/rp/d039ec19dd1b7f3b.png?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880"></a>
                                           </td>
                                        </tr>
                                     </table>
@@ -633,7 +633,7 @@ date: 2020-04-02 07:00:00
                   <table width="1" height="1" cellpadding="0" cellspacing="0" border="0">
                      <tr>
                         <td style="font-size:0px; line-height:0px;">
-                           <img src="http://mi.sling.com/p/cp/b092cfb6f4f98f8d/o.gif?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880" width="1" height="1" alt="" aria-hidden="true">
+                           <img src="https://mi.sling.com/p/cp/b092cfb6f4f98f8d/o.gif?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880" width="1" height="1" alt="" aria-hidden="true">
                         </td>
                      </tr>
                   </table>
@@ -1030,7 +1030,7 @@ date: 2020-04-02 07:00:00
                                              <tr>
                                                 <td align="center">
                                                    <div width="455" style="display: block; max-width:550px;text-align: center;">
-                                                      <a href="http://click.mail.sling.com/?qs=b1eb53791efb5d8998e8e6c2e2db3c259cf0eb3f74c0632da6ca183e5992cd66ce01396eb3c4d6eeffa4be78f15019d3d0656fe806627878" style="display: inline-block"><img alt="DISFRUTA AHORA &gt;" style="border: 0; display: block;" border="0" src="http://mi.sling.com/p/rp/c8721b9074faa0d8.png?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880"></a>
+                                                      <a href="http://click.mail.sling.com/?qs=b1eb53791efb5d8998e8e6c2e2db3c259cf0eb3f74c0632da6ca183e5992cd66ce01396eb3c4d6eeffa4be78f15019d3d0656fe806627878" style="display: inline-block"><img alt="DISFRUTA AHORA &gt;" style="border: 0; display: block;" border="0" src="https://mi.sling.com/p/rp/c8721b9074faa0d8.png?mi_u=4fa79506-2bfc-11e9-b7b5-12ac0fc46880"></a>
                                                    </div>
                                                 </td>
                                              </tr>

@@ -1,5 +1,5 @@
 ---
-title: "Frontpoint Security - Valentine's Sale"
+title: "FPT - Valentine's Sale"
 image: ../../assets/images/emails/FPT_ValentinesDay.png
 date: 2020-04-07 07:00:00
 ---

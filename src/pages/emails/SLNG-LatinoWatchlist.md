@@ -1,5 +1,5 @@
 ---
-title: 'Sling TV - Latino Summer Watchlist'
+title: 'SLNG - Latino Summer List'
 image: ../../assets/images/emails/SLNG_LatinoWatchlist.png
 date: 2020-04-02 07:00:00
 ---

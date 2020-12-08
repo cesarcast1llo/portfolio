@@ -107,8 +107,14 @@ export default class LiftSite extends Component {
               ))}
             </Col>
             <Col md={{ size: 7, order: 1 }} className="project-images">
-              <img alt="LIFT Creative Agency" src={wearelift} />
-              {/* <img alt="Frndly Tv" src={wearelift} /> */}
+              <a
+                href="https://www.wearelift.com/"
+                target="_blank rel="
+                rel="noopener noreferrer"
+              >
+                <img alt="LIFT Creative Agency" src={wearelift} />
+                {/* <img alt="Frndly Tv" src={wearelift} /> */}
+              </a>
             </Col>
           </Row>
         </div>

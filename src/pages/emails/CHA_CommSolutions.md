@@ -1,5 +1,5 @@
 ---
-title: 'Spectrum Mobile - Community Solutions'
+title: 'CHA - Community Solutions'
 image: ../../assets/images/emails/CHA-CommSolutions.png
 date: 2019-04-06 07:00:00
 ---

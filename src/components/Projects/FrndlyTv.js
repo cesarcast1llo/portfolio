@@ -95,8 +95,14 @@ export default class FrndlyTv extends Component {
               ))}
             </Col>
             <Col md={{ size: 7, order: 1 }} className="project-images">
-              <img alt="Frndly Tv" src={frndlyOpt} />
-              {/* <img alt="Frndly Tv" src={frndly} /> */}
+              <a
+                href="https://www.frndlytv.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img alt="Frndly Tv" src={frndlyOpt} />
+                {/* <img alt="Frndly Tv" src={frndly} /> */}
+              </a>
             </Col>
           </Row>
         </div>

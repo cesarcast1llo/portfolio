@@ -1,5 +1,5 @@
 ---
-title: 'Sling TV - NBA Finals 2019'
+title: 'SLNG - NBA Finals 2019'
 image: ../../assets/images/emails/FPT_NBAFinals.png
 date: 2020-04-05 07:00:00
 ---

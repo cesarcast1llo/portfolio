@@ -1,5 +1,5 @@
 ---
-title: "Frontpoint Security - St. Patrick's Day"
+title: "FPT - St. Patrick's Day"
 image: ../../assets/images/emails/FPT_StPatricksDay.png
 date: 2021-04-06 07:00:00
 ---

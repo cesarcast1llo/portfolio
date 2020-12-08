@@ -1,5 +1,5 @@
 ---
-title: 'Sling TV - Wu-Tang Documentary'
+title: 'SLNG - Wu-Tang Doc.'
 image: ../../assets/images/emails/SLNG_WuTangDoc.png
 date: 2020-04-03 07:00:00
 ---

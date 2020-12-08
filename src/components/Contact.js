@@ -70,7 +70,7 @@ const Contact = () => {
           delay={750}
           animateOnce={true}
         >
-          <a href={resume} download>
+          <a href={resume} target="_blank" rel="noreferrer" download>
             <Button className="animated-button draw">Resume</Button>
           </a>
         </ScrollAnimation>

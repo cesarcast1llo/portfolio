@@ -1,5 +1,5 @@
 ---
-title: "Frontpoint Security - Presidents' Day"
+title: "FPT - Presidents' Day"
 image: ../../assets/images/emails/FPT_PresidentsDay.png
 date: 2020-04-10 07:00:00
 ---

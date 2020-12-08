@@ -598,7 +598,7 @@ h3 {
   margin: 1rem auto 3rem;
   border-radius: 5px;
   padding: 5px 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1126,6 +1126,12 @@ h3 {
   text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+  .email-portal-container .email-container .html-email .html-title {
+    width: 100%;
+  }
+}
+
 .email-portal-container .email-container .html-email .bottom-border {
   border-bottom: 1px solid #3e3f3e;
   width: 85%;
@@ -1646,7 +1652,7 @@ footer .footer-container .center a:hover {
   margin: 1rem auto 3rem;
   border-radius: 5px;
   padding: 5px 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 4rem;
   text-transform: uppercase;
   letter-spacing: 2px;

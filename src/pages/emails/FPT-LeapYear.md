@@ -1,5 +1,5 @@
 ---
-title: 'Frontpoint Security - Leap Year Sale'
+title: 'FPT - Leap Year Sale'
 image: ../../assets/images/emails/FPT_LeapYear.png
 date: 2020-04-06 07:00:00
 ---

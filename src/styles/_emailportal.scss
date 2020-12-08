@@ -7,11 +7,11 @@
   .email-portal {
     border-radius: 10px;
     background-color: white;
-    padding: 40px 15px 20px;
+    padding: 40px 15px 80px;
     margin: 0 15px;
 
     @media (min-width: $XS) {
-      padding: 40px 20px 40px;
+      padding: 40px 30px 60px;
     }
 
     .intro {
@@ -53,34 +53,37 @@
     }
 
     .html-email {
-      padding-bottom: 2.5rem;
-      border-bottom: 3px solid $secondary;
-      margin-bottom: 2.5rem;
-      border-bottom: 3px solid $secondary;
-
-      @media (min-width: $XS) {
+        margin-bottom: 0;
         padding-bottom: 4rem;
-      }
-
-      @media (min-width: $S) {
-        border: none;
-      }
+      
 
       .html-image {
         margin: 0 auto;
-        max-width: 300px;
+        max-width: 350px;
       }
 
       .html-title {
         text-align: center;
-        padding-top: 1rem;
+        padding: 1rem 0 2.5rem;
         font-size: 22px;
         line-height: 26px;
         color: $secondary;
+        width: 65%;
+        margin: 0 auto;
 
         &:hover {
           text-decoration: underline;
         }
+      }
+
+      .bottom-border {
+        border-bottom: 1px solid $secondary;
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: $S) {
+        border: none;
       }
     }
   }

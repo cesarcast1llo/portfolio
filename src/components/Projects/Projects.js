@@ -23,7 +23,7 @@ const Projects = () => {
             </Col>
           </Row>
           <div className="format">
-            <FrndlyTv />
+            <HTMLEmails />
           </div>
         </Col>
       </Row>
@@ -37,7 +37,7 @@ const Projects = () => {
       <Row>
         <Col className="odd">
           <div className="format">
-            <HTMLEmails />
+            <FrndlyTv />
           </div>
         </Col>
       </Row>

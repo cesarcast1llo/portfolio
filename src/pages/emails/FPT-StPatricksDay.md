@@ -211,7 +211,7 @@ date: 2021-04-06 07:00:00
           width: 232px !important;
           height: auto !important;
         }
-        u + .em_body .em_full_wrap {
+        u + .em_body .em_full_wrap, .em_ {
           width: 100% !important;
           width: 100vw !important;
         }
@@ -439,13 +439,13 @@ width: 240px !important;
   </head>
   <body class="em_body" style="margin:0px auto; padding:0px;" bgcolor="#ffffff">
     <table
-      width="100%"
+      width="640"
       border="0"
       cellspacing="0"
       cellpadding="0"
-      class="em_full_wrap"
+      class="em_main_table"
+      style="width:640px;margin: 0 auto;"
       bgcolor="#ffffff"
-      style="table-layout:fixed;"
     >
       <tr>
         <td align="center" valign="top">
@@ -582,6 +582,7 @@ width: 240px !important;
                   cellspacing="0"
                   cellpadding="0"
                 >
+                <tr>
                   <td
                     align="center"
                     valign="top"
@@ -613,6 +614,7 @@ width: 240px !important;
                       src="https://cdn.wearelift.net/frontpointsecurity.com/email/FPT-1114/StPatricksUpsell/shamrock_right2x.png"
                     />
                   </td>
+                  </tr>
                 </table>
               </td>
             </tr>

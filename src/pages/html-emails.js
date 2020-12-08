@@ -23,38 +23,35 @@ const Emails = () => (
           <div className="intro">HTML Emails</div>
           <div className="description">
             <p>
-              Developed and validated 100+ responsive HTML emails using HTML4,
-              Salesforce or&nbsp;React.js.
-              <br />
-              All emails have been proofed and checked for HTML validation.
-              Tested on 70+ email clients and devices locally, and on either
-              Email on Acid or Litmus for desktop and mobile responsiveness.
+            Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consitency using HTML best practices.
             </p>
           </div>
         </Col>
       </Row>
-      <div className="email-container">
-        <StaticQuery
-          query={htmlQuery}
-          render={(data) => {
-            return (
-              <>
-                {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <HTMLpost
-                    key={node.id}
-                    title={node.frontmatter.title}
-                    slug={node.fields.slug}
-                    body={node.excerpt}
-                    date={node.frontmatter.date}
-                    fluid={node.frontmatter.image.childImageSharp.fluid}
-                    tags={node.frontmatter.tags}
-                  />
-                ))}
-              </>
-            );
-          }}
-        />
-      </div>
+      <Row>
+        <Col className="email-container">
+          <StaticQuery
+            query={htmlQuery}
+            render={(data) => {
+              return (
+                <>
+                  {data.allMarkdownRemark.edges.map(({ node }) => (
+                    <HTMLpost
+                      key={node.id}
+                      title={node.frontmatter.title}
+                      slug={node.fields.slug}
+                      body={node.excerpt}
+                      date={node.frontmatter.date}
+                      fluid={node.frontmatter.image.childImageSharp.fluid}
+                      tags={node.frontmatter.tags}
+                    />
+                  ))}
+                </>
+              );
+            }}
+          />
+        </Col>
+      </Row>
     </Container>
   </PageWrapper>
 );

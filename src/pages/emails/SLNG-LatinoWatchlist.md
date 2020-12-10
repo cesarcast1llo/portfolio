@@ -591,18 +591,6 @@ date: 2020-04-02 07:00:00
             <tr>
                <td class="stylingblock-content-wrapper camarker-inner">
                   <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="center" valign="top">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; background-color:salmon;max-width: 1000px;">
-                          <tr>
-                            <td align="center" style="padding: 10px;font-size: 15px;" valign="top">
-                                Images requested are blocked since the content is not served over&nbsp;HTTPS<br/>
-                                Please <strong>hard refresh</strong> to load images - <strong>CMD&nbsp;+&nbsp;Shift&nbsp;+&nbsp;R</strong>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
                      <tr>
                         <td align="center" valign="top">
                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed; width:100%; max-width:640px;" width="640">

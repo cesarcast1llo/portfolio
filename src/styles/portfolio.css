@@ -1143,7 +1143,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  .email-portal-container .email-container .html-email {
+  .email-portal-container .email-container .html-email .bottom-border {
     border: none;
   }
 }

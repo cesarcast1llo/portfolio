@@ -84,10 +84,10 @@
         border-bottom: 1px solid $secondary;
         width: 85%;
         margin: 0 auto;
-      }
 
-      @media (min-width: $S) {
-        border: none;
+        @media (min-width: $S) {
+          border: none;
+        }
       }
     }
   }

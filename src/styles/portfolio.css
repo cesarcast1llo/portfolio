@@ -37,6 +37,10 @@ h3 {
   color: #3e3f3e;
 }
 
+.row {
+  margin: 0 !important;
+}
+
 .site-button, .index-page .index-page-wrapper .contact-me .resume a button,
 .index-page .index-page-wrapper .contact-me .resume a:hover button, .projects-wrapper .row .skill-sliders .format .show-more button, .projects-wrapper .row .projects .format .project-layout .project-description .email-btn, .projects-wrapper .row .odd .format .project-layout .project-description .email-btn {
   border-radius: 5px;
@@ -1192,7 +1196,7 @@ h3 {
 
 @media (min-width: 576px) {
   .background {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -1898,7 +1902,37 @@ footer .footer-container .center a:hover {
   }
 }
 
-.projects-wrapper .row .projects .format .project-layout .project-description #developed, .projects-wrapper .row .odd .format .project-layout .project-description #developed {
+.projects-wrapper .row .projects .format .project-layout .project-description .badge-wrapper, .projects-wrapper .row .odd .format .project-layout .project-description .badge-wrapper {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .projects-wrapper .row .projects .format .project-layout .project-description .badge-wrapper, .projects-wrapper .row .odd .format .project-layout .project-description .badge-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 20px;
+  }
+}
+
+.projects-wrapper .row .projects .format .project-layout .project-description .badge-wrapper .hubspot-badge, .projects-wrapper .row .odd .format .project-layout .project-description .badge-wrapper .hubspot-badge {
+  max-width: 250px;
+  margin: 0 0 20px;
+}
+
+@media (min-width: 600px) {
+  .projects-wrapper .row .projects .format .project-layout .project-description .badge-wrapper .hubspot-badge, .projects-wrapper .row .odd .format .project-layout .project-description .badge-wrapper .hubspot-badge {
+    margin: 0 40px 0 0;
+  }
+}
+
+.projects-wrapper .row .projects .format .project-layout .project-description .badge-wrapper .developed, .projects-wrapper .row .odd .format .project-layout .project-description .badge-wrapper .developed {
   text-decoration: none;
 }
 

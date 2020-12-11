@@ -29,10 +29,10 @@ export default class SkillSliders extends Component {
     this.state = {
       skills: [
         { name: 'HTML', img: html, number: 250 },
-        { name: '(S)CSS', img: css, number: 450 },
-        { name: 'Javascript', img: javascript, number: 650 },
-        { name: 'React.js', img: react, number: 850 },
-        { name: 'Emails', img: emails, number: 250 },
+        { name: 'CSS', img: css, number: 450 },
+        { name: 'Emails', img: emails, number: 650 },
+        { name: 'Javascript', img: javascript, number: 850 },
+        { name: 'React.js', img: react, number: 250 },
         {
           name: 'Next.js',
           class: 'image-middle nextjs',

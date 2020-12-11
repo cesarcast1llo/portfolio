@@ -74,29 +74,32 @@ export default class HTMLEmails extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2 id="developed">Developed In:</h2>
-              </ScrollAnimation>
-              {this.state.stack.map((stack, i) => (
-                <div className="logos" key={i}>
-                  <ScrollAnimation
-                    className="animate"
-                    animateIn="fadeIn"
-                    duration={1}
-                    delay={stack.number}
-                    animateOnce={true}
-                  >
-                    <img
-                      className={stack.name}
-                      alt={stack.name}
-                      src={stack.img}
-                    />
-                  </ScrollAnimation>
+                <div class='badge-wrapper'>
+                  <img class="hubspot-badge" alt='Hubspot Email Marketing Certified' src='https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-badges/dfe76a1582aa4db5ba4bda28f23e4c75-1607721216453.png' />
+                  <div class="developed">
+                    <h2>Developed In:</h2>
+                    {this.state.stack.map((stack, i) => (
+                      <div className="logos" key={i}>
+                        <ScrollAnimation
+                          className="animate"
+                          animateIn="fadeIn"
+                          duration={1}
+                          delay={stack.number}
+                          animateOnce={true}
+                        >
+                          <img
+                            className={stack.name}
+                            alt={stack.name}
+                            src={stack.img}
+                          />
+                        </ScrollAnimation>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
+              </ScrollAnimation>
+              
             </Col>
-            {/* <Col md={{ size: 6, order: 1 }} className="project-images">
-              <img alt="Frndly Tv" src={frndly} />
-            </Col> */}
           </Row>
         </div>
       </ScrollAnimation>

@@ -7,7 +7,7 @@ const Footer = (props) => (
     <Container className="footer-container">
       <Row>
         <Col className="center">
-          &copy; Cesar Castillo&nbsp;<Link to="/2020">2020</Link>
+          &copy; Cesar Castillo&nbsp;<Link to="/2021">2021</Link>
         </Col>
         {/* <script
           src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Link } from 'gatsby';
 import { Container, Row, Col } from 'reactstrap';
-import Footer from '../components/pageWrapper//footer';
+import Footer from '../components/pageWrapper/footer';
 import SEO from '../components/seo';
 // import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons';
 

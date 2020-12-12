@@ -80,6 +80,8 @@ const Contact = () => {
                 basis
 
               </p> */}
+        {/* link to blog once html blogs produce, stick to html / css email based
+        versus vanilla js and popular frameworks */}
       </Col>
     </Row>
   );

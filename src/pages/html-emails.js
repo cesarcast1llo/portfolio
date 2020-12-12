@@ -23,7 +23,12 @@ const Emails = () => (
           <div className="intro">HTML Emails</div>
           <div className="description">
             <p>
-            Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consitency using HTML best practices.
+              Developed and validated 100+ responsive HTML emails using HTML4,
+              Salesforce or React.js. All emails have been proofed and checked
+              using HTML validators. Email responsiveness was proofed using
+              Litmus or Email on Acid on 70+ email clients and devices
+              before&nbsp;delivery. Used HTML validation to keep consitency
+              using HTML best&nbsp;practices.
             </p>
           </div>
         </Col>

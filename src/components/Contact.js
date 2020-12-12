@@ -18,7 +18,7 @@ const Contact = () => {
           delay={1350}
           animateOnce={true}
         >
-          <h1>Lets work together.</h1>
+          <h1>Let's work together.</h1>
         </ScrollAnimation>
         <div className="contact-icons">
           <ScrollAnimation

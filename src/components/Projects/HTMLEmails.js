@@ -32,6 +32,7 @@ export default class HTMLEmails extends Component {
         animateOnce={true}
       >
         <div className="project-layout">
+        <Link to="/html-emails">
           <Row>
             <Col md={{ size: 12 }} className="project-description">
               <ScrollAnimation
@@ -40,7 +41,9 @@ export default class HTMLEmails extends Component {
                 duration={1}
                 delay={450}
                 animateOnce={true}
-              ></ScrollAnimation>
+              >
+                <h2>HTML Emails</h2>
+              </ScrollAnimation>
               <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
@@ -48,8 +51,11 @@ export default class HTMLEmails extends Component {
                 delay={550}
                 animateOnce={true}
               >
+                <p>
+                  Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consitency using HTML best&nbsp;practices.
+                </p>
                 <Link to="/html-emails">
-                  <h2>HTML Emails</h2>
+                  <Button className="email-btn">EXAMPLES</Button>
                 </Link>
               </ScrollAnimation>
               <ScrollAnimation
@@ -59,25 +65,10 @@ export default class HTMLEmails extends Component {
                 delay={650}
                 animateOnce={true}
               >
-                <p>
-                  Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consitency using HTML best practices.
-                </p>
-                <Link to="/html-emails">
-                  <Button className="email-btn">EXAMPLES</Button>
-                </Link>
-              </ScrollAnimation>
-
-              <ScrollAnimation
-                className="animate"
-                animateIn="fadeIn"
-                duration={1}
-                delay={750}
-                animateOnce={true}
-              >
                 <div class='badge-wrapper'>
                   <img class="hubspot-badge" alt='Hubspot Email Marketing Certified' src='https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-badges/dfe76a1582aa4db5ba4bda28f23e4c75-1607721216453.png' />
                   <div class="developed">
-                    <h2>Developed In:</h2>
+                    <h3>Developed In:</h3>
                     {this.state.stack.map((stack, i) => (
                       <div className="logos" key={i}>
                         <ScrollAnimation
@@ -98,9 +89,9 @@ export default class HTMLEmails extends Component {
                   </div>
                 </div>
               </ScrollAnimation>
-              
             </Col>
           </Row>
+          </Link>
         </div>
       </ScrollAnimation>
     );

@@ -11,7 +11,7 @@ export default class LiftSite extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'Frndly TV',
+      name: 'Lift Creative Agency',
       img: wearelift,
       stack: [
         { name: 'PHP', img: php, number: 850 },
@@ -32,41 +32,17 @@ export default class LiftSite extends Component {
       >
         <div className="project-layout">
           <Row>
+            <Col md={{ size: 12 }} >
+            <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={550}
+                animateOnce={true} >
+                <h2>Lift Creative Agency</h2>
+              </ScrollAnimation>
+            </Col>
             <Col md={{ size: 5, order: 2 }} className="project-description">
-              <a
-                href="https://www.wearelift.com/"
-                target="_blank rel="
-                rel="noopener noreferrer"
-              >
-                {/* <ScrollAnimation
-                  className="animate"
-                  animateIn="fadeIn"
-                  duration={1}
-                  delay={450}
-                  animateOnce={true}
-                >
-                  <img
-                    alt="Lift Creative Agency"
-                    className="project-logo"
-                    src={wearelift}
-                  />
-                </ScrollAnimation> */}
-              </a>
-              <a
-                href="https://www.wearelift.com/"
-                target="_blank rel="
-                rel="noopener noreferrer"
-              >
-                <ScrollAnimation
-                  className="animate"
-                  animateIn="fadeIn"
-                  duration={1}
-                  delay={550}
-                  animateOnce={true}
-                >
-                  <h2>Lift Creative Agency</h2>
-                </ScrollAnimation>
-              </a>
               <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
@@ -75,8 +51,7 @@ export default class LiftSite extends Component {
                 animateOnce={true}
               >
                 <p>
-                  LIFT is a strategic design agency specializing in developing
-                  creative ideas that elevate&nbsp;brands.
+                  LIFT is a strategic design agency that elevates&nbsp;brands.
                 </p>
               </ScrollAnimation>
               <ScrollAnimation
@@ -86,35 +61,31 @@ export default class LiftSite extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2 id="developed">Developed In:</h2>
-              </ScrollAnimation>
-              {this.state.stack.map((stack, i) => (
-                <div className="logos" key={i}>
-                  <ScrollAnimation
-                    className="animate"
-                    animateIn="fadeIn"
-                    duration={1}
-                    delay={stack.number}
-                    animateOnce={true}
-                  >
-                    <img
-                      className={stack.name}
-                      alt={stack.name}
-                      src={stack.img}
-                    />
-                  </ScrollAnimation>
+                <div class="developed">
+                  <h3>Developed In:</h3>
+                  {this.state.stack.map((stack, i) => (
+                    <div className="logos" key={i}>
+                      <ScrollAnimation
+                        className="animate"
+                        animateIn="fadeIn"
+                        duration={1}
+                        delay={stack.number}
+                        animateOnce={true}
+                      >
+                        <img
+                          className={stack.name}
+                          alt={stack.name}
+                          src={stack.img}
+                        />
+                      </ScrollAnimation>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </ScrollAnimation>
             </Col>
             <Col md={{ size: 7, order: 1 }} className="project-images">
-              <a
-                href="https://www.wearelift.com/"
-                target="_blank rel="
-                rel="noopener noreferrer"
-              >
-                <img alt="LIFT Creative Agency" src={wearelift} />
-                {/* <img alt="Frndly Tv" src={wearelift} /> */}
-              </a>
+              <img alt="LIFT Creative Agency" src={wearelift} />
+              {/* <img alt="Frndly Tv" src={wearelift} /> */}
             </Col>
           </Row>
         </div>

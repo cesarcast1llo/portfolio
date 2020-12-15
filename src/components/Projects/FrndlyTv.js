@@ -33,31 +33,17 @@ export default class FrndlyTv extends Component {
       >
         <div className="project-layout">
           <Row>
+            <Col md={{ size: 12 }} >
+              <ScrollAnimation
+                className="animate"
+                animateIn="fadeIn"
+                duration={1}
+                delay={550}
+                animateOnce={true} >
+                <h2>Frndly TV</h2>
+              </ScrollAnimation>
+            </Col>
             <Col md={{ size: 5 }} className="project-description">
-              <a
-                href="https://www.frndlytv.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ScrollAnimation
-                  className="animate"
-                  animateIn="fadeIn"
-                  duration={1}
-                  delay={550}
-                  animateOnce={true}
-                >
-                  <h2>Frndly TV</h2>
-                </ScrollAnimation>
-                {/* <ScrollAnimation
-                  className="animate"
-                  animateIn="fadeIn"
-                  duration={1}
-                  delay={450}
-                  animateOnce={true}
-                >
-                  <img alt="Frndly Tv" className="project-logo" src={frndly} />
-                </ScrollAnimation> */}
-              </a>
               <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
@@ -74,35 +60,31 @@ export default class FrndlyTv extends Component {
                 delay={750}
                 animateOnce={true}
               >
-                <h2 id="developed">Developed In:</h2>
-              </ScrollAnimation>
-              {this.state.stack.map((stack, i) => (
-                <div className="logos" key={i}>
-                  <ScrollAnimation
-                    className="animate"
-                    animateIn="fadeIn"
-                    duration={1}
-                    delay={stack.number}
-                    animateOnce={true}
-                  >
-                    <img
-                      className={stack.name}
-                      alt={stack.name}
-                      src={stack.img}
-                    />
-                  </ScrollAnimation>
+                <div class="developed">
+                  <h3>Developed In:</h3>
+                  {this.state.stack.map((stack, i) => (
+                    <div className="logos" key={i}>
+                      <ScrollAnimation
+                        className="animate"
+                        animateIn="fadeIn"
+                        duration={1}
+                        delay={stack.number}
+                        animateOnce={true}
+                      >
+                        <img
+                          className={stack.name}
+                          alt={stack.name}
+                          src={stack.img}
+                        />
+                      </ScrollAnimation>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </ScrollAnimation>
             </Col>
             <Col md={{ size: 7, order: 1 }} className="project-images">
-              <a
-                href="https://www.frndlytv.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img alt="Frndly Tv" src={frndlyOpt} />
-                {/* <img alt="Frndly Tv" src={frndly} /> */}
-              </a>
+              <img alt="Frndly Tv" src={frndlyOpt} />
+              {/* <img alt="Frndly Tv" src={frndly} /> */}
             </Col>
           </Row>
         </div>

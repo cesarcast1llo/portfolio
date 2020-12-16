@@ -1,18 +1,17 @@
 .index-page {
   margin: -20rem auto 0;
   z-index: 20;
-  padding: 0 15px;
+  padding: 0;
   max-width: 980px !important;
+  padding: 0 1.5rem !important;
 
   .index-page-wrapper {
     border-radius: 10px;
     background-color: white;
-    padding: 40px 15px 40px;
-    margin: 0 8px;
+    padding: 4rem 2rem;
 
-    @media (min-width: $XS) {
-      padding: 40px 25px 60px;
-      margin: 0 15px;
+    @media (min-width: $S) {
+      padding: 4rem 2rem 6rem;
     }
 
     .intro {
@@ -44,7 +43,7 @@
           line-height: 22px;
           font-weight: 300;
 
-          @media (min-width: $XS) {
+          @media (min-width: $S) {
             font-size: 20px;
             line-height: 28px;
           }
@@ -151,7 +150,7 @@
         padding-top: 3rem;
         color: $secondary;
 
-        @media (min-width: $XS) {
+        @media (min-width: $S) {
           font-size: 17px;
           line-height: 21px;
         }

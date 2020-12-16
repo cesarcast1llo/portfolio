@@ -9,7 +9,7 @@
   text-align: center;
   color: $secondary;
   // background: $gradient;
-  padding: 6rem 2rem;
+  padding: 6rem 3.5rem;
   width: 100%;
 
   @media (min-width: $S) {
@@ -61,11 +61,6 @@
     .project-description {
       vertical-align: middle;
       margin: auto 0;
-      padding: 0 0 20px;
-
-      @media (min-width: $S) {
-        padding: 0;
-      }
 
       .project-logo {
         max-width: 100px;

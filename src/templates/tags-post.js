@@ -14,7 +14,7 @@ const tagPosts = ({ data, pageContext }) => {
   } tagged with `;
 
   return (
-    <PageWrapper pageTitle="Tags" pageKeywords={['tags', 'topics']}>
+    <PageWrapper pageTitle="Tags" pageKeywords={['tags', 'topics']} background="background">
       <Container className="single-tag-container">
         <Row>
           <Col className="single-tag-wrapper">

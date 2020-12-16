@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   text-align: center;
 
-  @media (min-width: $XS) {
+  @media (min-width: $S) {
     height: 40vh;
   }
 
@@ -42,7 +42,7 @@
         font-size: 60px;
         line-height: 65px;
       }
-      @media (min-width: $XS) {
+      @media (min-width: $S) {
         letter-spacing: 2px;
         font-size: 115px;
         line-height: 120px;

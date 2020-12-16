@@ -10,7 +10,7 @@
     padding: 40px 15px 80px;
     margin: 0 15px;
 
-    @media (min-width: $XS) {
+    @media (min-width: $S) {
       padding: 40px 30px 60px;
     }
 
@@ -22,7 +22,7 @@
       font-weight: 400;
       color: $secondary;
 
-      @media (min-width: $XS) {
+      @media (min-width: $S) {
         padding-bottom: 30px;
       }
     }
@@ -36,7 +36,7 @@
         color: $secondary;
         margin-bottom: 5px;
 
-        @media (min-width: $XS) {
+        @media (min-width: $S) {
           font-size: 20px;
           line-height: 28px;
         }

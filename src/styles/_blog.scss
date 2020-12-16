@@ -34,7 +34,6 @@
         display: inline-block;
         font-size: 38px;
         line-height: 42px;
-        font-weight: 400;
         letter-spacing: 1px;
         color: $secondary;
         margin-bottom: 5px;
@@ -48,12 +47,14 @@
       h1 {
         font-size: 30px;
         line-height: 36px;
+        font-weight: 500;
       }
 
       h2 {
         font-size: 23px;
         line-height: 26px;
         padding-bottom: 5px;
+        font-weight: 400;
       }
 
       p {
@@ -63,7 +64,7 @@
         color: $secondary;
         margin-bottom: 5px;
 
-        @media (min-width: $XS) {
+        @media (min-width: $S) {
           font-size: 20px;
           line-height: 24px;
         }

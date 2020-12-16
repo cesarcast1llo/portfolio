@@ -3,7 +3,6 @@ import { Row, Col } from 'reactstrap';
 import FrndlyTv from './FrndlyTv';
 import LiftSite from './LiftSite';
 import HTMLEmails from './HTMLEmails';
-import ScrollAnimation from 'react-animate-on-scroll';
 
 const Projects = () => {
   return (

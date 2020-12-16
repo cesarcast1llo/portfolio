@@ -9,10 +9,11 @@
   text-align: center;
   color: $secondary;
   // background: $gradient;
-  padding: 5rem 1.5rem;
+  padding: 6rem 2rem;
   width: 100%;
+
   @media (min-width: $S) {
-    padding: 6rem 2.5rem;
+    padding: 7.5rem 2.5rem;
     // clip-path: polygon(
     //   0 calc(0% + 45px),
     //   100% 0,
@@ -27,34 +28,28 @@
     // );
   }
 
-  .header {
-    text-align: center;
-    font-size: 4.8rem;
-    line-height: 5rem;
-    font-weight: 300;
-    padding-top: 1rem;
-    @media (min-width: $S) {
-      padding-top: 1.5rem;
-    }
-  }
-
   .project-layout {
+    max-width: 980px !important;
     margin: 0 auto;
-    text-decoration: none;
 
-    .project-images {
-      padding: 0;
-      
-      img {
-        margin: 0 auto;
-        width: 100%;
-      }
+    .header {
+      text-align: center;
+      font-size: 4.8rem;
+      line-height: 5rem;
+      font-weight: 400;
+      padding-bottom: 3rem;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     h2 {
+      font-weight: 500;
       font-size: 36px;
       line-height: 40px;
-      margin-bottom: .5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
 
       @media (min-width: $S) {
         margin-bottom: 1rem;
@@ -66,7 +61,11 @@
     .project-description {
       vertical-align: middle;
       margin: auto 0;
-      padding: 0;
+      padding: 0 0 20px;
+
+      @media (min-width: $S) {
+        padding: 0;
+      }
 
       .project-logo {
         max-width: 100px;
@@ -79,7 +78,8 @@
 
         h3 {
           font-size: 25px;
-          line-height: 28px;
+          line-height: 29px;
+          font-weight: 400;
           margin-bottom: .75rem;
 
           @media (min-width: $S) {
@@ -131,8 +131,9 @@
       }
 
       .email-btn {
+
         @extend .site-button;
-        margin: 1rem auto 3rem;
+        margin: 1rem auto 4rem;
         border-radius: 5px;
         padding: 5px 0;
         font-size: 2rem;
@@ -199,6 +200,15 @@
         margin: 0;
       }
     }
+
+    .project-images {
+      padding: 0;
+      
+      img {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -206,7 +216,6 @@
   @extend .projects;
   background: $gradient;
   color: white;
-  margin: 0;
 
   h1,
   h2,

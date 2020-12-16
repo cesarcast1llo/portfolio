@@ -32,6 +32,18 @@ export default class HTMLEmails extends Component {
         animateOnce={true}
       >
         <div className="project-layout">
+                    <Row>
+            <Col className="header">
+              <ScrollAnimation
+                animateIn="fadeIn"
+                duration={1}
+                delay={350}
+                animateOnce={true}
+              >
+              Projects I've Worked&nbsp;On.
+              </ScrollAnimation>
+            </Col>
+          </Row>
         <Link to="/html-emails">
           <Row>
             <Col md={{ size: 12 }} className="project-description">

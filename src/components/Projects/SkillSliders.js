@@ -128,10 +128,10 @@ export default class SkillSliders extends Component {
               animateOnce={true}
             >
               <Row>
-                <Col md="5" className="other-tools">
+                <Col md="6" className="other-tools">
                   Other Development&nbsp;Tools:
                 </Col>
-                <Col md="7" className="other-tools-icon">
+                <Col md="6" className="other-tools-icon">
                   {this.state.tools.map((tool, i) => {
                     return i === 3 ? (
                       <div key={i} style={{ display: 'inline' }}>

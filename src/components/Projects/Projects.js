@@ -10,35 +10,17 @@ const Projects = () => {
     <>
       <Row>
         <Col className="odd">
-          <Row>
-            <Col className="header">
-              <ScrollAnimation
-                animateIn="fadeIn"
-                duration={1}
-                delay={350}
-                animateOnce={true}
-              >
-                <div className="header">Projects I've Worked&nbsp;On.</div>
-              </ScrollAnimation>
-            </Col>
-          </Row>
-          <div className="format">
-            <HTMLEmails />
-          </div>
+          <HTMLEmails />
         </Col>
       </Row>
       <Row>
         <Col className="projects">
-          <div className="format">
-            <LiftSite />
-          </div>
+          <LiftSite />
         </Col>
       </Row>
       <Row>
         <Col className="odd">
-          <div className="format">
-            <FrndlyTv />
-          </div>
+          <FrndlyTv />
         </Col>
       </Row>
     </>

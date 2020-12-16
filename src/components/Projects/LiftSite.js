@@ -33,7 +33,12 @@ export default class LiftSite extends Component {
         <div className="project-layout">
           <Row>
             <Col md={{ size: 12 }} >
-            <ScrollAnimation
+              <a
+                href="https://www.wearelift.com/"
+                target="_blank rel="
+                rel="noopener noreferrer"
+              >
+              <ScrollAnimation
                 className="animate"
                 animateIn="fadeIn"
                 duration={1}
@@ -41,7 +46,9 @@ export default class LiftSite extends Component {
                 animateOnce={true} >
                 <h2>Lift Creative Agency</h2>
               </ScrollAnimation>
+              </a>
             </Col>
+      
             <Col md={{ size: 5, order: 2 }} className="project-description">
               <ScrollAnimation
                 className="animate"

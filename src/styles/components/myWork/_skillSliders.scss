@@ -9,10 +9,11 @@
   text-align: center;
   color: $secondary;
   // background: $gradient;
-  padding: 6rem 1.5rem 7rem;
+  padding: 6rem 2rem;
   width: 100%;
 
-  @media (min-width: $XS) {
+  @media (min-width: $S) {
+    padding: 7.5rem 2.5rem;
     // padding: 11rem 1.5rem;
     // clip-path: polygon(
     //   0 calc(0% + 45px),
@@ -32,25 +33,11 @@
     margin: 0 auto;
     max-width: 980px !important;
 
-    @media (min-width: $mobile) {
-      padding: 0 2.5rem;
-    }
-    @media (min-width: $S) {
-      padding: 0 1.5rem;
-    }
-    @media (min-width: $M) {
-      padding: 0 2.5rem;
-    }
-
     .intro {
       font-size: 4.8rem;
       line-height: 5rem;
-      font-weight: 300;
+      font-weight: 400;
       padding-bottom: 4rem;
-
-      @media (min-width: $XS) {
-        padding-bottom: 5rem;
-      }
     }
 
     .skillName {
@@ -132,26 +119,20 @@
     }
 
     .other-tools {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 25px;
+      line-height: 29px;
+      font-weight: 400;
       padding: 0;
 
-      @media (min-width: $XS) {
-        font-size: 20px;
-        line-height: 28px;
-      }
       @media (min-width: $S) {
         padding: 1.5rem 0 0;
+        font-size: 28px;
+        line-height: 32px;
       }
     }
 
     .other-tools-icon {
       padding: 0;
-
-      @media (min-width: $S) {
-        padding: 0;
-        text-align: right;
-      }
 
       .animate {
         display: inline-block;

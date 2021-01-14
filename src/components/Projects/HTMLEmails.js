@@ -44,7 +44,6 @@ export default class HTMLEmails extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-        <Link to="/html-emails">
           <Row>
             <Col md={{ size: 12 }} className="project-description">
               <ScrollAnimation
@@ -54,7 +53,9 @@ export default class HTMLEmails extends Component {
                 delay={450}
                 animateOnce={true}
               >
-                <h2>HTML Emails</h2>
+                <Link to="/html-emails">
+                  <h2>HTML Emails</h2>
+                </Link>
               </ScrollAnimation>
               <ScrollAnimation
                 className="animate"
@@ -64,7 +65,7 @@ export default class HTMLEmails extends Component {
                 animateOnce={true}
               >
                 <p>
-                  Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consitency using HTML best&nbsp;practices.
+                  Developed and validated 100+ responsive HTML emails using HTML4, Salesforce or React.js. All emails have been proofed and checked using HTML validators. Email responsiveness was proofed using Litmus or Email on Acid on 70+ email clients and devices before&nbsp;delivery. Used HTML validation to keep consistency using HTML best&nbsp;practices.
                 </p>
                 <Link to="/html-emails">
                   <Button className="email-btn">EXAMPLES</Button>
@@ -103,7 +104,6 @@ export default class HTMLEmails extends Component {
               </ScrollAnimation>
             </Col>
           </Row>
-          </Link>
         </div>
       </ScrollAnimation>
     );

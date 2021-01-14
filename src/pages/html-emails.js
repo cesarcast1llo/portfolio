@@ -27,7 +27,7 @@ const Emails = () => (
               Salesforce or React.js. All emails have been proofed and checked
               using HTML validators. Email responsiveness was proofed using
               Litmus or Email on Acid on 70+ email clients and devices
-              before&nbsp;delivery. Used HTML validation to keep consitency
+              before&nbsp;delivery. Used HTML validation to keep consistency
               using HTML best&nbsp;practices.
             </p>
           </div>
